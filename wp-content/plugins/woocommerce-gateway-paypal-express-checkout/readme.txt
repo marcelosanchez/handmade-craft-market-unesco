@@ -3,7 +3,7 @@ Contributors: automattic, woothemes, akeda, dwainm, royho, allendav, slash1andy,
 Tags: ecommerce, e-commerce, commerce, woothemes, wordpress ecommerce, store, sales, sell, shop, shopping, cart, checkout, configurable, paypal
 Requires at least: 4.4
 Tested up to: 4.9.0
-Stable tag: 1.4.5
+Stable tag: 1.4.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -84,6 +84,16 @@ https://gist.github.com/mikejolley/ad2ecc286c9ad6cefbb7065ba6dfef48
 3. Checkout with PayPal directly from the Cart.
 
 == Changelog ==
+
+= 1.4.7 =
+* Fix   - Issue with missing paypal session information.
+* Fix   - Dependency error when using LibreSSL.
+* Fix   - Additional compatibility with shipping plugins
+* Fix   - Issue where deprecated `WC_Cart::get_cart_url` is being used.
+* Tweak - Makes admin notification dismissible.
+
+= 1.4.6 =
+* Fix   - Coupon related PayPal error 10413.
 
 = 1.4.5 =
 * Fix   - Title/Description fields in the settings should appear based on Enable PayPal Express Checkout.
