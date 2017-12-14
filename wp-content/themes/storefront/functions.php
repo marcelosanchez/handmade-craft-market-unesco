@@ -49,6 +49,8 @@ if ( is_admin() ) {
 	require 'inc/admin/class-storefront-plugin-install.php';
 }
 
+
+
 /**
  * NUX
  * Only load if wp version is 4.7.3 or above because of this issue;
@@ -62,6 +64,17 @@ if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin()
 		require 'inc/nux/class-storefront-nux-starter-content.php';
 	}
 }
+
+
+/* Add bootstrap support to the Wordpress theme*/
+ 
+function theme_add_bootstrap() {
+	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css' );
+	wp_enqueue_style( 'style-css', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.0.0', true );
+}
+ 
+add_action( 'wp_enqueue_scripts', 'theme_add_bootstrap' );
 
 /**
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
