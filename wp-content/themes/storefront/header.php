@@ -17,14 +17,26 @@
 
 <!-- SCROLL PAGE -->
 <link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/fullPage-scroll/jquery.fullPage.css" />
-<link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/fullPage-scroll/examples.css" />
+<link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/fullPage-scroll/fullpage_custom.css" />
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/fullPage-scroll/scrolloverflow.js"></script>
 <script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/fullPage-scroll/jquery.fullPage.js"></script>
-<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/fullPage-scroll/examples.js"></script>
+<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/fullPage-scroll/fullpage_custom.js"></script>
 <!-- EO / SCROLL PAGE -->
+
+<!-- GENERAL CUSTOMIZATION -->
+<link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/hos_custom/hos_custom.css" />
+
+<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/hos_custom/hos_custom.js"></script>
+<!-- EO / GENERAL CUSTOMIZATION -->
+
+<!-- HOME PAGE -->
+<link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/page_home/home_page.css" />
+
+<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/page_home/home_page.js"></script>
+<!-- EO / HOME PAGE -->
 
 <?php wp_head(); ?>
 </head>

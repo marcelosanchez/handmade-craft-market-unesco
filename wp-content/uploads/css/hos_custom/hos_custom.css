@@ -1,0 +1,43 @@
+@CHARSET "ISO-8859-1";
+
+/*HEADER*/
+.site-branding {
+    margin-top: -5px;
+}
+
+/* Custom HOME CSS
+ * --------------------------------------- */
+.goto-btn {
+	height: 40px;
+	width: 125px; 
+	font-size: 12px;
+	/*font-weight: bolder;*/
+	text-transform: uppercase;
+	background: #ff7a00;
+	transition: background .3s ease;
+}
+
+.goto-btn:hover {
+	background: #ff5400;
+}
+
+.main-home-section h1{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 38px;
+	text-transform: uppercase;
+	color: white;
+}
+.main-home-section h2{
+	margin: 0;
+	padding: 0;
+	text-align: center; 
+	font-size: 28px;
+	color: white;
+}
+
+.gobtn_cont {
+	text-align: center;
+	margin-top: 50px;
+}

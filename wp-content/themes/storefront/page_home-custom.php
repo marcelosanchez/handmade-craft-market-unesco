@@ -20,11 +20,16 @@ get_header(); ?>
 		<div id="fullpage">
 			<div class="section main-home-section" id="section0">
 				<div class="intro">
-					<p style="text-align: center;">
-						<img alt="background" src="/integ.handicrafts.unesco/wp-content/uploads/img/demo_logo.png">
-					</p>
-					<p style="text-align: center; font-size: 30px;">Find what you want in our variety of crafts</p>
-					<p style="text-align: center;"><button onclick="javascript:location.href='http://localhost/integ.handicrafts.unesco/shop/'">Go to Shop</button></p>
+
+					<div class="col-md-12" style="text-align: center; margin-top: 8px;margin-bottom: 163px;">
+						<img style="display: inline-block;" alt="background" src="/integ.handicrafts.unesco/wp-content/uploads/img/demo_logo.png">
+					</div>
+					<h1>Handicraft Online Shop</h1>
+					<h2>Find what you want in our variety of crafts</h2>
+					<div class="gobtn_cont">
+						<button class="goto-btn" onclick="javascript:location.href='http://localhost/integ.handicrafts.unesco/shop/'">Go to Shop</button>
+					</div>
+
 				</div>
 			</div>
 			<div class="section artisans-home-section" id="section1">
