@@ -281,22 +281,22 @@ p{
  /* CUSTOM CSS HOME PAGE SCROLL
  * --------------------------------------- */
 .main-home-section {
-	background: url("/integ.handicrafts.unesco/wp-content/uploads/img/home/atrisans-sec01.jpg") no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/integ.handicrafts.unesco/wp-content/uploads/img/home/home-sec01.jpg");
 	background-size: cover;
 }
 
 .artisans-home-section {
-	background: url("/integ.handicrafts.unesco/wp-content/uploads/img/home/atrisans-sec01.jpg") no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/integ.handicrafts.unesco/wp-content/uploads/img/home/home-sec02.jpg");
 	background-size: cover;
 }
 
 .handicraft-home-section {
-	background: url("/integ.handicrafts.unesco/wp-content/uploads/img/home/atrisans-sec01.jpg") no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/integ.handicrafts.unesco/wp-content/uploads/img/home/home-sec03.jpg");
 	background-size: cover;
 }
 
 .cities-home-section {
-	background: url("/integ.handicrafts.unesco/wp-content/uploads/img/home/atrisans-sec01.jpg") no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/integ.handicrafts.unesco/wp-content/uploads/img/home/home-sec04.jpg");
 	background-size: cover;
 }
 
