@@ -513,7 +513,7 @@ function wp_dashboard_quick_press( $error_msg = false ) {
 
 		<div class="textarea-wrap" id="description-wrap">
 			<label class="screen-reader-text prompt" for="content" id="content-prompt-text"><?php _e( 'What&#8217;s on your mind?' ); ?></label>
-			<textarea name="content" id="content" class="mceEditor" rows="3" cols="15" autocomplete="off"></textarea>
+			<textarea name="content" id="content" class="mceEditor col-lg-12 col-md-12 col-sm-12 col-xs-12" rows="3" cols="15" autocomplete="off"></textarea>
 		</div>
 
 		<p class="submit">

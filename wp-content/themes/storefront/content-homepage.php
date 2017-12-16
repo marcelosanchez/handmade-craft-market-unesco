@@ -10,8 +10,11 @@
 $featured_image = get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' );
 ?>
 
+
+
+
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="<?php storefront_homepage_content_styles(); ?>" data-featured-image="<?php echo $featured_image; ?>">
-	<div class="col-full">
+	<div class="col-full col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<?php
 		/**
 		 * Functions hooked in to storefront_page add_action

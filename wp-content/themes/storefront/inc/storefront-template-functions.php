@@ -144,7 +144,7 @@ if ( ! function_exists( 'storefront_header_widget_region' ) ) {
 		if ( is_active_sidebar( 'header-1' ) ) {
 		?>
 		<div class="header-widget-region" role="complementary">
-			<div class="col-full">
+			<div class="col-full col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<?php dynamic_sidebar( 'header-1' ); ?>
 			</div>
 		</div>
@@ -229,7 +229,7 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 	 */
 	function storefront_primary_navigation() {
 		?>
-		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_html_e( 'Primary Navigation', 'storefront' ); ?>">
+		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_html_e( 'Primary Navigation', 'storefront' ); ?>">sss
 		<button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false"><span><?php echo esc_attr( apply_filters( 'storefront_menu_toggle_text', __( 'Menu', 'storefront' ) ) ); ?></span></button>
 			<?php
 			wp_nav_menu(

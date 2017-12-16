@@ -15,6 +15,17 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<!-- SCROLL PAGE -->
+<link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/fullPage-scroll/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/fullPage-scroll/examples.css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/fullPage-scroll/scrolloverflow.js"></script>
+<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/fullPage-scroll/jquery.fullPage.js"></script>
+<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/fullPage-scroll/examples.js"></script>
+<!-- EO / SCROLL PAGE -->
+
 <?php wp_head(); ?>
 </head>
 
@@ -56,7 +67,8 @@
 	do_action( 'storefront_before_content' ); ?>
 
 	<div id="content" class="site-content" tabindex="-1">
-		<div class="col-full">
+		<div class="col-full col-lg-12 col-md-12 col-sm-12 col-xs-12 custom-site-content">
+		<!-- <div class="col-full col-lg-12 col-md-12 col-sm-12 col-xs-12"> -->
 
 		<?php
 		/**
