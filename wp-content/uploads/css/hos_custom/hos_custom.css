@@ -1,0 +1,37 @@
+@CHARSET "ISO-8859-1";
+
+/*HEADER*/
+.site-branding {
+    margin-top: -5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: inherit;
+}
+
+/*GENERAL CSS VARS*/
+:root {
+  --main-theme-color1: #ff7a00;
+  --main-theme-color1-hover: #ff5400;
+}
+
+/* Custom HOME CSS
+ * --------------------------------------- */
+.goto-btn {
+	height: 40px;
+	width: 125px; 
+	font-size: 12px;
+	/*font-weight: bolder;*/
+	text-transform: uppercase;
+	background: var(--main-theme-color1);
+	transition: background .3s ease;
+}
+
+.goto-btn:hover {
+	background: var(--main-theme-color1-hover);
+}
+
+.gobtn_cont {
+	text-align: center;
+	margin-top: 50px;
+}
