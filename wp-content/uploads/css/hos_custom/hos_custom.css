@@ -5,6 +5,16 @@
     margin-top: -5px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: inherit;
+}
+
+/*GENERAL CSS VARS*/
+:root {
+  --main-theme-color1: #ff7a00;
+  --main-theme-color1-hover: #ff5400;
+}
+
 /* Custom HOME CSS
  * --------------------------------------- */
 .goto-btn {
@@ -13,28 +23,12 @@
 	font-size: 12px;
 	/*font-weight: bolder;*/
 	text-transform: uppercase;
-	background: #ff7a00;
+	background: var(--main-theme-color1);
 	transition: background .3s ease;
 }
 
 .goto-btn:hover {
-	background: #ff5400;
-}
-
-.main-home-section h1{
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	font-size: 38px;
-	text-transform: uppercase;
-	color: white;
-}
-.main-home-section h2{
-	margin: 0;
-	padding: 0;
-	text-align: center; 
-	font-size: 28px;
-	color: white;
+	background: var(--main-theme-color1-hover);
 }
 
 .gobtn_cont {
