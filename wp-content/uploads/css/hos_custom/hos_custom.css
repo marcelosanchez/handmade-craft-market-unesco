@@ -11,10 +11,39 @@ h1, h2, h3, h4, h5, h6 {
 
 /*GENERAL CSS VARS*/
 :root {
+  --main-theme-font: "Source Sans Pro",HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+
   --main-theme-color1: #ff7a00;
   --main-theme-color1-hover: #ff5400;
+  --main-theme-color2: #673f16;
+  --main-theme-color2-hover: #673f16;
+  --main-theme-color1-text-gray: #7b7b7b;
   --main-theme-dark-text-h: #181c28;
 }
+
+/* Custom PAGE HEADER
+ * --------------------------------------- */
+.gPage_hCont {
+    /* background: grey; */
+    background-image: url(/integ.handicrafts.unesco/wp-content/uploads/img/artisans/content_header.jpg);
+    background-position: 0px -170px;
+    height: 110px;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--main-theme-font);
+}
+
+.parallax { 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /* Custom HOME CSS
  * --------------------------------------- */
@@ -97,4 +126,18 @@ h1, h2, h3, h4, h5, h6 {
 	transform: translateX(-50%) translateY(-50%);
 	text-align: center;
 	opacity: .25;
+}
+
+
+/*SHOP*/
+
+.woocommerce-products-header {
+	padding-bottom: 10px !important;
+}
+.woocommerce-result-count {
+	display: none;
+	float: none !important;
+	text-align: center;
+	font-size: 12px;
+	color: lightgrey;
 }

@@ -17,11 +17,15 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-		<span>AboutUs Here</span>
+		<div class="col-md-12 gPage_hCont parallax">
+			About Us
+		</div>
+
+		<span>About Us Content</span>
 
 	</main><!-- #main -->
 </div><!-- #primary -->
 
 <?php
 do_action( 'storefront_sidebar' );
-get_footer();
+//get_footer();
