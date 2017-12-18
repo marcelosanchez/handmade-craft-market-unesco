@@ -43,3 +43,65 @@ h1, h2, h3, h4, h5, h6 {
 	display: inline-block;
 	float: right;
 }
+
+.artisans_h_cont h1 {
+	font-size: 40px;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+.artisans_h_cont h2 {
+	font-size: 21px;
+	color: #d1d1d1;
+	font-weight: lighter;
+}
+
+/*CARD*/
+.card {
+	background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 30px;
+}
+.card p {
+	font-size: 12px;
+}
+.card-header {
+    background-color: transparent; 
+}
+img[class*="avatar-"] {
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 6px;
+	margin-left: -15px;
+	height: 50px;
+	width: 50px;
+	background-repeat: no-repeat;
+	background-size: cover;}
+
+.user_cont {
+	display: inline-block;
+}
+.user_data {
+	display: inline-block;
+}
+
+.card-avatar-img {
+    background-image: url(/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisan_avatar_img/avatar-id01.jpg);
+    position: relative;
+    width: calc(100% + 30px);
+    height: 160px;
+    background-size: cover;
+    padding: 0;
+}
+
+.artisans_main_cont {
+	width: 100%;
+	margin: 0 140px;
+	margin-top: 45px;
+}
+
+.view_more_artisans {
+	margin: 40px auto;
+}
