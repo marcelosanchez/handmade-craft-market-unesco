@@ -137,8 +137,9 @@ img[class*="avatar-"] {
 	line-height: 1.5;
 }
 
-/*FOOTER CUSTOM CSS*/
-.custom_footer_maincont {
+/* Custom FOOTER CSS
+ * --------------------------------------- */
+/*.custom_footer_maincont {
 
 }
 .discount_code_cont {
@@ -146,7 +147,6 @@ img[class*="avatar-"] {
 }
 .discount_code_cont p {
 	color: var(--main-theme-color2);
-	/*color: white;*/
 	margin: 0;
 	font-size: 12px;
 }
@@ -175,4 +175,4 @@ img[class*="avatar-"] {
 .quick_access_footer p.color-copyright-f {
 	color: lightgrey;
 	margin: 0;
-}
+}*/

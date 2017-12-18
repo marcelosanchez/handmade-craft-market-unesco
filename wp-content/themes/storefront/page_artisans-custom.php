@@ -110,7 +110,7 @@ get_header(); ?>
 		</div>
 
 		<!-- FOOTER -->
-		<div class="custom_footer_maincont row">
+		<!-- <div class="custom_footer_maincont row">
 			<div class="discount_code_cont col-md-12">
 				<p>Ingrese Codigo de Descuento</p>
 			</div>
@@ -149,11 +149,11 @@ get_header(); ?>
 					<p class="color-copyright-f">Copyright © 2017 All Rights Reserved</p>
 				</div>
 			</div>
-		</div> <!-- EO / FOOTER -->
+		</div> --> <!-- EO / FOOTER -->
 
 	</main><!-- #main -->
 </div><!-- #primary -->
 
 <?php
 do_action( 'storefront_sidebar' );
-
+get_footer();
