@@ -1584,8 +1584,9 @@ if ( ! function_exists( 'woocommerce_breadcrumb' ) ) {
 	function woocommerce_breadcrumb( $args = array() ) {
 		$args = wp_parse_args( $args, apply_filters( 'woocommerce_breadcrumb_defaults', array(
 			'delimiter'   => '&nbsp;&#47;&nbsp;',
-			'wrap_before' => '<nav class="woocommerce-breadcrumb">',
-			'wrap_after'  => '</nav>',
+			// 'wrap_before' => '<div class="woocommerce-breadcrumb hos_breadcums col-md-12">',
+			'wrap_before' => '<div class="col-md-12 hos_breadcums">',
+			'wrap_after'  => '</div>',
 			'before'      => '',
 			'after'       => '',
 			'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),

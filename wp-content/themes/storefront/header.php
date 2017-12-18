@@ -33,10 +33,16 @@
 <!-- EO / GENERAL CUSTOMIZATION -->
 
 <!-- HOME PAGE -->
-<link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/page_home/home_page.css" />
+<!-- <link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/page_home/home_page.css" />
 
-<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/page_home/home_page.js"></script>
+<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/page_home/home_page.js"></script> -->
 <!-- EO / HOME PAGE -->
+
+<!-- ARTISANS PAGE -->
+<!-- <link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/page_artisans/artisans_page.css" />
+
+<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/page_artisans/artisans_page.js"></script> -->
+<!-- EO / ARTISANS PAGE -->
 
 <?php wp_head(); ?>
 </head>
