@@ -24,7 +24,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 		<div class="col-md-12 gPage_hCont parallax">
-			Artisans
+			<?php echo get_the_title(); ?>
 		</div>
 
 		<div class="row txtDesc_general">
