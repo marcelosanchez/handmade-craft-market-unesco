@@ -49,6 +49,20 @@
 
 <body <?php body_class(); ?>>
 
+
+<?php 
+
+function notld_link( ) {
+    $notld = get_permalink();
+    return str_replace( home_url(), "", $notld );
+} 
+
+?>
+
+<input type="hidden" class="flaga" name="get_post_permalink" value="<? echo get_post_permalink( ) ?>">
+<input type="hidden" class="flaga" name="home_url" value="<? echo home_url( $wp->request ) ?>">
+<input type="hidden" class="flaga" name="segment" value="<?php echo notld_link(); ?>">
+
 <?php do_action( 'storefront_before_site' ); ?>
 
 <div id="page" class="hfeed site">
