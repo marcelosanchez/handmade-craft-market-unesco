@@ -11,9 +11,43 @@ h1, h2, h3, h4, h5, h6 {
 
 /*GENERAL CSS VARS*/
 :root {
+  --main-theme-font: "Source Sans Pro",HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+
   --main-theme-color1: #ff7a00;
   --main-theme-color1-hover: #ff5400;
+  --main-theme-color2: #673f16;
+  --main-theme-color2-hover: #673f16;
+  --main-theme-color1-text-gray: #7b7b7b;
+  --main-theme-dark-text-h: #181c28;
 }
+
+.current-menu-item.current_page_item {
+    border-bottom: 2px solid var(--main-theme-color1);
+}
+
+/* Custom PAGE HEADER
+ * --------------------------------------- */
+.gPage_hCont {
+    /* background: grey; */
+    background-image: url(/integ.handicrafts.unesco/wp-content/uploads/img/artisans/content_header.jpg);
+    background-position: 0px -170px;
+    height: 110px;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--main-theme-font);
+}
+
+.parallax { 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /* Custom HOME CSS
  * --------------------------------------- */
@@ -34,4 +68,126 @@ h1, h2, h3, h4, h5, h6 {
 .gobtn_cont {
 	text-align: center;
 	margin-top: 50px;
+}
+
+.hos_breadcums {
+    background: white;
+    height: 30px;
+    width: 301px;
+    margin-top: 77px;
+    padding: 3px 112vw 3px;
+}
+
+.hos_breadcums, .hos_breadcums span, .hos_breadcums a {
+    color: rgba(0, 0, 0, .5);
+    font-size: 13px;
+}
+.hos_breadcums a:hover {
+    color: rgba(0, 0, 0, .75);
+    text-decoration: none;
+}
+
+.hos_breadcums a:first-child { 
+    padding-left: 10%;
+}
+
+.hos_breadcums a:first-child:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f015";
+    margin-right: 0.5407911001em;
+}
+
+.hos_breadcums .breadcrumb-separator {
+    text-indent: -9999px;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.hos_breadcums .breadcrumb-separator:after {
+	display: block;
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f105";
+	font-size: 0.875em;
+	text-indent: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1em;
+	height: 1em;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+	opacity: .25;
+}
+
+
+/*SHOP*/
+
+.woocommerce-products-header {
+	padding-bottom: 10px !important;
+}
+.woocommerce-result-count {
+	display: none;
+	float: none !important;
+	text-align: center;
+	font-size: 12px;
+	color: lightgrey;
+}
+
+
+/* Custom FOOTER CSS
+ * --------------------------------------- */
+ #colophon {
+ 	padding: 0;
+ 	background: white;
+ 	padding-bottom: 20px;
+ }
+.custom_footer_maincont {
+
+}
+.discount_code_cont {
+	background: var(--main-theme-color2);
+}
+.discount_code_cont p {
+	color: var(--main-theme-color2);
+	margin: 0;
+	font-size: 12px;
+}
+.quick_access_footer {
+	margin: 0 auto !important;
+	padding-top: 55px;
+}
+
+.quick_access_footer p.sect-h {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+	font-size: 11px;
+}
+
+.quick_access_footer p {
+	font-size: 10px;
+	color: var(--main-theme-color1-text-gray);
+}
+
+.quick_access_footer p a:hover{
+	text-decoration: none;
+	color: black;
+}
+
+.quick_access_footer p.color-copyright-f {
+	color: lightgrey;
+	margin: 0;
 }

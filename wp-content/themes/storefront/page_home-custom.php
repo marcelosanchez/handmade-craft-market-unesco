@@ -14,6 +14,12 @@
 
 get_header(); ?>
 
+<!-- HOME PAGE -->
+<link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/page_home/home_page.css" />
+
+<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/page_home/home_page.js"></script>
+<!-- EO / HOME PAGE -->
+
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 

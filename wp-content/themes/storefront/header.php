@@ -33,15 +33,35 @@
 <!-- EO / GENERAL CUSTOMIZATION -->
 
 <!-- HOME PAGE -->
-<link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/page_home/home_page.css" />
+<!-- <link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/page_home/home_page.css" />
 
-<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/page_home/home_page.js"></script>
+<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/page_home/home_page.js"></script> -->
 <!-- EO / HOME PAGE -->
+
+<!-- ARTISANS PAGE -->
+<!-- <link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/page_artisans/artisans_page.css" />
+
+<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/page_artisans/artisans_page.js"></script> -->
+<!-- EO / ARTISANS PAGE -->
 
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+
+
+<?php 
+
+function notld_link( ) {
+    $notld = get_permalink();
+    return str_replace( home_url(), "", $notld );
+} 
+
+?>
+
+<input type="hidden" class="flaga" name="get_post_permalink" value="<? echo get_post_permalink( ) ?>">
+<input type="hidden" class="flaga" name="home_url" value="<? echo home_url( $wp->request ) ?>">
+<input type="hidden" class="flaga" name="segment" value="<?php echo notld_link(); ?>">
 
 <?php do_action( 'storefront_before_site' ); ?>
 
