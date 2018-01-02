@@ -203,3 +203,31 @@ h1, h2, h3, h4, h5, h6 {
  	width: 75vw;
     margin: 0 auto;
  }
+
+ ul.products li.product img {
+    margin: 0 auto !important;
+}
+
+ul.products li.product .button {
+	background-color: var(--main-theme-color1);
+	font-size: 10px;
+	height: 30px;
+	width: 80px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	padding: 8px;
+}
+
+ul.products li.product .button:hover {
+	background-color: var(--main-theme-color1-hover);
+}
+
+ul.products li.product .woocommerce-loop-product__title, ul.products li.product h2, ul.products li.product h3 {
+	font-size: 1.5rem !important;
+	font-weight: 600 !important;
+	display: inline-block;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
