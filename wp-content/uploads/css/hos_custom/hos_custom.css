@@ -198,3 +198,8 @@ h1, h2, h3, h4, h5, h6 {
  .products li {
  	border: 1px solid lightgrey;
  }
+
+ #main div.columns-3, .storefront-sorting {
+ 	width: 75vw;
+    margin: 0 auto;
+ }
