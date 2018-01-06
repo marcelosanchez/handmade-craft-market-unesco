@@ -14,6 +14,13 @@
 
 get_header(); ?>
 
+<!-- ABOUT US PAGE -->
+<link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/page_aboutus/aboutus_page.css" />
+
+<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/page_aboutus/aboutus_page.js"></script>
+<!-- EO / ABOUT US PAGE -->
+
+
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
@@ -21,22 +28,11 @@ get_header(); ?>
 			<?php echo get_the_title(); ?>
 		</div>
 
-		<span>
+		<div class="content-main-div row col-md-12">
 			<?php while ( have_posts() ) : the_post();
-
-				do_action( 'storefront_page_before' );
-
 				get_template_part( 'content', 'page' );
-
-				/**
-				 * Functions hooked in to storefront_page_after action
-				 *
-				 * @hooked storefront_display_comments - 10
-				 */
-				do_action( 'storefront_page_after' );
-
-			endwhile; // End of the loop. ?>
-		</span>
+			endwhile; ?>
+		</div>
 
 	</main><!-- #main -->
 </div><!-- #primary -->

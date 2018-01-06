@@ -9,10 +9,25 @@ h1, h2, h3, h4, h5, h6 {
 	color: inherit;
 }
 
+/*FONTS*/
+@font-face { font-family: LustriaRegular; src: url(/integ.handicrafts.unesco/wp-content/uploads/font/Lustria-Regular.ttf); }
+@font-face { font-family: Mottona; src: url(/integ.handicrafts.unesco/wp-content/uploads/font/Mottona-demo.otf); }
+@font-face { font-family: Raleway-Bold; src: url(/integ.handicrafts.unesco/wp-content/uploads/font/Raleway-Bold.ttf); }
+@font-face { font-family: Raleway-ExtraBold; src: url(/integ.handicrafts.unesco/wp-content/uploads/font/Raleway-ExtraBold.ttf); }
+@font-face { font-family: Raleway-Regular; src: url(/integ.handicrafts.unesco/wp-content/uploads/font/Raleway-Regular.ttf); }
+@font-face { font-family: Raleway-SemiBold; src: url(/integ.handicrafts.unesco/wp-content/uploads/font/Raleway-SemiBold.ttf); }
+@font-face { font-family: Raleway-ThinItalic; src: url(/integ.handicrafts.unesco/wp-content/uploads/font/Raleway-ThinItalic.ttf); }
+
 /*GENERAL CSS VARS*/
 :root {
-  --main-theme-font: "Source Sans Pro",HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  --main-theme-font: "LustriaRegular",sans-serif;
 
+  --main-theme-font-titleH1: "Raleway-ExtraBold",sans-serif;
+  --main-theme-font-titleH2: "Raleway-Bold",sans-serif;
+  --main-theme-font-subtitle1: "Raleway-Regular",sans-serif;
+  --main-theme-font-subtitle2: "Raleway-SemiBold",sans-serif;
+  --main-theme-font-description: "LustriaRegular",sans-serif;
+  
   --main-theme-color1: #ff7a00;
   --main-theme-color1-hover: #ff5400;
   --main-theme-color2: #673f16;
@@ -37,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    font-family: var(--main-theme-font);
+    font-family: var(--main-theme-font-titleH1);
 }
 
 .parallax { 
