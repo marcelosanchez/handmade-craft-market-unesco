@@ -34,6 +34,10 @@ get_header(); ?>
 			endwhile; ?>
 		</div>
 
+		<div class="content-main-div row col-md-12">
+			<?php the_field( 'about_paragraph' ); ?>
+		</div>
+
 	</main><!-- #main -->
 </div><!-- #primary -->
 

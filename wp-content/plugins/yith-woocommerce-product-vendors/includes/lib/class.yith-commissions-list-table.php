@@ -255,15 +255,15 @@ if ( ! class_exists( 'YITH_Commissions_List_Table' ) ) {
                             $username = trim( $billing_first_name . ' ' . $billing_last_name );
                         }
                         else {
-                            $username = __( 'Guest', 'woocommerce' );
+                            $username = __( 'Guest', 'yith-woocommerce-product-vendors' );
                         }
                     }
 
-                    $order_id = yit_get_prop( $order, 'id', true );
-                    $order_number    = '<strong>#' . esc_attr( $order->get_order_number() ) . '</strong>';
-                    $order_uri       = apply_filters( 'yith_wcmv_commissions_list_table_order_url', admin_url( 'post.php?post=' . absint( $order_id ) . '&action=edit' ), $rec, $order );
-                    $order_uri_html  = '<a href="' . $order_uri . '">' . $order_number . '</a>';
-                    $order_info      = $this->_vendor->is_super_user() ? $order_uri :  apply_filters( 'yith_wcmv_commissions_order_column', $order_number, $order->get_order_number(), $rec );
+	                $order_id       = yit_get_prop( $order, 'id', true );
+	                $order_number   = '<strong>#' . esc_attr( $order->get_order_number() ) . '</strong>';
+	                $order_uri      = apply_filters( 'yith_wcmv_commissions_list_table_order_url', admin_url( 'post.php?post=' . absint( $order_id ) . '&action=edit' ), $rec, $order );
+	                $order_uri_html = '<a href="' . $order_uri . '">' . $order_number . '</a>';
+	                $order_info     = $this->_vendor->is_super_user() ? $order_uri : apply_filters( 'yith_wcmv_commissions_order_column', $order_number, $order->get_order_number(), $rec );
 
                     if( $this->_vendor->is_super_user() ){
                         $order_info = $order_uri_html;
@@ -387,6 +387,10 @@ if ( ! class_exists( 'YITH_Commissions_List_Table' ) ) {
 
                     echo $h_time ? '<abbr title="' . $t_time . '">' . $h_time . '</abbr>' : '<small class="meta">-</small>';
                     break;
+
+	            default:
+	            	do_action( "yith_wcmv_commissions_list_table_col_{$column_name}", $rec, $this->_vendor, $column_name );
+	            	break;
             }
 
             return null;

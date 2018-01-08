@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YITH WooCommerce Multi Vendor\n"
-"POT-Creation-Date: 2017-11-24 11:05+0100\n"
-"PO-Revision-Date: 2017-11-24 11:05+0100\n"
+"POT-Creation-Date: 2017-12-18 11:27+0100\n"
+"PO-Revision-Date: 2017-12-18 11:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: YIThemes <plugins@yithemes.com>\n"
 "Language: it_IT\n"
@@ -102,116 +102,117 @@ msgstr "Rimborsato %s dall'ordine"
 
 #: includes/class.yith-commissions.php:1304
 msgid "Order Refunded"
-msgstr ""
+msgstr "Ordine rimborsato"
 
 #: includes/class.yith-commissions.php:1339
 #, php-format
 msgid "Cancelled %s refund from order"
 msgstr "Annullato rimborso di %s dall'ordine"
 
-#: includes/class.yith-commissions.php:1466 includes/class.yith-orders.php:1675
+#: includes/class.yith-commissions.php:1466 includes/class.yith-orders.php:1733
 msgid "commission_id"
 msgstr "id_commissione"
 
 #: includes/class.yith-commissions.php:1563
 msgctxt "[Admin]: Option description"
 msgid "Credit taxes to the website admin"
-msgstr ""
+msgstr "Accredita le tasse all'amministratore del sito"
 
 #: includes/class.yith-commissions.php:1564
 msgctxt "[Admin]: Option description"
 msgid "Split tax by percentage between website admin and vendor"
 msgstr ""
+"Dividi le tasse in percentuale tra l'amministratore del sito e il venditore"
 
 #: includes/class.yith-commissions.php:1565
 msgctxt "[Admin]: Option description"
 msgid "Credit taxes to the vendor"
-msgstr ""
+msgstr "Accredita le tasse ai venditori"
 
 #: includes/class.yith-commissions.php:1569
 msgctxt "means: Vendor commission have been calculated: tax included"
 msgid "included"
-msgstr ""
+msgstr "incluso"
 
 #: includes/class.yith-commissions.php:1569
 msgctxt "means: Vendor commission have been calculated: tax excluded"
 msgid "excluded"
-msgstr ""
+msgstr "escluso"
 
 #: includes/class.yith-commissions.php:1572
 msgctxt "part of: tax included or tax excluded"
 msgid "tax"
-msgstr ""
+msgstr "tasse"
 
 #: includes/class.yith-commissions.php:1578
 msgctxt "part of: Vendor commission have been calculated: tax included"
 msgid "Vendor commission have been calculated"
-msgstr ""
+msgstr "La commissione venditore è stata calcolata"
 
 #: includes/class.yith-commissions.php:1583
 msgctxt "part of: coupon included or coupon excluded"
 msgid "coupon"
-msgstr ""
+msgstr "coupon"
 
-#: includes/class.yith-orders.php:230
+#: includes/class.yith-orders.php:272
 #, php-format
 msgid "Order &ndash; %s"
 msgstr "Ordine &ndash; %s"
 
-#: includes/class.yith-orders.php:230
+#: includes/class.yith-orders.php:272
 msgctxt "Order date parsed by strftime"
 msgid "%b %d, %Y @ %I:%M %p"
 msgstr "%d %b, %Y @ %I:%M %p"
 
-#: includes/class.yith-orders.php:396
+#: includes/class.yith-orders.php:434
 #, php-format
 msgid "Error %d: Unable to create order. Please try again."
-msgstr ""
+msgstr "Errore %d: impossibile creare l'ordine. Prova di nuovo."
 
-#: includes/class.yith-orders.php:536 includes/class.yith-orders.php:918
+#: includes/class.yith-orders.php:580 includes/class.yith-orders.php:968
 msgctxt "Order note"
 msgid "Update by admin: "
 msgstr "Aggiornamento dell'amministratore: "
 
-#: includes/class.yith-orders.php:911
+#: includes/class.yith-orders.php:961
 msgid "Delete note"
 msgstr "Cancella nota"
 
-#: includes/class.yith-orders.php:1020
+#: includes/class.yith-orders.php:1072
 #, php-format
 msgid "Item #%s stock reduced from %s to %s."
 msgstr "Riserve articolo #%s ridotte da %s a %s."
 
-#: includes/class.yith-orders.php:1024
+#: includes/class.yith-orders.php:1076
 #, php-format
 msgid "Item #%s stock increased from %s to %s."
 msgstr "Riserve articolo #%s aumentate da %s a %s."
 
-#: includes/class.yith-orders.php:1676
+#: includes/class.yith-orders.php:1734
 msgid "status"
 msgstr "stato"
 
-#: includes/class.yith-orders.php:1743
+#: includes/class.yith-orders.php:1802
 msgctxt "Admin: Order table column"
 msgid "Suborders"
 msgstr "Sottordini"
 
-#: includes/class.yith-orders.php:1747
+#: includes/class.yith-orders.php:1806
 msgctxt "Admin: Order table column"
 msgid "Vendor"
 msgstr "Venditore"
 
-#: includes/class.yith-orders.php:1795 includes/class.yith-orders.php:1880
+#: includes/class.yith-orders.php:1850 includes/class.yith-orders.php:1940
 msgctxt "Order table details"
 msgid "in"
 msgstr "in"
 
-#: includes/class.yith-orders.php:1837
+#: includes/class.yith-orders.php:1892
 msgctxt "Admin: Single order page. Suborder details box"
 msgid "Suborders"
 msgstr "Sottordini"
 
-#: includes/class.yith-orders.php:1837
+#: includes/class.yith-orders.php:1892
 msgid ""
 "Note: from this box you can monitor the status of suborders associated to "
 "individual vendors."
@@ -219,37 +220,39 @@ msgstr ""
 "N.B.: da questa casella puoi controllare lo stato dei sotto-ordini associati "
 "ai singoli venditori."
 
-#: includes/class.yith-orders.php:1842
+#: includes/class.yith-orders.php:1898
 msgctxt "Admin: Single order page. Parent order details box"
 msgid "Parent order"
 msgstr "Ordine padre"
 
-#: includes/class.yith-orders.php:1849
+#: includes/class.yith-orders.php:1906
 msgctxt "Admin: Single order page. Parent order details box"
 msgid "Parent order id"
-msgstr ""
+msgstr "ID dell'ordine genitore"
 
-#: includes/class.yith-orders.php:1881
+#: includes/class.yith-orders.php:1941
 #: includes/lib/class.yith-commissions-list-table.php:331
 #: templates/admin/commission-view.php:213
 msgid "Vendor deleted"
 msgstr "Venditore eliminato"
 
-#: includes/class.yith-orders.php:1892
+#: includes/class.yith-orders.php:1952
 msgctxt "Admin: single order page. Link to parent order"
 msgid "Return to main order"
 msgstr "Torna all'ordine principale"
 
-#: includes/class.yith-orders.php:1897
+#: includes/class.yith-orders.php:1957
 msgid ""
 "Pass this ID over to the website administrator for any communication related "
 "to this order"
 msgstr ""
+"Passa questo ID all'amministratore del sito per qualsiasi comunicazione "
+"relativa a questo ordine"
 
-#: includes/class.yith-orders.php:2219
+#: includes/class.yith-orders.php:2283
 #, php-format
 msgid "File %d"
-msgstr ""
+msgstr "File %d"
 
 #: includes/class.yith-vendors-admin.php:185
 #: includes/class.yith-vendors.php:380
@@ -281,6 +284,8 @@ msgid ""
 "You do not have permission to edit this order. %1$sClick here to view and "
 "edit your orders%2$s."
 msgstr ""
+"Non hai i permessi sufficienti per modificare quest'ordine. %1$sFai clic qui "
+"per visualizzare e modificare i tuoi ordini%2$s."
 
 #: includes/class.yith-vendors-admin.php:504
 #: includes/class.yith-vendors-admin.php:505
@@ -312,7 +317,7 @@ msgstr "Questo nome venditore esiste già"
 
 #: includes/class.yith-vendors-admin.php:690
 #: includes/class.yith-vendors-admin.php:1864
-msgid "You can't create more vendor with the same shop owner."
+msgid "You can't associate more vendor shops with the same shop owner."
 msgstr ""
 
 #: includes/class.yith-vendors-admin.php:1041
@@ -380,7 +385,7 @@ msgstr "Abilita PayPal MassPay"
 
 #: includes/class.yith-vendors-admin.php:1854
 msgid "Option Saved"
-msgstr ""
+msgstr "Opzione salvata"
 
 #: includes/class.yith-vendors.php:378 includes/class.yith-vendors.php:379
 #: templates/admin/commission-view.php:207
@@ -507,7 +512,7 @@ msgstr "%s per %s"
 #: includes/lib/class.yith-commissions-list-table.php:294
 msgctxt "[admin]: commission type"
 msgid "Shipping fee"
-msgstr ""
+msgstr "Costi di spedizione"
 
 #: includes/lib/class.yith-commissions-list-table.php:317
 #: templates/admin/commission-view.php:202
@@ -536,7 +541,7 @@ msgstr "%s fa"
 msgid "Y/m/d"
 msgstr "Y/m/d"
 
-#: includes/lib/class.yith-commissions-list-table.php:418
+#: includes/lib/class.yith-commissions-list-table.php:422
 msgid "No commissions found."
 msgstr "Nessuna commissione trovata."
 
@@ -699,17 +704,17 @@ msgstr "Ancora non sono presenti note."
 #: templates/admin/commission-view.php:107
 msgctxt "[admin] part of commission details"
 msgid "Commission"
-msgstr ""
+msgstr "Commissione"
 
 #: templates/admin/commission-view.php:107
 msgctxt "[admin] part of shipping fee details"
 msgid "Shipping fee"
-msgstr ""
+msgstr "Costo di spedizione"
 
 #: templates/admin/commission-view.php:108
 msgctxt "[admin] part of commission details"
 msgid "details"
-msgstr ""
+msgstr "dettagli"
 
 #: templates/admin/commission-view.php:162
 #, php-format
@@ -735,7 +740,7 @@ msgstr "PayPal"
 
 #: templates/admin/commission-view.php:222
 msgid "Email address not set "
-msgstr ""
+msgstr "Indirizzo email non impostato "
 
 #: templates/admin/commission-view.php:230
 msgid "Billing information"
@@ -764,12 +769,12 @@ msgstr "Qtà"
 #: templates/admin/commission-view.php:306
 #: templates/admin/commission-view.php:626
 msgid "Total"
-msgstr ""
+msgstr "Totale"
 
 #: templates/admin/commission-view.php:311
 #: templates/admin/commission-view.php:312
 msgid "Tax"
-msgstr ""
+msgstr "Tasse"
 
 #: templates/admin/commission-view.php:337
 msgid "Product ID:"
@@ -790,11 +795,11 @@ msgstr "Codice SKU prodotto:"
 
 #: templates/admin/commission-view.php:503
 msgid "Pre-discount:"
-msgstr ""
+msgstr "Prima dello sconto:"
 
 #: templates/admin/commission-view.php:507
 msgid "Total:"
-msgstr ""
+msgstr "Totale:"
 
 #: templates/admin/commission-view.php:534
 msgid "Refund"
@@ -1406,7 +1411,7 @@ msgstr "Descrizione:"
 
 #: templates/admin/vendor-admin.php:45
 msgid "Commission Rate: "
-msgstr "Tasso di commissione:"
+msgstr "Percentuale di commissione: "
 
 #: templates/admin/vendor-admin.php:52
 msgid "Vendor's selling status: "
@@ -1429,6 +1434,10 @@ msgstr ""
 msgid "by"
 msgstr "da"
 
+#~ msgctxt "part of: Commission: 19,00$ (50% on product price)"
+#~ msgid "on product price"
+#~ msgstr "sul prezzo del prodotto"
+
 #~ msgid "Vendor commissions have been calculated including coupon value"
 #~ msgstr ""
 #~ "L'importo delle commissioni dei venditori è calcolato al netto degli "
@@ -1439,6 +1448,13 @@ msgstr "da"
 #~ "L'importo delle commissioni dei venditori non tiene conto degli sconti "
 #~ "applicati"
 
+#~ msgid "on product price"
+#~ msgstr "sul prezzo del prodotto"
+
+#~ msgctxt "Order note"
+#~ msgid "Sync with vendor's suborders: "
+#~ msgstr "Sincronizza con i sottordini dei venditori: "
+
 #~ msgid "Sale Commissions"
 #~ msgstr "Commissioni vendita"
 
@@ -1447,6 +1463,9 @@ msgstr "da"
 
 #~ msgid "Registered Vendors"
 #~ msgstr "Venditori registrati"
+
+#~ msgid "Commissions by Vendor"
+#~ msgstr "Commissioni per venditore"
 
 #~ msgid "Export CSV"
 #~ msgstr "Esporta CSV"
@@ -1477,6 +1496,10 @@ msgstr "da"
 
 #~ msgid "Add-ons"
 #~ msgstr "Add-ons"
+
+#~ msgctxt "Admin menu name"
+#~ msgid "Orders"
+#~ msgstr "Ordini"
 
 #~ msgid "Front page"
 #~ msgstr "Pagina principale"
@@ -1549,7 +1572,7 @@ msgstr "da"
 #~ msgstr ""
 #~ "Puoi impostare una commissione specifica per un singolo prodotto. "
 #~ "Inserisci zero o lascia il campo vuoto per utilizzare la commissione del "
-#~ "venditore."
+#~ "venditore"
 
 #~ msgid ""
 #~ "You do not have sufficient permissions to access this page. %1$sClick "
@@ -1613,7 +1636,7 @@ msgstr "da"
 #~ msgstr "Venduto da"
 
 #~ msgid "Warning"
-#~ msgstr "Attenzione:"
+#~ msgstr "Attenzione"
 
 #~ msgid ""
 #~ "vendor shops have no owner set. Please, set an owner for each vendor shop "
@@ -1625,43 +1648,42 @@ msgstr "da"
 #~ msgid "Go to Vendor page to fix it."
 #~ msgstr "Vai alla pagina venditori per correggere."
 
-#, fuzzy
 #~ msgctxt "part of: vendor shops have no VAT/SSN set"
 #~ msgid "vendor shops have no"
-#~ msgstr "Informazioni pagina venditore"
+#~ msgstr "i negozi dei singoli venditori non hanno"
 
-#, fuzzy
 #~ msgctxt "part of: vendor shops have no VAT/SSN set"
 #~ msgid "set"
-#~ msgstr "Reimposta"
+#~ msgstr "impostata/o"
 
-#, fuzzy
 #~ msgctxt "part of: Please, set VAT/SSN field for each vendor shop"
 #~ msgid "Please, set"
-#~ msgstr "Per favore, non postare spam qui"
+#~ msgstr "Per favore, compila il campo"
 
-#, fuzzy
 #~ msgctxt "part of: Please, set VAT/SSN field for each vendor shop"
 #~ msgid "field for each vendor shop"
-#~ msgstr "nello shop %s"
+#~ msgstr "per ogni venditore"
 
 #~ msgid "Warning: "
-#~ msgstr "Attenzione:"
+#~ msgstr "Attenzione: "
 
-#, fuzzy
 #~ msgctxt ""
 #~ "part of: Please, set the VAT/SSN field to complete your profile in "
 #~ "\"Vendor profile\""
 #~ msgid "Please, set the"
-#~ msgstr "Per favore, non postare spam qui"
+#~ msgstr "Per favore, compila il campo"
 
-#, fuzzy
 #~ msgctxt ""
 #~ "part of: Please, set the VAT/SSN field to complete your profile in "
 #~ "\"Vendor profile\""
 #~ msgid "field to complete your profile in \"Vendor profile\""
+#~ msgstr "IVA/C.F. per completare il tuo profilo da \"Profilo venditore\""
+
+#~ msgid ""
+#~ "Please, set the VAT/SSN field to complete your profile in \"Vendor profile"
+#~ "\""
 #~ msgstr ""
-#~ "Per favore, imposta il campo IVA/C.F. per completare il tuo profilo da "
+#~ "Per favore, compila il campo IVA/C.F. per completare il tuo profilo da "
 #~ "\"Profilo venditore\""
 
 #~ msgid "Go to Vendor details page to fix it."
@@ -1683,6 +1705,12 @@ msgstr "da"
 #~ msgstr ""
 #~ "La descrizione non è messa in rilievo di default, ma alcuni temi "
 #~ "potrebbero mostrarla comunque."
+
+#~ msgid "Cheatin&#8217; uh?"
+#~ msgstr "Scherzavi, non è vero?"
+
+#~ msgid "Sorry, you are not allowed to edit comments."
+#~ msgstr "Spiacente, non ti è permesso modificare questi commenti."
 
 #~ msgid "Commission paid via PayPal (txn ID: %s)"
 #~ msgstr "Commissione pagata tramite PayPal (txn ID: %s)"
@@ -1712,16 +1740,28 @@ msgstr "da"
 #~ msgid "The Store address field is mandatory"
 #~ msgstr "Il campo \"Indirizzo negozio\" è obbligatorio"
 
+#~ msgid "The Email field is mandatory"
+#~ msgstr "Il campo email è obbligatorio"
+
 #~ msgid "The Email address entered is not valid"
 #~ msgstr "L'indirizzo email inserito non è valido"
+
+#~ msgid "The PayPal Email field is mandatory"
+#~ msgstr "Il campo PayPal è obbligatorio"
+
+#~ msgid "The PayPal Email address entered is not valid"
+#~ msgstr "Il campo email PayPal inserito non è valido"
 
 #~ msgid "The Telephone field is mandatory"
 #~ msgstr "Il campo \"Telefono\" è obbligatorio"
 
-#, fuzzy
+#~ msgctxt "[frontend]: part of sentence. e.g.: The VAT/SSN field is mandatory"
+#~ msgid "The"
+#~ msgstr "Il campo"
+
 #~ msgctxt "[frontend]: part of sentence. e.g.: The VAT/SSN field is mandatory"
 #~ msgid "field is mandatory"
-#~ msgstr "Il campo \"Email\" è obbligatorio"
+#~ msgstr "è obbligatorio"
 
 #~ msgid "Insert the vendor name"
 #~ msgstr "Inserisci il nome del venditore"
@@ -1731,6 +1771,9 @@ msgstr "da"
 
 #~ msgid "Please, read and accept the terms & conditions"
 #~ msgstr "Per favore, leggi ed accetta i termini & condizioni"
+
+#~ msgid "Please, no spam here"
+#~ msgstr "Per favore, no spam qui"
 
 #~ msgid "Report"
 #~ msgstr "Invia segnalazione"
@@ -1760,6 +1803,34 @@ msgstr "da"
 #~ msgctxt "Cart details: Product sold by"
 #~ msgid "Sold by"
 #~ msgstr "Venduto da"
+
+#~ msgctxt "[Single Product Page]: Tab name for shipping information"
+#~ msgid "Shipping Info"
+#~ msgstr "Informazioni di spedizione"
+
+#~ msgctxt "[single Product Page]: Shipping tab subtitle"
+#~ msgid "Processing Time"
+#~ msgstr "Tempo di elaborazione"
+
+#~ msgctxt "[part of]: Ready to ship in x business day"
+#~ msgid "Ready to ship in"
+#~ msgstr "Pronto ad essere spedito entro"
+
+#~ msgctxt "[part of]: Ready to ship in x business day From Italy"
+#~ msgid "from"
+#~ msgstr "da"
+
+#~ msgctxt "[part of]: Shipping from Italy"
+#~ msgid "Shipping from"
+#~ msgstr "Spedizione da"
+
+#~ msgctxt "[single Product Page]: Shipping tab subtitle"
+#~ msgid "Shipping policy"
+#~ msgstr "Politiche di spedizione"
+
+#~ msgctxt "[single Product Page]: Shipping tab subtitle"
+#~ msgid "Refund policy"
+#~ msgstr "Politica di rimborso"
 
 #~ msgid "Facebook"
 #~ msgstr "Facebook"
@@ -1792,7 +1863,14 @@ msgstr "da"
 #~ msgstr "Behance"
 
 #~ msgid "Tripadvisor  "
-#~ msgstr "Tripadvisor"
+#~ msgstr "Tripadvisor  "
+
+#~ msgid "YITH Live Chat"
+#~ msgstr "YITH Live Chat"
+
+#~ msgctxt "option description"
+#~ msgid "Use this value to show live chat button"
+#~ msgstr "Utilizza questo valore per mostrare il pulsante live chat"
 
 #~ msgid "Cancelled order (to vendor)"
 #~ msgstr "Ordine annullato (venditore)"
@@ -1842,6 +1920,14 @@ msgstr "da"
 
 #~ msgid "Choose email format."
 #~ msgstr "Scegli formato email."
+
+#~ msgid "Order id"
+#~ msgstr "ID dell'ordine"
+
+#~ msgid "Show parent order id instead of vendor suborder id"
+#~ msgstr ""
+#~ "Mostra l'ID dell'ordine genitore invece dell'ID del sottordine del "
+#~ "venditore"
 
 #~ msgid "Commission paid (for Admin)"
 #~ msgstr "Commissione pagata (amministratore)"
@@ -1915,11 +2001,35 @@ msgstr "da"
 #~ msgid "[{site_title}] - New Vendor Registration"
 #~ msgstr "[{site_title}] - Registrazione nuovo venditore"
 
+#~ msgid "Commissions status changed (bulk action)"
+#~ msgstr "Stato delle commissioni modificato (da azione di gruppo)"
+
+#~ msgid "Commissions have been updated"
+#~ msgstr "Le commissioni sono state aggiornate"
+
+#~ msgid "Commissions Updated"
+#~ msgstr "Commissioni aggiornate"
+
+#~ msgid "[{site_title}] - Commissions Updated"
+#~ msgstr "[{site_title}] - Commissioni aggiornate"
+
 #~ msgid "Enable notification for this email"
 #~ msgstr "Abilita notifiche email"
 
 #~ msgid "Choose format for the email that will be sent."
 #~ msgstr "Scegli il formato dell'email da inviare."
+
+#~ msgid "Show commission note"
+#~ msgstr "Mostra nota sulle commissioni"
+
+#~ msgid "Enable commission note column for this email"
+#~ msgstr "Abilita la colonna Note commissioni per questa email"
+
+#~ msgid "Send a copy of this email to administrator"
+#~ msgstr "Invia una copia di questa email all'amministratore"
+
+#~ msgid "Enable carbon copy to webiste admin email: "
+#~ msgstr "Abilita la copia per conoscenza per l'email dell'amministratore: "
 
 #~ msgid "Commission paid (for Vendor)"
 #~ msgstr "Commissione pagata (venditore)"
@@ -1930,6 +2040,9 @@ msgstr "da"
 #~ msgid "Vendor's Commission paid"
 #~ msgstr "Commissione venditore pagata"
 
+#~ msgid "Vendor's new account approval"
+#~ msgstr "Approvazione nuovo account venditore"
+
 #~ msgid ""
 #~ "Emails are sent to the vendor as soon as the admin approves his/her "
 #~ "account"
@@ -1939,7 +2052,7 @@ msgstr "da"
 
 #~ msgid "Your vendor account on the website {site_title} has been approved."
 #~ msgstr ""
-#~ "Il tuo account venditore sul sito sito {site_title} è stato approvato"
+#~ "Il tuo account venditore sul sito sito {site_title} è stato approvato."
 
 #~ msgid "Welcome to {site_title}"
 #~ msgstr "Benvenuto su {site_title}"
@@ -1969,7 +2082,7 @@ msgstr "da"
 #~ msgstr "Tutte"
 
 #~ msgid "Ship to"
-#~ msgstr "Invia a "
+#~ msgstr "Invia a"
 
 #~ msgid "Search for a product&hellip;"
 #~ msgstr "Cerca un prodotto&hellip;"
@@ -1984,7 +2097,7 @@ msgstr "da"
 #~ msgstr "Passa stato a"
 
 #~ msgid "Via"
-#~ msgstr "per"
+#~ msgstr "Via"
 
 #~ msgid "Order status:"
 #~ msgstr "Stato ordine:"
@@ -1992,6 +2105,9 @@ msgstr "da"
 #~ msgctxt "Order status"
 #~ msgid "Trashed"
 #~ msgstr "Eliminato"
+
+#~ msgid "You do not have permission to edit this post"
+#~ msgstr "Non hai permessi sufficienti per modificare questo articolo"
 
 #~ msgid "Coming Soon"
 #~ msgstr "In arrivo"
@@ -2036,7 +2152,7 @@ msgstr "da"
 #~ "your price products"
 #~ msgstr ""
 #~ "Se abiliti questa opzione, i venditori saranno in grado di creare e "
-#~ "gestire i prodotti \"Name your price\""
+#~ "gestire i prodotti \"Name your price\"."
 
 #~ msgid ""
 #~ "If you enable this option, vendors will be able to add product size "
@@ -2069,7 +2185,9 @@ msgstr "da"
 #~ msgid ""
 #~ "If you enable this option, vendors will be able to create and manage "
 #~ "surveys for their own customers"
-#~ msgstr "is this gift card multi currency"
+#~ msgstr ""
+#~ "Se abiliti quest'opzione, i venditori potranno creare e gestire sondaggi "
+#~ "da sottoporre ai propri clienti"
 
 #~ msgid ""
 #~ "If you enable this option, vendors will be able to create and manage "
@@ -2129,7 +2247,41 @@ msgstr "da"
 #~ "product options for their products."
 #~ msgstr ""
 #~ "Se abiliti questa opzione, i venditori saranno in grado di creare opzioni "
-#~ "avanzate per i propri prodotti"
+#~ "avanzate per i propri prodotti."
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to receive SMS "
+#~ "notifications for their orders."
+#~ msgstr ""
+#~ "Se abiliti questa opzione, i venditori potranno ricevere notifiche via "
+#~ "SMS riguardo ai loro ordini."
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to access to bulk product "
+#~ "editing for their products."
+#~ msgstr ""
+#~ "Se abiliti questa opzione, i venditori potranno accedere alle modifiche "
+#~ "di gruppo per i propri prodotti."
+
+#~ msgid "Vendors can create bundle products"
+#~ msgstr "I venditori possono creare prodotti bundle"
+
+#~ msgid "Vendors can add a label on their products with their energy class"
+#~ msgstr ""
+#~ "I venditori possono aggiungere un'etichetta sui propri prodotti con la "
+#~ "classe energetica"
+
+#~ msgid ""
+#~ "The vendor commissions are paid automatically by Adaptive Payments system"
+#~ msgstr ""
+#~ "Le commissioni venditore vengono pagate automaticamente dal sistema "
+#~ "Adaptive Payments"
+
+#~ msgid "Vendors can create booking products"
+#~ msgstr "I venditore possono creare prodotti-prenotazione"
+
+#~ msgid "Vendors can manage avanced refund system"
+#~ msgstr "I venditori possono gestire il sistema avanzato di rimborso"
 
 #~ msgid "Coupon Data"
 #~ msgstr "Informazioni coupon"
@@ -2229,7 +2381,10 @@ msgstr "da"
 #~ msgid ""
 #~ "List of allowed emails to check against the customer's billing email when "
 #~ "an order is placed. Separate email addresses with commas."
-#~ msgstr "Elenco degli indirizzi email autorizzati da "
+#~ msgstr ""
+#~ "Elenco degli indirizzi email autorizzati da confrontare con l'email di "
+#~ "fatturazione del cliente durante la creazione dell'ordine. Separa gli "
+#~ "indirizzi email con la virgola."
 
 #~ msgid "Usage limit per coupon"
 #~ msgstr "Limite di utilizzo per coupon"
@@ -2268,8 +2423,72 @@ msgstr "da"
 #~ "Utilizza email di fatturazione per gli ospiti e ID utente per gli utenti "
 #~ "registrati."
 
+#~ msgid "Shipping"
+#~ msgstr "Spedizione"
+
+#~ msgid "Ready to ship in..."
+#~ msgstr "Pronto per essere spedito in..."
+
+#~ msgid "1 business day"
+#~ msgstr "1 giorno lavorativo"
+
+#~ msgid "1-2 business day"
+#~ msgstr "1-2 giorni lavorativi"
+
+#~ msgid "1-3 business day"
+#~ msgstr "1-3 giorni lavorativi"
+
+#~ msgid "3-5 business day"
+#~ msgstr "3-5 giorni lavorativi"
+
+#~ msgid "1-2 weeks"
+#~ msgstr "1-2 settimane"
+
+#~ msgid "2-3 weeks"
+#~ msgstr "2-3 settimane"
+
+#~ msgid "3-4 weeks"
+#~ msgstr "3-4 settimane"
+
+#~ msgid "4-6 weeks"
+#~ msgstr "4-6 settimane"
+
+#~ msgid "6-8 weeks"
+#~ msgstr "6-8 settimane"
+
 #~ msgid "Vacation"
 #~ msgstr "Ferie"
+
+#~ msgid "WooCommerce Cost of Goods"
+#~ msgstr "WooCommerce Cost of Goods"
+
+#~ msgid "Cost of goods handling"
+#~ msgstr "Costo di gestione dei prodotti"
+
+#~ msgid "Include cost of goods in commission calculations"
+#~ msgstr "Includi i costi dei prodotti nel calcolo delle commissioni"
+
+#~ msgid ""
+#~ "Decide whether vendor commissions have to be calculated including cost of "
+#~ "goods value or not."
+#~ msgstr ""
+#~ "Scegli se le commissioni venditore devono includere il costo del prodotto "
+#~ "o meno."
+
+#~ msgid "Show Cost of goods information"
+#~ msgstr "Mostra informazioni sul costo del prodotto"
+
+#~ msgid "Show cost of goods information in commission details page"
+#~ msgstr ""
+#~ "Mostra informazioni sul costo del prodotto nella pagina dettagli "
+#~ "commissioni"
+
+#~ msgctxt "part of: cost of goods included or cost of goods excluded"
+#~ msgid "cost of goods"
+#~ msgstr "costo del prodotto"
+
+#~ msgid "%s commissions for the selected vendor"
+#~ msgstr "%s di commissioni per il venditore selezionato"
 
 #~ msgid "Showing reports for:"
 #~ msgstr "Mostra report per:"
@@ -2296,7 +2515,7 @@ msgstr "da"
 #~ msgstr "Importo commissione: %s"
 
 #~ msgid "This is the sum of commission totals."
-#~ msgstr "Somma totale delle commissioni"
+#~ msgstr "Somma totale delle commissioni."
 
 #~ msgid "%s paid commissions"
 #~ msgstr "Commissioni pagate: %s"
@@ -2361,6 +2580,9 @@ msgstr "da"
 #~ msgid "Cancelled Commissions"
 #~ msgstr "Commissioni annullate"
 
+#~ msgid "%s net commissions in this period"
+#~ msgstr "%s di commissioni nette in queste periodo"
+
 #~ msgid ""
 #~ "This is the sum of the order totals after any refunds and excluding "
 #~ "shipping and taxes."
@@ -2385,6 +2607,9 @@ msgstr "da"
 
 #~ msgid "%s registered vendors"
 #~ msgstr "%s venditori registrati"
+
+#~ msgid "%s total "
+#~ msgstr "%s in totale "
 
 #~ msgid "%s with selling capability"
 #~ msgstr "%s abilitati alla vendita"
@@ -2419,6 +2644,38 @@ msgstr "da"
 #~ msgid "Number of items sold"
 #~ msgstr "Numero di articoli venduti"
 
+#~ msgid "Add shipping method"
+#~ msgstr "Aggiungi metodo di spedizione"
+
+#~ msgid "Save changes to continue adding shipping methods to this zone"
+#~ msgstr ""
+#~ "Salva le modifiche per continuare ad aggiungere metodi di spedizione per "
+#~ "questa zona"
+
+#~ msgid "No shipping methods offered to this zone."
+#~ msgstr "Non sono disponibili metodi di spedizione per questa zona."
+
+#~ msgid "Enable Shipping"
+#~ msgstr "Abilita la spedizione"
+
+#~ msgid "Method Title"
+#~ msgstr "Nome del metodo"
+
+#~ msgid "This controls the title which the user sees during checkout."
+#~ msgstr "Questo è il testo che l'utente vedrà durante il pagamento."
+
+#~ msgid "Per Vendor Shipping"
+#~ msgstr "Spedizione per venditore"
+
+#~ msgid "Tax Status"
+#~ msgstr "Stato delle tasse"
+
+#~ msgid "Taxable"
+#~ msgstr "Tassabile"
+
+#~ msgid "None"
+#~ msgstr "Nessuno"
+
 #~ msgid "Quick Info"
 #~ msgstr "Informazioni veloci"
 
@@ -2437,17 +2694,42 @@ msgstr "da"
 #~ msgid "YITH Vendor Quick Info"
 #~ msgstr "YITH Informazioni venditore"
 
+#~ msgid ""
+#~ "Add a quick info contact form in vendor's store page and in single "
+#~ "product page"
+#~ msgstr ""
+#~ "Aggiungi un modulo di contatto rapido nella pagina del negozio venditore "
+#~ "e nella pagina singolo prodotto"
+
 #~ msgid "Description"
 #~ msgstr "Descrizione"
 
 #~ msgid "Submit button label text"
-#~ msgstr "Testo pulsante \"Submit\""
+#~ msgstr "Testo del pulsante Invia"
 
 #~ msgid "Hide from guests"
 #~ msgstr "Nascondi agli ospiti"
 
+#~ msgid "Show in vendor's store page"
+#~ msgstr "Mostra nella pagina negozio venditore"
+
+#~ msgid "Show in single product page"
+#~ msgstr "Mostra nella pagina singolo prodotto"
+
 #~ msgid "Send a copy to website owner"
 #~ msgstr "Invia una copia al proprietario del sito"
+
+#~ msgctxt "Placeholder like \"Name: Andrea"
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgctxt "Placeholder like \"Email: andrea@yithemes.com"
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgctxt "Placeholder like \"Message: Lorem ipsume dolor sit amet"
+#~ msgid "Message"
+#~ msgstr "Messaggio"
 
 #~ msgid "YITH Vendor Store Location"
 #~ msgstr "YITH Posizione negozio venditore"
@@ -2484,6 +2766,16 @@ msgstr "da"
 #~ msgstr ""
 #~ "Se abiliti questa opzione, ciascun venditore potrà chiudere il suo shop "
 #~ "per ferie."
+
+#~ msgid "Enable shipping module"
+#~ msgstr "Abilita il modulo spedizioni"
+
+#~ msgid ""
+#~ "If you enable this option, each vendor will be able to set a self cost "
+#~ "for the vendor shipping method"
+#~ msgstr ""
+#~ "Se abiliti quest'opzione, ciascun venditore potrà abilitare dei costi "
+#~ "propri per il metodo di spedizione venditore"
 
 #~ msgid "Live Chat"
 #~ msgstr "Live Chat"
@@ -2581,11 +2873,62 @@ msgstr "da"
 #~ msgid "Enable Role Based Prices for vendors"
 #~ msgstr "Abilita Role Based Prices per i venditori"
 
+#~ msgid "Product Add-ons"
+#~ msgstr "Product Add-ons"
+
+#~ msgid "Enable Product Add-ons Options for vendors"
+#~ msgstr "Abilita le opzioni di Product Add-ons per i venditori"
+
+#~ msgid "SMS Notifications"
+#~ msgstr "SMS Notifications"
+
+#~ msgid "Enable SMS Notifications for vendors"
+#~ msgstr "Abilita SMS Notifications per i venditori"
+
+#~ msgid "Bulk Product Editing"
+#~ msgstr "Bulk Product Editing"
+
+#~ msgid "Enable Bulk Product Editing Options for vendors"
+#~ msgstr "Abilita le opzioni di Bulk Product Editing per i venditori"
+
+#~ msgid "Product Bundles"
+#~ msgstr "Product Bundles"
+
+#~ msgid "Product Bundles features for vendors"
+#~ msgstr "Le funzionalità di Product Bundles per i venditori"
+
+#~ msgid "EU Energy Label"
+#~ msgstr "EU Energy Label"
+
+#~ msgid "EU Energy Label features for vendors"
+#~ msgstr "Le funzionalità di EU Energy Label per i venditori"
+
+#~ msgid "PayPal Adaptive Payments for WooCommerce"
+#~ msgstr "PayPal Adaptive Payments for WooCommerce"
+
+#~ msgid "PayPal Adaptive Payments for vendors"
+#~ msgstr "PayPal Adaptive Payments per i venditori"
+
+#~ msgid "Booking"
+#~ msgstr "Booking"
+
+#~ msgid "Booking features for vendors"
+#~ msgstr "Le funzionalità di Booking per i venditori"
+
+#~ msgid "Advanced Refund System"
+#~ msgstr "Advanced Refund System"
+
+#~ msgid "Advacend Refund System features for vendors"
+#~ msgstr "Le funzionalità di Advanced Refund System per i venditori"
+
 #~ msgid "Commission page view"
 #~ msgstr "Visualizzazione pagina commissioni"
 
 #~ msgid "Select the default view for commission page"
 #~ msgstr "Seleziona la visualizzazione di default per la pagina commissioni"
+
+#~ msgid "Coupons"
+#~ msgstr "Codici promozionali"
 
 #~ msgid "Include coupons in commission calculations"
 #~ msgstr "Includi i coupon nel calcolo della commissione"
@@ -2596,6 +2939,16 @@ msgstr "da"
 #~ msgstr ""
 #~ "Scegli se le commissioni venditore devono essere calcolate includendo il "
 #~ "valore del coupon o meno."
+
+#~ msgid "Taxes"
+#~ msgstr "Tasse"
+
+#~ msgid ""
+#~ "Decide whether vendor commissions have to be calculated including/"
+#~ "excluding tax value."
+#~ msgstr ""
+#~ "Scegli se le commissioni venditore devono includere/escludere il valore "
+#~ "delle tasse."
 
 #~ msgid "WooCommerce Pages"
 #~ msgstr "Pagine WooCommerce"
@@ -2665,6 +3018,13 @@ msgstr "da"
 #~ msgid "Report abuse"
 #~ msgstr "Segnala un abuso"
 
+#~ msgid "Show \"Vendor\" tab in single product page"
+#~ msgstr "Mostra la scheda \"Venditore\" nella pagina singolo prodotto"
+
+#~ msgid "Select if you want to show vendor's tab in single product page."
+#~ msgstr ""
+#~ "Scegli se mostrare la scheda venditore nella pagina singolo prodotto."
+
 #~ msgid "Vendor Tab"
 #~ msgstr "Tab venditori"
 
@@ -2689,6 +3049,14 @@ msgstr "da"
 #~ msgid "After WooCommerce tabs"
 #~ msgstr "Dopo le schede predefinite di WooCommerce"
 
+#~ msgid "Shipping info Tab"
+#~ msgstr "Scheda informazioni spedizione"
+
+#~ msgid "Change the label of \"Shipping info Tab\" in single product page."
+#~ msgstr ""
+#~ "Modifica l'etichetta \"Scheda informazioni spedizione\" nella pagina "
+#~ "singolo prodotto."
+
 #~ msgid "Vendor's registration page"
 #~ msgstr "Pagina di registrazione del venditore"
 
@@ -2710,14 +3078,13 @@ msgstr "da"
 #~ "After registration, the seller is entitled to sell. If you disable this "
 #~ "option, the administrator must enable the vendor account manually"
 #~ msgstr ""
-#~ "Dopo la registrazione, il venditore è abilitato alla vendita. Se "
+#~ "Dopo la registrazione il venditore è abilitato alla vendita. Se "
 #~ "disabiliti questa opzione, l'amministratore deve abilitare l'account "
-#~ "venditore manualmente."
+#~ "venditore manualmente"
 
-#, fuzzy
 #~ msgctxt "part of: VAT/SSN number"
 #~ msgid "number"
-#~ msgstr "Numero ordine"
+#~ msgstr "numero"
 
 #~ msgid "Mark this field required"
 #~ msgstr "Segna questo campo come obbligatorio"
@@ -2725,17 +3092,39 @@ msgstr "da"
 #~ msgid "Terms and conditions"
 #~ msgstr "Termini e condizioni"
 
+#~ msgid "PayPal Email"
+#~ msgstr "Email PayPal"
+
 #~ msgid "Become a vendor page"
 #~ msgstr "Pagina per diventare venditori"
 
 #~ msgid "\"Become a vendor\" page"
 #~ msgstr "Pagina \"Diventa un venditore\""
 
+#~ msgid ""
+#~ "This sets the page where add the \"become a vendor\" form will be shown."
+#~ msgstr ""
+#~ "Imposta qui la pagina in cui verrà mostrato il modulo \"Diventa un "
+#~ "venditore\"."
+
+#~ msgid "Become a vendor page style"
+#~ msgstr "Stile pagina Diventa un venditore"
+
+#~ msgid ""
+#~ "My Account Style: with login form and \"Register as a vendor\" checkbox"
+#~ msgstr ""
+#~ "Stile del My Account: con il modulo per il login e la casella "
+#~ "\"Registrati come venditore\" da spuntare"
+
+#~ msgid "MultiVendor Style: Show only become a vendor form"
+#~ msgstr ""
+#~ "Stile MultiVendor: mostra solo il modulo per la registrazione venditore"
+
 #~ msgid "Terms and conditions page"
 #~ msgstr "Pagina dei termini e delle condizioni"
 
 #~ msgid "\"Terms and conditions\" page"
-#~ msgstr "pagina \"Termini e condizioni\""
+#~ msgstr "Pagina \"Termini e condizioni\""
 
 #~ msgid "This sets the page for vendors Terms and conditions."
 #~ msgstr "Impostazioni per termini e condizioni dei venditori."
@@ -2755,6 +3144,9 @@ msgstr "da"
 
 #~ msgid "Store link"
 #~ msgstr "Link negozio"
+
+#~ msgid "Select the style you want to use:"
+#~ msgstr "Seleziona lo stile che vuoi utilizzare:"
 
 #~ msgid "Theme style"
 #~ msgstr "Stile tema"
@@ -2779,6 +3171,27 @@ msgstr "da"
 #~ msgid "Style for header image in vendor store page"
 #~ msgstr "Stile immagine header nella pagina venditore"
 
+#~ msgid "Select the vendor store page header style"
+#~ msgstr "Seleziona lo stile dell'header della pagina venditore"
+
+#~ msgid "Small Box"
+#~ msgstr "Riquadro piccolo"
+
+#~ msgid "Double Box"
+#~ msgstr "Riquadro doppio"
+
+#~ msgid "Vendor's skin background color"
+#~ msgstr "Colore di sfondo del tema venditore"
+
+#~ msgid "Skin Background color"
+#~ msgstr "Colore di sfondo del tema"
+
+#~ msgid "Vendor's skin font color"
+#~ msgstr "Colore del carattere del tema del venditore"
+
+#~ msgid "Skin font color"
+#~ msgstr "Colore del carattere del tema"
+
 #~ msgid "Show vendor logo in vendor store page"
 #~ msgstr "Mostra il logo del venditore nella pagina del venditore"
 
@@ -2786,6 +3199,9 @@ msgstr "da"
 #~ msgstr ""
 #~ "Abilita/Disabilita il logo del venditore (avatar dell' utente) nella "
 #~ "pagina del negozio del venditore."
+
+#~ msgid "Show vendor logo"
+#~ msgstr "Mostra il logo del venditore"
 
 #~ msgid "Don't show vendor logo"
 #~ msgstr "Non mostrare il logo del venditore"
@@ -2800,6 +3216,26 @@ msgstr "da"
 
 #~ msgid "Change the default image size for logo (Default: 62 px)."
 #~ msgstr "Cambia le dimensioni predefinite per il logo (Default: 62 px)."
+
+#~ msgid "Image width for header image in vendor store page"
+#~ msgstr "Larghezza dell'immagine dell'header nella pagina venditore"
+
+#~ msgid ""
+#~ "Change the default image width for header. Set width to zero to use "
+#~ "original image width (Default: 0 px)."
+#~ msgstr ""
+#~ "Modifica l'immagine predefinita dell'header. Imposta la larghezza a zero "
+#~ "per utilizzare la larghezza dell'immagine originale (predefinita: 0 px)."
+
+#~ msgid "Image height for header image in vendor store page"
+#~ msgstr "Altezza dell'immagine dell'header nella pagine venditore"
+
+#~ msgid ""
+#~ "Change the default image height size for header. Set height to zero to "
+#~ "use original image height (Default: 0 px)."
+#~ msgstr ""
+#~ "Modifica l'immagine predefinita dell'header. Imposta zero per utilizzare "
+#~ "l'altezza dell'immagine originale (predefinita: 0 px)."
 
 #~ msgid "Settings for vendor's \"Related products\""
 #~ msgstr "Impostazioni per i \"Prodotti correlati\" del venditore"
@@ -2818,7 +3254,8 @@ msgstr "da"
 #~ msgstr "Prodotti correlati dalla pagina del venditore"
 
 #~ msgid "Show vendor's description in store page"
-#~ msgstr "Mostra la descrizione del venditore nella pagina Shop dello store."
+#~ msgstr ""
+#~ "Mostra la descrizione del venditore nella pagina Negozio dello store."
 
 #~ msgid ""
 #~ "Select if you want to show vendor's description after the header of Store "
@@ -2846,31 +3283,50 @@ msgstr "da"
 #~ "Scegli se mostrare le vendite totali del venditore nell'header della "
 #~ "pagina shop."
 
-#, fuzzy
 #~ msgctxt "part of: VAT/SSN number"
 #~ msgid "Show"
 #~ msgstr "Mostra"
 
-#, fuzzy
 #~ msgctxt "part of: VAT/SSN number"
 #~ msgid "in store page"
-#~ msgstr "Pagina shop"
+#~ msgstr "nella pagina negozio"
 
-#, fuzzy
 #~ msgctxt ""
 #~ "[admin] part of: Select if you want to show the VAT/SSN information in "
 #~ "the header of Store page"
 #~ msgid "Select if you want to show the"
-#~ msgstr "Seleziona lo stile che vuoi utilizzare:"
+#~ msgstr "Seleziona se vuoi mostrare"
 
-#, fuzzy
 #~ msgctxt ""
 #~ "[admin] part of: Select if you want to show the VAT/SSN information in "
 #~ "the header of Store page"
 #~ msgid "information in the header of Store page"
+#~ msgstr "nell'intestazione della pagina Store."
+
+#~ msgid "Change the standard VAT/SSN label with your local tax wording"
 #~ msgstr ""
-#~ "Seleziona se vuoi mostrare le informazioni IVA/C.F. nell'intestazione "
-#~ "della pagina Store."
+#~ "Modifica l'etichetta standard per IVA/C.F. utilizzando la dicitura del "
+#~ "tuo paese o della tua regione"
+
+#~ msgid "Show website in store page"
+#~ msgstr "Mostra il sito web nella pagina venditore"
+
+#~ msgid ""
+#~ "Select if you want to allow vendor to add external website information in "
+#~ "the header of Store page."
+#~ msgstr ""
+#~ "Scegli se permettere al venditore di aggiungere informazioni riguardo "
+#~ "altri siti web nell'header della loro pagina negozio."
+
+#~ msgid "Show reviews average rating"
+#~ msgstr "Mostra la valutazione media delle recensioni"
+
+#~ msgid ""
+#~ "Select if you want to show reviews average ratings in the header of Store "
+#~ "page."
+#~ msgstr ""
+#~ "Scegli se mostrare la valutazione media delle recensioni nell'header "
+#~ "della pagina venditore."
 
 #~ msgid "Google Maps API Key"
 #~ msgstr "Chiave API di Google Maps"
@@ -3031,8 +3487,25 @@ msgstr "da"
 #~ "possible to override these settings for each vendor. "
 #~ msgstr ""
 #~ "Se abiliti questa opzione ogni venditore potrà pubblicare prodotti senza "
-#~ "la supervisione dell' admin. Questa è l'opzione predefinita per ciascun "
-#~ "venditore, è possibile modificarne le impostazioni per ogni venditore."
+#~ "la supervisione dell'amministratore. Questa è l'opzione predefinita per "
+#~ "ciascun venditore, è possibile modificarne le impostazioni per ogni "
+#~ "venditore. "
+
+#~ msgid "Set products to “Pending review\" status after vendors edit them"
+#~ msgstr ""
+#~ "Imposta lo stato \"In attesa di revisione\" sui prodotti che sono stati "
+#~ "modificati dai venditori"
+
+#~ msgid ""
+#~ "Enabling this option will let you set any product on which a vendor "
+#~ "applies a change to “Pending review” status, if the vendor is not allowed "
+#~ "to apply changes to his/her products without super admin approval."
+#~ msgstr ""
+#~ "Se abiliti quest'opzione, dopo ogni modifica ai prodotti da parte dei "
+#~ "venditori, il prodotto passerà allo stato \"In attesa di revisione\". "
+#~ "Opzione valida nel caso in cui il venditore sia abilitato a fare "
+#~ "modifiche ai suoi prodotti solo dopo l'approvazione da parte "
+#~ "dell'amministratore."
 
 #~ msgid "Force \"Skip reviews\" option for all vendors"
 #~ msgstr "Imposta l'opzione \"Salta autorizzazione\" per tutti i venditori"
@@ -3043,7 +3516,7 @@ msgstr "da"
 #~ msgid "Force \"Skip admin review\" options for all vendors."
 #~ msgstr ""
 #~ "Imposta l'opzione \"Salta autorizzazione amministratore\" per tutti i "
-#~ "venditori"
+#~ "venditori."
 
 #~ msgid "Enable YIT Shortcodes Button"
 #~ msgstr "Abilita pulsante  YIT Shortcodes"
@@ -3088,6 +3561,13 @@ msgstr "da"
 #~ "Tutte le modifiche effettuate sugli ordini generali saranno sincronizzate "
 #~ "con gli ordini di ogni singolo venditore"
 
+#~ msgid ""
+#~ "Check this option to update the parent order status when editing the "
+#~ "child order status"
+#~ msgstr ""
+#~ "Seleziona questa opzione per aggiornare lo stato dell'ordine genitore "
+#~ "quando il sottordine viene modificato"
+
 #~ msgid "Order refund management"
 #~ msgstr "Gestione rimborso ordini"
 
@@ -3117,6 +3597,25 @@ msgstr "da"
 #~ msgstr ""
 #~ "Spunta questa opzione per impedire ai venditori di visualizzare la "
 #~ "sezione 'Pagamento' nel dettaglio ordine"
+
+#~ msgid "Prevent vendors to resend order emails"
+#~ msgstr ""
+#~ "Impedisci ai venditori di inviare di nuovo le email relative agli ordini"
+
+#~ msgid ""
+#~ "It prevents the vendors to resend the emails related to the orders to "
+#~ "customers."
+#~ msgstr ""
+#~ "Questo impedisce che i venditori possano inviare di nuovo ai clienti "
+#~ "email relative agli ordini."
+
+#~ msgid "Prevent vendors to edit custom fields"
+#~ msgstr "Impedisci ai venditori di modificare i campi personalizzati"
+
+#~ msgid "It prevents the vendors to edit the shop orders custom fileds"
+#~ msgstr ""
+#~ "Questo impedisce che i venditori modifichino i campi personalizzati negli "
+#~ "ordini dello store"
 
 #~ msgid "Featured Products management"
 #~ msgstr "Gestione prodotti in evidenza"
@@ -3153,6 +3652,32 @@ msgstr "da"
 #~ "Se abiliti questa opzione, ogni venditore potrà usare il tasto media "
 #~ "nell' editor avanzato."
 
+#~ msgid "Shop Admins"
+#~ msgstr "Amministratori del negozio"
+
+#~ msgid "Enable vendors to add admins"
+#~ msgstr "Permetti ai venditori di aggiungere amministratori"
+
+#~ msgid ""
+#~ "Thanks to this option, your vendors will be able to assign shop admins "
+#~ "for their own shop page. Please, be careful while using this option, "
+#~ "because this way your vendors will be able to see all users registered to "
+#~ "the entire store, first name, last name and email address and this could "
+#~ "be a violation of their own privacy. We always recommend you enable this "
+#~ "option only if necessary. Alternatively, your vendors will be able to see "
+#~ "who the admins of their shop page are and make a request to the global "
+#~ "admin to have them added."
+#~ msgstr ""
+#~ "Grazie a quest'opzione, i tuoi venditori potranno nominare degli "
+#~ "amministratori della propria pagina negozio. Ti raccomandiamo di "
+#~ "utilizzare questa funzione con prudenza, perché in questo modo i "
+#~ "venditori potranno vedere tutti gli utenti registrati nello store, nome, "
+#~ "cognome e indirizzo email e questo potrebbe costituire una violazione "
+#~ "della privacy. Consigliamo sempre di abilitare quest'opzione solo se "
+#~ "necessario. In alternativa, i tuoi venditori potranno vedere chi sono gli "
+#~ "amministratori della propria pagina negozio e inoltrare una richiesta "
+#~ "all'amministratore global per far sì che vengano aggiunti."
+
 #~ msgid "Vendor's"
 #~ msgstr "del venditore"
 
@@ -3166,6 +3691,12 @@ msgstr "da"
 #~ "Inserisci le note legali della compagnia (I.E. Direttore delle vendite, "
 #~ "Tribunale di registrazione, Numero di iscrizione al registro, ecc.)"
 
+#~ msgid "Website"
+#~ msgstr "Sito web"
+
+#~ msgid "Insert website url"
+#~ msgstr "Inserisci l'URL del sito web"
+
 #~ msgid "Allow vendors to add products without admin review"
 #~ msgstr ""
 #~ "Autorizza i venditori ad aggiungere prodotti senza dover ricevere "
@@ -3176,6 +3707,9 @@ msgstr "da"
 
 #~ msgid "Allow vendors to manage featured products"
 #~ msgstr "Permetti ai venditori di gestire i prodotti in primo piano"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
 
 #~ msgid "Vendor Shop Admins"
 #~ msgstr "Amministratori pagina venditore"
@@ -3218,6 +3752,14 @@ msgstr "da"
 #~ msgid "Registration date:"
 #~ msgstr "Data di registrazione:"
 
+#~ msgctxt "[Admin]: option description"
+#~ msgid ""
+#~ "Upload an image with the correct aspect ratio settings. Recommended size "
+#~ "(width x height)"
+#~ msgstr ""
+#~ "Carica un'immagine dal formato corretto. Le dimensioni consigliate sono "
+#~ "(larghezza x altezza)"
+
 #~ msgid "Upload/Add image"
 #~ msgstr "Carica/aggiungi immagine"
 
@@ -3234,7 +3776,7 @@ msgstr "da"
 #~ msgstr "Abilita logo dell'header del negozio:"
 
 #~ msgid "Show logo in the vendor's store header page"
-#~ msgstr "Mostra il logo nell'header della pagina del negozio dei venditori."
+#~ msgstr "Mostra il logo nell'header della pagina negozio venditore"
 
 #~ msgid "MyStore S.A. Avenue MyStore 55, 1800 Vevey, Switzerland"
 #~ msgstr "MyStore S.A. Avenue MyStore 55, 1800 Vevey, Switzerland"
@@ -3244,6 +3786,17 @@ msgstr "da"
 
 #~ msgid "Insert store telephone number."
 #~ msgstr "Inserisci numero di telefono dello store."
+
+#~ msgctxt "part of: The VAT/SSN of your store"
+#~ msgid "The"
+#~ msgstr "   "
+
+#~ msgctxt "part of: The VAT/SSN of your store"
+#~ msgid "of your store"
+#~ msgstr "del tuo negozio"
+
+#~ msgid "Website url"
+#~ msgstr "URL del sito web"
 
 #~ msgid "Add social page link here"
 #~ msgstr "Aggiungi link pagina social qui"
@@ -3293,19 +3846,114 @@ msgstr "da"
 #~ msgstr "Autorizzazioni store e tassi commissione:"
 
 #~ msgid "Skip admin review: "
-#~ msgstr "Salta approvazione amministrazione:"
+#~ msgstr "Salta approvazione amministrazione: "
 
 #~ msgid "Sale status: "
-#~ msgstr "Stato delle vendite:"
+#~ msgstr "Stato delle vendite: "
 
 #~ msgid "Registration date: "
-#~ msgstr "Data di registrazione:"
+#~ msgstr "Data di registrazione: "
+
+#~ msgid "Store Admins: "
+#~ msgstr "Amministratori del negozio: "
 
 #~ msgid "Save Vendor Settings"
 #~ msgstr "Salva impostazioni venditore"
 
+#~ msgid "Zone Name"
+#~ msgstr "Nome zona"
+
+#~ msgid "Remove"
+#~ msgstr "Rimuovi"
+
+#~ msgid "Select regions within this zone"
+#~ msgstr "Seleziona le regioni con questa zone"
+
+#~ msgid "Limit to specific ZIP/postcodes"
+#~ msgstr "Restringi a specifici codici postali"
+
+#~ msgid "List 1 postcode per line"
+#~ msgstr "Elenca 1 codice postale per riga"
+
+#~ msgid ""
+#~ "Postcodes containing wildcards (e.g. CB23*) and fully numeric ranges (e."
+#~ "g. <code>90210...99000</code>) are also supported."
+#~ msgstr ""
+#~ "Sono supportati anche C.A.P. contenenti caratteri jolly (es. CB23*) e "
+#~ "range numerici (es. <code>90210...99000</code>)."
+
+#~ msgid ""
+#~ "Drag and drop to re-order your custom zones. This is the order in which "
+#~ "they will be matched against the customer address."
+#~ msgstr ""
+#~ "Trascina per riordinare le tue zone personalizzate. Questo è l'ordine in "
+#~ "cui saranno utilizzate durante un confronto con l'indirizzo dei clienti."
+
+#~ msgid "Save Changes"
+#~ msgstr "Salva le modifiche"
+
+#~ msgid "Shipping Settings"
+#~ msgstr "Impostazioni di spedizione"
+
+#~ msgid "Enable shipping:"
+#~ msgstr "Abilita spedizione:"
+
+#~ msgid "Enable shipping cost"
+#~ msgstr "Abilita costi di spedizione"
+
+#~ msgid "Default Shipping Price:"
+#~ msgstr "Prezzo di spedizione predefinito:"
+
+#~ msgid "The default shipping price for each product in the cart."
+#~ msgstr ""
+#~ "Il prezzo di spedizione predefinito per ciascun prodotto nel carrello."
+
+#~ msgid "Per Product Additional Price:"
+#~ msgstr "Prezzo aggiuntivo per prodotto:"
+
+#~ msgid "Per Qty Product Additional Price:"
+#~ msgstr "Prezzo quantità aggiuntivo:"
+
+#~ msgid "The additional price for every second product of the same type"
+#~ msgstr ""
+#~ "Il prezzo aggiuntivo per prodotto a partire dal secondo prodotto dello "
+#~ "stesso tipo"
+
+#~ msgid "Processing Time"
+#~ msgstr "Tempo di elaborazione"
+
+#~ msgid "The time required before sending the product for delivery"
+#~ msgstr "Tempo necessario prima che il prodotto venga spedito"
+
+#~ msgid "Shipping Policy:"
+#~ msgstr "Politiche di spedizione:"
+
+#~ msgid "You terms, conditions and instructions about shipping"
+#~ msgstr "Termini e condizioni e le tue istruzioni riguardanti la spedizione"
+
+#~ msgid "Refund Policy:"
+#~ msgstr "Politica di rimborso:"
+
+#~ msgid "You terms, conditions and instructions about refund"
+#~ msgstr "Termini e condizioni e le tue istruzioni riguardanti i rimborsi"
+
+#~ msgid "Shipping From"
+#~ msgstr "Spedizione da"
+
+#~ msgid "- Select a location -"
+#~ msgstr "- Seleziona una località -"
+
+#~ msgid "Location from where the product are shipped for delivery"
+#~ msgstr "Località da cui verranno spediti i prodotti"
+
+#~ msgid "Save Shipping Settings"
+#~ msgstr "Salva le impostazioni di spedizione"
+
+#~ msgid "Add shipping zone"
+#~ msgstr "Aggiungi una zona di spedizione"
+
 #~ msgid "Seller vacation info"
-#~ msgstr "Info "
+#~ msgstr "Informazioni sulle ferie del venditore"
 
 #~ msgid "Vacation message:"
 #~ msgstr "Messaggio chiusura ferie:"
@@ -3339,6 +3987,41 @@ msgstr "da"
 
 #~ msgid "Order number"
 #~ msgstr "Numero ordine"
+
+#~ msgid "Commission ID"
+#~ msgstr "ID commissione"
+
+#~ msgid "Order ID"
+#~ msgstr "ID ordine"
+
+#~ msgid "SKU"
+#~ msgstr "SKU"
+
+#~ msgctxt "[Email]: meanse commissions rate"
+#~ msgid "Rate"
+#~ msgstr "Percentuale"
+
+#~ msgid "New Status"
+#~ msgstr "Nuovo stato"
+
+#~ msgid "Note"
+#~ msgstr "Nota"
+
+#~ msgctxt "[admin] part of shipping fee details"
+#~ msgid "Shipping"
+#~ msgstr "Spedizione"
+
+#~ msgctxt "[Email commissions report]: Total commissions amount"
+#~ msgid "Total product commissions"
+#~ msgstr "Commissioni prodotto totali"
+
+#~ msgctxt "[Email commissions report]: Total commissions amount"
+#~ msgid "Total Shipping Fee"
+#~ msgstr "Costi di spedizione totali"
+
+#~ msgctxt "yith-woocommerce-product-vendors"
+#~ msgid "Commissions Report for"
+#~ msgstr "Resoconto commissioni per"
 
 #~ msgid "The commission has been credited successfully."
 #~ msgstr "La commissione è stata accreditata con successo."
@@ -3402,6 +4085,10 @@ msgstr "da"
 #~ msgstr "Tasso di commissione:"
 
 #~ msgctxt "New Order Email"
+#~ msgid "Tax:"
+#~ msgstr "Tasse:"
+
+#~ msgctxt "New Order Email"
 #~ msgid "Earnings:"
 #~ msgstr "Guadagni:"
 
@@ -3416,6 +4103,9 @@ msgstr "da"
 
 #~ msgid "Download"
 #~ msgstr "Download"
+
+#~ msgid "Your vendor account has been approved on %s."
+#~ msgstr "Il tuo account venditore su %s è stato approvato."
 
 #~ msgid ""
 #~ "From your vendor dashboard you can view your recent commissions, view the "
@@ -3450,6 +4140,30 @@ msgstr "da"
 #~ msgid "You have received an order from %s. The order is as follows:"
 #~ msgstr "Hai ricevuto un ordine da %s. Di seguito i dettagli:"
 
+#~ msgctxt "Email: tax amount column"
+#~ msgid "Tax"
+#~ msgstr "Tasse"
+
+#~ msgctxt "Email: commission amount column"
+#~ msgid "(inc. taxes)"
+#~ msgstr "(tasse incluse)"
+
+#~ msgctxt "Email: Title before the Shipping fee list"
+#~ msgid "Shipping Fee"
+#~ msgstr "Costo di spedizione"
+
+#~ msgctxt "Email: shièpèing method column"
+#~ msgid "Shipping Method"
+#~ msgstr "Metodo di spedizione"
+
+#~ msgctxt "Email: commission rate column"
+#~ msgid "Rate"
+#~ msgstr "Percentuale"
+
+#~ msgctxt "Email: commission amount column"
+#~ msgid "Amount"
+#~ msgstr "Importo"
+
 #~ msgid "Store name *"
 #~ msgstr "Nome shop *"
 
@@ -3479,6 +4193,10 @@ msgstr "da"
 
 #~ msgid "Total sales: %d"
 #~ msgstr "Vendite totali: %d"
+
+#~ msgctxt "part of: Request about: Apple iPhone 6"
+#~ msgid "Request about"
+#~ msgstr "Richiesta su"
 
 #~ msgid "Name"
 #~ msgstr "Nome"
@@ -3522,6 +4240,10 @@ msgstr "da"
 #~ "Fai clic su <a href=\"%s\">here</a> per accedere alla <strong>%s "
 #~ "dashboard</strong>."
 
+#~ msgctxt "[Part of]: Register as a vendor"
+#~ msgid "Register as a"
+#~ msgstr "Registrati come"
+
 #~ msgid "Owner First Name *"
 #~ msgstr "Nome proprietario *"
 
@@ -3531,8 +4253,18 @@ msgstr "da"
 #~ msgid "Report an abuse for product %s"
 #~ msgstr "Segnala un abuso per il prodotto %s"
 
+#~ msgid "in vendor shop %s"
+#~ msgstr "nel negozio venditore %s"
+
 #~ msgid "Leave a message explaining the reasons for your abuse report"
 #~ msgstr "Lascia un messaggio e spiega il motivo della segnalazione"
+
+#~ msgid "<a href=\"%s\" target=\"_blank\">%s</a>"
+#~ msgstr "<a href=\"%s\" target=\"_blank\">%s</a>"
+
+#~ msgid "You can't create more vendor with the same shop owner."
+#~ msgstr ""
+#~ "Non è possibile associare più negozi venditore con lo stesso proprietario."
 
 #~ msgid "Vendor's new account approvation"
 #~ msgstr "Approvazione nuovo account venditore"

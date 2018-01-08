@@ -31,7 +31,9 @@ $options['icon'] =  YIT_Plugin_Common::get_icon_list();
 
 
 
-<div id="<?php echo $id ?>-container" <?php if ( isset( $deps ) ): ?>data-field="<?php echo $id ?>" data-dep="<?php echo $deps['ids'] ?>" data-value="<?php echo $deps['values'] ?>" <?php endif ?>class="select_icon rm_option rm_input rm_text">
+<div id="<?php echo $id ?>-container" class="select_icon rm_option rm_input rm_text" <?php echo yith_field_deps_data( $args ); ?>>
+    <div id="<?php echo $id ?>-container" <?php echo yith_field_deps_data( $args ); ?>>
+
     <label for="<?php echo $id ?>"><?php echo $label ?></label>
 
     <div class="option">
@@ -65,10 +67,10 @@ $options['icon'] =  YIT_Plugin_Common::get_icon_list();
 
 
         <div class="input_wrapper custom_icon_wrapper upload" style="clear:both;">
-            <input type="text" name="<?php echo $name ?>[custom]" id="<?php echo $id ?>[custom]" value="<?php echo $current_options['custom'] ?>" class="upload_img_url upload_custom_icon" />
-            <input type="button" value="<?php _e( 'Upload', 'yith-plugin-fw' ) ?>" id="<?php echo $id; ?>-custom-button" class="upload_button button" />
+            <input type="text" name="<?php echo $name ?>[custom]" id="<?php echo $id ?>[custom]" value="<?php echo $current_options['custom'] ?>" class="yith-plugin-fw-upload-img-url upload_custom_icon" />
+            <input type="button" value="<?php _e( 'Upload', 'yith-plugin-fw' ) ?>" id="<?php echo $id; ?>-custom-button" class="yith-plugin-fw-upload-button button" />
 
-            <div class="upload_img_preview" style="margin-top:10px;">
+            <div class="yith-plugin-fw-upload-img-preview" style="margin-top:10px;">
                 <?php
                 $file = $current_options['custom'];
                 if ( preg_match( '/(jpg|jpeg|png|gif|ico)$/', $file ) ) {

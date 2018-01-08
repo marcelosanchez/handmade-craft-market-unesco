@@ -140,6 +140,24 @@ if ( ! function_exists( 'storefront_upsell_display' ) ) {
 	}
 }
 
+if (! function_exists( 'shop_title_head' ) ) {
+	/**
+	 * Sorting wrapper
+	 *
+	 * @since   1.4.3
+	 * @return  void
+	 */
+	function shop_title_head() {
+		echo '<div class="shop_title_head col-md-12">';
+		?>
+			<h1>Our all Product</h1>
+			<span>Find your best Product</span>
+
+		<?php
+		echo '</div>';
+	}
+}
+
 if ( ! function_exists( 'storefront_sorting_wrapper' ) ) {
 	/**
 	 * Sorting wrapper

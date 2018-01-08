@@ -34,6 +34,8 @@ include_once( 'licence/lib/yit-theme-licence.php');
 include_once( 'lib/yit-video.php');
 include_once( 'lib/yit-upgrade.php');
 include_once( 'lib/yit-pointers.php');
+include_once( 'lib/yit-icons.php');
+include_once( 'lib/yit-assets.php');
 
 // load from theme folder...
 load_textdomain( 'yith-plugin-fw', get_template_directory() . '/core/plugin-fw/yith-plugin-fw-' . apply_filters( 'plugin_locale', get_locale(), 'yith-plugin-fw' ) . '.mo' )

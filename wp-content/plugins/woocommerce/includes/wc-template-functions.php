@@ -624,7 +624,7 @@ if ( ! function_exists( 'woocommerce_template_loop_product_title' ) ) {
 	 * Show the product title in the product loop. By default this is an H2.
 	 */
 	function woocommerce_template_loop_product_title() {
-		echo '<div class="product_store_card_cont"><h2 class="woocommerce-loop-product__title custom_product_title">' . get_the_title() . '</h2>';
+		echo '<h2 class="woocommerce-loop-product__title">' . get_the_title() . '</h2>';
 	}
 }
 if ( ! function_exists( 'woocommerce_template_loop_category_title' ) ) {
@@ -1584,9 +1584,8 @@ if ( ! function_exists( 'woocommerce_breadcrumb' ) ) {
 	function woocommerce_breadcrumb( $args = array() ) {
 		$args = wp_parse_args( $args, apply_filters( 'woocommerce_breadcrumb_defaults', array(
 			'delimiter'   => '&nbsp;&#47;&nbsp;',
-			// 'wrap_before' => '<div class="woocommerce-breadcrumb hos_breadcums col-md-12">',
-			'wrap_before' => '<div class="col-md-12 hos_breadcums">',
-			'wrap_after'  => '</div>',
+			'wrap_before' => '<nav class="woocommerce-breadcrumb">',
+			'wrap_after'  => '</nav>',
 			'before'      => '',
 			'after'       => '',
 			'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),
@@ -1999,7 +1998,7 @@ if ( ! function_exists( 'woocommerce_form_field' ) ) {
 
 		// Custom attribute handling.
 		$custom_attributes         = array();
-		$args['custom_attributes'] = array_filter( (array) $args['custom_attributes'] );
+		$args['custom_attributes'] = array_filter( (array) $args['custom_attributes'], 'strlen' );
 
 		if ( $args['maxlength'] ) {
 			$args['custom_attributes']['maxlength'] = absint( $args['maxlength'] );

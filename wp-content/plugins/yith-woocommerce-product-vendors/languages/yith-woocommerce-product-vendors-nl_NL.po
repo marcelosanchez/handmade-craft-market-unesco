@@ -1,0 +1,4215 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YITH WooCommerce Multi Vendor\n"
+"POT-Creation-Date: 2017-12-18 11:27+0100\n"
+"PO-Revision-Date: 2017-12-18 11:27+0100\n"
+"Last-Translator: \n"
+"Language-Team: YIThemes <plugins@yithemes.com>\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.9\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __ ;_e;_n:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"esc_attr__;esc_attr_e\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: plugin-fw\n"
+
+#: includes/class.yith-commission.php:485
+#, php-format
+msgid "Commission status changed from %s to %s."
+msgstr "Commissie status gewijzigd van %s naar %s."
+
+#: includes/class.yith-commissions.php:188
+msgid "Commission status not updated!"
+msgstr "Commissie status is niet geupdate!"
+
+#: includes/class.yith-commissions.php:189
+msgid "Commission status updated!"
+msgstr "Commissie status geupdate!"
+
+#: includes/class.yith-commissions.php:190
+msgid ""
+"Payment successful. In a few minutes you will receive an email with the "
+"outcome of the payment and the commission state will be changed accordingly."
+msgstr ""
+"Betaling succesvol. Binnen enkele minuten zult u een e-mail met de "
+"resultaten van de betaling ontvangen, de commissie status zal daarna "
+"gewijzigd worden."
+
+#: includes/class.yith-commissions.php:191
+msgid "Payment failed."
+msgstr "Betaling mislukt."
+
+#: includes/class.yith-commissions.php:226
+msgid "Paid"
+msgstr "Betaald"
+
+#: includes/class.yith-commissions.php:227
+msgid "Unpaid"
+msgstr "Niet betaald"
+
+#: includes/class.yith-commissions.php:228
+msgid "Pending"
+msgstr "In behandeling"
+
+#: includes/class.yith-commissions.php:229
+#: templates/admin/commission-view.php:619
+msgid "Refunded"
+msgstr "Gerestitueerd"
+
+#: includes/class.yith-commissions.php:230
+msgid "Cancelled"
+msgstr "Geannuleerd"
+
+#: includes/class.yith-commissions.php:231
+msgid "Processing"
+msgstr "Verwerken"
+
+#: includes/class.yith-commissions.php:290
+#: includes/class.yith-commissions.php:291
+#: includes/class.yith-commissions.php:1429
+#: includes/class.yith-vendors-admin.php:184
+msgid "Commissions"
+msgstr "Commissies"
+
+#: includes/class.yith-commissions.php:358
+msgid "Vendor Commissions"
+msgstr "Verkopers commissie"
+
+#: includes/class.yith-commissions.php:395
+msgid "Earnings by vendor"
+msgstr "Verdiensten door verkoper"
+
+#: includes/class.yith-commissions.php:413
+#, php-format
+msgid "Commission #%d details"
+msgstr "Commissie #%d details"
+
+#: includes/class.yith-commissions.php:414
+#, php-format
+msgid "%1$s &lsaquo; %2$s &#8212; WordPress"
+msgstr "%1$s &lsaquo; %2$s &#8212; WordPress"
+
+#: includes/class.yith-commissions.php:1285
+#, php-format
+msgid "Refunded %s from order"
+msgstr "Restitutie %s van order"
+
+#: includes/class.yith-commissions.php:1304
+msgid "Order Refunded"
+msgstr "Order gerestitueerd"
+
+#: includes/class.yith-commissions.php:1339
+#, php-format
+msgid "Cancelled %s refund from order"
+msgstr "Geannuleerd %s restitutie van order"
+
+#: includes/class.yith-commissions.php:1466 includes/class.yith-orders.php:1733
+msgid "commission_id"
+msgstr "commissie_id"
+
+#: includes/class.yith-commissions.php:1563
+msgctxt "[Admin]: Option description"
+msgid "Credit taxes to the website admin"
+msgstr "Btw wordt doorberekend aan de website admin"
+
+#: includes/class.yith-commissions.php:1564
+msgctxt "[Admin]: Option description"
+msgid "Split tax by percentage between website admin and vendor"
+msgstr "Btw wordt procentueel gedeeld tussen admin en verkoper"
+
+#: includes/class.yith-commissions.php:1565
+msgctxt "[Admin]: Option description"
+msgid "Credit taxes to the vendor"
+msgstr "Btw wordt doorberekend aan de verkoper"
+
+#: includes/class.yith-commissions.php:1569
+msgctxt "means: Vendor commission have been calculated: tax included"
+msgid "included"
+msgstr "inclusief"
+
+#: includes/class.yith-commissions.php:1569
+msgctxt "means: Vendor commission have been calculated: tax excluded"
+msgid "excluded"
+msgstr "exclusief"
+
+#: includes/class.yith-commissions.php:1572
+msgctxt "part of: tax included or tax excluded"
+msgid "tax"
+msgstr "btw"
+
+#: includes/class.yith-commissions.php:1578
+msgctxt "part of: Vendor commission have been calculated: tax included"
+msgid "Vendor commission have been calculated"
+msgstr "De verkopers commissie is berekend"
+
+#: includes/class.yith-commissions.php:1583
+msgctxt "part of: coupon included or coupon excluded"
+msgid "coupon"
+msgstr "coupon"
+
+#: includes/class.yith-orders.php:272
+#, php-format
+msgid "Order &ndash; %s"
+msgstr "Order &ndash; %s"
+
+#: includes/class.yith-orders.php:272
+msgctxt "Order date parsed by strftime"
+msgid "%b %d, %Y @ %I:%M %p"
+msgstr "%b %d, %Y @ %I:%M %p"
+
+#: includes/class.yith-orders.php:434
+#, php-format
+msgid "Error %d: Unable to create order. Please try again."
+msgstr "Fout %d: Niet in staat een order te creëeren. Probeert u het nogmaals."
+
+#: includes/class.yith-orders.php:580 includes/class.yith-orders.php:968
+msgctxt "Order note"
+msgid "Update by admin: "
+msgstr "Update door admin: "
+
+#: includes/class.yith-orders.php:961
+msgid "Delete note"
+msgstr "Verwijder notitie"
+
+#: includes/class.yith-orders.php:1072
+#, php-format
+msgid "Item #%s stock reduced from %s to %s."
+msgstr "Item #%s voorraad afgenomen van %s naar %s."
+
+#: includes/class.yith-orders.php:1076
+#, php-format
+msgid "Item #%s stock increased from %s to %s."
+msgstr "Item #%s voorraad toegenomen van %s naar %s."
+
+#: includes/class.yith-orders.php:1734
+msgid "status"
+msgstr "status"
+
+#: includes/class.yith-orders.php:1802
+msgctxt "Admin: Order table column"
+msgid "Suborders"
+msgstr "Sub-orders"
+
+#: includes/class.yith-orders.php:1806
+msgctxt "Admin: Order table column"
+msgid "Vendor"
+msgstr "Verkoper"
+
+#: includes/class.yith-orders.php:1850 includes/class.yith-orders.php:1940
+msgctxt "Order table details"
+msgid "in"
+msgstr "in"
+
+#: includes/class.yith-orders.php:1892
+msgctxt "Admin: Single order page. Suborder details box"
+msgid "Suborders"
+msgstr "Sub-orders"
+
+#: includes/class.yith-orders.php:1892
+msgid ""
+"Note: from this box you can monitor the status of suborders associated to "
+"individual vendors."
+msgstr ""
+"Opmerking: vanuit deze box kunt u de statussen van de sub-orders ,"
+"gerelateerd aan individuele verkopers, monitoren."
+
+#: includes/class.yith-orders.php:1898
+msgctxt "Admin: Single order page. Parent order details box"
+msgid "Parent order"
+msgstr "Bovenliggende order"
+
+#: includes/class.yith-orders.php:1906
+msgctxt "Admin: Single order page. Parent order details box"
+msgid "Parent order id"
+msgstr "Bovenliggende order id"
+
+#: includes/class.yith-orders.php:1941
+#: includes/lib/class.yith-commissions-list-table.php:331
+#: templates/admin/commission-view.php:213
+msgid "Vendor deleted"
+msgstr "Verkoper verwijderd"
+
+#: includes/class.yith-orders.php:1952
+msgctxt "Admin: single order page. Link to parent order"
+msgid "Return to main order"
+msgstr "Ga terug naar hoofd order"
+
+#: includes/class.yith-orders.php:1957
+msgid ""
+"Pass this ID over to the website administrator for any communication related "
+"to this order"
+msgstr ""
+"Geef deze ID aan de website administrator, voor alle communicatie omtrent "
+"deze order"
+
+#: includes/class.yith-orders.php:2283
+#, php-format
+msgid "File %d"
+msgstr "Bestand %d"
+
+#: includes/class.yith-vendors-admin.php:185
+#: includes/class.yith-vendors.php:380
+msgid "Vendors"
+msgstr "Verkopers"
+
+#: includes/class.yith-vendors-admin.php:186
+#: includes/class.yith-vendors-admin.php:1129
+msgid "Premium Version"
+msgstr "Premium Versie"
+
+#: includes/class.yith-vendors-admin.php:192
+#: includes/class.yith-vendors-admin.php:193
+msgid "Multi Vendor"
+msgstr "Multi Vendor"
+
+#: includes/class.yith-vendors-admin.php:450
+#, php-format
+msgid ""
+"You do not have permission to edit this product. %1$sClick here to view and "
+"edit your products%2$s."
+msgstr ""
+"U heeft geen recht om dit product te bewerken. %1$sKlik hier om uw producten "
+"te bekijken en bewerken%2$s."
+
+#: includes/class.yith-vendors-admin.php:457
+#, php-format
+msgid ""
+"You do not have permission to edit this order. %1$sClick here to view and "
+"edit your orders%2$s."
+msgstr ""
+"U heeft geen recht om deze order te bewerken. %1$sKlik hier om uw orders te "
+"bekijken en bewerken%2$s."
+
+#: includes/class.yith-vendors-admin.php:504
+#: includes/class.yith-vendors-admin.php:505
+msgid "Vendor Profile"
+msgstr "Verkoper profiel"
+
+#: includes/class.yith-vendors-admin.php:577
+msgid "VAT/SSN"
+msgstr "BTW/SSN"
+
+#: includes/class.yith-vendors-admin.php:582
+#: includes/class.yith-vendors-admin.php:615
+msgid "Search for a customer&hellip;"
+msgstr "Zoek naar een klant&hellip;"
+
+#: includes/class.yith-vendors-admin.php:624
+msgid "Search for a shop admins&hellip;"
+msgstr "Zoeken naar shop admins&hellip;"
+
+#: includes/class.yith-vendors-admin.php:663
+#: includes/class.yith-vendors-admin.php:684
+#: includes/class.yith-vendors-admin.php:1859
+msgid "A vendor with this name already exists."
+msgstr "Er bestaat al een verkoper met deze naam."
+
+#: includes/class.yith-vendors-admin.php:664
+msgid "Vendor name already exists"
+msgstr "Naam verkoper bestaat al"
+
+#: includes/class.yith-vendors-admin.php:690
+#: includes/class.yith-vendors-admin.php:1864
+msgid "You can't associate more vendor shops with the same shop owner."
+msgstr ""
+
+#: includes/class.yith-vendors-admin.php:1041
+#, php-format
+msgid "No %s"
+msgstr "No %s"
+
+#: includes/class.yith-vendors-admin.php:1124
+msgid "Settings"
+msgstr "Instellingen"
+
+#: includes/class.yith-vendors-admin.php:1125
+#: includes/class.yith-vendors-admin.php:1666
+msgid "Premium live demo"
+msgstr "Premium live demo"
+
+#: includes/class.yith-vendors-admin.php:1125
+msgid "Live demo"
+msgstr "Live demo"
+
+#: includes/class.yith-vendors-admin.php:1153
+msgid "Plugin Documentation"
+msgstr "Plugin Documentatie"
+
+#: includes/class.yith-vendors-admin.php:1257
+msgid "Visit Store"
+msgstr "Bezoek webwinkel"
+
+#: includes/class.yith-vendors-admin.php:1649
+msgid "Plugin documentation"
+msgstr "Plugin Documentatie"
+
+#: includes/class.yith-vendors-admin.php:1656
+msgid "Discover the premium version"
+msgstr "Ontdek de premium versie"
+
+#: includes/class.yith-vendors-admin.php:1661
+msgid "Free Vs Premium"
+msgstr "Free Vs Premium"
+
+#: includes/class.yith-vendors-admin.php:1671
+msgid "WordPress support forum"
+msgstr "WordPress support forum"
+
+#: includes/class.yith-vendors-admin.php:1676
+#: includes/class.yith-vendors-admin.php:1688
+msgid "Changelog"
+msgstr "Wijzigingenlogboek"
+
+#: includes/class.yith-vendors-admin.php:1683
+msgid "Support platform"
+msgstr "Support platform"
+
+#: includes/class.yith-vendors-admin.php:1688
+msgid "current version"
+msgstr "huidige versie"
+
+#: includes/class.yith-vendors-admin.php:1693
+msgid "PayPal sandbox test accounts"
+msgstr "PayPal sandbox test accounts"
+
+#: includes/class.yith-vendors-admin.php:1698
+msgid "Enable PayPal MassPay"
+msgstr "PayPal MassPay inschakelen"
+
+#: includes/class.yith-vendors-admin.php:1854
+msgid "Option Saved"
+msgstr "Optie opgeslagen"
+
+#: includes/class.yith-vendors.php:378 includes/class.yith-vendors.php:379
+#: templates/admin/commission-view.php:207
+msgid "Vendor"
+msgstr "Verkoper"
+
+#: includes/class.yith-vendors.php:381
+msgid "Search Vendors"
+msgstr "Zoek verkopers"
+
+#: includes/class.yith-vendors.php:382
+msgid "All Vendors"
+msgstr "Alle verkopers"
+
+#: includes/class.yith-vendors.php:383
+msgid "Parent Vendor"
+msgstr "Bovenliggende verkoper"
+
+#: includes/class.yith-vendors.php:384
+msgid "Parent Vendor:"
+msgstr "Bovenliggende verkoper:"
+
+#: includes/class.yith-vendors.php:385
+msgid "View Vendor"
+msgstr "Bekijk verkoper"
+
+#: includes/class.yith-vendors.php:386
+msgid "Edit Vendor"
+msgstr "Bewerk verkoper"
+
+#: includes/class.yith-vendors.php:387
+msgid "Update Vendor"
+msgstr "Update verkoper"
+
+#: includes/class.yith-vendors.php:388
+msgid "Add New Vendor"
+msgstr "Voeg nieuwe verkoper toe"
+
+#: includes/class.yith-vendors.php:389
+msgid "New Vendor's Name"
+msgstr "Naam nieuwe verkoper"
+
+#: includes/class.yith-vendors.php:391
+msgid "Separate vendors with commas"
+msgstr "Scheidt verkopers met komma´s"
+
+#: includes/class.yith-vendors.php:392
+msgid "Add or remove vendors"
+msgstr "Voeg toe of verwijder verkopers"
+
+#: includes/class.yith-vendors.php:393
+msgid "Choose from most used vendors"
+msgstr "Kies uit de meest gebruikte verkopers"
+
+#: includes/class.yith-vendors.php:394
+msgid "No vendors found"
+msgstr "Geen verkopers gevonden"
+
+#: includes/lib/class.yith-commissions-list-table.php:59
+msgid "ID"
+msgstr "ID"
+
+#: includes/lib/class.yith-commissions-list-table.php:60
+#: templates/admin/commission-view.php:172
+msgid "Status"
+msgstr "Status"
+
+#: includes/lib/class.yith-commissions-list-table.php:61
+msgid "Order"
+msgstr "Order"
+
+#: includes/lib/class.yith-commissions-list-table.php:62
+msgid "Product"
+msgstr "Product"
+
+#: includes/lib/class.yith-commissions-list-table.php:63
+#: templates/admin/commission-view.php:591
+msgid "Rate"
+msgstr "Rating"
+
+#: includes/lib/class.yith-commissions-list-table.php:64
+msgid "User"
+msgstr "Gebruiker"
+
+#: includes/lib/class.yith-commissions-list-table.php:66
+#: templates/admin/premium.php:849
+msgid "IBAN/BIC"
+msgstr "IBAN/BIC"
+
+#: includes/lib/class.yith-commissions-list-table.php:67
+msgid "Amount"
+msgstr "Bedrag"
+
+#: includes/lib/class.yith-commissions-list-table.php:68
+#: templates/admin/commission-view.php:176
+msgid "Date"
+msgstr "Datum"
+
+#: includes/lib/class.yith-commissions-list-table.php:69
+#: templates/admin/commission-view.php:180
+msgid "Last update"
+msgstr "Laatste update"
+
+#: includes/lib/class.yith-commissions-list-table.php:70
+#: templates/admin/commission-view.php:52
+msgid "Actions"
+msgstr "Acties"
+
+#: includes/lib/class.yith-commissions-list-table.php:225
+msgid "Order Deleted"
+msgstr "Order verwijderd"
+
+#: includes/lib/class.yith-commissions-list-table.php:258
+#: templates/admin/commission-view.php:139
+msgid "Guest"
+msgstr "Gast"
+
+#: includes/lib/class.yith-commissions-list-table.php:280
+#, php-format
+msgctxt "Order number by user"
+msgid "%s by %s"
+msgstr "%s van %s"
+
+#: includes/lib/class.yith-commissions-list-table.php:294
+msgctxt "[admin]: commission type"
+msgid "Shipping fee"
+msgstr "Verzendkosten"
+
+#: includes/lib/class.yith-commissions-list-table.php:317
+#: templates/admin/commission-view.php:202
+msgid "User deleted"
+msgstr "Gebruiker verwijderd"
+
+#: includes/lib/class.yith-commissions-list-table.php:354
+msgid "View"
+msgstr "Bekijken"
+
+#: includes/lib/class.yith-commissions-list-table.php:359
+#: includes/lib/class.yith-commissions-list-table.php:377
+#: templates/admin/commission-view.php:183
+msgid "Y/m/d g:i:s A"
+msgstr "J/m/d g:i:s A"
+
+#: includes/lib/class.yith-commissions-list-table.php:366
+#: includes/lib/class.yith-commissions-list-table.php:384
+#: templates/admin/commission-view.php:184
+#, php-format
+msgid "%s ago"
+msgstr "%s geleden"
+
+#: includes/lib/class.yith-commissions-list-table.php:369
+#: includes/lib/class.yith-commissions-list-table.php:386
+msgid "Y/m/d"
+msgstr "J/m/d"
+
+#: includes/lib/class.yith-commissions-list-table.php:422
+msgid "No commissions found."
+msgstr "Geen commissies gevonden."
+
+#: includes/widgets/class.yith-woocommerce-vendors-widget.php:29
+msgid "YITH Vendor List"
+msgstr "YITH Vendor List"
+
+#: includes/widgets/class.yith-woocommerce-vendors-widget.php:31
+msgid "Display the list with enabled vendors."
+msgstr "Toon de lijst met ingeschakelde verkoeprs."
+
+#: includes/widgets/class.yith-woocommerce-vendors-widget.php:74
+msgid "Vendor List"
+msgstr "Verkoperslijst"
+
+#: includes/widgets/class.yith-woocommerce-vendors-widget.php:83
+msgid "Title"
+msgstr "Titel"
+
+#: includes/widgets/class.yith-woocommerce-vendors-widget.php:88
+msgid "Hide this widget on vendor page"
+msgstr "Verberg deze widget op de verkopers´ pagina"
+
+#: includes/widgets/class.yith-woocommerce-vendors-widget.php:93
+msgid "Vendor's products amount"
+msgstr "Verkopers´ producten bedrag"
+
+#: includes/widgets/class.yith-woocommerce-vendors-widget.php:98
+msgid "Hide vendors with no products"
+msgstr "Verberg verkopers die geen producten hebben"
+
+#: init.php:37
+msgid ""
+"YITH WooCommerce Multi Vendor is enabled but not effective. It requires "
+"WooCommerce in order to work."
+msgstr ""
+"YITH WooCommerce Multi Vendor is ingeschakeld maar werkt niet. Het heeft "
+"WooCommerce nodig om te werken."
+
+#: plugin-options/commissions-options.php:20
+msgid "General settings"
+msgstr "Algemene instellingen"
+
+#: plugin-options/commissions-options.php:27
+msgid "Commission Base"
+msgstr "Commissie basis"
+
+#: plugin-options/commissions-options.php:30
+msgid "Default commission percentage"
+msgstr "Default commissie percentage"
+
+#: plugin-options/vendors-options.php:20
+msgid "Product management"
+msgstr "Productbeheer"
+
+#: plugin-options/vendors-options.php:27
+msgid "Vendor name label color"
+msgstr "Naam verkoper labelkleur"
+
+#: plugin-options/vendors-options.php:29
+msgid "Use in shop page and single product page"
+msgstr "Gebruik in winkel pagina en single product pagina"
+
+#: plugin-options/vendors-options.php:43
+msgid "Order management"
+msgstr "Order beheer"
+
+#: plugin-options/vendors-options.php:50
+msgid "Enable order management"
+msgstr "Order beheer inschakelen"
+
+#: plugin-options/vendors-options.php:52
+msgid ""
+"If you enable this option, each vendor will be able to manage orders on his/"
+"her own products independently."
+msgstr ""
+"Als u deze optie inschakelt, zal iedere verkoper in staat zijn de orders van "
+"eigen producten zelfstandig te beheren."
+
+#: plugin-options/vendors-options.php:58
+msgid "Order synchronization"
+msgstr "Order synchronisatie"
+
+#: plugin-options/vendors-options.php:60
+msgid ""
+"All changes to general orders will be synchronized with the individual "
+"vendor's order"
+msgstr ""
+"Alle veranderingen die gemaakt wordenin de algemene orders, zullen worden "
+"gesynchroniseerd met de individuele verkopers´ order"
+
+#: templates/admin/add-product-vendors-taxonomy.php:12
+#: templates/admin/edit-product-vendors-taxonomy.php:13
+msgid "Vendor Shop Owner"
+msgstr "Verkopers winkel eigenaar"
+
+#: templates/admin/add-product-vendors-taxonomy.php:17
+#: templates/admin/edit-product-vendors-taxonomy.php:24
+msgid "PayPal email address"
+msgstr "Paypal e-mailadres"
+
+#: templates/admin/add-product-vendors-taxonomy.php:19
+#: templates/admin/edit-product-vendors-taxonomy.php:29
+msgid "Vendor's PayPal email address where profits will be delivered."
+msgstr "PayPal e-mailadres van verkoper, waar opbrengsten naartoe gaan."
+
+#: templates/admin/add-product-vendors-taxonomy.php:23
+#: templates/admin/edit-product-vendors-taxonomy.php:35
+msgid "Enable sales"
+msgstr "Verkopen inschakelen"
+
+#: templates/admin/add-product-vendors-taxonomy.php:25
+#: templates/admin/edit-product-vendors-taxonomy.php:41
+msgid "Enable or disable product sales."
+msgstr "Product verkopen inschakelen of uitschakelen."
+
+#: templates/admin/add-product-vendors-taxonomy.php:30
+#: templates/admin/edit-product-vendors-taxonomy.php:48
+msgid "Commission:"
+msgstr "Commissie:"
+
+#: templates/admin/add-product-vendors-taxonomy.php:34
+msgid "Percentage of the total sale price that this vendor receives"
+msgstr "Percentage van de totale omzetprijs dat deze verkoper ontvangt"
+
+#: templates/admin/commission-view.php:32
+msgid "View Commission"
+msgstr "Bekijk commissie"
+
+#: templates/admin/commission-view.php:33
+msgid "Back"
+msgstr "Terug"
+
+#: templates/admin/commission-view.php:46
+msgid "Commission Actions"
+msgstr "Acties op commissies"
+
+#: templates/admin/commission-view.php:54
+#, php-format
+msgid "Change to %s"
+msgstr "Wijzig in %s"
+
+#: templates/admin/commission-view.php:60
+msgid "Apply"
+msgstr "Toepassen"
+
+#: templates/admin/commission-view.php:69
+msgid "Commission notes"
+msgstr "Commissie notities"
+
+#: templates/admin/commission-view.php:80
+#, php-format
+msgid "added on %1$s at %2$s"
+msgstr "toegevoegd op %1$s om %2$s"
+
+#: templates/admin/commission-view.php:85
+msgid "There are no notes yet."
+msgstr "Er zijn nog geen notities."
+
+#: templates/admin/commission-view.php:107
+msgctxt "[admin] part of commission details"
+msgid "Commission"
+msgstr "Commissie"
+
+#: templates/admin/commission-view.php:107
+msgctxt "[admin] part of shipping fee details"
+msgid "Shipping fee"
+msgstr "Verzendkosten"
+
+#: templates/admin/commission-view.php:108
+msgctxt "[admin] part of commission details"
+msgid "details"
+msgstr "details"
+
+#: templates/admin/commission-view.php:162
+#, php-format
+msgctxt "Commission credited to [user]"
+msgid "credited to %s &#8212; from order %s &#8212; order status: %s"
+msgstr "doorberekend aan %s &#8212; van order %s &#8212; order status: %s"
+
+#: templates/admin/commission-view.php:169
+msgid "General details"
+msgstr "Algemene Details"
+
+#: templates/admin/commission-view.php:194
+msgid "User details"
+msgstr "Gebruikersdetails"
+
+#: templates/admin/commission-view.php:199
+msgid "Email"
+msgstr "E-mail"
+
+#: templates/admin/commission-view.php:218
+msgid "PayPal"
+msgstr "PayPal"
+
+#: templates/admin/commission-view.php:222
+msgid "Email address not set "
+msgstr "E-mailadres is niet ingesteld "
+
+#: templates/admin/commission-view.php:230
+msgid "Billing information"
+msgstr "Factureringsinformatie"
+
+#: templates/admin/commission-view.php:257
+msgid "Shipping information"
+msgstr "Verzendinformatie"
+
+#: templates/admin/commission-view.php:293
+msgid "Item data"
+msgstr "Item data"
+
+#: templates/admin/commission-view.php:302
+msgid "Item"
+msgstr "Item"
+
+#: templates/admin/commission-view.php:304
+msgid "Cost"
+msgstr "Kosten"
+
+#: templates/admin/commission-view.php:305
+msgid "Qty"
+msgstr "Qty"
+
+#: templates/admin/commission-view.php:306
+#: templates/admin/commission-view.php:626
+msgid "Total"
+msgstr "Totaal"
+
+#: templates/admin/commission-view.php:311
+#: templates/admin/commission-view.php:312
+msgid "Tax"
+msgstr "Btw"
+
+#: templates/admin/commission-view.php:337
+msgid "Product ID:"
+msgstr "Product ID:"
+
+#: templates/admin/commission-view.php:340
+#: templates/admin/commission-view.php:342
+msgid "Variation ID:"
+msgstr "Variatie ID:"
+
+#: templates/admin/commission-view.php:342
+msgid "No longer exists"
+msgstr "Bestaat niet meer"
+
+#: templates/admin/commission-view.php:346
+msgid "Product SKU:"
+msgstr "Product SKU:"
+
+#: templates/admin/commission-view.php:503
+msgid "Pre-discount:"
+msgstr "Pre-korting:"
+
+#: templates/admin/commission-view.php:507
+msgid "Total:"
+msgstr "Totaal:"
+
+#: templates/admin/commission-view.php:534
+msgid "Refund"
+msgstr "Restitutie"
+
+#: templates/admin/commission-view.php:567
+msgid "Coupon(s) Used"
+msgstr "Coupon(s) gebruikt"
+
+#: templates/admin/commission-view.php:600
+msgid "Commission"
+msgstr "Commissie"
+
+#: templates/admin/commissions.php:24
+msgid "Search commissions"
+msgstr "Zoek commissies"
+
+#: templates/admin/edit-product-vendors-taxonomy.php:18
+msgid "User that can manage products in this shop and view sale reports."
+msgstr ""
+"Gebruiker die de producten in de webwinkel kan beheren en omzetrapporten kan "
+"zien."
+
+#: templates/admin/edit-product-vendors-taxonomy.php:54
+msgid "Percentage of the total sale price that this vendor receives."
+msgstr "Percentage van de totale omzetprijs dat deze verkoper ontvangt."
+
+#: templates/admin/premium.php:239 templates/admin/premium.php:994
+#, php-format
+msgid ""
+"Upgrade to the %1$spremium version%2$s of %1$sYITH WooCommerce Multi Vendor"
+"%2$s to benefit from all features!"
+msgstr ""
+
+#: templates/admin/premium.php:243 templates/admin/premium.php:998
+#, php-format
+msgid "%1$s UPGRADE %2$s %3$s to the premium version %2$s"
+msgstr ""
+
+#: templates/admin/premium.php:250
+msgid "Premium Features"
+msgstr ""
+
+#: templates/admin/premium.php:259
+msgid "A richer vendor shop page"
+msgstr ""
+
+#: templates/admin/premium.php:262
+#, php-format
+msgid ""
+"The vendor page gets more details!Vendors will be able to add their %s "
+"contact details %s (email, address, phone number) and the most common social "
+"network profiles (Facebook, Twitter, Google+, LinkedIn and YouTube)"
+msgstr ""
+
+#: templates/admin/premium.php:265
+#, php-format
+msgid ""
+"These pieces of information are gathered in the page of every vendor shop "
+"with a %sheader%s where style and images can be customized."
+msgstr ""
+
+#: templates/admin/premium.php:276
+msgid "One or more administrators for every vendor shop"
+msgstr ""
+
+#: templates/admin/premium.php:279
+#, php-format
+msgid ""
+"The administrators of the vendor shop are one of the most important new "
+"features.%s They are simple registered users of the shop that have been "
+"admitted to %smanage the products%s and all the information about a vendor "
+"shop by the administrator of the store or the owner of the vendor shop."
+msgstr ""
+
+#: templates/admin/premium.php:282
+#, php-format
+msgid ""
+"The only element they can't change is the %stype of payment%s that only "
+"administrator of the store or the owner of the vendor shop can set."
+msgstr ""
+
+#: templates/admin/premium.php:299
+msgid "Direct product sale"
+msgstr ""
+
+#: templates/admin/premium.php:302
+#, php-format
+msgid ""
+"Thanks to the %s\"Skip Admin review\"%s option, vendors can publish new "
+"products without the store administrator approval. This option can be "
+"applied to all the vendor shops, or just to the selected ones."
+msgstr ""
+
+#: templates/admin/premium.php:313
+msgid "Actions for commissions"
+msgstr ""
+
+#: templates/admin/premium.php:316
+msgid ""
+"A commissions table with more details to be always up-to-date. Every "
+"commission offers a set of buttons to quickly proceed to the PayPal payments "
+"(if set as manual), or to change the state of the commission."
+msgstr ""
+
+#: templates/admin/premium.php:333 templates/admin/premium.php:367
+msgid "Variable commission rates"
+msgstr ""
+
+#: templates/admin/premium.php:336 templates/admin/premium.php:370
+#, php-format
+msgid ""
+"%sNo more single commission rate for all the vendor shops:%s in the premium "
+"version of the plugin, this rate can be modified for every single vendor "
+"shop and for every product associated."
+msgstr ""
+
+#: templates/admin/premium.php:347
+msgid "Coupon handling"
+msgstr ""
+
+#: templates/admin/premium.php:350
+#, php-format
+msgid ""
+"If users use a coupon during a purchase, how will vendor commissions be "
+"calculated? It's up to you: with the %s\"Coupon handling\"%s option, you can "
+"decide whether you want to calculate the commission for the discounted total "
+"or not."
+msgstr ""
+
+#: templates/admin/premium.php:381
+msgid "COUPON CREATION"
+msgstr ""
+
+#: templates/admin/premium.php:384
+#, php-format
+msgid ""
+"With the option %s \"Enable coupon management\" %s, the vendors of your shop "
+"can create coupons regarding the products they own. A nice innovation to "
+"offer to your vendor-users."
+msgstr ""
+
+#: templates/admin/premium.php:401
+msgid "REVIEWS"
+msgstr ""
+
+#: templates/admin/premium.php:404
+#, php-format
+msgid ""
+" Just like coupons, this option is tailored on the need to manage reviews "
+"and it has been added to the premium version of the plugin. Activating the %s"
+"\"Enable review management\"%s option from the option panel of the plugin, "
+"vendors will be free to manage the reviews of the products they own, and act "
+"with the same privileges of the administrator of the store."
+msgstr ""
+
+#: templates/admin/premium.php:415
+msgid "Advanced reports"
+msgstr ""
+
+#: templates/admin/premium.php:418
+#, php-format
+msgid ""
+"Statistics have a central relevance in the e-commerce field and WooCommerce "
+"Multi Vendor offers you different reports to %sanalyze your data%s: from the "
+"most lucrative vendors, to the best sellers, including convenient commission "
+"diagrams for each of them."
+msgstr ""
+
+#: templates/admin/premium.php:435
+msgid "CSV exportation of the reports"
+msgstr ""
+
+#: templates/admin/premium.php:438
+#, php-format
+msgid ""
+"For each report, %syou can export its data in the CSV format%s: in this way, "
+"you will be free to use all the report details in every fields not "
+"expressively related to WordPress."
+msgstr ""
+
+#: templates/admin/premium.php:449
+msgid "Vendor's product exclusion from the shop (Product listing)"
+msgstr ""
+
+#: templates/admin/premium.php:452
+#, php-format
+msgid ""
+"The %s\"Product listing\"%s option has been conceived to exclude from the "
+"shop the products of a particular vendor. In this way, these would be "
+"consultable only from the relative vendor's page."
+msgstr ""
+
+#: templates/admin/premium.php:469
+msgid "Complete list of vendors "
+msgstr ""
+
+#: templates/admin/premium.php:472
+#, php-format
+msgid ""
+"The YITH Vendor List widget allows showing the complete list of all the "
+"vendors available on your site. %1$sA fast way to have access to the vendor "
+"detail page%2$s in whom they are interested."
+msgstr ""
+
+#: templates/admin/premium.php:482
+msgid "Vendor location "
+msgstr ""
+
+#: templates/admin/premium.php:485
+msgid "Would you like to help your users to reach your store in an easy way? "
+msgstr ""
+
+#: templates/admin/premium.php:488
+#, php-format
+msgid ""
+"Just add the widget %1$sYITH Vendor Store Location%2$s to the vendor page "
+"sidebar. The system will show a different %1$sGoogle map%2$s on each shop "
+"detail page calculated basing on the address inserted in the vendor's "
+"profile."
+msgstr ""
+
+#: templates/admin/premium.php:505
+msgid "In contact with the vendor..."
+msgstr ""
+
+#: templates/admin/premium.php:508
+msgid ""
+"Simplify the exchange of information between buyer and vendor thanks to the "
+"related contact form."
+msgstr ""
+
+#: templates/admin/premium.php:511
+#, php-format
+msgid ""
+"The form shows both in the sidebars of the shop and/or product detail pages. "
+"%3$s %1$sThe message sent by the user is forwarded directly to the vendor"
+"%2$s without any intermediary. "
+msgstr ""
+
+#: templates/admin/premium.php:521
+msgid "Shortcode"
+msgstr ""
+
+#: templates/admin/premium.php:524
+msgid ""
+"Take advantage of the YITH WooCommerce Multi Vendor List shortcode to show "
+"the complete list of your shop vendors in any page."
+msgstr ""
+
+#: templates/admin/premium.php:541
+msgid "VISUALIZATION OF THE VENDOR'S NAME"
+msgstr ""
+
+#: templates/admin/premium.php:544
+msgid ""
+"The default setting of the plugin shows the name of each vendor in three "
+"pages of your site: the shop page, the product detail page and product "
+"category page. Now you can decide whether you want to show their name and "
+"hide them whenever you want with three different options."
+msgstr ""
+
+#: templates/admin/premium.php:554
+msgid "VENDOR REGISTRATION"
+msgstr ""
+
+#: templates/admin/premium.php:557
+#, php-format
+msgid ""
+"A more dynamic management for whoever wants to become a vendor in your "
+"store. It doesn't matter whether you are a registered user or a new one: "
+"everyone will be free to register as a vendor with the related "
+"%1$sregistration form.%2$s Following your settings, the registration request "
+"can be accepted automatically or manually by administrators"
+msgstr ""
+
+#: templates/admin/premium.php:574
+msgid "RESTRICTED NUMBER OF PRODUCTS"
+msgstr ""
+
+#: templates/admin/premium.php:577
+msgid ""
+"The option \"Enable product amount limit\" has been conceived to whoever "
+"would like to limit the creation of products of the shop vendors, with the "
+"freedom to indicate a specific maximum number of products that each vendor "
+"can create."
+msgstr ""
+
+#: templates/admin/premium.php:587
+msgid "BULK ACTIONS ON VENDORS"
+msgstr ""
+
+#: templates/admin/premium.php:590
+msgid ""
+"How many times did you find yourself annoyed by the repetition of the same "
+"passages with a huge waste of time? Well, now vendors management is "
+"completely renewed! You will be able to apply bulk actions on all the "
+"registered vendors, approving or deleting them all together with just one "
+"click."
+msgstr ""
+
+#: templates/admin/premium.php:606
+msgid "Advanced administration area for each vendor"
+msgstr ""
+
+#: templates/admin/premium.php:609
+msgid ""
+"A breath of fresh air for the \"vendor users\" that can take advantage of a "
+"big and advanced administrative area. From this place, they will be free to "
+"consult the reports about their products,change their profile information "
+"and choose the payment method they prefer. Each vendor can also check the "
+"commissions table, with the whole sum of the relative commissions up to that "
+"moment."
+msgstr ""
+
+#: templates/admin/premium.php:619
+msgid "ABUSE REPORT"
+msgstr ""
+
+#: templates/admin/premium.php:622
+msgid ""
+"With this feature, your users will be able to send you a message about one "
+"of the products of your shop with a dedicated form that will open in a popup "
+"within the related product detail page."
+msgstr ""
+
+#: templates/admin/premium.php:638
+msgid "Second email"
+msgstr ""
+
+#: templates/admin/premium.php:641
+msgid ""
+"Each time that a new order is registered or cancelled, a notification email "
+"is sent to the corresponding vendor. This sending can sometimes be affected "
+"by some problems, and this is why you should be able to send again the lost "
+"email. With the premium version of the plugin, you will just have to go to "
+"the detail page of the order and with a single click everything will be "
+"solved."
+msgstr ""
+
+#: templates/admin/premium.php:651
+msgid "Minimum amount of commissions"
+msgstr ""
+
+#: templates/admin/premium.php:654
+msgid ""
+"If each vendor can decide a commission threshold for which asking the "
+"payment, administrators must be free to control how this works.Setting a "
+"minimum amount of commissions, you will be free to pay commissions starting "
+"from the amount you have set."
+msgstr ""
+
+#: templates/admin/premium.php:670
+msgid "Highlighted products"
+msgstr ""
+
+#: templates/admin/premium.php:673
+msgid ""
+"Setting a WooCommerce product as \"Featured\" means standing it out among "
+"the others, maybe putting it in the main part of the homepage, or in one of "
+"the widgets of the siderbars of your shop. With the related option, you will "
+"be free to allow or block vendors to set their products as \"featured\"."
+msgstr ""
+
+#: templates/admin/premium.php:683
+msgid "Sales amount"
+msgstr "Omzetbedrag"
+
+#: templates/admin/premium.php:686
+msgid ""
+"Enrich your shop with more information. Show the amount of sales made by "
+"each vendor, placing it in the detail page of the related product, and for "
+"each single product assigned to a vendor."
+msgstr ""
+
+#: templates/admin/premium.php:702
+msgid "Shop closed"
+msgstr ""
+
+#: templates/admin/premium.php:705
+msgid ""
+"Even the owners of online shops need a break, maybe for deserved vacations "
+"or for other reasons. Therefore, when administrators offers this freedom to "
+"their vendors, they will be free to close their stores, showing a customized "
+"message to users. Vendors will also be free to decide whether they want to "
+"keep their products purchasable, or showing them in catalogue mode with no "
+"opportunity to add them to the cart. "
+msgstr ""
+
+#: templates/admin/premium.php:715
+msgid "Vendor Chat"
+msgstr ""
+
+#: templates/admin/premium.php:718
+#, php-format
+msgid ""
+"Thanks to the integration with %1$sYITH Live Chat%2$s, vendors of your site "
+"will be free to answer immediately to their customers' questions. In this "
+"way, vendors and purchasers will be even nearer, for a complete success of "
+"your e-commerce."
+msgstr ""
+
+#: templates/admin/premium.php:734
+msgid "VAT numbers"
+msgstr ""
+
+#: templates/admin/premium.php:737
+msgid ""
+"If you need the VAT number of your vendors, make it mandatory during the "
+"registration. In this way, no request to become vendor could be completed "
+"without adding the VAT number, as this can also be showed in the related "
+"detailed vendor's page."
+msgstr ""
+
+#: templates/admin/premium.php:747
+msgid "Refund management"
+msgstr ""
+
+#: templates/admin/premium.php:750
+msgid ""
+"Now refund management can be designated to the vendors of your shop. In "
+"fact, they will be able to refund partially or totally users about the "
+"products they own, with a related recalculation of the commissions received. "
+"Another way to empower your vendors about the management of their shops."
+msgstr ""
+
+#: templates/admin/premium.php:766
+msgid "VENDOR TAXONOMY"
+msgstr ""
+
+#: templates/admin/premium.php:769
+#, php-format
+msgid ""
+"With a specific option, %1$svendor taxonomy slug%2$s becomes customizable "
+"according to your needs."
+msgstr ""
+
+#: templates/admin/premium.php:779
+msgid "VENDOR LOGO"
+msgstr ""
+
+#: templates/admin/premium.php:782
+msgid ""
+"Vendors might wish to show their own logo, but not all vendors have one. "
+"This is the reason why you can give them the chance to add it or not in "
+"their shop pages. If you prefer to have an uniform style in your site, you "
+"can also choose to hide all your vendors’ logos."
+msgstr ""
+
+#: templates/admin/premium.php:785
+msgid ""
+" If you prefer to have an suniform style in your site, you can also choose "
+"to hide all your vendors’ logos."
+msgstr ""
+
+#: templates/admin/premium.php:801
+msgid "USERS PRIVACY"
+msgstr ""
+
+#: templates/admin/premium.php:804
+msgid ""
+"Protect your customers' privacy! With a specific option of the plugin, you "
+"can hide \"Customer\" search section in order detail page, so that other "
+"vendors won’t have access to your customers email addresses."
+msgstr ""
+
+#: templates/admin/premium.php:814
+msgid "Advanced editor"
+msgstr "Geavanceerde editor"
+
+#: templates/admin/premium.php:817
+msgid ""
+"All vendors can have WordPress advanced editor so that they can add a richer "
+"description of their shop by inserting HTML tags and images."
+msgstr ""
+
+#: templates/admin/premium.php:830
+msgid "LEGAL NOTES"
+msgstr ""
+
+#: templates/admin/premium.php:833
+msgid ""
+"Each vendor of your shop can insert important legal notes in their reserved "
+"area, which will be shown with the other profile information in vendor "
+"detail page."
+msgstr ""
+
+#: templates/admin/premium.php:852
+msgid ""
+"By giving your users the possibility to add their IBAN/BIC code, it will be "
+"much easier to pay their commissions by bank transfer when requested.  "
+msgstr ""
+
+#: templates/admin/premium.php:862
+msgid "TERMS AND CONDITIONS"
+msgstr ""
+
+#: templates/admin/premium.php:865
+msgid ""
+"Ask to users who wish to become vendors in your shop, to accept \"terms and "
+"conditions\" during their registration, which, in case of non-acceptance, "
+"could not be completed."
+msgstr ""
+
+#: templates/admin/premium.php:881
+msgid "WordPress gallery"
+msgstr ""
+
+#: templates/admin/premium.php:884
+msgid ""
+"All the functionalities of WordPress gallery made available to vendors. From "
+"now on, they could add and manage media in relation to the products they "
+"own, by creating image galleries to outstand important details to make a "
+"difference on market."
+msgstr ""
+
+#: templates/admin/premium.php:894
+msgid "Vendors menu"
+msgstr ""
+
+#: templates/admin/premium.php:897
+msgid ""
+"Each vendor can be managed by menu field in order to create the list of all "
+"vendors of the shop and include it, for example, within the main navigation "
+"of your site"
+msgstr ""
+
+#: templates/admin/premium.php:913
+msgid "Google API Key"
+msgstr "Google API Key"
+
+#: templates/admin/premium.php:916
+msgid ""
+"Does your site generate a huge amount of traffic that interferes with Google "
+"Maps services? Register a Google account and insert the required API KEY so "
+"that you could work around, for example, the limitation of the number of "
+"permitted visits for the maps integrated on your site"
+msgstr ""
+
+#: templates/admin/premium.php:926
+msgid "Massive assignment "
+msgstr ""
+
+#: templates/admin/premium.php:929
+msgid ""
+"Time is money! Don’t waste it! No more repeated actions to assign more "
+"products to the same vendor. From now on you can optimize your time thanks "
+"to the massive assignment allowed by the plugin with just one click."
+msgstr ""
+
+#: templates/admin/premium.php:945
+msgid "User switch"
+msgstr ""
+
+#: templates/admin/premium.php:948
+msgid ""
+"Thanks to this feature, you can access the dashboard of your site as a "
+"vendor. This allows having the same view vendors registered on your store "
+"have and verifying any notified issue "
+msgstr ""
+
+#: templates/admin/premium.php:958
+msgid "Enable shipping for vendors"
+msgstr ""
+
+#: templates/admin/premium.php:961
+#, php-format
+msgid ""
+"Thanks to the shipping module, you can %1$slet vendors manage shipping costs"
+"%2$s for their own products. "
+msgstr ""
+
+#: templates/admin/premium.php:964
+msgid ""
+"Vendors can create shipping zones and apply the related costs directly from "
+"their dashboard."
+msgstr ""
+
+#: templates/admin/premium.php:980
+msgid "Shipping Info"
+msgstr ""
+
+#: templates/admin/premium.php:983
+msgid ""
+"Each vendor can insert information related to his/her shipping costs and "
+"processing that users can view on the product detail page."
+msgstr ""
+
+#: templates/admin/vendor-admin.php:17
+msgid "Vendor Details"
+msgstr ""
+
+#: templates/admin/vendor-admin.php:24
+msgid "Name:"
+msgstr "Naam:"
+
+#: templates/admin/vendor-admin.php:29
+msgid "Slug:"
+msgstr "Slug:"
+
+#: templates/admin/vendor-admin.php:34
+msgid "PayPal email address:"
+msgstr ""
+
+#: templates/admin/vendor-admin.php:39
+msgid "Description:"
+msgstr "Beschrijving:"
+
+#: templates/admin/vendor-admin.php:45
+msgid "Commission Rate: "
+msgstr "Commissie tarief: "
+
+#: templates/admin/vendor-admin.php:52
+msgid "Vendor's selling status: "
+msgstr ""
+
+#: templates/admin/vendor-admin.php:54
+msgid "Enabled"
+msgstr "Inschakelen"
+
+#: templates/admin/vendor-admin.php:54
+msgid "Disabled"
+msgstr "Uitgeschakeld"
+
+#: templates/admin/vendor-admin.php:60
+msgid "Save Vendor Information"
+msgstr ""
+
+#: templates/woocommerce/loop/vendor-name-title.php:20
+#: templates/woocommerce/single-product/vendor-name-title.php:20
+msgid "by"
+msgstr "door"
+
+#~ msgctxt "part of: Commission: 19,00$ (50% on product price)"
+#~ msgid "on product price"
+#~ msgstr "op productprijs"
+
+#~ msgid "Vendor commissions have been calculated including coupon value"
+#~ msgstr "Verkopers commissie is berekend, inclusief couponwaarde"
+
+#~ msgid "Vendor commissions have been calculated excluding coupon value"
+#~ msgstr "Verkopers commissie is berekend, exclusief couponwaarde"
+
+#~ msgid "on product price"
+#~ msgstr "op productprijs"
+
+#~ msgctxt "Order note"
+#~ msgid "Sync with vendor's suborders: "
+#~ msgstr "Sync met suborders van verkoper: "
+
+#~ msgid "Sale Commissions"
+#~ msgstr "Verkoop Commissies"
+
+#~ msgid "Vendor Sales"
+#~ msgstr "Omzet verkoper"
+
+#~ msgid "Registered Vendors"
+#~ msgstr "Geregistreerde Verkopers"
+
+#~ msgid "Commissions by Vendor"
+#~ msgstr "Commissies door Verkoper"
+
+#~ msgid "Export CSV"
+#~ msgstr "Export CSV"
+
+#~ msgid "Year"
+#~ msgstr "Jaar"
+
+#~ msgid "Last Month"
+#~ msgstr "Afgelopen Maand"
+
+#~ msgid "This Month"
+#~ msgstr "Deze Maand"
+
+#~ msgid "Last 7 Days"
+#~ msgstr "Afgelopen 7 Dagen"
+
+#~ msgid "Search for a vendor&hellip;"
+#~ msgstr "Zoeken naar verkoper&hellip;"
+
+#~ msgid "Payments"
+#~ msgstr "Betalingen"
+
+#~ msgid "Frontpage"
+#~ msgstr "Voorpagina"
+
+#~ msgid "Reports"
+#~ msgstr "Rapporten"
+
+#~ msgid "Add-ons"
+#~ msgstr "Add-ons"
+
+#~ msgctxt "Admin menu name"
+#~ msgid "Orders"
+#~ msgstr "Orders"
+
+#~ msgid "Front page"
+#~ msgstr "Voorpagina"
+
+#~ msgid "Vendor settings"
+#~ msgstr "Verkoper instellingen"
+
+#~ msgid "Header image"
+#~ msgstr "Header afbeelding"
+
+#~ msgid "Choose an image"
+#~ msgstr "Kies een afbeelding"
+
+#~ msgid "Use image"
+#~ msgstr "Gebruik afbeelding"
+
+#~ msgid "Registration date"
+#~ msgstr "Registratie datum"
+
+#~ msgid "Owner"
+#~ msgstr "Eigenaar"
+
+#~ msgid "Enable"
+#~ msgstr "Inschakelen"
+
+#~ msgid "Items"
+#~ msgstr "Items"
+
+#~ msgid "Set an owner"
+#~ msgstr "Stel een eigenaar in"
+
+#~ msgid "Edit extra info"
+#~ msgstr "Bewerk extra info"
+
+#~ msgid "Approve"
+#~ msgstr "Goedkeuren"
+
+#~ msgid "Disable sales"
+#~ msgstr "Verkopen uitschakelen"
+
+#~ msgid "Instant Payment"
+#~ msgstr "Onmiddelijke Betaling"
+
+#~ msgid "Payment threshold"
+#~ msgstr "Betalingsdrempel"
+
+#~ msgid ""
+#~ "Are you sure? If you click \"YES\" you change skip review option for each "
+#~ "vendor"
+#~ msgstr ""
+#~ "Weet u het zeker? Als u \"JA\" kiest, kunt u de review optie voor elke "
+#~ "verkoper overslaan"
+
+#~ msgid ""
+#~ "If you continue, the commission will be paid automatically to the vendor "
+#~ "via PayPal. Do you want to continue?"
+#~ msgstr ""
+#~ "Als u doorgaat, zal de commissie automatisch worden betaald aan de "
+#~ "verkoper via PayPal. Wilt u doorgaan?"
+
+#~ msgid "Payment failed: %s"
+#~ msgstr "Betaling mislukt: %s"
+
+#~ msgid "Product commission"
+#~ msgstr "Product commissie"
+
+#~ msgid ""
+#~ "You can set a specific commission for a single product. Keep this field "
+#~ "blank or zero to use the vendor commission"
+#~ msgstr ""
+#~ "U kunt een specifieke commissie instellen voor een single product. Laat "
+#~ "dit veld leeg of op 0, om de verkopers commissie te gebruiken"
+
+#~ msgid ""
+#~ "You do not have sufficient permissions to access this page. %1$sClick "
+#~ "here to return in your dashboard%2$s."
+#~ msgstr ""
+#~ "U heeft geen recht om deze pagina te betreden. %1$sKliek hier om terug te "
+#~ "keren naar uw dashboard%2$s."
+
+#~ msgid ""
+#~ "You are not allowed to create more than %1$s products. %2$sClick here to "
+#~ "return in your admin area%3$s."
+#~ msgstr ""
+#~ "Het is niet toegestaan om meer dan %1$s producten te creëren. %2$sKlik "
+#~ "hier om terug te keren naar uw admin area%3$s."
+
+#~ msgid ""
+#~ "You do not have permission to edit this post. %1$sClick here to view your "
+#~ "dashboard%2$s."
+#~ msgstr ""
+#~ "U heeft geen recht om deze post te bewerken. %1$sKlik hier om uw "
+#~ "dashboard te bekijken%2$s."
+
+#~ msgid ""
+#~ "You do not have permission to edit this coupon. %1$sClick here to view "
+#~ "and edit your coupons%2$s."
+#~ msgstr ""
+#~ "U heeft geen recht om deze coupon te bewerken. %1$sKlik hier om uw "
+#~ "coupons te bekijken en bewerken%2$s."
+
+#~ msgid ""
+#~ "You do not have permission to edit this order. %1$sClick here to view "
+#~ "your orders%2$s."
+#~ msgstr ""
+#~ "U heeft geen recht om deze order te bewerken. %1$sKlik hier om uw orders "
+#~ "te bekijken%2$s."
+
+#~ msgid ""
+#~ "You do not have permission to edit this review. %1$sClick here to view "
+#~ "and edit your product reviews%2$s."
+#~ msgstr ""
+#~ "U heeft geen recht om deze review te bewerken. %1$sKlik hier om uw "
+#~ "product reviews te bekijken en bewerken%2$s."
+
+#~ msgid "Recent reviews"
+#~ msgstr "Recente reviews"
+
+#~ msgid "Recent comments"
+#~ msgstr "Recente opmerkingen"
+
+#~ msgid "out of 5"
+#~ msgstr "van de 5"
+
+#~ msgid "reviewed by"
+#~ msgstr "gereviewd door"
+
+#~ msgid "There are no product reviews yet."
+#~ msgstr "Er zijn nog geen product reviews."
+
+#~ msgctxt "Order details: Product sold by"
+#~ msgid "Sold by"
+#~ msgstr "Verkocht door"
+
+#~ msgid "Warning"
+#~ msgstr "Waarschuwing"
+
+#~ msgid ""
+#~ "vendor shops have no owner set. Please, set an owner for each vendor shop "
+#~ "in order to enable them"
+#~ msgstr ""
+#~ "webwinkel van verkoper heeft geen eigenaar ingesteld. Stel een eigenaar "
+#~ "in voor iedere webwinkel, om ze in te kunnen schakelen"
+
+#~ msgid "Go to Vendor page to fix it."
+#~ msgstr "Ga naar Verkopers pagina om het op te lossen."
+
+#~ msgctxt "part of: vendor shops have no VAT/SSN set"
+#~ msgid "vendor shops have no"
+#~ msgstr "winkels van verkopers hebben geen"
+
+#~ msgctxt "part of: vendor shops have no VAT/SSN set"
+#~ msgid "set"
+#~ msgstr "ingesteld"
+
+#~ msgctxt "part of: Please, set VAT/SSN field for each vendor shop"
+#~ msgid "Please, set"
+#~ msgstr "Stel alstublieft"
+
+#~ msgctxt "part of: Please, set VAT/SSN field for each vendor shop"
+#~ msgid "field for each vendor shop"
+#~ msgstr "veld in voor de webwinkel van iedere verkoper"
+
+#~ msgid "Warning: "
+#~ msgstr "Waarschuwing: "
+
+#~ msgctxt ""
+#~ "part of: Please, set the VAT/SSN field to complete your profile in "
+#~ "\"Vendor profile\""
+#~ msgid "Please, set the"
+#~ msgstr "Stel alstublieft het"
+
+#~ msgctxt ""
+#~ "part of: Please, set the VAT/SSN field to complete your profile in "
+#~ "\"Vendor profile\""
+#~ msgid "field to complete your profile in \"Vendor profile\""
+#~ msgstr ""
+#~ "veld in, voor het completeren van uw profiel in \"Verkopers profiel\""
+
+#~ msgid ""
+#~ "Please, set the VAT/SSN field to complete your profile in \"Vendor profile"
+#~ "\""
+#~ msgstr ""
+#~ "Stel alstublieft het BTW/SSN veld in voor het completeren van uw profiel "
+#~ "in \"Verkopers profiel\""
+
+#~ msgid "Go to Vendor details page to fix it."
+#~ msgstr "Ga naar Verkopers details pagina om het op te lossen."
+
+#~ msgid "Become a vendor"
+#~ msgstr "Wordt een verkoper"
+
+#~ msgid "Terms and Conditions for Vendors"
+#~ msgstr "Algemene Voorwaarden voor Verkopers"
+
+#~ msgctxt "Taxonomy Description"
+#~ msgid "Description"
+#~ msgstr "Beschrijving"
+
+#~ msgid ""
+#~ "The description is not prominent by default; however, some themes may "
+#~ "show it."
+#~ msgstr ""
+#~ "De beschrijving is niet prominent door default; maar sommige theme zullen "
+#~ "het weergeven."
+
+#~ msgid "Cheatin&#8217; uh?"
+#~ msgstr "Cheatin&#8217; uh?"
+
+#~ msgid "Sorry, you are not allowed to edit comments."
+#~ msgstr "Sorry, u heeft geen recht om opmerkingen te bewerken."
+
+#~ msgid "Commission paid via PayPal (txn ID: %s)"
+#~ msgstr "Commissie betaald via PayPal (txn ID: %s)"
+
+#~ msgid "Payment %s"
+#~ msgstr "Betaling %s"
+
+#~ msgid "Abuse reported correctly."
+#~ msgstr "Misbruik gerapporteerd."
+
+#~ msgid "All fields are mandatory."
+#~ msgstr "Alle velden zijn verplicht."
+
+#~ msgid "Your request could not be processed. Please try again"
+#~ msgstr ""
+#~ "Uw verzoek kon niet worden verwerkt. Probeert u het alstublieft nogmaals"
+
+#~ msgid "Error"
+#~ msgstr "Fout"
+
+#~ msgid "The First name field is mandatory"
+#~ msgstr "Het voornaam is verplicht"
+
+#~ msgid "The Last name field is mandatory"
+#~ msgstr "Het achternaam is verplicht"
+
+#~ msgid "The Store address field is mandatory"
+#~ msgstr "Het addres van de webwinkel is verplicht"
+
+#~ msgid "The Email field is mandatory"
+#~ msgstr "Het e-mail adres is verlicht"
+
+#~ msgid "The Email address entered is not valid"
+#~ msgstr "Een ongeldig e-mail adres"
+
+#~ msgid "The PayPal Email field is mandatory"
+#~ msgstr "Het PayPal e-mail veld is verplicht"
+
+#~ msgid "The PayPal Email address entered is not valid"
+#~ msgstr "Een ongeldig PayPal e-mail adres"
+
+#~ msgid "The Telephone field is mandatory"
+#~ msgstr "Het telefoonnummer is verplicht"
+
+#~ msgctxt "[frontend]: part of sentence. e.g.: The VAT/SSN field is mandatory"
+#~ msgid "The"
+#~ msgstr "Het"
+
+#~ msgctxt "[frontend]: part of sentence. e.g.: The VAT/SSN field is mandatory"
+#~ msgid "field is mandatory"
+#~ msgstr "veld is verplicht"
+
+#~ msgid "Insert the vendor name"
+#~ msgstr "Voer verkopers naam in"
+
+#~ msgid "A vendor with this name already exists"
+#~ msgstr "Er bestaat al een verkoper met deze naam"
+
+#~ msgid "Please, read and accept the terms & conditions"
+#~ msgstr "Lees en acepteer de algemene voorwaarden alstublieft"
+
+#~ msgid "Please, no spam here"
+#~ msgstr "Geen spam hier"
+
+#~ msgid "Report"
+#~ msgstr "Rapport"
+
+#~ msgid "User %s (%s) is reporting an abuse on the following product: \n"
+#~ msgstr "Gebruiker %s (%s) meldt misbruik van het volgende product: \n"
+
+#~ msgid "Product details: %s (ID: #%s) \n"
+#~ msgstr "Product details: %s (ID: #%s) \n"
+
+#~ msgid "Vendor shop: %s (ID: #%s) \n"
+#~ msgstr "Verkopers webwinkel: %s (ID: #%s) \n"
+
+#~ msgid "Message: %s\n"
+#~ msgstr "Bericht: %s\n"
+
+#~ msgid "Product page: %s\n"
+#~ msgstr "Product pagina: %s\n"
+
+#~ msgid "Vendor Account details: %s \n"
+#~ msgstr "Verkopers Account details: %s \n"
+
+#~ msgid "Item sold"
+#~ msgstr "Item verkocht"
+
+#~ msgctxt "Cart details: Product sold by"
+#~ msgid "Sold by"
+#~ msgstr "Verkocht door"
+
+#~ msgctxt "[Single Product Page]: Tab name for shipping information"
+#~ msgid "Shipping Info"
+#~ msgstr "Verzend informatie"
+
+#~ msgctxt "[single Product Page]: Shipping tab subtitle"
+#~ msgid "Processing Time"
+#~ msgstr "Bewerkingstijd"
+
+#~ msgctxt "[part of]: Ready to ship in x business day"
+#~ msgid "Ready to ship in"
+#~ msgstr "Klaar om te verzenden in"
+
+#~ msgctxt "[part of]: Ready to ship in x business day From Italy"
+#~ msgid "from"
+#~ msgstr "van"
+
+#~ msgctxt "[part of]: Shipping from Italy"
+#~ msgid "Shipping from"
+#~ msgstr "Verzenden van"
+
+#~ msgctxt "[single Product Page]: Shipping tab subtitle"
+#~ msgid "Shipping policy"
+#~ msgstr "Verzend beleid"
+
+#~ msgctxt "[single Product Page]: Shipping tab subtitle"
+#~ msgid "Refund policy"
+#~ msgstr "Restitutiebeleid"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Google+"
+#~ msgstr "Google+"
+
+#~ msgid "Linkedin"
+#~ msgstr "LinkedIn"
+
+#~ msgid "Youtube"
+#~ msgstr "Youtube"
+
+#~ msgid "Vimeo"
+#~ msgstr "Vimeo"
+
+#~ msgid "Instagram"
+#~ msgstr "Instagram"
+
+#~ msgid "Pinterest"
+#~ msgstr "Pinterest"
+
+#~ msgid "Flickr"
+#~ msgstr "Flickr"
+
+#~ msgid "Behance"
+#~ msgstr "Behance"
+
+#~ msgid "Tripadvisor  "
+#~ msgstr "Tripadvisor  "
+
+#~ msgid "YITH Live Chat"
+#~ msgstr "YITH Live Chat"
+
+#~ msgctxt "option description"
+#~ msgid "Use this value to show live chat button"
+#~ msgstr "Gebruik deze optie om de live chat knop te tonen"
+
+#~ msgid "Cancelled order (to vendor)"
+#~ msgstr "Geannuleerde bestelling (naar verkoper)"
+
+#~ msgid ""
+#~ "Cancelled order emails are sent when orders have been marked as cancelled "
+#~ "(if they were previously set as pending or on-hold)."
+#~ msgstr ""
+#~ "E-mails betreffende geannuleerde orders worden verzonden, wanneer orders "
+#~ "zijn gemarkeerd als geannuleerd (indien deze eerder de status in "
+#~ "bewerking of on-hold hadden)."
+
+#~ msgid "Cancelled order"
+#~ msgstr "Geannuleerde order"
+
+#~ msgid "[{site_title}] Cancelled order ({order_number})"
+#~ msgstr "[{site_title}] Geannuleerde order ({order_number})"
+
+#~ msgid "Enable/Disable"
+#~ msgstr "Inschakelen/uitschakelen"
+
+#~ msgid "Enable this email notification"
+#~ msgstr "Schakel deze e-mail notificatie in"
+
+#~ msgid "Subject"
+#~ msgstr "Onderwerp"
+
+#~ msgid ""
+#~ "This controls the email subject line. Leave blank to use the default "
+#~ "subject: <code>%s</code>."
+#~ msgstr ""
+#~ "Dit bepaald het onderwerpveld van de e-mail. Laat het leeg om het default "
+#~ "onderwerp te gebruiken: <code>%s</code>."
+
+#~ msgid "Email Heading"
+#~ msgstr "E-mail hoofd"
+
+#~ msgid ""
+#~ "This controls the main heading contained within the email notification. "
+#~ "Leave blank to use the default heading: <code>%s</code>."
+#~ msgstr ""
+#~ "Dit bepaald het titelveld van de e-mail notificatie. Laat het leeg om de "
+#~ "default titel te gebruiken: <code>%s</code>."
+
+#~ msgid "Email type"
+#~ msgstr "E-mail type"
+
+#~ msgid "Choose email format."
+#~ msgstr "Kies e-mail formaat."
+
+#~ msgid "Order id"
+#~ msgstr "Order id"
+
+#~ msgid "Show parent order id instead of vendor suborder id"
+#~ msgstr "Toon bovenliggend order id, in plaats van verkopers sub-order id"
+
+#~ msgid "Commission paid (for Admin)"
+#~ msgstr "Commissie betaald (voor Admin)"
+
+#~ msgid "New commissions are credited to vendor"
+#~ msgstr "Nieuwe commissies zijn doorberekend aan verkoper"
+
+#~ msgid "Commission paid"
+#~ msgstr "Commissie betaald"
+
+#~ msgid "[{site_title}] - Commission paid"
+#~ msgstr "[{site_title}] - Commissie betaald"
+
+#~ msgid "Recipient(s)"
+#~ msgstr "Ontvanger(s)"
+
+#~ msgid ""
+#~ "Enter recipients (comma separated) for this email. Defaults to <code>%s</"
+#~ "code>."
+#~ msgstr ""
+#~ "Vul ontangers in voor deze mail (scheiden met komma). Defaults naar <code>"
+#~ "%s</code>."
+
+#~ msgid ""
+#~ "This controls the email subject line. Leave it blank to use the default "
+#~ "subject: <code>%s</code>."
+#~ msgstr ""
+#~ "Dit bepaald het onderwerpveld van de e-mail. Laat het leeg om het default "
+#~ "onderwerp te gebruiken: <code>%s</code>."
+
+#~ msgid ""
+#~ "This controls the main heading contained in the email notification. Leave "
+#~ "it blank to use the default heading: <code>%s</code>."
+#~ msgstr ""
+#~ "Dit bepaald het titelveld van de e-mail notificatie. Laat het leeg om de "
+#~ "default titel te gebruiken: <code>%s</code>."
+
+#~ msgid "Choose format for emails that will be sent."
+#~ msgstr "Kies welke e-mail opmaak wordt verzonden."
+
+#~ msgid "Commissions unpaid"
+#~ msgstr "Onbetaalde commissies"
+
+#~ msgid "New commissions are credited to vendors"
+#~ msgstr "Nieuwe commissies zijn doorberekend aan verkopers"
+
+#~ msgid "[{site_title}] - Commissions unpaid"
+#~ msgstr "[{site_title}] - Onbetaalde commissies"
+
+#~ msgid "New order (to vendor)"
+#~ msgstr "Nieuwe order (naar verkoper)"
+
+#~ msgid "New order emails are sent to vendor(s) when an order is received."
+#~ msgstr ""
+#~ "E-mails betreffende nieuwe orders, worden verzonden naar verkoper(s) "
+#~ "zodra de order is ontvangen."
+
+#~ msgid "New customer order"
+#~ msgstr "Nieuwe klant order"
+
+#~ msgid "[{site_title}] New customer order ({order_number}) - {order_date}"
+#~ msgstr "[{site_title}] Nieuwe klant order ({order_number}) - {order_date}"
+
+#~ msgid "New Vendor Registration"
+#~ msgstr "Nieuwe verkoper registratie"
+
+#~ msgid "New Vendor has requested to access to your store"
+#~ msgstr "Een verkoper heeft verzocht om toegang te krijgen tot uw webwinkel"
+
+#~ msgid "[{site_title}] - New Vendor Registration"
+#~ msgstr "[{site_title}] - Nieuwe verkoper registratie"
+
+#~ msgid "Enable notification for this email"
+#~ msgstr "Schakel deze e-mail notificatie in"
+
+#~ msgid "Choose format for the email that will be sent."
+#~ msgstr "Kies welke e-mail opmaak wordt verzonden."
+
+#~ msgid "Commission paid (for Vendor)"
+#~ msgstr "Commissies betaald (voor Verkoper)"
+
+#~ msgid "New commissions have been credited to vendor"
+#~ msgstr "Nieuwe commissies zijn doorberekend aan verkoper"
+
+#~ msgid "Vendor's Commission paid"
+#~ msgstr "Verkopers commissies betaald"
+
+#~ msgid ""
+#~ "Emails are sent to the vendor as soon as the admin approves his/her "
+#~ "account"
+#~ msgstr ""
+#~ "E-mails worden verstuurd naar de verkopers, zodra de admin het account "
+#~ "heeft goedgekeurd"
+
+#~ msgid "Your vendor account on the website {site_title} has been approved."
+#~ msgstr "Uw verkopers account op de website {site_title} is goedgekeurd."
+
+#~ msgid "Welcome to {site_title}"
+#~ msgstr "Welkom bij {site_title}"
+
+#~ msgid "Missing required parameters for PayPal configuration"
+#~ msgstr "Noodzakelijke parameters ontbreken voor de PayPal configuratie"
+
+#~ msgid "Payment sent"
+#~ msgstr "Betaling verzonden"
+
+#~ msgid "Oldest unpaid commission"
+#~ msgstr "Oudste niet betaalde commissie"
+
+#~ msgid "Sold products"
+#~ msgstr "Verkochte producten"
+
+#~ msgid "Pay"
+#~ msgstr "Betalen"
+
+#~ msgid "Payment Request"
+#~ msgstr "Betaalverzoek"
+
+#~ msgid "Change to"
+#~ msgstr "Wijzigen in"
+
+#~ msgid "All"
+#~ msgstr "Alle"
+
+#~ msgid "Ship to"
+#~ msgstr "Verzenden naar"
+
+#~ msgid "Search for a product&hellip;"
+#~ msgstr "Zoeken naar een product&hellip;"
+
+#~ msgid "Filter"
+#~ msgstr "Filter"
+
+#~ msgid "Reset"
+#~ msgstr "Resetten"
+
+#~ msgid "Change status to"
+#~ msgstr "Verander status naar"
+
+#~ msgid "Via"
+#~ msgstr "Via"
+
+#~ msgid "Order status:"
+#~ msgstr "Order status:"
+
+#~ msgctxt "Order status"
+#~ msgid "Trashed"
+#~ msgstr "In de prullenbak"
+
+#~ msgid "You do not have permission to edit this post"
+#~ msgstr "U heeft geen recht om deze post te bewerken"
+
+#~ msgid "Coming Soon"
+#~ msgstr "Binnenkort"
+
+#~ msgid "New"
+#~ msgstr "Nieuw"
+
+#~ msgctxt "Admin: means needs YITH xxx plugin to works"
+#~ msgid "Needs"
+#~ msgstr "Heeft nodig"
+
+#~ msgctxt "Admin: means needs YITH xxx plugin to works"
+#~ msgid "plugin"
+#~ msgstr "plugin"
+
+#~ msgctxt "means: plugin version"
+#~ msgid "version"
+#~ msgstr "versie"
+
+#~ msgctxt "means: min version xxx or greater"
+#~ msgid "or greater"
+#~ msgstr "of groter"
+
+#~ msgid "YIT Plugins"
+#~ msgstr "YIT Plugins"
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to manage order tracking"
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om orders te "
+#~ "volgen"
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to create and manage "
+#~ "Subscription products"
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om "
+#~ "subscription producten te creëren en beheren"
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to create and manage name "
+#~ "your price products"
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om noem uw "
+#~ "prijs producten te creëren en beheren"
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to add product size "
+#~ "charts for their own products"
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om een "
+#~ "product maattabel voor eigen producten toe te voegen"
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to create and manage "
+#~ "memberships for their own customers"
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om "
+#~ "memberships voor eigen klanten te creëren en beheren"
+
+#~ msgid ""
+#~ "If you enable this option, each vendor will be able to chat with their "
+#~ "customers directly"
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om direct met "
+#~ "hun klanten te chatten"
+
+#~ msgid ""
+#~ "If you enable this option, each vendor will be able to manage their "
+#~ "waiting lists and send mail to their customers."
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om hun "
+#~ "waiting list te beheren en emails te aan klanten te verzenden."
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to create and manage "
+#~ "surveys for their own customers"
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om surveys "
+#~ "voor eigen klanten te creërern en beheren"
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to create and manage "
+#~ "badges for their own products"
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om badges "
+#~ "voor eigen producten te creëren en beheren"
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to create and manage "
+#~ "discounts for their own customers"
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om kortingen "
+#~ "voor eigen klanten te creëren en beheren"
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to create custom coupon "
+#~ "and send it by email for their own customers"
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om coupons "
+#~ "voor eigen klanten te creëeren en te verzenden per e-mail"
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to create invoice for "
+#~ "their order. This feature require that vendor are able to manage their "
+#~ "order individually"
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om facturen "
+#~ "te maken voor hun orders. Voor deze feature is het noodzakelijk dat de "
+#~ "verkoper de orders individueel kan beheren"
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to receive and manage "
+#~ "their order quote. This feature require that vendor are able to manage "
+#~ "their order individually"
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om order "
+#~ "quotes te ontvangen en beheren. Voor deze feature is het noodzakelijk dat "
+#~ "de verkoper de orders individueel kan beheren"
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to manage the selling of "
+#~ "their products."
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om de verkoop "
+#~ "van eigen producten te beheren."
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to create custom price "
+#~ "rules for their own products."
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om aangepaste "
+#~ "prijsregels voor eigen producten te creëeren."
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to create advanced "
+#~ "product options for their products."
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om "
+#~ "geavanceerde product opties voor eigen producten te creëeren."
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to access to bulk product "
+#~ "editing for their products."
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in toegang krijgen tot bulk "
+#~ "product editing voor eigen producten."
+
+#~ msgid "Vendors can create bundle products"
+#~ msgstr "Verkopers kunnen gebundelde producten creëeren"
+
+#~ msgid "Vendors can add a label on their products with their energy class"
+#~ msgstr "Verkopers kunnen een energielabel toevoegen aan hun producten"
+
+#~ msgid ""
+#~ "The vendor commissions are paid automatically by Adaptive Payments system"
+#~ msgstr ""
+#~ "De verkopers commissies worden automatisch betaald door het Adaptive "
+#~ "Payments system"
+
+#~ msgid "Vendors can create booking products"
+#~ msgstr "Verkopers kunnen bookings producten creëeren"
+
+#~ msgid "Vendors can manage avanced refund system"
+#~ msgstr "Verkopers kunnen advanced refund system beheren"
+
+#~ msgid "Coupon Data"
+#~ msgstr "Coupon gegevens"
+
+#~ msgid "General"
+#~ msgstr "Algemeen"
+
+#~ msgid "Usage Restriction"
+#~ msgstr "Gebruikers beperking"
+
+#~ msgid "Usage Limits"
+#~ msgstr "Gebruikers limieten"
+
+#~ msgid "Discount type"
+#~ msgstr "Kortingtype"
+
+#~ msgid "Coupon amount"
+#~ msgstr "Coupon bedrag"
+
+#~ msgid "Value of the coupon."
+#~ msgstr "Waarde van coupon."
+
+#~ msgid "Coupon expiry date"
+#~ msgstr "Vervaldatum coupon"
+
+#~ msgctxt "placeholder"
+#~ msgid "YYYY-MM-DD"
+#~ msgstr "JJJJ-MM-DD"
+
+#~ msgid "Minimum spend"
+#~ msgstr "Minimum uitgaven"
+
+#~ msgid "No minimum"
+#~ msgstr "Geen minimum"
+
+#~ msgid ""
+#~ "This field allows you to set the minimum subtotal needed to use the "
+#~ "coupon."
+#~ msgstr ""
+#~ "In dit veld vult u het minimum noodzakelijke subtotaal in, om deze coupon "
+#~ "te mogen gebruiken."
+
+#~ msgid "Maximum spend"
+#~ msgstr "Maximale besteding"
+
+#~ msgid "No maximum"
+#~ msgstr "Geen maximum"
+
+#~ msgid ""
+#~ "This field allows you to set the maximum subtotal allowed when using the "
+#~ "coupon."
+#~ msgstr ""
+#~ "In dit veld vult u het maximaal toegestane subtotaal in, bij gebruik van "
+#~ "deze coupon."
+
+#~ msgid "Individual use only"
+#~ msgstr "Enkel individueel gebruik"
+
+#~ msgid ""
+#~ "Check this box if the coupon cannot be used in conjunction with other "
+#~ "coupons."
+#~ msgstr ""
+#~ "Vink aan als deze coupon niet in combinatie met andere kortingsbonnen "
+#~ "gebruikt kan worden."
+
+#~ msgid "Exclude sale items"
+#~ msgstr "Afgeprijsde items uitsluiten"
+
+#~ msgid ""
+#~ "Check this box if the coupon should not apply to items on sale. Per-item "
+#~ "coupons will only work if the item is not on sale. Per-cart coupons will "
+#~ "only work if there are no sale items in the cart."
+#~ msgstr ""
+#~ "Vink aan als deze coupon niet toegepast kan worden op afgeprijsde items. "
+#~ "Per-item coupons werken uitsluitend als het item niet is afgeprijsd. Per-"
+#~ "cartcoupons werken uitsluitend indien er geen afgeprijsde items in de "
+#~ "winkelwagen zitten."
+
+#~ msgid "Products"
+#~ msgstr "Producten"
+
+#~ msgid ""
+#~ "Select products that must have been added to cart to use this coupon."
+#~ msgstr ""
+#~ "Selecteer producten die in de winkelwagen moeten zitten, om deze coupon "
+#~ "te kunnen gebruiken."
+
+#~ msgid "Exclude products"
+#~ msgstr "Producten uitsluiten"
+
+#~ msgid "Email restrictions"
+#~ msgstr "E-mail beperkingen"
+
+#~ msgid "No restrictions"
+#~ msgstr "Geen beperkingen"
+
+#~ msgid ""
+#~ "List of allowed emails to check against the customer's billing email when "
+#~ "an order is placed. Separate email addresses with commas."
+#~ msgstr ""
+#~ "Lijst met toegestane emails, om te controleren met de facturerings e-mail "
+#~ "van de klant, als een order wordt geplaatst. Scheid de e-mail adressen "
+#~ "met komma´s."
+
+#~ msgid "Usage limit per coupon"
+#~ msgstr "Gebruikslimiet per coupon"
+
+#~ msgctxt "placeholder"
+#~ msgid "Unlimited usage"
+#~ msgstr "Ongelimiteerd gebruik"
+
+#~ msgid "How many times this coupon can be used before it is void."
+#~ msgstr ""
+#~ "Aantal keren dat coupon kan worden gebruikt, voordat hij ongeldig wordt."
+
+#~ msgid "Limit usage to X items"
+#~ msgstr "Limiteer gebruik tot X items"
+
+#~ msgctxt "placeholder"
+#~ msgid "Apply to all qualifying items in cart"
+#~ msgstr "Pas toe op alle gekwalificeerde items in de winkelwagen"
+
+#~ msgid ""
+#~ "The maximum number of individual items this coupon can apply to when "
+#~ "using product discounts. Leave blank to apply to all qualifying items in "
+#~ "cart."
+#~ msgstr ""
+#~ "Maximum aantal individuele items, waarop deze coupon toegepast kan worden "
+#~ "bij het gebruik van product kortingen. Laat leeg om toe te passen op alle "
+#~ "gekwalificeerde items in de winkelwagen."
+
+#~ msgid "Usage limit per user"
+#~ msgstr "Gebruikslimiet per gebruiker"
+
+#~ msgid ""
+#~ "How many times this coupon can be used by an invidual user. Uses billing "
+#~ "email for guests, and user ID for logged in users."
+#~ msgstr ""
+#~ "Aantal keren dat deze coupon gebruikt kan worden door individuele "
+#~ "gebruiker. Gebruikt facturerings e-mail voor gasten en user ID voor "
+#~ "ingelogde gebruikers."
+
+#~ msgid ""
+#~ "Products which need to be in the cart to use this coupon or, for "
+#~ "\"Product Discounts\", which products are discounted."
+#~ msgstr ""
+#~ "Producten die in de winkelwagen moeten zitten om deze coupon te kunnen "
+#~ "gebruiken, of voor \"Product kortingen\", welke producten zijn afgeprijsd."
+
+#~ msgid ""
+#~ "Products which must not be in the cart to use this coupon or, for "
+#~ "\"Product Discounts\", which products are not discounted."
+#~ msgstr ""
+#~ "Producten die niet in de winkelwagen moeten zitten om deze coupon te "
+#~ "kunnen gebruiken, of voor \"Product kortingen\", welke producten niet "
+#~ "zijn afgeprijsd."
+
+#~ msgid "Shipping"
+#~ msgstr "Verzending"
+
+#~ msgid "Ready to ship in..."
+#~ msgstr "Klaar om te verzenden in..."
+
+#~ msgid "1 business day"
+#~ msgstr "1 werkdag"
+
+#~ msgid "1-2 business day"
+#~ msgstr "1-2 werkdagen"
+
+#~ msgid "1-3 business day"
+#~ msgstr "1-3 werkdagen"
+
+#~ msgid "3-5 business day"
+#~ msgstr "3-5 werkdagen"
+
+#~ msgid "1-2 weeks"
+#~ msgstr "1-2 weken"
+
+#~ msgid "2-3 weeks"
+#~ msgstr "2-3 weken"
+
+#~ msgid "3-4 weeks"
+#~ msgstr "3-4 weken"
+
+#~ msgid "4-6 weeks"
+#~ msgstr "4-6 weken"
+
+#~ msgid "6-8 weeks"
+#~ msgstr "6-8 weken"
+
+#~ msgid "Vacation"
+#~ msgstr "Vakantie"
+
+#~ msgid "WooCommerce Cost of Goods"
+#~ msgstr "WooCommerce Cost of Goods"
+
+#~ msgid "Cost of goods handling"
+#~ msgstr "Cost of Goods behandeling"
+
+#~ msgid "Include cost of goods in commission calculations"
+#~ msgstr "Cost of goeds toevoegen aan commissie berekeningen"
+
+#~ msgid ""
+#~ "Decide whether vendor commissions have to be calculated including cost of "
+#~ "goods value or not."
+#~ msgstr ""
+#~ "Bepaal of verkopers commissies moeten worden berekend inclusief of "
+#~ "exclusief de cost of goods waarde."
+
+#~ msgid "Show Cost of goods information"
+#~ msgstr "Toon cost of goods informatie"
+
+#~ msgid "Show cost of goods information in commission details page"
+#~ msgstr "Toon cost of goods informatie in de commissie details pagina"
+
+#~ msgctxt "part of: cost of goods included or cost of goods excluded"
+#~ msgid "cost of goods"
+#~ msgstr "cost of Goods"
+
+#~ msgid "%s commissions for the selected vendor"
+#~ msgstr "%s commissies voor de geselecteerde verkoper"
+
+#~ msgid "Showing reports for:"
+#~ msgstr "Toon rapporten voor:"
+
+#~ msgid "Show"
+#~ msgstr "Toon"
+
+#~ msgid "Top Sellers"
+#~ msgstr "Top verkopers"
+
+#~ msgid "No vendors found in range"
+#~ msgstr "Geen verkopers gevonden in bereik"
+
+#~ msgid "Top Earners"
+#~ msgstr "Top verdieners"
+
+#~ msgid "&larr; Choose a vendor to view stats"
+#~ msgstr "&larr; Kies een verkoper om statistieken te bekijken"
+
+#~ msgid "Number of commission granted"
+#~ msgstr "Aantal commissie toegekend"
+
+#~ msgid "Commissions amount"
+#~ msgstr "Commissie bedrag"
+
+#~ msgid "%s commission amount"
+#~ msgstr "%s commissie bedrag"
+
+#~ msgid "This is the sum of commission totals."
+#~ msgstr "Optelling van totale commissies."
+
+#~ msgid "%s paid commissions"
+#~ msgstr "%s betaalde commissies"
+
+#~ msgid "This is the sum of paid commission totals."
+#~ msgstr "Optelling van totale betaalde commissies."
+
+#~ msgid "%s unpaid commissions"
+#~ msgstr "%s onbetaalde commissies"
+
+#~ msgid "This is the sum of unpaid commission totals."
+#~ msgstr "Optelling van alle onbetaalde commissies."
+
+#~ msgid "%s processing commissions"
+#~ msgstr "%s commissies in verwerking"
+
+#~ msgid "This is the sum of processing commission totals."
+#~ msgstr "Optelling van totale commissies in verwerking."
+
+#~ msgid "%s pending commissions"
+#~ msgstr "%s commissies in behandeling"
+
+#~ msgid "This is the sum of pending commission totals."
+#~ msgstr "Optelling van totale commissies in behandeling."
+
+#~ msgid "%s commissions"
+#~ msgstr "%s commissies"
+
+#~ msgid "This is the sum of the commissions in this period."
+#~ msgstr "Optelling van alle commissies in deze periode."
+
+#~ msgid "%s refunded commissions"
+#~ msgstr "%s gerestitueerde commissies"
+
+#~ msgid "This is the sum of refunded commission totals."
+#~ msgstr "Optelling van totale gerestitueerde commissies."
+
+#~ msgid "%s cancelled commissions"
+#~ msgstr "%s geannuleerde commissies"
+
+#~ msgid "This is the sum of cancelled commission totals."
+#~ msgstr "Optelling van totale geannuleerde commissies."
+
+#~ msgid "Commission Totals"
+#~ msgstr "Totaal commissies"
+
+#~ msgid "Paid Commissions"
+#~ msgstr "Betaalde commissies"
+
+#~ msgid "Unpaid Commissions"
+#~ msgstr "Onbetaalde commissies"
+
+#~ msgid "Processing Commissions"
+#~ msgstr "Commissies in verwerking"
+
+#~ msgid "Pending Commissions"
+#~ msgstr "Commissies in behandeling"
+
+#~ msgid "Refunded Commissions"
+#~ msgstr "Gerstitueerde commissies"
+
+#~ msgid "Cancelled Commissions"
+#~ msgstr "Geannuleerde commissies"
+
+#~ msgid "%s net commissions in this period"
+#~ msgstr "%s netto commissies in deze periode"
+
+#~ msgid ""
+#~ "This is the sum of the order totals after any refunds and excluding "
+#~ "shipping and taxes."
+#~ msgstr ""
+#~ "Optelling van de order totalen, na aftrek van kortingen, en exclusief "
+#~ "verzending en belastingen."
+
+#~ msgid "%s orders placed"
+#~ msgstr "%s orders geplaatst"
+
+#~ msgid "%s items purchased"
+#~ msgstr "%s items gekocht"
+
+#~ msgid "Items purchased"
+#~ msgstr "Items gekocht"
+
+#~ msgid "Orders count"
+#~ msgstr "Orders geteld"
+
+#~ msgid "Net sales"
+#~ msgstr "Netto omzet"
+
+#~ msgid "%s registered vendors"
+#~ msgstr "%s geregistreerde verkopers"
+
+#~ msgid "%s total "
+#~ msgstr "%s totaal "
+
+#~ msgid "%s with selling capability"
+#~ msgstr "%s met verkoop capaciteit"
+
+#~ msgid "%s enabled"
+#~ msgstr "%s ingeschakeld"
+
+#~ msgid "%s without selling capability"
+#~ msgstr "%s zonder verkoop capaciteit"
+
+#~ msgid "%s disabled"
+#~ msgstr "%s uitgeschakeld"
+
+#~ msgid "Totals of registered vendors"
+#~ msgstr "Totaal geregistreerde verkopers"
+
+#~ msgid "new vendors"
+#~ msgstr "nieuwe verkopers"
+
+#~ msgid "Enabled Vs Disabled Vendors"
+#~ msgstr "Ingeschakelde vs uitgeschakelde verkopers"
+
+#~ msgid "vendors"
+#~ msgstr "verkopers"
+
+#~ msgid "%s sales for the selected vendor"
+#~ msgstr "%s omzet voor geselecteerde verkoper"
+
+#~ msgid "%s purchases for the selected vendor"
+#~ msgstr "%s inkopen voor geselecteerde verkoper"
+
+#~ msgid "Number of items sold"
+#~ msgstr "Aantal items verkocht"
+
+#~ msgid "Add shipping method"
+#~ msgstr "Voeg verzendmethode toe"
+
+#~ msgid "Save changes to continue adding shipping methods to this zone"
+#~ msgstr ""
+#~ "Sla wijziginen op om door te gaan met toevoegen van verzendmethodes in "
+#~ "deze zone"
+
+#~ msgid "No shipping methods offered to this zone."
+#~ msgstr "Geen verzendmethodes aangeboden in deze zone."
+
+#~ msgid "Enable Shipping"
+#~ msgstr "Verzenden inschakelen"
+
+#~ msgid "Method Title"
+#~ msgstr "Titel van methode"
+
+#~ msgid "This controls the title which the user sees during checkout."
+#~ msgstr "Bepaal de titel die de gebruiker ziet tijdens de checkout."
+
+#~ msgid "Per Vendor Shipping"
+#~ msgstr "Verzending per verkoper"
+
+#~ msgid "Tax Status"
+#~ msgstr "Belasting status"
+
+#~ msgid "Taxable"
+#~ msgstr "Belastbaar"
+
+#~ msgid "None"
+#~ msgstr "Geen"
+
+#~ msgid "Quick Info"
+#~ msgstr "Quick Info"
+
+#~ msgid "Do you need more information? Write to us!"
+#~ msgstr "Heeft u meer informatie nodig? Neem contact met ons op!"
+
+#~ msgid "Submit"
+#~ msgstr "Verzenden"
+
+#~ msgid "Unable to send email. Please try again"
+#~ msgstr "Niet in staat een e-mail te verzenden. Probeert u het nogmaals"
+
+#~ msgid "Email sent successfully"
+#~ msgstr "Uw e-mail is succesvol verzonden"
+
+#~ msgid "YITH Vendor Quick Info"
+#~ msgstr "YITH Vendor Quick Info"
+
+#~ msgid ""
+#~ "Add a quick info contact form in vendor's store page and in single "
+#~ "product page"
+#~ msgstr ""
+#~ "Voeg een ´quick info´ contact formulier toe in de verkopers´ winkelpagina "
+#~ "en de single product pagina"
+
+#~ msgid "Description"
+#~ msgstr "Omschrijving"
+
+#~ msgid "Submit button label text"
+#~ msgstr "Tekst van verzendknop label"
+
+#~ msgid "Hide from guests"
+#~ msgstr "Verbergen voor gasten"
+
+#~ msgid "Show in vendor's store page"
+#~ msgstr "Toon in verkopers´ winkelpagina"
+
+#~ msgid "Show in single product page"
+#~ msgstr "Toon in single product pagina"
+
+#~ msgid "Send a copy to website owner"
+#~ msgstr "Stuur een kopie naar de website eigenaar"
+
+#~ msgctxt "Placeholder like \"Name: Andrea"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgctxt "Placeholder like \"Email: andrea@yithemes.com"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgctxt "Placeholder like \"Message: Lorem ipsume dolor sit amet"
+#~ msgid "Message"
+#~ msgstr "Bericht"
+
+#~ msgid "YITH Vendor Store Location"
+#~ msgstr "YITH Vendor Store Location"
+
+#~ msgid "Display the vendor's store location in Google Maps"
+#~ msgstr "Toon de locatie van de verkopers´ winkel locatie in Google Maps"
+
+#~ msgid "Store Location"
+#~ msgstr "Winkel locatie"
+
+#~ msgid "If you have an API KEY for Google Maps, you can add it"
+#~ msgstr "Als u een API KEY heeft voor Google Maps, kunt u deze toevoegen"
+
+#~ msgctxt "[admin] placeholder link"
+#~ msgid "here"
+#~ msgstr "hier"
+
+#~ msgid ""
+#~ "Don’t know what an API KEY is or how to use it? If you need further "
+#~ "information, please click"
+#~ msgstr ""
+#~ "Weet u niet wat een API KEY is of hoe u deze kunt gebruiken? Voor meer "
+#~ "informatie, klik ier"
+
+#~ msgid "Seller vacation"
+#~ msgstr "Verkopers´ vakantie"
+
+#~ msgid "Enable seller vacation module"
+#~ msgstr "Verkopers´ vakantie module inschakelen"
+
+#~ msgid ""
+#~ "If you enable this option, each vendor will be able to close his/her shop "
+#~ "for vacation."
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zal iedere verkoper in staat zijn om zijn/"
+#~ "haar webwinkel te sluiten voor vakantie."
+
+#~ msgid "Enable shipping module"
+#~ msgstr "Verzendmodule inschakelen"
+
+#~ msgid ""
+#~ "If you enable this option, each vendor will be able to set a self cost "
+#~ "for the vendor shipping method"
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zal iedere verkoper in staat zijn om eigen "
+#~ "kosten voor verkoper verzendmethode in te stellen"
+
+#~ msgid "Live Chat"
+#~ msgstr "Live Chat"
+
+#~ msgid "Enable live chat for vendors"
+#~ msgstr "Live chat voor verkopers inschakelen"
+
+#~ msgid "Membership"
+#~ msgstr "Membership"
+
+#~ msgid "Enable membership for vendors"
+#~ msgstr "Membership voor verkopers inschakelen"
+
+#~ msgid "Subscription"
+#~ msgstr "Subscription"
+
+#~ msgid "Enable subscription for vendors"
+#~ msgstr "Subscription voor verkopers inschakelen"
+
+#~ msgid "Badge Management"
+#~ msgstr "Badge Management"
+
+#~ msgid "Enable badge management for vendors"
+#~ msgstr "Badge management voor verkopers inschakelen"
+
+#~ msgid "Product Size Charts"
+#~ msgstr "Product Size Charts"
+
+#~ msgid "Enable product size charts for vendors"
+#~ msgstr "Product size charts voor verkopers inschakelen"
+
+#~ msgid "Name Your Price"
+#~ msgstr "Name Your Price"
+
+#~ msgid "Enable Name Your Price for vendors"
+#~ msgstr "Name Your Price voor verkopers inschakelen"
+
+#~ msgid "Order Tracking"
+#~ msgstr "Order Tracking"
+
+#~ msgid "Enable Order Tracking for vendors"
+#~ msgstr "Order Tracking voor verkopers inschakelen"
+
+#~ msgid "Waiting List"
+#~ msgstr "Waiting List"
+
+#~ msgid "Enable Waiting List for vendors"
+#~ msgstr "Waiting List voor verkopers inchakelen"
+
+#~ msgid "Surveys"
+#~ msgstr "Surveys"
+
+#~ msgid "Enable surveys for vendors"
+#~ msgstr "Surveys voor verkopers inschakelen"
+
+#~ msgid "Review For Discounts"
+#~ msgstr "Review For Discounts"
+
+#~ msgid "Enable Review for Discounts for vendors"
+#~ msgstr "Review For Discounts voor verkopers inschakelen"
+
+#~ msgid "Coupon Email System"
+#~ msgstr "Coupon Email System"
+
+#~ msgid "Coupon Email System for vendors"
+#~ msgstr "Coupon Email System voor verkopers"
+
+#~ msgid "You can manage this features here"
+#~ msgstr "Deze features kunt hier beheren"
+
+#~ msgid "Vendor Settings"
+#~ msgstr "Verkopers instellingen"
+
+#~ msgid "PDF Invoice"
+#~ msgstr "PDF Factuur"
+
+#~ msgid "Enable PDF Invoice for vendors"
+#~ msgstr "PDF Factuur voor verkopers inschakelen"
+
+#~ msgid "Request a quote"
+#~ msgstr "Request a quote"
+
+#~ msgid "Enable Request a quote for vendors"
+#~ msgstr "Request a quote voor verkopers inschakelen"
+
+#~ msgid "Catalog Mode"
+#~ msgstr "Catalog Mode"
+
+#~ msgid "Enable Catalog Mode for vendors"
+#~ msgstr "Catalog Mode voor verkopers"
+
+#~ msgid "Role Based Prices"
+#~ msgstr "Role Based Prices"
+
+#~ msgid "Enable Role Based Prices for vendors"
+#~ msgstr "Role Based Prices voor verkopers"
+
+#~ msgid "Product Add-ons"
+#~ msgstr "Product Add-ons"
+
+#~ msgid "Enable Product Add-ons Options for vendors"
+#~ msgstr "Product Add-ons opties voor verkopers"
+
+#~ msgid "SMS Notifications"
+#~ msgstr "SMS Notifications"
+
+#~ msgid "Enable SMS Notifications for vendors"
+#~ msgstr "SMS Notifications voor verkopers inschakelen"
+
+#~ msgid "Bulk Product Editing"
+#~ msgstr "Bulk Product Editing"
+
+#~ msgid "Enable Bulk Product Editing Options for vendors"
+#~ msgstr "Bulk Product Editing voor verkopers inschakelen"
+
+#~ msgid "Product Bundles"
+#~ msgstr "Product Bundles"
+
+#~ msgid "Product Bundles features for vendors"
+#~ msgstr "Product Bundles features voor verkopers"
+
+#~ msgid "EU Energy Label"
+#~ msgstr "EU Energy Label"
+
+#~ msgid "EU Energy Label features for vendors"
+#~ msgstr "EU Energy Label features voor verkopers"
+
+#~ msgid "PayPal Adaptive Payments for WooCommerce"
+#~ msgstr "PayPal Adaptive Payments for WooCommerce"
+
+#~ msgid "PayPal Adaptive Payments for vendors"
+#~ msgstr "PayPal Adaptive Payments voor verkopers"
+
+#~ msgid "Booking"
+#~ msgstr "Booking"
+
+#~ msgid "Booking features for vendors"
+#~ msgstr "Booking features voor verkopers"
+
+#~ msgid "Advanced Refund System"
+#~ msgstr "Advanced Refund System"
+
+#~ msgid "Advacend Refund System features for vendors"
+#~ msgstr "Advanced Refund System features voor verkopers"
+
+#~ msgid "Commission page view"
+#~ msgstr "Commissie pagina weergave"
+
+#~ msgid "Select the default view for commission page"
+#~ msgstr "Selecteer de default weergave voor de commissie pagina"
+
+#~ msgid "Coupons"
+#~ msgstr "Coupons"
+
+#~ msgid "Include coupons in commission calculations"
+#~ msgstr "Commissie berekeningen incluseif coupons"
+
+#~ msgid ""
+#~ "Decide whether vendor commissions have to be calculated including coupon "
+#~ "value or not."
+#~ msgstr ""
+#~ "Bepaal of de verkopers commissie moet worden berekend inclusief of "
+#~ "exclusief coupon."
+
+#~ msgid "Taxes"
+#~ msgstr "Belastingen"
+
+#~ msgid "Tax in commission calculations management"
+#~ msgstr "Commissie berekeningen management inclusief belasting"
+
+#~ msgid ""
+#~ "Decide whether vendor commissions have to be calculated including/"
+#~ "excluding tax value."
+#~ msgstr ""
+#~ "Bepaal of de verkopers commissie moet worden berekend inclusief of "
+#~ "exclusief belasting."
+
+#~ msgid "WooCommerce Pages"
+#~ msgstr "WooCommerce Pagina´s"
+
+#~ msgid "Show vendor's name in shop page"
+#~ msgstr "Toon naam verkoper in winkelpagina"
+
+#~ msgid ""
+#~ "Select if you want to show vendor's name below products in Shop page."
+#~ msgstr ""
+#~ "Geef aan of u de naam van de verkoper wilt weergeven onder de producten "
+#~ "in de winkelpagina."
+
+#~ msgid "Show vendor's name in single product page"
+#~ msgstr "Toon naam verkoper in single product pagina"
+
+#~ msgid ""
+#~ "Select if you want to show vendor's name below products in Single product "
+#~ "page."
+#~ msgstr ""
+#~ "Geef aan of u de naam van de verkoper wilt weergeven onder producten in "
+#~ "single product pagina."
+
+#~ msgid "Show vendor's name in product category page"
+#~ msgstr "Toon naam verkoper in product categorie pagina"
+
+#~ msgid ""
+#~ "Select if you want to show vendor's name below products in Product "
+#~ "category page."
+#~ msgstr ""
+#~ "Geef aan of u de naam van de verkoper wilt weergeven onder producten in "
+#~ "de product categorie pagina."
+
+#~ msgid "Show \"Item sold\" information in single product page"
+#~ msgstr "Toon \"item verkocht\" informatie in single product pagina"
+
+#~ msgid ""
+#~ "Select if you want to show the text \"Item sold\" in single product page "
+#~ "among category and tag information"
+#~ msgstr ""
+#~ "Geef aan of u de tekst \"item verkocht\" wilt weergeven in single product "
+#~ "pagina, samen met categorie en tag informatie"
+
+#~ msgid "Show \"Report abuse\" link"
+#~ msgstr "Toon \"Meld misbruik\" link"
+
+#~ msgid ""
+#~ "Choose if you want to show the \"Report abuse\" link under product "
+#~ "thumbnails in single product page."
+#~ msgstr ""
+#~ "Geef aan of u de \"Meld misbruik\" link wilt weergeven als product "
+#~ "thumbnail in de single product pagina."
+
+#~ msgid "All products"
+#~ msgstr "Alle producten"
+
+#~ msgid "Only for vendor's products"
+#~ msgstr "Uitsluitend voor producten van verkoper"
+
+#~ msgid "\"Report abuse\" link text"
+#~ msgstr "\"Meld misbruik\" link tekst"
+
+#~ msgid "The report abuse link text."
+#~ msgstr "De meld misbruik link tekst."
+
+#~ msgid "Report abuse"
+#~ msgstr "Meld misbruik"
+
+#~ msgid "Show \"Vendor\" tab in single product page"
+#~ msgstr "Toon \"Verkoper\" tab in single product pagina"
+
+#~ msgid "Select if you want to show vendor's tab in single product page."
+#~ msgstr ""
+#~ "Geef aan of u de toon verkoper tab wilt weergeven in de single product "
+#~ "pagina."
+
+#~ msgid "Vendor Tab"
+#~ msgstr "Verkoper tab"
+
+#~ msgid "Change the label of \"Vendor Tab\" in single product page."
+#~ msgstr "Wijzig label van \"Verkoper tab\" in single product pagina."
+
+#~ msgid "Vendor tab position in single product page"
+#~ msgstr "Verkoper tab positie in single product pagina"
+
+#~ msgid ""
+#~ "Select the position for \"Vendor\" tab in single product page. You can "
+#~ "set to show the tab before or after WooCommerce tabs"
+#~ msgstr ""
+#~ "Selecteer de positie van de \"Vendor\" tab in de single product pagina. U "
+#~ "heeft de keuze uit voor of na de WooCommerce tabs"
+
+#~ msgid "First tab"
+#~ msgstr "Eerste tab"
+
+#~ msgid "After WooCommerce tabs"
+#~ msgstr "Na WooCommerce tabs"
+
+#~ msgid "Shipping info Tab"
+#~ msgstr "Verzend info Tab"
+
+#~ msgid "Change the label of \"Shipping info Tab\" in single product page."
+#~ msgstr "Wijzig label van \"Verzend info tab\" in single product pagina."
+
+#~ msgid "Vendor's registration page"
+#~ msgstr "Registratiepagina verkopers"
+
+#~ msgid "Enable Vendors registration in \"My Account\" page"
+#~ msgstr "Registratie verkopers inschakelen in \"My Account\" pagina"
+
+#~ msgid ""
+#~ "To make this option available you have to enable registration from \"My "
+#~ "Account\" page in <a href=\"%s\">WooCommerce > Settings > Account</a>"
+#~ msgstr ""
+#~ "Om deze optie beschikbaar te maken, moet u registratie inschakelen in de "
+#~ "\"My Account\" pagina in <a href=\"%s\">WooCommerce > Instellingen > "
+#~ "Account</a>"
+
+#~ msgid "Auto enable vendor account"
+#~ msgstr "Automatisch inschakelen verkopers account"
+
+#~ msgid ""
+#~ "After registration, the seller is entitled to sell. If you disable this "
+#~ "option, the administrator must enable the vendor account manually"
+#~ msgstr ""
+#~ "Na registratie is de verkoper gerechtigd om te verkopen. Als u deze optie "
+#~ "uitschakeld, moet de administrator het account van de verkoper handmatig "
+#~ "inschakelen"
+
+#~ msgctxt "part of: VAT/SSN number"
+#~ msgid "number"
+#~ msgstr "nummer"
+
+#~ msgid "Mark this field required"
+#~ msgstr "Maak dit een verplicht veld"
+
+#~ msgid "Terms and conditions"
+#~ msgstr "Algemene Voorwaarden"
+
+#~ msgid "PayPal Email"
+#~ msgstr "PayPal e-mail"
+
+#~ msgid "Become a vendor page"
+#~ msgstr "Wordt een verkoper pagina"
+
+#~ msgid "\"Become a vendor\" page"
+#~ msgstr "\"Wordt een verkoper\" pagina"
+
+#~ msgid "Become a vendor page style"
+#~ msgstr "Wordt een verkoper paginastijl"
+
+#~ msgid ""
+#~ "My Account Style: with login form and \"Register as a vendor\" checkbox"
+#~ msgstr ""
+#~ "My Account Stijl: met inlogformulier en \"Registreer als een verkoper\" "
+#~ "checkbox"
+
+#~ msgid "MultiVendor Style: Show only become a vendor form"
+#~ msgstr "MultiVendor Stijl: Toon uitsluitend wordt een verkoper formulier"
+
+#~ msgid "Terms and conditions page"
+#~ msgstr "Algemene Voorwaarden pagina"
+
+#~ msgid "\"Terms and conditions\" page"
+#~ msgstr "\"Algemene Voorwaarden\" pagina"
+
+#~ msgid "This sets the page for vendors Terms and conditions."
+#~ msgstr "Het instellen van de Algemene voorwaarden pagina, van de verkoper."
+
+#~ msgid "Vendor's Store Page"
+#~ msgstr "Verkopers Winkelpagina"
+
+#~ msgid "Vendor store slug prefix"
+#~ msgstr "Verkopers webwinkel slug voorvoegsel"
+
+#~ msgid ""
+#~ "Change the vendor store slug prefix. I.E.: http://mywebsite.com/"
+#~ "{store_slug}/vendor_name"
+#~ msgstr ""
+#~ "Wijzig verkopers webwinkel slug voorvoegsel. Vb: http://mywebsite.com/"
+#~ "{store_slug}/naam_verkoper"
+
+#~ msgid "Store link"
+#~ msgstr "Link webwinkel"
+
+#~ msgid "Select the style you want to use:"
+#~ msgstr "Selecteer de stijl die u wilt gebruiken:"
+
+#~ msgid "Theme style"
+#~ msgstr "Theme stijl"
+
+#~ msgid "Custom style"
+#~ msgstr "Custom stijl"
+
+#~ msgid "Vendor's name label color"
+#~ msgstr "Kleur naamlabel verkoper"
+
+#~ msgid "Use it in shop page and single product page"
+#~ msgstr "Gebruik in winkelpagina en single product pagina"
+
+#~ msgid "Vendor's name label color (on hover)"
+#~ msgstr "Kleur naamlabel verkoper (op hover)"
+
+#~ msgid "Use it in shop page and single product page (on hover)"
+#~ msgstr "Gebruik het in winkelpagina en single product pagina (op hover)"
+
+#~ msgid "Style for header image in vendor store page"
+#~ msgstr "Stijl voor header afbeelding in winkelpagina verkoper"
+
+#~ msgid "Select the vendor store page header style"
+#~ msgstr "Selecteer de header stijl van de winkelpagina van de verkoper"
+
+#~ msgid "Small Box"
+#~ msgstr "Kleine box"
+
+#~ msgid "Double Box"
+#~ msgstr "Dubbele box"
+
+#~ msgid "Vendor's skin background color"
+#~ msgstr "Achtergrondkleur skin verkoper"
+
+#~ msgid "Skin Background color"
+#~ msgstr "Achtergrondkleur skin"
+
+#~ msgid "Vendor's skin font color"
+#~ msgstr "Skin lettertype kleur verkoper"
+
+#~ msgid "Skin font color"
+#~ msgstr "Skin lettertype kleur"
+
+#~ msgid "Show vendor logo in vendor store page"
+#~ msgstr "Toon logo van verkoper in winkelpagina van verkoper"
+
+#~ msgid "Enable/Disable the vendor logo (user avatar) in vendor store page."
+#~ msgstr ""
+#~ "Logo (gebruikers avatar) van verkoper in de winkelpagina van de verkoper, "
+#~ "inschakelen of uitschakelen."
+
+#~ msgid "Show vendor logo"
+#~ msgstr "Logo verkoper weergeven"
+
+#~ msgid "Don't show vendor logo"
+#~ msgstr "Logo verkoper niet weergeven"
+
+#~ msgid "Let vendors decide"
+#~ msgstr "Laat verkopers bepalen"
+
+#~ msgid "Image size for vendor logo in vendor store page"
+#~ msgstr ""
+#~ "Afbeeldingsgrootte voor logo verkoper, in webwinkel pagina van verkoper"
+
+#~ msgid "Change the default image size for logo (Default: 62 px)."
+#~ msgstr ""
+#~ "Wijzig de standaard afbeeldingsgrootte voor het logo (standaard: 62 px)."
+
+#~ msgid "Image width for header image in vendor store page"
+#~ msgstr ""
+#~ "Afbeeldingsbreedte voor header afbeelding in webwinkel pagina van verkoper"
+
+#~ msgid "Image height for header image in vendor store page"
+#~ msgstr "Afbeeldigshoogte voor header afbeelding in webwinkel pagina"
+
+#~ msgid ""
+#~ "Change the default image height size for header. Set height to zero to "
+#~ "use original image height (Default: 0 px)."
+#~ msgstr ""
+#~ "Wijzig de standaard afbeeldingshoogte voor header. Stel hoogte in op nul "
+#~ "om de originele afbeeldingshoogte te gebruiken (Standaard: 0px)."
+
+#~ msgid "Settings for vendor's \"Related products\""
+#~ msgstr "Verkopers´ instellingen voor \"gerelateerde producten\""
+
+#~ msgid "Select related products to show in single product pages:"
+#~ msgstr ""
+#~ "Selecteer gerelateerde producten om weer te geven in single product pagina"
+#~ "´s:"
+
+#~ msgid "Do not show related products"
+#~ msgstr "Gerelateerde producten niet weergeven"
+
+#~ msgid "Related products from the entire store"
+#~ msgstr "Gerelateerde producten uit de hele webwinkel"
+
+#~ msgid "Related products from vendor's shop"
+#~ msgstr "Gerelateerde producten uit webwinkel verkoper"
+
+#~ msgid "Show vendor's description in store page"
+#~ msgstr "Toon beschrijving verkoper in webwinkel pagina"
+
+#~ msgid ""
+#~ "Select if you want to show vendor's description after the header of Store "
+#~ "page."
+#~ msgstr ""
+#~ "Selecteer als u de beschrijving van de verkoper wilt weergeven na de "
+#~ "header van de webwinkel."
+
+#~ msgid "Show vendor's name in store page"
+#~ msgstr "Toon naam verkoper in webwebwinkel"
+
+#~ msgid ""
+#~ "Select if you want to show vendor's name below products in Store page."
+#~ msgstr ""
+#~ "Selecteer als u de naam van de verkoper wilt weergeven onder de producten "
+#~ "in de webwinkel."
+
+#~ msgid "Show total vendor's sales in store page"
+#~ msgstr "Toon totaal omzet van verkoper in webwinkel"
+
+#~ msgid ""
+#~ "Select if you want to show total vendor's sales in the header of Store "
+#~ "page."
+#~ msgstr ""
+#~ "Selecteer of u de totaal omzet van de verkoper wilt weergeven in de "
+#~ "header van de webwinkel pagina."
+
+#~ msgctxt "part of: VAT/SSN number"
+#~ msgid "Show"
+#~ msgstr "Toon"
+
+#~ msgctxt "part of: VAT/SSN number"
+#~ msgid "in store page"
+#~ msgstr "in winkelpagina"
+
+#~ msgctxt ""
+#~ "[admin] part of: Select if you want to show the VAT/SSN information in "
+#~ "the header of Store page"
+#~ msgid "Select if you want to show the"
+#~ msgstr "Selecteer of u de informatie wilt weergeven"
+
+#~ msgctxt ""
+#~ "[admin] part of: Select if you want to show the VAT/SSN information in "
+#~ "the header of Store page"
+#~ msgid "information in the header of Store page"
+#~ msgstr "in de header van de winkelpagina"
+
+#~ msgid "Change the standard VAT/SSN label with your local tax wording"
+#~ msgstr "Wijzig de standaard VAT/SSN label met uw locale belasting termen"
+
+#~ msgid "Show website in store page"
+#~ msgstr "Toon website in webwinkelpagina"
+
+#~ msgid ""
+#~ "Select if you want to allow vendor to add external website information in "
+#~ "the header of Store page."
+#~ msgstr ""
+#~ "Selecteer als u wilt toestaan dat de verkoper externe website informatie "
+#~ "kan toevoegen, in de header van de webwinkel pagina."
+
+#~ msgid "Show reviews average rating"
+#~ msgstr "Toon gemiddelde reviews waardering"
+
+#~ msgid ""
+#~ "Select if you want to show reviews average ratings in the header of Store "
+#~ "page."
+#~ msgstr ""
+#~ "Selecteer of u de gemiddelde reviews waardering wilt weergeven in de "
+#~ "header van de webwinkel pagina."
+
+#~ msgid "Google Maps API Key"
+#~ msgstr "Google Maps API Key"
+
+#~ msgid ""
+#~ "Don’t know what an API KEY is or how to use it? For further information, "
+#~ "please click"
+#~ msgstr ""
+#~ "Weet u niet wat een API KEY is of hoe u deze kunt gebruiken? Voor meer "
+#~ "informatie, klik hier"
+
+#~ msgid "PayPal settings"
+#~ msgstr "PayPal instellingen"
+
+#~ msgid ""
+#~ "Configure here PayPal in order to process the payment of commissions."
+#~ msgstr ""
+#~ "Configureer hier PayPal om de betalingen van commissies te verwerken."
+
+#~ msgid "PayPal Service"
+#~ msgstr "PayPal Service"
+
+#~ msgid ""
+#~ "Choose the PayPal service to pay the commissions to vendors (the only "
+#~ "option currently available is MassPay)."
+#~ msgstr ""
+#~ "Kies de PayPal service om de commissies naar de verkopers te voldoen "
+#~ "(enige beschikbare optie is MassPay)."
+
+#~ msgid "MassPay"
+#~ msgstr "MassPay"
+
+#~ msgid "Payment Method"
+#~ msgstr "Betwaalwijze"
+
+#~ msgid "Choose how to pay the commissions to vendors"
+#~ msgstr "Bepaal hoe u de verkopers commissie wilt betalen"
+
+#~ msgid "Pay manually"
+#~ msgstr "Betaal handmatig"
+
+#~ msgid "Minimum Withdrawal"
+#~ msgstr "Minimum opname"
+
+#~ msgid ""
+#~ "Set the minimum value for commission withdrawals. This setting will "
+#~ "update all vendors' accounts that still have a threshold lower than the "
+#~ "one set."
+#~ msgstr ""
+#~ "Stel de minimum waarde in voor het opnemen van commissies. Deze instellen "
+#~ "zullen alle verkopers´ accounts updaten, die nog steeds een drempel "
+#~ "hebben lager dan de ingestelde drempel."
+
+#~ msgid "Sandbox environment"
+#~ msgstr "Sandbox omgeving"
+
+#~ msgid "Set environment as sandbox, for test purpose"
+#~ msgstr "Stel omgeving in als sandbox, voor test doeleinden"
+
+#~ msgid "API Username"
+#~ msgstr "API Gebruikersnaam"
+
+#~ msgid ""
+#~ "API username of PayPal administration account (if empty, settings of "
+#~ "PayPal in <a href=\"%s\">WooCommmerce Settings page</a> apply)."
+#~ msgstr ""
+#~ "API gebruikersnaam van PayPal administratie account (indien leeg, dan "
+#~ "zijn instellingen van PayPal in <a href=\"%s\">WooCommmerce Settings "
+#~ "page</a> van toepassing)."
+
+#~ msgid "API Password"
+#~ msgstr "API Wachtwoord"
+
+#~ msgid ""
+#~ "API password of PayPal administration account (if empty, settings of "
+#~ "PayPal in <a href=\"%s\">WooCommmerce Settings page</a> apply)."
+#~ msgstr ""
+#~ "API wachtwoord van PayPal administratie account (indien leeg, dan zijn "
+#~ "instellingen van PayPal in <a href=\"%s\">WooCommmerce Settings page</a> "
+#~ "van toepassing)."
+
+#~ msgid "API Signature"
+#~ msgstr "API Handtekening"
+
+#~ msgid ""
+#~ "API signature of PayPal administration account (if empty, settings of "
+#~ "PayPal in <a href=\"%s\">WooCommmerce Settings page</a> apply)."
+#~ msgstr ""
+#~ "API Handtekening van PayPal administratie account (indien leeg, dan zijn "
+#~ "instellingen van PayPal in <a href=\"%s\">WooCommmerce Settings page</a> "
+#~ "van toepassing)."
+
+#~ msgid "Payment Email Subject"
+#~ msgstr "Onderwerp van betaling e-mail"
+
+#~ msgid ""
+#~ "Subject for email sent by PayPal to customers when payment request is "
+#~ "registered"
+#~ msgstr ""
+#~ "Onderwerp van e-mail die wordt verzonder door PayPal aan klanten, wanneer "
+#~ "een betalingsverzoek is geregistreerd"
+
+#~ msgid "Notification URL"
+#~ msgstr "Notificatie URL"
+
+#~ msgid ""
+#~ "Copy this URL and set it into PayPal admin panel, to receive IPN from "
+#~ "their server"
+#~ msgstr ""
+#~ "Kopieer deze URL en plaats het in PayPal admin panel, om IPN van hun "
+#~ "server te ontvangen"
+
+#~ msgid "Report settings."
+#~ msgstr "Rapport instellingen."
+
+#~ msgid "Vendor Report limit"
+#~ msgstr "Verkoper Rapport limiet"
+
+#~ msgid "Choose the maximum number of rows you can show in the reports"
+#~ msgstr "Kies het maximum aantal rijen die u kunt weergeven in de rapporten"
+
+#~ msgid "10"
+#~ msgstr "10"
+
+#~ msgid "20"
+#~ msgstr "20"
+
+#~ msgid "Enable product amount limit"
+#~ msgstr "Limiteer hoeveelheid producten inschakelen"
+
+#~ msgid "Limit product amount for each vendor"
+#~ msgstr "Limitieer hoeveelheid producten voor iedere verkoper"
+
+#~ msgid "Product amount limit"
+#~ msgstr "Limiet hoeveelheid producten"
+
+#~ msgid "Set a maximum number of products that each vendor can publish"
+#~ msgstr ""
+#~ "Stel een maximum in voor het aantal producten die iedere verkoper mag "
+#~ "publiceren"
+
+#~ msgid "Product listings"
+#~ msgstr "Product lijsten"
+
+#~ msgid "Hide vendor products from store loop page"
+#~ msgstr "Verberg producten van verkopers in de webwinkel pagina"
+
+#~ msgid ""
+#~ "Hide products belonging to vendors from store loop page - this means that "
+#~ "vendor products will only be visible on the individual vendor pages."
+#~ msgstr ""
+#~ "Verberg producten behorende tot verkopers in de webwinkel pagina - dit "
+#~ "betekend dat producten van verkopers uitsluitend zichtbaar zijn in de "
+#~ "individuele verkopers pagina´s."
+
+#~ msgid "Skip admin review"
+#~ msgstr "Sla admin goedkeuring over"
+
+#~ msgid ""
+#~ "If you enable this option any vendor could publish products without super "
+#~ "admin authorization. This is the default option for any new vendor It is "
+#~ "possible to override these settings for each vendor. "
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, kan iedere verkoper producten publiceren "
+#~ "zonder super admin autorisatie. Dit is de standaard optie voor alle "
+#~ "nieuwe verkopers, het is mogelijk om deze instellingen te overschrijven "
+#~ "voor iedere verkoper. "
+
+#~ msgid "Set products to “Pending review\" status after vendors edit them"
+#~ msgstr ""
+#~ "Zet producten op \"goedkeuring in behandeling\" status, nadat verkopers "
+#~ "ze hebben bewerkt"
+
+#~ msgid ""
+#~ "Enabling this option will let you set any product on which a vendor "
+#~ "applies a change to “Pending review” status, if the vendor is not allowed "
+#~ "to apply changes to his/her products without super admin approval."
+#~ msgstr ""
+#~ "Als het voor de verkoper niet is toegestaan om veranderingen aan te "
+#~ "brengen aan zijn producten, zonder super admin goedkeuring, schakel dan "
+#~ "deze optie in. U kunt dan alle statussen van producten die de verkoper "
+#~ "heeft gewijzigd op \"goedkeuring in behandeling\" zetten."
+
+#~ msgid "Force \"Skip reviews\" option for all vendors"
+#~ msgstr "Forceer \"Goedkeuring overslaan\" optie voor alle verkopers"
+
+#~ msgid "Force option"
+#~ msgstr "Optie forceren"
+
+#~ msgid "Force \"Skip admin review\" options for all vendors."
+#~ msgstr "Forceer \"Admin goedkeuring overslaan\" opties voor alle verkopers."
+
+#~ msgid "Enable YIT Shortcodes Button"
+#~ msgstr "YIT Shortcodes Button inschakelen"
+
+#~ msgid ""
+#~ "If you enable this option, each vendor will be able to use YIT Shortcodes "
+#~ "in Add/Edit Product page."
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zal iedere verkoper YIT Shortcodes kunnen "
+#~ "gebruiken in Toevoegen/Bewerken Productpagina."
+
+#~ msgid "Coupon management"
+#~ msgstr "Coupon beheer"
+
+#~ msgid "Enable coupon management"
+#~ msgstr "Coupon beheer inschakelen"
+
+#~ msgid ""
+#~ "If you enable this option, each vendor will be able to create coupon for "
+#~ "their own products."
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zal iedere verkoper in staat zijn een coupon "
+#~ "te creëeren voor eigen producten."
+
+#~ msgid "Review management"
+#~ msgstr "Review beheer"
+
+#~ msgid "Enable review management"
+#~ msgstr "Review beheer inschakelen"
+
+#~ msgid ""
+#~ "If you enable this option, each vendor will be able to manage reviews on "
+#~ "his/her own products independently."
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zal iedere verkoper in staat zijn de reviews "
+#~ "op zijn producten, zelfstandig te beheren."
+
+#~ msgid "Parent-suborder synchronization"
+#~ msgstr "Synchronisatie bovenliggende order - sub-order"
+
+#~ msgid ""
+#~ "All changes made to general orders will be synchronized with the "
+#~ "individual vendor's order"
+#~ msgstr ""
+#~ "Alle veranderingen die gemaakt wordenin de algemene orders, zullen worden "
+#~ "gesynchroniseerd met de individuele verkopers´ order"
+
+#~ msgid "Suborder-parent order status synchronization"
+#~ msgstr "Synchronisatie sub-order - bovenliggende orderstatus"
+
+#~ msgid ""
+#~ "Check this option to update the parent order status when editing the "
+#~ "child order status"
+#~ msgstr ""
+#~ "Selecteer deze optie om de bovenliggende orderstatus te updaten, wanneer "
+#~ "de onderliggende orderstatus bewerkt wordt"
+
+#~ msgid "Order refund management"
+#~ msgstr "Order restitutie beheer"
+
+#~ msgid ""
+#~ "If you enable this option, each vendor will be able to manage refund on "
+#~ "his/her own orders independently."
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zal iedere verkoper restituties op zijn "
+#~ "eigen producten zelfstandig kunnen beheren."
+
+#~ msgid "Hide Customer Section"
+#~ msgstr "Verberg klanten sectie"
+
+#~ msgid ""
+#~ "Check this option to prevent vendors from seeing 'Customer' section in "
+#~ "order details"
+#~ msgstr ""
+#~ "Selecteer deze optie om te voorkomen dat verkopers de \"klant\" sectie "
+#~ "zien in de order datails"
+
+#~ msgid "Hide Payment Information"
+#~ msgstr "Verberg betalingsinformatie"
+
+#~ msgid ""
+#~ "Check this option to prevent vendors from seeing 'Payment' section in "
+#~ "order details"
+#~ msgstr ""
+#~ "Selecteer deze optie om te voorkomen dat verkopers de \"betaling\" sectie "
+#~ "zin in order details"
+
+#~ msgid "Prevent vendors to resend order emails"
+#~ msgstr "Voorkom dat verkopers order e-mails nogmaals versturen"
+
+#~ msgid ""
+#~ "It prevents the vendors to resend the emails related to the orders to "
+#~ "customers."
+#~ msgstr ""
+#~ "Het voorkomt dat verkopers e-mails gerelateerd aan klantorders nogmaals "
+#~ "verzenden."
+
+#~ msgid "Prevent vendors to edit custom fields"
+#~ msgstr "Voorkom dat verkopers aangepasten velden bewerken"
+
+#~ msgid "It prevents the vendors to edit the shop orders custom fileds"
+#~ msgstr ""
+#~ "Het voorkomt dat verkopers de aangepaste winkelorders velden bewerken"
+
+#~ msgid "Featured Products management"
+#~ msgstr "Featured productenbeheer"
+
+#~ msgid "Enable featured products management"
+#~ msgstr "Featured productenbeheer inschakelen"
+
+#~ msgid ""
+#~ "If you enable this option, each vendor will be able to set \"Featured\" "
+#~ "on his/her own products independently (this option can be override for "
+#~ "each vendor)."
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, kan iedere verkoper zelfstandig \"Featured\" "
+#~ "op zijn producten instellen. (deze optie kan overschreven worden voor "
+#~ "iedere verkoper)."
+
+#~ msgid "Enable advanced editor for vendor description"
+#~ msgstr "Geavanceerde editor voor verkoper beschrijving inschakelen"
+
+#~ msgid ""
+#~ "If you enable this option, each vendor will be able to use an advanced "
+#~ "editor for store description."
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, is iedere verkoper in staat om een "
+#~ "geavanceerde editor, voor webwinkel beschrijving, te gebruiken."
+
+#~ msgid "Enable media button in text editor"
+#~ msgstr "Media knop in tekst bewerker inschakelen"
+
+#~ msgid ""
+#~ "If you enable this option, each vendor will be able to use the media "
+#~ "button in advanced editor."
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, kan iedere verkoper de media butten "
+#~ "gebruiken in de geavanceerde editor."
+
+#~ msgid "Shop Admins"
+#~ msgstr "Webwinkel Admins"
+
+#~ msgid "Enable vendors to add admins"
+#~ msgstr "Vendors kunnen admins toevoegen inschakelen"
+
+#~ msgid ""
+#~ "Thanks to this option, your vendors will be able to assign shop admins "
+#~ "for their own shop page. Please, be careful while using this option, "
+#~ "because this way your vendors will be able to see all users registered to "
+#~ "the entire store, first name, last name and email address and this could "
+#~ "be a violation of their own privacy. We always recommend you enable this "
+#~ "option only if necessary. Alternatively, your vendors will be able to see "
+#~ "who the admins of their shop page are and make a request to the global "
+#~ "admin to have them added."
+#~ msgstr ""
+#~ "Dankzij deze optie kunnen uw verkopers winkel admins voor hun eigen "
+#~ "webwinkel toewijzen. Let goed op bij het gebruiken van deze optie, de "
+#~ "verkopers krijgen namelijk inzicht in alle geregistreerde gebruikers van "
+#~ "de gehele winkel, voornaam, achternaam en e-mailadres. Dit kan worden "
+#~ "gezien worden als inbraak op privacy. Wij raden altijd aan deze optie "
+#~ "uitsluitend te gebruiken als het noodzakelijk is. Een andere mogelijkheid "
+#~ "is, dat verkopers kunnen zien wie de admins zijn van hun webwinkel, "
+#~ "vervolgens kunnen zij een verzoek sturen naar de globel admin om ze toe "
+#~ "te laten voegen."
+
+#~ msgid "Vendor's"
+#~ msgstr "Verkoper"
+
+#~ msgid "Company legal notes"
+#~ msgstr "Juridische opmerkingen bedrijf"
+
+#~ msgid ""
+#~ "Insert company legal notes (e.g. Managing Directors, Court of "
+#~ "registration, Commercial registration number, ecc.)"
+#~ msgstr ""
+#~ "Juridische opmerkingen bedrijf invoegen (vb. directie, rechtbank van "
+#~ "registratie, handelsregistratienummer, etc)"
+
+#~ msgid "Website"
+#~ msgstr "Website"
+
+#~ msgid "Insert website url"
+#~ msgstr "Website url invoegen"
+
+#~ msgid "Allow vendors to add products without admin review"
+#~ msgstr ""
+#~ "Sta toe dat verkopers producten kunnen toevoegen zonder goedkeuring admin"
+
+#~ msgid "Enable Featured products management"
+#~ msgstr "Featured products beheer inschakelen"
+
+#~ msgid "Allow vendors to manage featured products"
+#~ msgstr "Toestaan dat verkopers featured products beheren"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "Vendor Shop Admins"
+#~ msgstr "Verkopers´ winkel Admins"
+
+#~ msgid ""
+#~ "User that can manage products in this vendor shop and view sale reports."
+#~ msgstr ""
+#~ "Gebruiker die de producten in de webwinkel kan beheren en omzetrapporten "
+#~ "kan zien."
+
+#~ msgid "Contact information :"
+#~ msgstr "Contact information:"
+
+#~ msgid "Location"
+#~ msgstr "Locatie"
+
+#~ msgid ""
+#~ "Store address. e.g.: MyStore S.A. Avenue MyStore 55, 1800 Vevey, "
+#~ "Switzerland"
+#~ msgstr ""
+#~ "Adres winkel. vb.: MyStore S.A. Avenue MyStore 55, 1800 Vevey, Switzerland"
+
+#~ msgid "Store email"
+#~ msgstr "E-mail winkel"
+
+#~ msgid "Telephone"
+#~ msgstr "Telefoon"
+
+#~ msgid "Social profile:"
+#~ msgstr "Sociaal profiel:"
+
+#~ msgid "Payments:"
+#~ msgstr "Betalingen:"
+
+#~ msgid "Bank Account (IBAN/BIC)"
+#~ msgstr "Bankrekeningnummer (IBAN/BIC)"
+
+#~ msgid "Vendor's IBAN/BIC bank account"
+#~ msgstr "Bankrekeningnummer verkoper IBAN/BIC"
+
+#~ msgid "Registration date:"
+#~ msgstr "Registratie datum:"
+
+#~ msgctxt "[Admin]: option description"
+#~ msgid ""
+#~ "Upload an image with the correct aspect ratio settings. Recommended size "
+#~ "(width x height)"
+#~ msgstr ""
+#~ "Upload een afbeelding met de juiste aspect ratio instellingen. Aanbevolen "
+#~ "formaat (breedte x hoogte)"
+
+#~ msgid "Upload/Add image"
+#~ msgstr "Upload/toevoegen afbeelding"
+
+#~ msgid "Remove image"
+#~ msgstr "Afbeelding verwijderen"
+
+#~ msgid "Vendor shop page information"
+#~ msgstr "Verkopers´ winkel pagina informatie"
+
+#~ msgid "Description for Vendor Tab in single product page."
+#~ msgstr "Beschrijving voor Verkoper Tab in single productpagina."
+
+#~ msgid "Enable store header logo:"
+#~ msgstr "Winkel header logo inschakelen:"
+
+#~ msgid "Show logo in the vendor's store header page"
+#~ msgstr "Toon logo in verkopers´ winkel header pagina"
+
+#~ msgid "MyStore S.A. Avenue MyStore 55, 1800 Vevey, Switzerland"
+#~ msgstr "MyStore S.A. Avenue MyStore 55, 1800 Vevey, Switzerland"
+
+#~ msgid "Insert store email address."
+#~ msgstr "E-mailadres winkel invoegen."
+
+#~ msgid "Insert store telephone number."
+#~ msgstr "Telefoonnummer winkel invoegen."
+
+#~ msgctxt "part of: The VAT/SSN of your store"
+#~ msgid "The"
+#~ msgstr "De"
+
+#~ msgctxt "part of: The VAT/SSN of your store"
+#~ msgid "of your store"
+#~ msgstr "van uw winkel"
+
+#~ msgid "Website url"
+#~ msgstr "Website url"
+
+#~ msgid "Add social page link here"
+#~ msgstr "Social media pagina link hier toevoegen"
+
+#~ msgid "Save Front page Settings"
+#~ msgstr "Front page instellingen opslaan"
+
+#~ msgid "Payments information"
+#~ msgstr "Betalingsinformatie"
+
+#~ msgid "Payment type:"
+#~ msgstr "Betaalwijze:"
+
+#~ msgid "Choose payment method for crediting commissions"
+#~ msgstr "Kies betaalwijze voor doorberekenen commissies"
+
+#~ msgid "Threshold"
+#~ msgstr "Drempel"
+
+#~ msgid "Minimum vendor's earning before a vendor's commissions can be paid"
+#~ msgstr ""
+#~ "Minimale opbrengsten van verkoper, voordat verkopers´ commissie kan "
+#~ "worden betaald"
+
+#~ msgid "Minimum threshold allowed by site administrator is"
+#~ msgstr "Minimale drempel toegestaan door site administrator is"
+
+#~ msgid "Save Payments Information"
+#~ msgstr "Betalingsinformatie opslaan"
+
+#~ msgid "Store general information"
+#~ msgstr "Algemene informatie winkel"
+
+#~ msgid "Store name (displayed in vendor tabs and vendor store page)."
+#~ msgstr "Naam webwinkel (weergegeven in verkopers´ tabs en winkelpagina)."
+
+#~ msgid ""
+#~ "The “slug” is the URL-friendly version of the name. It is usually "
+#~ "lowercased and contains only letters, numbers and hyphens."
+#~ msgstr ""
+#~ "De \"slug\" is de URL-vriendelijke benaming. Vaak is deze geschreven met "
+#~ "kleine letters, nummers en koppeltekens."
+
+#~ msgid "Store capability and rate:"
+#~ msgstr "Winkel capaciteit en tarief:"
+
+#~ msgid "Skip admin review: "
+#~ msgstr "Sla admin goedkeuring over: "
+
+#~ msgid "Sale status: "
+#~ msgstr "Verkoop status: "
+
+#~ msgid "Registration date: "
+#~ msgstr "Registratie datum: "
+
+#~ msgid "Store Admins: "
+#~ msgstr "Winkel Admins: "
+
+#~ msgid "Save Vendor Settings"
+#~ msgstr "Verkopers´ instellingen opslaan"
+
+#~ msgid "Zone Name"
+#~ msgstr "Naam zone"
+
+#~ msgid "Remove"
+#~ msgstr "Verwijderen"
+
+#~ msgid "Select regions within this zone"
+#~ msgstr "Selecteer regio´s binnen deze zone"
+
+#~ msgid "Limit to specific ZIP/postcodes"
+#~ msgstr "Beperk tot specifieke ZIP/postcodes"
+
+#~ msgid "List 1 postcode per line"
+#~ msgstr "Schrijf 1 postcode per regel"
+
+#~ msgid ""
+#~ "Postcodes containing wildcards (e.g. CB23*) and fully numeric ranges (e."
+#~ "g. <code>90210...99000</code>) are also supported."
+#~ msgstr ""
+#~ "Postcodes met speciale tekens (e.g. CB23*) en volledige nummers (e.g. "
+#~ "<code>90210...99000</code>) worden ook ondersteund."
+
+#~ msgid ""
+#~ "Drag and drop to re-order your custom zones. This is the order in which "
+#~ "they will be matched against the customer address."
+#~ msgstr ""
+#~ "Slepen en neerzetten om uw aangepaste zones te herordenen. In deze "
+#~ "volgorde worden ze gekoppeld aan de adressen van klanten."
+
+#~ msgid "Close modal panel"
+#~ msgstr "Sluit modaal paneel"
+
+#~ msgid "Save Changes"
+#~ msgstr "Wijzigingen opslaan"
+
+#~ msgid "Shipping Settings"
+#~ msgstr "Verzend instellingen"
+
+#~ msgid "Enable shipping:"
+#~ msgstr "Verzenden inschakelen:"
+
+#~ msgid "Enable shipping cost"
+#~ msgstr "Verzendkosten inschakelen"
+
+#~ msgid "Default Shipping Price:"
+#~ msgstr "Standaard verzendkosten:"
+
+#~ msgid "The default shipping price for each product in the cart."
+#~ msgstr "De standaard verzendksoten voor elk product in de winkelwagen."
+
+#~ msgid "Per Product Additional Price:"
+#~ msgstr "Toegevoegde prijs per product:"
+
+#~ msgid ""
+#~ "The additional price for the first product of every second product type "
+#~ "in the cart."
+#~ msgstr ""
+#~ "De toegevoegde prijs voor het eerste product, van elk tweede productype "
+#~ "in de winkelwagen."
+
+#~ msgid "Per Qty Product Additional Price:"
+#~ msgstr "Per Qty product toegevoegde prijs:"
+
+#~ msgid "The additional price for every second product of the same type"
+#~ msgstr "De toegevoegde prijs voor elk tweede product van hetzelfde type"
+
+#~ msgid "Processing Time"
+#~ msgstr "Bewerkingstijd"
+
+#~ msgid "The time required before sending the product for delivery"
+#~ msgstr "De tijd die nodig is voordat het product verzonden wordt"
+
+#~ msgid "Shipping Policy:"
+#~ msgstr "Verzend beleid:"
+
+#~ msgid "You terms, conditions and instructions about shipping"
+#~ msgstr "Uw algemene voorwaarden en instructies betreffende verzenden"
+
+#~ msgid "Refund Policy:"
+#~ msgstr "Restitutiebeleid:"
+
+#~ msgid "You terms, conditions and instructions about refund"
+#~ msgstr "Uw algemene voorwaarden en instructies betreffende restitutie"
+
+#~ msgid "Shipping From"
+#~ msgstr "Verzenden van"
+
+#~ msgid "- Select a location -"
+#~ msgstr "- Selecteer locatie -"
+
+#~ msgid "Location from where the product are shipped for delivery"
+#~ msgstr "Locatie vanwaar de producten worden verstuurd"
+
+#~ msgid "Save Shipping Settings"
+#~ msgstr "Verzend instellingen opslaan"
+
+#~ msgid "Add shipping zone"
+#~ msgstr "Voeg verzendzone toe"
+
+#~ msgid "Seller vacation info"
+#~ msgstr "Vakantie informatie verkoper"
+
+#~ msgid "Vacation message:"
+#~ msgstr "Vakantie bericht:"
+
+#~ msgid "Add here the vacation message."
+#~ msgstr "Voeg hier het vakantie bericht in."
+
+#~ msgid "Vacation date"
+#~ msgstr "Vakantie datum"
+
+#~ msgid "Start date"
+#~ msgstr "Startdatum"
+
+#~ msgid "End date"
+#~ msgstr "Einddatum"
+
+#~ msgid "Selling option"
+#~ msgstr "Verkoop opties"
+
+#~ msgid "Prevent sales temporarily"
+#~ msgstr "Stop verkopen tijdelijk"
+
+#~ msgid "Keep selling anyway"
+#~ msgstr "Ga toch door met verkopen"
+
+#~ msgid "Save Vacation Settings"
+#~ msgstr "Vakantie instellingen opslaan"
+
+#~ msgid "Paypal email"
+#~ msgstr "Paypal email"
+
+#~ msgid "Order number"
+#~ msgstr "Order nummer"
+
+#~ msgid "The commission has been credited successfully."
+#~ msgstr "De commissie is succesvol doorberekend."
+
+#~ msgid "Commission #%s detail"
+#~ msgstr "Commissie #%s detail"
+
+#~ msgid "Some commissions have not been credited properly."
+#~ msgstr "Enkele commissies zijn niet juist doorberekend."
+
+#~ msgid "Details of commissions not paid"
+#~ msgstr "Details van onbetaalde commissies"
+
+#~ msgid "Commission #%s"
+#~ msgstr "Commissie #%s"
+
+#~ msgid "Owner:"
+#~ msgstr "Eigenaar:"
+
+#~ msgid "Store Name:"
+#~ msgstr "Naam webwinkel:"
+
+#~ msgid "Store Email"
+#~ msgstr "E-mail webwinkel"
+
+#~ msgid "New vendor registered"
+#~ msgstr "Nieuwe verkoper geregistreerd"
+
+#~ msgid "A new user has made a request to become a vendor in your store."
+#~ msgstr ""
+#~ "Een nieuwe gebruiker heeft een verzoek achter gelaten om verkoper te "
+#~ "worden in uw webwinkel."
+
+#~ msgid "Vendor detail"
+#~ msgstr "Details verkoper"
+
+#~ msgid "PayPal email"
+#~ msgstr "PayPal email"
+
+#~ msgid "Commission number: %s"
+#~ msgstr "Commissie nummer: %s"
+
+#~ msgid "jS F Y"
+#~ msgstr "jS F Y"
+
+#~ msgid "Store Name"
+#~ msgstr "Naam webwinkel"
+
+#~ msgid "The order #%d from %s has been cancelled. The order was as follows:"
+#~ msgstr "De order #%d van %s is geannuleerd. De order zag er als volgt uit:"
+
+#~ msgid "Order number: %s"
+#~ msgstr "Order numner: %s"
+
+#~ msgctxt "New Order Email"
+#~ msgid "Commission id:"
+#~ msgstr "Commissie id:"
+
+#~ msgctxt "New Order Email"
+#~ msgid "Commission rate:"
+#~ msgstr "Commissie tarief:"
+
+#~ msgctxt "New Order Email"
+#~ msgid "Tax:"
+#~ msgstr "Btw:"
+
+#~ msgctxt "New Order Email"
+#~ msgid "Earnings:"
+#~ msgstr "Verdiensten:"
+
+#~ msgid "Quantity: %s"
+#~ msgstr "Hoeveelheid: %s"
+
+#~ msgid "Cost: %s"
+#~ msgstr "Kosten: %s"
+
+#~ msgid "Download %d"
+#~ msgstr "Download %d"
+
+#~ msgid "Download"
+#~ msgstr "Download"
+
+#~ msgid "Your vendor account has been approved on %s."
+#~ msgstr "Uw verkopers´ account is goedgekeurd op %s."
+
+#~ msgid ""
+#~ "From your vendor dashboard you can view your recent commissions, view the "
+#~ "sales report and manage your store and payment settings. Click <a href="
+#~ "\"%s\">here</a> to access <strong>store dashboard</strong>."
+#~ msgstr ""
+#~ "In uw verkopers dashboard kunt uw uw recente commissies zien, bekijk het "
+#~ "omzetrapport en beheer uw webwinkel en betalings instellingen. Klik <a "
+#~ "href=\"%s\">hier</a> voor toegang tot <strong>webwinkel dashboard</"
+#~ "strong>."
+
+#~ msgid "You have received an order from %s."
+#~ msgstr "U heeft een order ontvangen van %s."
+
+#~ msgid "Order #%s"
+#~ msgstr "Order #%s"
+
+#~ msgid "Price"
+#~ msgstr "Prijs"
+
+#~ msgctxt "Email: commission rate column"
+#~ msgid "Commission"
+#~ msgstr "Commissies"
+
+#~ msgctxt "Email: commission amount column"
+#~ msgid "Earnings"
+#~ msgstr "Verdiensten"
+
+#~ msgid "Product Image"
+#~ msgstr "Productafbeelding"
+
+#~ msgid "You have received an order from %s. The order is as follows:"
+#~ msgstr "U heeft een order ontvangen van %s. De order ziet er als volgt uit:"
+
+#~ msgctxt "Email: tax amount column"
+#~ msgid "Tax"
+#~ msgstr "Btw"
+
+#~ msgctxt "Email: commission amount column"
+#~ msgid "(inc. taxes)"
+#~ msgstr "(inc. taxes)"
+
+#~ msgctxt "Email: Title before the Shipping fee list"
+#~ msgid "Shipping Fee"
+#~ msgstr "Verzendkosten"
+
+#~ msgctxt "Email: shièpèing method column"
+#~ msgid "Shipping Method"
+#~ msgstr "Verzendmethode"
+
+#~ msgctxt "Email: commission rate column"
+#~ msgid "Rate"
+#~ msgstr "Tarief"
+
+#~ msgctxt "Email: commission amount column"
+#~ msgid "Amount"
+#~ msgstr "Bedrag"
+
+#~ msgid "Store name *"
+#~ msgstr "Naam webwinkel *"
+
+#~ msgid "Address *"
+#~ msgstr "Adres *"
+
+#~ msgid "Store email *"
+#~ msgstr "E-mail webwinkel *"
+
+#~ msgid "Telephone *"
+#~ msgstr "Telefoon *"
+
+#~ msgid ""
+#~ "I&rsquo;ve read and accept the <a href=\"%s\" target=\"_blank\">terms "
+#~ "&amp; conditions</a>"
+#~ msgstr ""
+#~ "I&rsquo;ve lezen en accepteren van de <a href=\"%s\" target=\"_blank"
+#~ "\">algemene voorwaarden</a>"
+
+#~ msgid "Store page"
+#~ msgstr "Webwinkel pagina"
+
+#~ msgid "%s average rating from %d review"
+#~ msgid_plural "%s average rating from %d reviews"
+#~ msgstr[0] "%s gemiddelde beoordeling van %d review"
+#~ msgstr[1] "%s gemiddelde beoordeling van %d reviews"
+
+#~ msgid "Total sales: %d"
+#~ msgstr "Totaal omzet: %d"
+
+#~ msgctxt "part of: Request about: Apple iPhone 6"
+#~ msgid "Request about"
+#~ msgstr "Verzoek betreffende"
+
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgid "Message"
+#~ msgstr "Bericht"
+
+#~ msgid "Show in Google Maps"
+#~ msgstr "Toon in Google Maps"
+
+#~ msgid "Custom:"
+#~ msgstr "Aanpassen:"
+
+#~ msgid "Go"
+#~ msgstr "Go"
+
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "My Vendor Dashboard"
+#~ msgstr "Mijn Verkopers Dashboard"
+
+#~ msgid ""
+#~ "You'll be able to access your dashboard as soon as the administrator "
+#~ "approves your vendor account."
+#~ msgstr ""
+#~ "U krijgt toegang tot uw dashboard zodra de administrator uw verkopers´ "
+#~ "account heeft goedgekeurd."
+
+#~ msgid ""
+#~ "From your vendor dashboard you can view your recent commissions, view the "
+#~ "sales report and manage your store and payment settings."
+#~ msgstr ""
+#~ "In uw verkopers dashboard kunt uw uw recente commissies zien, bekijk het "
+#~ "omzetrapport en beheer uw webwinkel en betalings instellingen."
+
+#~ msgid ""
+#~ "Click <a href=\"%s\">here</a> to access <strong>%s dashboard</strong>."
+#~ msgstr ""
+#~ "Klik <a href=\"%s\">hier</a> voor toegang tot <strong>%s dashboard</"
+#~ "strong>."
+
+#~ msgctxt "[Part of]: Register as a vendor"
+#~ msgid "Register as a"
+#~ msgstr "Registreer als een"
+
+#~ msgid "Owner First Name *"
+#~ msgstr "Voornaam Eigenaar *"
+
+#~ msgid "Owner Last Name *"
+#~ msgstr "Achternaam Eigenaar *"
+
+#~ msgid "Report an abuse for product %s"
+#~ msgstr "Rapporteer misbruik van product %s"
+
+#~ msgid "in vendor shop %s"
+#~ msgstr "in de webwinkel van verkoper %s"
+
+#~ msgid "Leave a message explaining the reasons for your abuse report"
+#~ msgstr ""
+#~ "Laat een bericht achter met beredenering over uw rapport voor misbruik"
+
+#~ msgid "You can't create more vendor with the same shop owner."
+#~ msgstr "Een en dezelfde shopowner kan niet meer verkopers creëren."
+
+#~ msgid "<a href=\"%s\" target=\"_blank\">%s</a>"
+#~ msgstr "<a href=\"%s\" target=\"_blank\">%s</a>"
+
+#~ msgid "Vendor's new account approvation"
+#~ msgstr "Goedkeuring nieuw acount verkoper"
+
+#~ msgid ""
+#~ "If you enable this option, vendors will be able to SMS notifications for "
+#~ "their orders."
+#~ msgstr ""
+#~ "Als u deze optie inschakelt, zullen verkopers in staat zijn om een SMS "
+#~ "notificatie te ontvangen voor hun orders."
+
+#~ msgid "This sets the page where add the \"become a vendor\" form."
+#~ msgstr ""
+#~ "Bepaal de pagina waar het \"wordt een verkoper\" formulier wordt "
+#~ "toegevoegd."
+
+#~ msgid ""
+#~ "Change the default image height for header. Set width to zero to use "
+#~ "original image width (Default: 0 px)."
+#~ msgstr ""
+#~ "Wijzig de standaard afbeeldigsbreedte voor header. Stel breedte in op nul "
+#~ "om de originele breedte te gebruiken (standaard: 0px)."

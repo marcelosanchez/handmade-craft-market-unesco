@@ -5,7 +5,7 @@
 * Description: YITH WooCommerce Multi Vendor is a plugin explicitly developed to switch your website into a platform hosting more than one shop.
 * Author: YITHEMES
 * Text Domain: yith-woocommerce-product-vendors
-* Version: 2.3.0
+* Version: 2.3.1
 * Author URI: http://yithemes.com/
 *
 * WC requires at least: 2.6.0
@@ -49,7 +49,7 @@ if ( ! function_exists( 'WC' ) ) {
 if ( defined( 'YITH_WPV_VERSION' ) ) {
     return;
 } else {
-    define( 'YITH_WPV_VERSION', '2.3.0' );
+    define( 'YITH_WPV_VERSION', '2.3.1' );
 }
 
 if ( ! defined( 'YITH_WPV_DB_VERSION' ) ) {

@@ -77,12 +77,12 @@ $currency            = array( 'currency' => yith_wcmv_get_order_currency( $order
 												<p><?php echo $note->description ?></p>
 											</div>
 											<p class="meta">
-												<abbr class="exact-date" title="<?php echo $note->note_date; ?>"><?php printf( __( 'added on %1$s at %2$s', 'woocommerce' ), date_i18n( wc_date_format(), strtotime( $note->note_date ) ), date_i18n( wc_time_format(), strtotime( $note->note_date ) ) ); ?></abbr>
+												<abbr class="exact-date" title="<?php echo $note->note_date; ?>"><?php printf( __( 'added on %1$s at %2$s', 'yith-woocommerce-product-vendors' ), date_i18n( wc_date_format(), strtotime( $note->note_date ) ), date_i18n( wc_time_format(), strtotime( $note->note_date ) ) ); ?></abbr>
 											</p>
 										</li>
 									<?php endforeach; ?>
 								<?php else : ?>
-									<li><?php _e( 'There are no notes yet.', 'woocommerce' ) ?></li>
+									<li><?php _e( 'There are no notes yet.', 'yith-woocommerce-product-vendors' ) ?></li>
 								<?php endif; ?>
 
 							</ul>
@@ -136,7 +136,7 @@ $currency            = array( 'currency' => yith_wcmv_get_order_currency( $order
 												$username = trim( $billing_first_name . ' ' . $billing_last_name );
 											}
 				 							else {
-												$username = __( 'Guest', 'woocommerce' );
+												$username = __( 'Guest', 'yith-woocommerce-product-vendors' );
 											}
                                         }
 
@@ -299,17 +299,17 @@ $currency            = array( 'currency' => yith_wcmv_get_order_currency( $order
                                     <?php if ( 'product' == $commission->type ) : ?>
                                         <thead>
                                         <tr>
-                                            <th class="item sortable" colspan="2"><?php _e( 'Item', 'woocommerce' ) ?></th>
+                                            <th class="item sortable" colspan="2"><?php _e( 'Item', 'yith-woocommerce-product-vendors' ) ?></th>
                                             <?php do_action( 'yith_wcmv_admin_order_item_headers', $order, $item, $item_id ); ?>
-                                            <th class="item_cost sortable"><?php _e( 'Cost', 'woocommerce' ) ?></th>
-                                            <th class="quantity sortable"><?php _e( 'Qty', 'woocommerce' ) ?></th>
-                                            <th class="line_cost sortable" data-sort="float"><?php _e( 'Total', 'woocommerce' ); ?></th>
+                                            <th class="item_cost sortable"><?php _e( 'Cost', 'yith-woocommerce-product-vendors' ) ?></th>
+                                            <th class="quantity sortable"><?php _e( 'Qty', 'yith-woocommerce-product-vendors' ) ?></th>
+                                            <th class="line_cost sortable" data-sort="float"><?php _e( 'Total', 'yith-woocommerce-product-vendors' ); ?></th>
                                             <?php
                                             if ( empty( $legacy_order ) && ! empty( $order_taxes ) ) :
                                                 foreach ( $order_taxes as $tax_id => $tax_item ) :
                                                     $tax_class      = wc_get_tax_class_by_tax_id( $tax_item['rate_id'] );
-                                                    $tax_class_name = isset( $classes_options[ $tax_class ] ) ? $classes_options[ $tax_class ] : __( 'Tax', 'woocommerce' );
-                                                    $column_label   = ! empty( $tax_item['label'] ) ? $tax_item['label'] : __( 'Tax', 'woocommerce' );
+                                                    $tax_class_name = isset( $classes_options[ $tax_class ] ) ? $classes_options[ $tax_class ] : __( 'Tax', 'yith-woocommerce-product-vendors' );
+                                                    $column_label   = ! empty( $tax_item['label'] ) ? $tax_item['label'] : __( 'Tax', 'yith-woocommerce-product-vendors' );
                                                     $column_tip     = $tax_item['name'] . ' (' . $tax_class_name . ')';
                                                     ?>
                                                     <th class="line_tax tips" data-tip="<?php echo esc_attr( $column_tip ); ?>">
@@ -334,16 +334,16 @@ $currency            = array( 'currency' => yith_wcmv_get_order_currency( $order
                                                     <?php $product_uri = apply_filters( 'yith_wcmv_commission_get_product_uri', admin_url( 'post.php?post=' . absint( $product_id ) . '&action=edit' ), $product_id ); ?>
 													<a href="<?php echo esc_url( $product_uri ); ?>" class="tips" data-tip="<?php
 
-                                                    echo '<strong>' . __( 'Product ID:', 'woocommerce' ) . '</strong> ' . absint( $item['product_id'] );
+                                                    echo '<strong>' . __( 'Product ID:', 'yith-woocommerce-product-vendors' ) . '</strong> ' . absint( $item['product_id'] );
 
                                                     if ( $item['variation_id'] && 'product_variation' === get_post_type( $item['variation_id'] ) ) {
-                                                        echo '<br/><strong>' . __( 'Variation ID:', 'woocommerce' ) . '</strong> ' . absint( $item['variation_id'] );
+                                                        echo '<br/><strong>' . __( 'Variation ID:', 'yith-woocommerce-product-vendors' ) . '</strong> ' . absint( $item['variation_id'] );
                                                     } elseif ( $item['variation_id'] ) {
-                                                        echo '<br/><strong>' . __( 'Variation ID:', 'woocommerce' ) . '</strong> ' . absint( $item['variation_id'] ) . ' (' . __( 'No longer exists', 'woocommerce' ) . ')';
+                                                        echo '<br/><strong>' . __( 'Variation ID:', 'yith-woocommerce-product-vendors' ) . '</strong> ' . absint( $item['variation_id'] ) . ' (' . __( 'No longer exists', 'yith-woocommerce-product-vendors' ) . ')';
                                                     }
 
                                                     if ( $product && $product->get_sku() ) {
-                                                        echo '<br/><strong>' . __( 'Product SKU:', 'woocommerce' ).'</strong> ' . esc_html( $product->get_sku() );
+                                                        echo '<br/><strong>' . __( 'Product SKU:', 'yith-woocommerce-product-vendors' ).'</strong> ' . esc_html( $product->get_sku() );
                                                     }
 
                                                     $variation_data = $product->get_attributes();
@@ -500,11 +500,11 @@ $currency            = array( 'currency' => yith_wcmv_get_order_currency( $order
                                                         <div class="edit" style="display: none;">
                                                             <div class="split-input">
                                                                 <div class="input">
-                                                                    <label><?php esc_attr_e( 'Pre-discount:', 'woocommerce' ); ?></label>
+                                                                    <label><?php esc_attr_e( 'Pre-discount:', 'yith-woocommerce-product-vendors' ); ?></label>
                                                                     <input type="text" name="line_subtotal_tax[<?php echo absint( $item_id ); ?>][<?php echo esc_attr( $tax_item_id ); ?>]" placeholder="<?php echo wc_format_localized_price( 0 ); ?>" value="<?php echo esc_attr( wc_format_localized_price( $tax_item_subtotal ) ); ?>" class="line_subtotal_tax wc_input_price" data-subtotal_tax="<?php echo esc_attr( wc_format_localized_price( $tax_item_subtotal ) ); ?>" data-tax_id="<?php echo esc_attr( $tax_item_id ); ?>" />
                                                                 </div>
                                                                 <div class="input">
-                                                                    <label><?php esc_attr_e( 'Total:', 'woocommerce' ); ?></label>
+                                                                    <label><?php esc_attr_e( 'Total:', 'yith-woocommerce-product-vendors' ); ?></label>
                                                                     <input type="text" name="line_tax[<?php echo absint( $item_id ); ?>][<?php echo esc_attr( $tax_item_id ); ?>]" placeholder="<?php echo wc_format_localized_price( 0 ); ?>" value="<?php echo esc_attr( wc_format_localized_price( $tax_item_total ) ); ?>" class="line_tax wc_input_price" data-total_tax="<?php echo esc_attr( wc_format_localized_price( $tax_item_total ) ); ?>" data-tax_id="<?php echo esc_attr( $tax_item_id ); ?>" />
                                                                 </div>
                                                             </div>
@@ -531,7 +531,7 @@ $currency            = array( 'currency' => yith_wcmv_get_order_currency( $order
                                             <td class="name">
                                                 <?php  $date_created = yit_get_prop( $refund, 'date_created' );  ?>
                                                 <?php if( class_exists( 'WC_DateTime' ) && $date_created instanceof WC_DateTime ){ $date_created = $date_created->getTimestamp(); }?>
-                                                <?php echo esc_attr__( 'Refund', 'woocommerce' ) . ' #' . absint( yit_get_prop( $refund, 'id' ) ) . ' - ' . esc_attr( date_i18n( get_option( 'date_format' ) . ', ' . get_option( 'time_format' ), $date_created ) );  ?>
+                                                <?php echo esc_attr__( 'Refund', 'yith-woocommerce-product-vendors' ) . ' #' . absint( yit_get_prop( $refund, 'id' ) ) . ' - ' . esc_attr( date_i18n( get_option( 'date_format' ) . ', ' . get_option( 'time_format' ), $date_created ) );  ?>
                                                 <?php $refund_reason = $refund->get_reason(); ?>
                                                 <?php if ( $refund_reason ) : ?>
                                                     <p class="description">
@@ -564,7 +564,7 @@ $currency            = array( 'currency' => yith_wcmv_get_order_currency( $order
                                     ?>
                                     <div class="wc-used-coupons">
                                         <ul class="wc_coupon_list"><?php
-                                            echo '<li><strong>' . __( 'Coupon(s) Used', 'woocommerce' ) . '</strong></li>';
+                                            echo '<li><strong>' . __( 'Coupon(s) Used', 'yith-woocommerce-product-vendors' ) . '</strong></li>';
                                             foreach ( $coupons as $item_id => $item ) {
                                                 global $wpdb;
                                                 $post_id = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM {$wpdb->posts} WHERE post_title = %s AND post_type = 'shop_coupon' AND post_status = 'publish' LIMIT 1;", $item['name'] ) );

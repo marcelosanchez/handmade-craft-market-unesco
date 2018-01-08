@@ -75,6 +75,41 @@ if ( !class_exists( 'YIT_Plugin_Licence' ) ) {
             add_action( "wp_ajax_yith_deactivate-{$this->_product_type}", array( $this, 'deactivate' ) );
             add_action( "wp_ajax_yith_update_licence_information-{$this->_product_type}", array( $this, 'update_licence_information' ) );
             add_action( 'yit_licence_after_check', array( $this, 'licence_after_check' ) );
+
+            /** @since 3.0.0 */
+            add_action( 'admin_notices', array( $this, 'activate_license_notice' ), 15 );
+        }
+
+        /**
+         * print notice with products to activate
+         *
+         * @since 3.0.0
+         */
+        public function activate_license_notice() {
+            if ( apply_filters( 'yith_plugin_fw_show_activate_license_notice', !isset( $_GET[ 'page' ] ) || 'yith_plugins_activation' !== $_GET[ 'page' ] ) ) {
+                $products_to_activate = $this->get_to_active_products();
+                if ( !!$products_to_activate ) {
+                    $product_names = array();
+                    foreach ( $products_to_activate as $init => $product ) {
+                        if ( !empty( $product[ 'Name' ] ) )
+                            $product_names[] = $product[ 'Name' ];
+                    }
+
+                    if ( !!$product_names ) {
+                        $start          = '<span style="display:inline-block; padding:3px 10px; margin: 0 10px 10px 0; background: #f1f1f1; border-radius: 4px;">';
+                        $end            = '</span>';
+                        $product_list   = '<div>' . $start . implode( $end . $start, $product_names ) . $end . '</div>';
+                        $activation_url = add_query_arg( array( 'page' => 'yith_plugins_activation' ), admin_url( 'admin.php' ) );
+                        ?>
+                        <div class="notice notice-error">
+                            <p><strong>Warning!</strong> You didn't set license key for the following products:
+                                <?php echo $product_list ?>
+                                which means you're missing out on updates and support. <a href='<?php echo $activation_url ?>'>Enter your license key</a></p>
+                        </div>
+                        <?php
+                    }
+                }
+            }
         }
 
 

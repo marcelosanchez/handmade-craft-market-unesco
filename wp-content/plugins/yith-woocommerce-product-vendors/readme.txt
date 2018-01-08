@@ -3,8 +3,8 @@
 Contributors: yithemes
 Tags: woocommerce multi vendor store, woocommerce marketplace, product vendors, vendors, vendor, multi store, multi vendor, multi seller, woocommerce product vendors, woocommerce multi vendor, commission rate, seller, shops, vendor shop, vendor system, woo vendors, wc vendors, e-commerce, multivendor, multivendors, wc multivendor, WooCommerce vedors, WooCommerce, Vendor, Multivendor, marketplace, seller, product vendor, product vendors, store, WooCommerce multivendor, Woo vendors, wc vendors, multistore, dc vendors, dc vendor, dc multi vendor, dc multi vendors, dc product vendor, dc product vendors, woocommerce marketplace, yit, yith, yithemes
 Requires at least: 4.0
-Tested up to: 4.9
-Stable tag: 2.3.0
+Tested up to: 4.9.2
+Stable tag: 2.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html/
 
@@ -195,6 +195,13 @@ If none of the previous listed actions helps you solve the problem, then, submit
 YITH WooCommerce Multi Vendor will add a new tab called "Multi Vendor" in "YIT Plugins" menu item. There, you will find all Yithemes plugins with quick access to plugin setting page.
 
 == Changelog ==
+
+= 2.3.1 - Dec 18, 2017 =
+
+* Fix: Unable to use commissions filter in commissions page WordPress 4.9
+* Fix: Unable to add new product to parent order if the admin is a valid vendor
+* Fix: change text-domain from woocommerce to yith-woocommerce-product-vendors
+* Fix: Wrong string localizzation for vendor website field
 
 = 2.3.0 - Nov 21, 2017 =
 

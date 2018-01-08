@@ -579,7 +579,7 @@ if ( !class_exists( 'YITH_Vendors_Admin' ) ) {
                     'class'             => 'wc-customer-search',
                     'id'                => 'key_user',
                     'name'              => 'yith_vendor_data[owner]',
-                    'data-placeholder'  => esc_attr__( 'Search for a customer&hellip;', 'woocommerce' ),
+                    'data-placeholder'  => esc_attr__( 'Search for a customer&hellip;', 'yith-woocommerce-product-vendors' ),
                     'data-allow_clear'  => true,
                     'data-selected'     => '',
                     'value'             => ''
@@ -612,7 +612,7 @@ if ( !class_exists( 'YITH_Vendors_Admin' ) ) {
                         'class'             => 'wc-customer-search',
                         'id'                => 'key_user',
                         'name'              => 'yith_vendor_data[owner]',
-                        'data-placeholder'  => esc_attr__( 'Search for a customer&hellip;', 'woocommerce' ),
+                        'data-placeholder'  => esc_attr__( 'Search for a customer&hellip;', 'yith-woocommerce-product-vendors' ),
                         'data-allow_clear'  => true,
                         'data-selected'     => YITH_Vendors()->is_wc_2_7_or_greather ? array( $owner_id => $vendor_owner ) : $vendor_owner,
                         'value'             => $owner_id
@@ -687,7 +687,7 @@ if ( !class_exists( 'YITH_Vendors_Admin' ) ) {
                 if( ! empty( $_POST['yith_vendor_data']['owner'] ) ){
                     $vendor = yith_get_vendor( $_POST['yith_vendor_data']['owner'], 'user' );
                     if( $vendor->is_valid() ){
-	                    $to_return = new WP_Error( 'owner_exists', __( "You can't create more vendor with the same shop owner.", 'yith-woocommerce-product-vendors' ), $duplicate );
+	                    $to_return = new WP_Error( 'owner_exists', __( "You can't associate more vendor shops with the same shop owner.", 'yith-woocommerce-product-vendors' ), $duplicate );
                     }
                 }
 
@@ -1254,7 +1254,7 @@ if ( !class_exists( 'YITH_Vendors_Admin' ) ) {
                 $wp_admin_bar->add_node( array(
                         'parent' => 'site-name',
                         'id'     => 'view-store',
-                        'title'  => __( 'Visit Store', 'woocommerce' ),
+                        'title'  => __( 'Visit Store', 'yith-woocommerce-product-vendors' ),
                         'href'   => $vendor->get_url( 'frontend' )
                     ) );
             }
@@ -1861,7 +1861,7 @@ if ( !class_exists( 'YITH_Vendors_Admin' ) ) {
                         break;
 
                     case 'owner_exist':
-	                    $message = __( "You can't create more vendor with the same shop owner.", 'yith-woocommerce-product-vendors' );
+	                    $message = __( "You can't associate more vendor shops with the same shop owner.", 'yith-woocommerce-product-vendors' );
 	                    $type = 'error';
                         break;
                 }

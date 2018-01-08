@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YITH WooCommerce Multi Vendor\n"
-"POT-Creation-Date: 2017-11-24 11:05+0100\n"
+"POT-Creation-Date: 2017-12-18 11:27+0100\n"
 "PO-Revision-Date: 2015-07-23 14:59+0100\n"
 "Last-Translator: \n"
 "Language-Team: YIThemes <plugins@yithemes.com>\n"
@@ -107,7 +107,7 @@ msgstr ""
 msgid "Cancelled %s refund from order"
 msgstr ""
 
-#: includes/class.yith-commissions.php:1466 includes/class.yith-orders.php:1675
+#: includes/class.yith-commissions.php:1466 includes/class.yith-orders.php:1733
 msgid "commission_id"
 msgstr ""
 
@@ -151,98 +151,98 @@ msgctxt "part of: coupon included or coupon excluded"
 msgid "coupon"
 msgstr ""
 
-#: includes/class.yith-orders.php:230
+#: includes/class.yith-orders.php:272
 #, php-format
 msgid "Order &ndash; %s"
 msgstr ""
 
-#: includes/class.yith-orders.php:230
+#: includes/class.yith-orders.php:272
 msgctxt "Order date parsed by strftime"
 msgid "%b %d, %Y @ %I:%M %p"
 msgstr ""
 
-#: includes/class.yith-orders.php:396
+#: includes/class.yith-orders.php:434
 #, php-format
 msgid "Error %d: Unable to create order. Please try again."
 msgstr ""
 
-#: includes/class.yith-orders.php:536 includes/class.yith-orders.php:918
+#: includes/class.yith-orders.php:580 includes/class.yith-orders.php:968
 msgctxt "Order note"
 msgid "Update by admin: "
 msgstr ""
 
-#: includes/class.yith-orders.php:911
+#: includes/class.yith-orders.php:961
 msgid "Delete note"
 msgstr ""
 
-#: includes/class.yith-orders.php:1020
+#: includes/class.yith-orders.php:1072
 #, php-format
 msgid "Item #%s stock reduced from %s to %s."
 msgstr ""
 
-#: includes/class.yith-orders.php:1024
+#: includes/class.yith-orders.php:1076
 #, php-format
 msgid "Item #%s stock increased from %s to %s."
 msgstr ""
 
-#: includes/class.yith-orders.php:1676
+#: includes/class.yith-orders.php:1734
 msgid "status"
 msgstr ""
 
-#: includes/class.yith-orders.php:1743
+#: includes/class.yith-orders.php:1802
 msgctxt "Admin: Order table column"
 msgid "Suborders"
 msgstr ""
 
-#: includes/class.yith-orders.php:1747
+#: includes/class.yith-orders.php:1806
 msgctxt "Admin: Order table column"
 msgid "Vendor"
 msgstr ""
 
-#: includes/class.yith-orders.php:1795 includes/class.yith-orders.php:1880
+#: includes/class.yith-orders.php:1850 includes/class.yith-orders.php:1940
 msgctxt "Order table details"
 msgid "in"
 msgstr ""
 
-#: includes/class.yith-orders.php:1837
+#: includes/class.yith-orders.php:1892
 msgctxt "Admin: Single order page. Suborder details box"
 msgid "Suborders"
 msgstr ""
 
-#: includes/class.yith-orders.php:1837
+#: includes/class.yith-orders.php:1892
 msgid ""
 "Note: from this box you can monitor the status of suborders associated to "
 "individual vendors."
 msgstr ""
 
-#: includes/class.yith-orders.php:1842
+#: includes/class.yith-orders.php:1898
 msgctxt "Admin: Single order page. Parent order details box"
 msgid "Parent order"
 msgstr ""
 
-#: includes/class.yith-orders.php:1849
+#: includes/class.yith-orders.php:1906
 msgctxt "Admin: Single order page. Parent order details box"
 msgid "Parent order id"
 msgstr ""
 
-#: includes/class.yith-orders.php:1881
+#: includes/class.yith-orders.php:1941
 #: includes/lib/class.yith-commissions-list-table.php:331
 #: templates/admin/commission-view.php:213
 msgid "Vendor deleted"
 msgstr ""
 
-#: includes/class.yith-orders.php:1892
+#: includes/class.yith-orders.php:1952
 msgctxt "Admin: single order page. Link to parent order"
 msgid "Return to main order"
 msgstr ""
 
-#: includes/class.yith-orders.php:1897
+#: includes/class.yith-orders.php:1957
 msgid ""
 "Pass this ID over to the website administrator for any communication related "
 "to this order"
 msgstr ""
 
-#: includes/class.yith-orders.php:2219
+#: includes/class.yith-orders.php:2283
 #, php-format
 msgid "File %d"
 msgstr ""
@@ -306,7 +306,7 @@ msgstr ""
 
 #: includes/class.yith-vendors-admin.php:690
 #: includes/class.yith-vendors-admin.php:1864
-msgid "You can't create more vendor with the same shop owner."
+msgid "You can't associate more vendor shops with the same shop owner."
 msgstr ""
 
 #: includes/class.yith-vendors-admin.php:1041
@@ -530,7 +530,7 @@ msgstr ""
 msgid "Y/m/d"
 msgstr ""
 
-#: includes/lib/class.yith-commissions-list-table.php:418
+#: includes/lib/class.yith-commissions-list-table.php:422
 msgid "No commissions found."
 msgstr ""
 
