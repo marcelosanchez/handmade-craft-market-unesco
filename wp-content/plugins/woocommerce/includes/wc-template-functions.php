@@ -624,7 +624,7 @@ if ( ! function_exists( 'woocommerce_template_loop_product_title' ) ) {
 	 * Show the product title in the product loop. By default this is an H2.
 	 */
 	function woocommerce_template_loop_product_title() {
-		echo '<div class="product_store_card_cont"><h2 class="woocommerce-loop-product__title custom_product_title">' . get_the_title() . '</h2>';
+		echo '<div class="product_store_card_cont col-md-12"><div class="col-md-7"><div  title="' . get_the_title() . '" class="woocommerce-loop-product__title custom_product_title elipsis-2l">' . get_the_title() . '</div>';
 	}
 }
 if ( ! function_exists( 'woocommerce_template_loop_category_title' ) ) {

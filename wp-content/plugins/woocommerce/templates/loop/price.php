@@ -24,7 +24,10 @@ global $product;
 ?>
 
 <?php if ( $price_html = $product->get_price_html() ) : ?>
-	<div class="price price_custom"><?php echo $product->get_short_description(); ?></div>
-	<div class="price price_custom"><?php echo $price_html; ?></div>
+			<div class="short_description elipsis-2l"><?php echo $product->get_short_description(); ?></div>
+		</div>
+		<div class="price price_custom col-md-4">
+			<?php echo $price_html; ?>
+		</div>
 	</div>
 <?php endif; ?>
