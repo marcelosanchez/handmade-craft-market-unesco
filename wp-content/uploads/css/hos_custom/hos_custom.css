@@ -30,8 +30,11 @@ h1, h2, h3, h4, h5, h6 {
   
   --main-theme-color1: #ff7a00;
   --main-theme-color1-hover: #ff5400;
-  --main-theme-color2: #673f16;
-  --main-theme-color2-hover: #673f16;
+  --main-theme-color2: #a25335;
+  --main-theme-color2-hover: #79361d;
+  --main-theme-color3: #f7bc55;
+  --main-theme-color3-hover: #bd8d38;
+  
   --main-theme-color1-text-gray: #7b7b7b;
   --main-theme-dark-text-h: #181c28;
 }
@@ -324,6 +327,14 @@ ul.products li.product .button {
 
 ul.products li.product .button:hover {
 	background-color: var(--main-theme-color1-hover);
+}
+
+ul.products li.product .button-brown {
+	background-color: var(--main-theme-color2);
+}
+
+ul.products li.product .button-brown:hover {
+	background-color: var(--main-theme-color2-hover);
 }
 
 ul.products li.product .woocommerce-loop-product__title, ul.products li.product h2, ul.products li.product h3 {
