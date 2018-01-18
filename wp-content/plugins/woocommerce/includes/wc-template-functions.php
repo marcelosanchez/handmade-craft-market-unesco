@@ -959,6 +959,8 @@ if ( ! function_exists( 'woocommerce_template_single_excerpt' ) ) {
 	 * @subpackage	Product
 	 */
 	function woocommerce_template_single_excerpt() {
+		global $product;
+		do_action( 'woocommerce_' . $product->get_type() . '_add_to_cart' );
 		wc_get_template( 'single-product/short-description.php' );
 	}
 }
@@ -1004,8 +1006,8 @@ if ( ! function_exists( 'woocommerce_template_single_add_to_cart' ) ) {
 	 * @subpackage	Product
 	 */
 	function woocommerce_template_single_add_to_cart() {
-		global $product;
-		do_action( 'woocommerce_' . $product->get_type() . '_add_to_cart' );
+		// global $product;
+		// do_action( 'woocommerce_' . $product->get_type() . '_add_to_cart' );
 	}
 }
 if ( ! function_exists( 'woocommerce_simple_add_to_cart' ) ) {

@@ -1,0 +1,31 @@
+@CHARSET "ISO-8859-1";
+
+/* CART STYLE
+ * --------------------------------------- */
+.entry-content .woocommerce {
+	width: 77vw !important;
+	margin: 0 auto;
+}
+
+.woocommerce p {
+	font-size: 100%;
+}
+
+.woocommerce .return-to-shop {
+	text-align: center;
+}
+
+.woocommerce .wc-backward {
+	height: 40px !important;
+	/* width: 125px !important; */
+	padding: 10px 20px;
+	font-size: 12px !important;
+	/* font-weight: bolder; */
+	text-transform: uppercase;
+	background: var(--main-theme-color1) !important;
+	transition: background .3s ease;
+}
+
+.woocommerce .wc-backward:hover {
+	background: var(--main-theme-color1-hover) !important;
+}

@@ -15,9 +15,6 @@
 get_header(); ?>
 
 <!-- HOME PAGE -->
-<link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/page_home/home_page.css" />
-
-<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/page_home/home_page.js"></script>
 <!-- EO / HOME PAGE -->
 
 <div id="primary" class="content-area">
@@ -28,7 +25,7 @@ get_header(); ?>
 				<div class="intro">
 
 					<div class="home_logo_cont col-md-12">
-						<img alt="background" src="/integ.handicrafts.unesco/wp-content/uploads/img/demo_logo.png">
+						<img alt="background" src="/integ.handicrafts.unesco/wp-content/uploads/img/HOS_Logo.png">
 					</div>
 					<h1>Handicraft Online Shop</h1>
 					<h2>Find what you want in our variety of crafts</h2>
@@ -42,7 +39,7 @@ get_header(); ?>
 				<div class="intro">
 
 					<div class="home_logo_cont col-md-12">
-						<img alt="background" src="/integ.handicrafts.unesco/wp-content/uploads/img/demo_logo.png">
+						<img alt="background" src="/integ.handicrafts.unesco/wp-content/uploads/img/HOS_Logo.png">
 					</div>
 					
 					<div class="row txtDesc_home">
@@ -62,7 +59,7 @@ get_header(); ?>
 				<div class="intro">
 
 					<div class="home_logo_cont col-md-12">
-						<img alt="background" src="/integ.handicrafts.unesco/wp-content/uploads/img/demo_logo.png">
+						<img alt="background" src="/integ.handicrafts.unesco/wp-content/uploads/img/HOS_Logo.png">
 					</div>
 					
 					<div class="row txtDesc_home">
@@ -82,7 +79,7 @@ get_header(); ?>
 				<div class="intro">
 
 					<div class="home_logo_cont col-md-12">
-						<img alt="background" src="/integ.handicrafts.unesco/wp-content/uploads/img/demo_logo.png">
+						<img alt="background" src="/integ.handicrafts.unesco/wp-content/uploads/img/HOS_Logo.png">
 					</div>
 					
 					<div class="row txtDesc_home">

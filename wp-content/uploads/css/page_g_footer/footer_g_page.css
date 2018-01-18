@@ -1,0 +1,47 @@
+@CHARSET "ISO-8859-1";
+
+/* FOOTER CUSTOM STYLE
+ * --------------------------------------- */
+ #colophon {
+ 	padding: 0;
+ 	background: white;
+ 	padding-bottom: 20px;
+ }
+.custom_footer_maincont {
+
+}
+.discount_code_cont {
+	background: var(--main-theme-color2);
+}
+.discount_code_cont p {
+	color: var(--main-theme-color2);
+	margin: 0;
+	font-size: 12px;
+}
+.quick_access_footer {
+	margin: 0 auto !important;
+	padding-top: 55px;
+}
+
+.quick_access_footer p.sect-h {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+	font-size: 11px;
+}
+
+.quick_access_footer p {
+	font-size: 10px;
+	color:     text-align: center;
+    margin: 20px auto !important;
+}
+
+.quick_access_footer p a:hover{
+	text-decoration: none;
+	color: black;
+}
+
+.quick_access_footer p.color-copyright-f {
+	color: lightgrey;
+	margin: 0;
+}

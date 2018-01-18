@@ -124,3 +124,97 @@ function cd_meta_box_save( $post_id ) {
     if( isset( $_POST['my_meta_box_text'] ) )
         update_post_meta( $post_id, 'my_meta_box_text', wp_kses( $_POST['my_meta_box_text'], $allowed ) );
 }
+
+/**
+ * Add Custom Scripts
+ */
+
+
+function wpb_adding_scripts() {
+    wp_register_script('global_script', get_template_directory_uri() . '../../../uploads/js/hos_custom/hos_custom.js', array('jquery'),'1.1', true);
+    wp_enqueue_script('global_script');
+
+    // HOME - CSS
+    if ( is_page_template( 'page_home-custom.php' ) ) {
+        wp_register_script( 'home_script', get_template_directory_uri() . '../../../uploads/js/page_home/home_page.js', array('jquery'),'1.1', true);
+        wp_enqueue_script('home_script');
+    }
+
+}
+add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );  
+
+
+
+
+/**
+ * Add Custom STYLE CSS
+ */
+
+function wpb_adding_styles() {
+    // GENERAL - CSS
+    wp_enqueue_style( 'global_stylesheet', get_stylesheet_directory_uri() . '../../../uploads/css/hos_custom/hos_custom.css' );
+    wp_enqueue_style( 'global_stylesheet' );
+
+    // FOOTER - CSS
+    wp_enqueue_style( 'footer_stylesheet', get_stylesheet_directory_uri() . '../../../uploads/css/page_g_footer/footer_g_page.css' );
+    wp_enqueue_style( 'footer_stylesheet' );
+
+    // HOME - CSS
+    if ( is_page_template( 'page_home-custom.php' ) ) {
+        wp_enqueue_style( 'home_stylesheet', get_stylesheet_directory_uri() . '../../../uploads/css/page_home/home_page.css' );
+        wp_enqueue_style( 'home_stylesheet' );
+    }
+
+    // ----------------------------------------------------------------
+
+    // SHOP - CSS
+    if ( is_shop() ) {
+        wp_enqueue_style( 'shop_wc_stylesheet', get_stylesheet_directory_uri() . '../../../uploads/css/page_wc_shop/shop_page.css' );
+        wp_enqueue_style( 'shop_wc_stylesheet' );
+    }
+
+    // PRODUCT SINGLE - CSS
+    if ( is_product() ) {
+        wp_enqueue_style( 'product_single_wc_stylesheet', get_stylesheet_directory_uri() . '../../../uploads/css/page_wc_product_single/product_single_page.css' );
+        wp_enqueue_style( 'product_single_wc_stylesheet' );
+    }
+
+    // PRODUCT SINGLE - CSS
+    if ( is_cart() ) {
+        wp_enqueue_style( 'cart_wc_stylesheet', get_stylesheet_directory_uri() . '../../../uploads/css/page_wc_cart/cart_page.css' );
+        wp_enqueue_style( 'cart_wc_stylesheet' );
+    }
+
+    // CHECKOUT - CSS
+    if ( is_checkout() ) {
+        wp_enqueue_style( 'checkout_wc_stylesheet', get_stylesheet_directory_uri() . '../../../uploads/css/page_wc_checkout/checkout_page.css' );
+        wp_enqueue_style( 'checkout_wc_stylesheet' );
+    }
+
+    // ----------------------------------------------------------------
+
+    // ARTISANS - CSS
+    if ( is_page_template( 'page_artisans-custom.php' ) ) {
+        wp_enqueue_style( 'artisans_stylesheet', get_stylesheet_directory_uri() . '../../../uploads/css/page_artisans/artisans_page.css' );
+        wp_enqueue_style( 'artisans_stylesheet' );
+    }
+
+    // HANDICRAFT - CSS
+    if ( is_page_template( 'page_handicraft-custom.php' ) ) {
+        wp_enqueue_style( 'handicrafts_stylesheet', get_stylesheet_directory_uri() . '../../../uploads/css/page_handicraft/handicrafts_page.css' );
+        wp_enqueue_style( 'handicrafts_stylesheet' );
+    }
+
+    // CITIES - CSS
+    if ( is_page_template( 'page_cities-custom.php' ) ) {
+        wp_enqueue_style( 'cities_stylesheet', get_stylesheet_directory_uri() . '../../../uploads/css/page_cities/cities_page.css' );
+        wp_enqueue_style( 'cities_stylesheet' );
+    }
+
+    // ABOUT US - CSS
+    if ( is_page_template( 'page_about-custom.php' ) ) {
+        wp_enqueue_style( 'about_stylesheet', get_stylesheet_directory_uri() . '../../../uploads/css/page_aboutus/aboutus_page.css' );
+        wp_enqueue_style( 'about_stylesheet' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'wpb_adding_styles' );

@@ -26,30 +26,10 @@
 <script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/fullPage-scroll/fullpage_custom.js"></script>
 <!-- EO / SCROLL PAGE -->
 
-<!-- GENERAL PAGE -->
-<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+<!-- BOOTSTRAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-<!-- GENERAL PAGE -->
-
-<!-- GENERAL CUSTOMIZATION -->
-<link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/hos_custom/hos_custom.css" />
-
-<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/hos_custom/hos_custom.js"></script>
-<!-- EO / GENERAL CUSTOMIZATION -->
-
-<!-- HOME PAGE -->
-<!-- <link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/page_home/home_page.css" />
-
-<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/page_home/home_page.js"></script> -->
-<!-- EO / HOME PAGE -->
-
-<!-- ARTISANS PAGE -->
-<!-- <link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/page_artisans/artisans_page.css" />
-
-<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/page_artisans/artisans_page.js"></script> -->
-<!-- EO / ARTISANS PAGE -->
-
+<!-- EO / BOOTSTRAP -->
 
 
 <?php wp_head(); ?>

@@ -17,12 +17,13 @@ h1, h2, h3, h4, h5, h6 {
 .home_logo_cont {
 	text-align: center;
 	display: inline-block;
-	margin-top: 10px;
-	margin-bottom: 175px;
+	margin-top: 20px;
+	margin-bottom: 75px;
 }
 
 .home_logo_cont img {
 	display: inline-block;
+    height: 8rem;
 }
 
 .main-home-section h1 {

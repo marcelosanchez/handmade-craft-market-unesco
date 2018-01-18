@@ -1,0 +1,13 @@
+@CHARSET "ISO-8859-1";
+
+/* Custom PRODUCT DETAIL SINGLE
+ * --------------------------------------- */
+.site-main div[id^='product-'], .site-main div[id*=' product-']{
+    width: 77vw !important;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.woocommerce-product-details__short-description p {
+	font-size: 14px;
+}

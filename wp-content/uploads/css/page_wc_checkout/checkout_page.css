@@ -1,0 +1,23 @@
+@CHARSET "ISO-8859-1";
+
+/* CHECKOUT STYLE
+ * --------------------------------------- */
+
+.woocommerce-checkout input {
+	width: 100% !important;
+    height: 30px !important;
+    padding: 5px 7px !important;
+    /*font-size: 50% !important;*/
+}
+
+#place_order {
+	height: auto !important;
+}
+
+.woocommerce-checkout p {
+    font-size: 100%;
+}
+
+.star-rating span:before, .quantity .plus, .quantity .minus, p.stars a:hover:after, p.stars a:after, .star-rating span:before, #payment .payment_methods li input[type=radio]:first-child:checked+label:before {
+	color: var(--main-theme-color1-hover) !important;
+}
