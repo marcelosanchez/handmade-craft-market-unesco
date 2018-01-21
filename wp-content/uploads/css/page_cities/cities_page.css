@@ -4,25 +4,78 @@ h1, h2, h3, h4, h5, h6 {
 	color: var(main-theme-dark-text-h);
 }
 
-/* Custom HOME CSS
+/* Custom CITY CSS
  * --------------------------------------- */
-/*.gPage_hCont {
-    background-image: url(/integ.handicrafts.unesco/wp-content/uploads/img/artisans/content_header.jpg);
-    background-position: 0px -170px;
-    height: 110px;
-    padding: 30px;
-    color: white;
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: var(--main-theme-font);
+
+p {
+	font-size: 100%;
 }
 
-.parallax { 
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
+.cities_head {
+    padding: 95px 0px 45px;
+}
+
+.p_img {
+	height: -webkit-fill-available;
+	max-width: 100%;
+	display: block;
+}
+
+.col-unspaced {
+	margin: 0;
+	padding: 0;
+}
+
+.col2-text {
+	background-color: var(--main-theme-color-lightgrey);
+	padding: 60px;
+}
+
+.col2-text h1 {
+	font-family: var(--main-theme-font-titleH1);
+	text-transform: uppercase;
+	color: black;
+}
+
+.col2-img {
+	background: url(blah.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
+	width: 250px;
+	height: 250px;
+}
+
+
+.squaredImg {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+.squaredImg img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.squaredImg img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+.spaced_f {
+	padding-bottom: 75px;
+}
+
+.spacer_f30_b {
+    padding-bottom: 30px;
+}
 
 .txtDesc_general {
     height: 260px;
@@ -136,43 +189,3 @@ img[class*="avatar-"] {
 	line-height: 1;
 	line-height: 1.5;
 }
-
-/* Custom FOOTER CSS
- * --------------------------------------- */
-/*.custom_footer_maincont {
-
-}
-.discount_code_cont {
-	background: var(--main-theme-color2);
-}
-.discount_code_cont p {
-	color: var(--main-theme-color2);
-	margin: 0;
-	font-size: 12px;
-}
-.quick_access_footer {
-	margin: 0 auto;
-	padding-top: 55px;
-}
-
-.quick_access_footer p.sect-h {
-	text-transform: uppercase;
-	font-weight: bold;
-	color: black;
-	font-size: 11px;
-}
-
-.quick_access_footer p {
-	font-size: 10px;
-	color: var(--main-theme-color1-text-gray);
-}
-
-.quick_access_footer p a:hover{
-	text-decoration: none;
-	color: black;
-}
-
-.quick_access_footer p.color-copyright-f {
-	color: lightgrey;
-	margin: 0;
-}*/

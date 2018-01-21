@@ -37,10 +37,27 @@ h1, h2, h3, h4, h5, h6 {
   
   --main-theme-color1-text-gray: #7b7b7b;
   --main-theme-dark-text-h: #181c28;
+
+  --main-theme-color-lightgrey: #f7f7f7;
 }
 
 .current-menu-item.current_page_item {
     border-bottom: 2px solid var(--main-theme-color1);
+}
+
+/*
+ * CONTENT CUSTOM
+ */
+
+.centered_content {
+	width: 69vw;
+	margin: 0 auto;
+}
+
+.p_tex {
+	font-family: var(--main-theme-font-subtitle1);
+	color: var(--main-theme-color1-text-gray);
+	font-size: 13px;
 }
 
 /* Custom PAGE HEADER
@@ -183,10 +200,63 @@ h1, h2, h3, h4, h5, h6 {
     text-overflow: ellipsis;
 }
 
+.elipsis-5l {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.elipsis-6l {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
 .hover_card_float {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 .hover_card_float:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+
+.button-main-color {
+	text-transform: uppercase;
+	background: var(--main-theme-color1) !important;
+	transition: background .3s ease;
+	color: white !important;
+}
+
+.button-main-color:hover {
+	background: var(--main-theme-color1-hover) !important;
+}
+
+
+
+
+
+/*LOGIN LOGOUT*/
+.custom-loginout {
+	margin-left: 30px;
+}
+
+nav.secondary-navigation {
+	width: fit-content;
+	margin-right: 0 !important;
+}
+.woocommerce-active .site-header .secondary-navigation {
+	width: max-content;
+}
+
+#menu-menu a {
+	text-transform: capitalize;
 }

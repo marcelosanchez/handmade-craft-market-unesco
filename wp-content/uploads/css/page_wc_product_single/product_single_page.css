@@ -2,12 +2,43 @@
 
 /* Custom PRODUCT DETAIL SINGLE
  * --------------------------------------- */
+ p {
+     font-size: 100%;
+ }
+
 .site-main div[id^='product-'], .site-main div[id*=' product-']{
     width: 77vw !important;
     margin: 0 auto;
     padding-top: 10px;
 }
 
+.summary .price {
+	margin: 0 !important;
+}
+
+.single-product div.product form.cart {
+	margin-bottom: 0.618em !important;
+}
+
+.woocommerce-product-details__short-description {  }
+
 .woocommerce-product-details__short-description p {
 	font-size: 14px;
+}
+
+.elipsis-8l {
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+
+
+.collapse_short_desc {
+    height: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.adas {
+	background-color: #f2f2f2;
 }
