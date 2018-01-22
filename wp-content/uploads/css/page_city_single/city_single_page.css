@@ -1,0 +1,33 @@
+@CHARSET "ISO-8859-1";
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(main-theme-dark-text-h);
+}
+
+/* Custom CITY CSS
+ * --------------------------------------- */
+
+p {
+	font-size: 100%;
+}
+
+.cityPage_header {
+    background-position: 0px -170px;
+    height: 515px;
+    padding: 200px 225px;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.cityPage_header h1 {
+	font-size: 50px;
+	margin-bottom: 12px;
+	font-family: var(--main-theme-font-titleH1);
+}
+.cityPage_header h2 {
+	font-size: 20px;
+	font-family: var(--main-theme-font-subtitle1);
+}

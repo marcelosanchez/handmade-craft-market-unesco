@@ -110,10 +110,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .hos_breadcums {
     background: white;
+    line-height: 2.3;
     height: 30px;
-    width: 301px;
+    width: 35%;
     margin-top: 77px;
-    padding: 3px 112vw 3px;
+    margin-left: 8vw;
+    padding: 0;
 }
 
 .hos_breadcums, .hos_breadcums span, .hos_breadcums a {

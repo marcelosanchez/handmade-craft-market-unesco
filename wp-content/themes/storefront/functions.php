@@ -226,6 +226,11 @@ function wpb_adding_styles() {
         wp_enqueue_style( 'artisans_stylesheet', get_styles_path() . '/page_artisans/artisans_page.css' );
         wp_enqueue_style( 'artisans_stylesheet' );
     }
+        // ARTISAN SINGLE - CSS
+        if ( is_page_template( 'page_artisan_single-custom.php' ) ) {
+            wp_enqueue_style( 'artisans_stylesheet', get_styles_path() . '/page_artisan_single/artisan_single_page.css' );
+            wp_enqueue_style( 'artisans_stylesheet' );
+        }
 
     // HANDICRAFT - CSS
     if ( is_page_template( 'page_handicraft-custom.php' ) ) {
@@ -238,6 +243,12 @@ function wpb_adding_styles() {
         wp_enqueue_style( 'cities_stylesheet', get_styles_path() . '/page_cities/cities_page.css' );
         wp_enqueue_style( 'cities_stylesheet' );
     }
+
+        // CITY SINGLE - CSS
+        if ( is_page_template( 'page_city_single-custom.php' ) ) {
+            wp_enqueue_style( 'cities_stylesheet', get_styles_path() . '/page_city_single/city_single_page.css' );
+            wp_enqueue_style( 'cities_stylesheet' );
+        }
 
     // ABOUT US - CSS
     if ( is_page_template( 'page_about-custom.php' ) ) {
