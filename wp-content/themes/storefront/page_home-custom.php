@@ -25,7 +25,7 @@ get_header(); ?>
 				<div class="intro">
 
 					<div class="home_logo_cont col-md-12">
-						<img alt="background" src="/integ.handicrafts.unesco/wp-content/uploads/img/HOS_Logo.png">
+						<img alt="logo_white" src="<?php echo get_images_path(); ?>/HANDMADE_logo_finalblanco.png">
 					</div>
 					<h1>Handicraft Online Shop</h1>
 					<h2>Find what you want in our variety of crafts</h2>
@@ -39,14 +39,14 @@ get_header(); ?>
 				<div class="intro">
 
 					<div class="home_logo_cont col-md-12">
-						<img alt="background" src="/integ.handicrafts.unesco/wp-content/uploads/img/HOS_Logo.png">
+						<img alt="logo_white" src="<?php echo get_images_path(); ?>/HANDMADE_logo_finalblanco.png">
 					</div>
 					
 					<div class="row txtDesc_home">
 						<div class="col-md-4 offset-md-2">
 							<h1 class="">Artisans</h1>
 							<p class="">Donec a gravida ipsum. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue. Etiam iaculis mauris quis nulla tincidunt egestas tempor consectetur mi. Nullam ullamcorper posuere nisl, quis commodo purus fringilla in. Mauris ultricies massa nisl, id mollis turpis gravida ut. Aliquam erat volutpat. Aliquam id metus ultrices, eleifend ipsum id.</p>
-							<button class="goto-btn">Read More</button>
+							<button class="goto-btn" onclick="javascript:location.href='http://localhost/integ.handicrafts.unesco/artisans/'">Read More</button>
 						</div>
 						<div class="col-md-6">
 							<img style="" src="/integ.handicrafts.unesco/wp-content/uploads/img/home/artisans_default_img.jpg">
@@ -59,14 +59,14 @@ get_header(); ?>
 				<div class="intro">
 
 					<div class="home_logo_cont col-md-12">
-						<img alt="background" src="/integ.handicrafts.unesco/wp-content/uploads/img/HOS_Logo.png">
+						<img alt="logo_white" src="<?php echo get_images_path(); ?>/HANDMADE_logo_finalblanco.png">
 					</div>
 					
 					<div class="row txtDesc_home">
 						<div class="col-md-4 offset-md-2">
-							<h1 class="">Handicraft</h1>
+							<h1 class="">Handicrafts</h1>
 							<p class="">Donec a gravida ipsum. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue. Etiam iaculis mauris quis nulla tincidunt egestas tempor consectetur mi. Nullam ullamcorper posuere nisl, quis commodo purus fringilla in. Mauris ultricies massa nisl, id mollis turpis gravida ut. Aliquam erat volutpat. Aliquam id metus ultrices, eleifend ipsum id.</p>
-							<button class="goto-btn">Read More</button>
+							<button class="goto-btn" onclick="javascript:location.href='http://localhost/integ.handicrafts.unesco/handicraft/'">Read More</button>
 						</div>
 						<div class="col-md-6">
 							<img style="" src="/integ.handicrafts.unesco/wp-content/uploads/img/home/artisans_default_img.jpg">
@@ -79,14 +79,14 @@ get_header(); ?>
 				<div class="intro">
 
 					<div class="home_logo_cont col-md-12">
-						<img alt="background" src="/integ.handicrafts.unesco/wp-content/uploads/img/HOS_Logo.png">
+						<img alt="logo_white" src="<?php echo get_images_path(); ?>/HANDMADE_logo_finalblanco.png">
 					</div>
 					
 					<div class="row txtDesc_home">
 						<div class="col-md-4 offset-md-2">
 							<h1 class="">Cities</h1>
 							<p class="">Donec a gravida ipsum. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue. Etiam iaculis mauris quis nulla tincidunt egestas tempor consectetur mi. Nullam ullamcorper posuere nisl, quis commodo purus fringilla in. Mauris ultricies massa nisl, id mollis turpis gravida ut. Aliquam erat volutpat. Aliquam id metus ultrices, eleifend ipsum id.</p>
-							<button class="goto-btn">Read More</button>
+							<button class="goto-btn" onclick="javascript:location.href='http://localhost/integ.handicrafts.unesco/cities/'">Read More</button>
 						</div>
 						<div class="col-md-6">
 							<img style="" src="/integ.handicrafts.unesco/wp-content/uploads/img/home/artisans_default_img.jpg">

@@ -137,6 +137,12 @@ function wpb_adding_scripts() {
     wp_register_script('global_script', get_scripts_path() . '/hos_custom/hos_custom.js', array('jquery'),'1.1', true);
     wp_enqueue_script('global_script');
 
+
+    if ( is_page( 'login' ) || is_page( 'register' ) || is_page( 'lostpassword' ) ) {
+        wp_register_script( 'loginout_script', get_scripts_path() . '/page_loginout/loginout_page.js', array('jquery'),'1.1', true);
+        wp_enqueue_script('loginout_script');
+    }
+
     // HOME - SCRIPT
     if ( is_page_template( 'page_home-custom.php' ) ) {
         wp_register_script( 'home_script', get_scripts_path() . '/page_home/home_page.js', array('jquery'),'1.1', true);
@@ -186,6 +192,13 @@ function wpb_adding_styles() {
     // FOOTER - CSS
     wp_enqueue_style( 'footer_stylesheet', get_styles_path() . '/page_g_footer/footer_g_page.css' );
     wp_enqueue_style( 'footer_stylesheet' );
+
+
+    if ( is_page( 'login' ) || is_page( 'register' ) || is_page( 'lostpassword' ) ) {
+        wp_enqueue_style( 'loginout_stylesheet', get_styles_path() . '/page_loginout/loginout_page.css' );
+        wp_enqueue_style( 'loginout_stylesheet' );
+    }
+
 
     // HOME - CSS
     if ( is_page_template( 'page_home-custom.php' ) ) {

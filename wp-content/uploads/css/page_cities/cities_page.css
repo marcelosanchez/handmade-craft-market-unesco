@@ -21,50 +21,6 @@ p {
 	display: block;
 }
 
-.col-unspaced {
-	margin: 0;
-	padding: 0;
-}
-
-.col2-text {
-	background-color: var(--main-theme-color-lightgrey);
-	padding: 60px;
-}
-
-.col2-text h1 {
-	font-family: var(--main-theme-font-titleH1);
-	text-transform: uppercase;
-	color: black;
-}
-
-.col2-img {
-	background: url(blah.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
-	width: 250px;
-	height: 250px;
-}
-
-
-.squaredImg {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  overflow: hidden;
-}
-.squaredImg img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  width: auto;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-}
-.squaredImg img.portrait {
-  width: 100%;
-  height: auto;
-}
-
 
 
 

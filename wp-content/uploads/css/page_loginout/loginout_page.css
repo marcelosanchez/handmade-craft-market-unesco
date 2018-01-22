@@ -1,0 +1,74 @@
+@CHARSET "ISO-8859-1";
+
+:root {
+  
+  --main-theme-color1: #ff7a00;
+  --main-theme-color1-hover: #ff5400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+}
+
+/* Custom LOGINOUT CSS
+ * --------------------------------------- */
+
+p {
+	/*font-family: var(--main-theme-font-description);*/
+	font-family: "Source Sans Pro",HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	font-size: 16px;
+	font-size: 100%;
+}
+
+html { 
+  background: url('https://previews.123rf.com/images/tonobalaguer/tonobalaguer1108/tonobalaguer110800344/10438111-clay-ceramic-colorful-plates-from-mexico-traditional-handcrafts-Stock-Photo.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    background-color: transparent;
+}
+
+div[id^="post-"], #primary, #main {
+    margin: 0;
+}
+
+.hos_breadcums {
+	display: none;
+}
+
+.login-maincont {
+	margin: 0 auto;
+	margin-top: 125px;
+	padding: 30px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.tml .message {
+    border: 1px solid #28a745;
+    background-color: #53ff1866;
+}
+
+.tml p {
+    margin: 0 0 .5em 0;
+    font-size: 100%;
+}
+
+.goto-btn {
+	height: 40px;
+	width: 125px; 
+	font-size: 12px;
+	/*font-weight: bolder;*/
+	text-transform: uppercase;
+	background: var(--main-theme-color1) !important;
+	transition: background .3s ease;
+}
+
+.goto-btn:hover {
+	background: var(--main-theme-color1-hover) !important;
+}
