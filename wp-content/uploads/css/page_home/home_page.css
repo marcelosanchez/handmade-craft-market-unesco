@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	display: inline-block;
 	margin-top: 20px;
-	margin-bottom: 75px;
+	margin-bottom: 40px;
 }
 
 .home_logo_cont img {
@@ -32,14 +32,17 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	font-size: 60px;
 	text-transform: uppercase;
-	color: white;
+	color: var(--main-theme-color4);
+	font-family: var(--main-theme-font-titleH2);
 }
 .main-home-section h2 {
 	margin: 0;
 	padding: 0;
 	text-align: center; 
 	font-size: 28px;
-	color: white;
+	text-transform: uppercase;
+	color: var(--main-theme-color4);
+	font-family: var(--main-theme-font-subtitle1);
 }
 
 .sub-section h1 {

@@ -281,27 +281,89 @@ p{
  /* CUSTOM CSS HOME PAGE SCROLL
  * --------------------------------------- */
 .main-home-section {
-	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/integ.handicrafts.unesco/wp-content/uploads/img/home/home-sec01.jpg");
+	/*background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/integ.handicrafts.unesco/wp-content/uploads/img/home/bkg/home_bkg011.jpg");*/
+	background: url("/integ.handicrafts.unesco/wp-content/uploads/img/home/bkg/home_bkg011.jpg");
 	background-size: cover;
 }
 
 .artisans-home-section {
-	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/integ.handicrafts.unesco/wp-content/uploads/img/home/home-sec02.jpg");
+	/*background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/integ.handicrafts.unesco/wp-content/uploads/img/home/bkg/home_bkg02.jpg");*/
+	/*background: url("/integ.handicrafts.unesco/wp-content/uploads/img/home/bkg/home_bkg02.jpg");*/
+	/*background-size: cover;*/
+}
+
+.artisans-home-section:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: url("/integ.handicrafts.unesco/wp-content/uploads/img/home/bkg/home_bkg02.jpg") 0 0 repeat;
 	background-size: cover;
+	-webkit-transform: translateX(25%);
+	transform: translateX(25%);
+}
+.artisans-home-section:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-bottom-width: 185vh;
+    border-top-width: 0px;
+    border-left: 60vw solid var(--main-theme-color5);
+    z-index: -1;
 }
 
 .handicraft-home-section {
-	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/integ.handicrafts.unesco/wp-content/uploads/img/home/home-sec03.jpg");
+	/*background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/integ.handicrafts.unesco/wp-content/uploads/img/home/bkg/home_bkg03.jpg");*/
+	/*background: url("/integ.handicrafts.unesco/wp-content/uploads/img/home/bkg/home_bkg03.jpg");*/
+	/*background-size: cover;*/
+}
+
+.handicraft-home-section:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: url("/integ.handicrafts.unesco/wp-content/uploads/img/home/bkg/home_bkg03.jpg") 0 0 repeat;
 	background-size: cover;
+	-webkit-transform: translateX(-25%);
+	transform: translateX(-25%);
+}
+.handicraft-home-section:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 0px;
+    border-bottom-width: 185vh;
+    border-right: 60vw solid var(--main-theme-color6);
+    z-index: -1;
+
+
+
+
 }
 
 .cities-home-section {
-	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/integ.handicrafts.unesco/wp-content/uploads/img/home/home-sec04.jpg");
+	/*background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/integ.handicrafts.unesco/wp-content/uploads/img/home/bkg/home_bkg04.jpg");*/
+	background: url("/integ.handicrafts.unesco/wp-content/uploads/img/home/bkg/home_bkg04.jpg");
 	background-size: cover;
 }
 
  /* CUSTOM NAV
  * --------------------------------------- */
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
-    background: #fff;
+    background: var( --main-theme-color1);
+    color: var( --main-theme-color1);
+}
+#fp-nav ul li a, .fp-slidesNav ul li a {
+    color: var( --main-theme-color1);
 }
