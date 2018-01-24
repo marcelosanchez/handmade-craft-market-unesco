@@ -16,14 +16,14 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <!-- SCROLL PAGE -->
-<link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/fullPage-scroll/jquery.fullPage.css" />
-<link rel="stylesheet" type="text/css" href="/integ.handicrafts.unesco/wp-content/uploads/css/fullPage-scroll/fullpage_custom.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo WP_SITEURL ?>/wp-content/uploads/css/fullPage-scroll/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo WP_SITEURL ?>/wp-content/uploads/css/fullPage-scroll/fullpage_custom.css" />
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/fullPage-scroll/scrolloverflow.js"></script>
-<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/fullPage-scroll/jquery.fullPage.js"></script>
-<script type="text/javascript" src="/integ.handicrafts.unesco/wp-content/uploads/js/fullPage-scroll/fullpage_custom.js"></script>
+<script type="text/javascript" src="<?php echo WP_SITEURL ?>/wp-content/uploads/js/fullPage-scroll/scrolloverflow.js"></script>
+<script type="text/javascript" src="<?php echo WP_SITEURL ?>/wp-content/uploads/js/fullPage-scroll/jquery.fullPage.js"></script>
+<script type="text/javascript" src="<?php echo WP_SITEURL ?>/wp-content/uploads/js/fullPage-scroll/fullpage_custom.js"></script>
 <!-- EO / SCROLL PAGE -->
 
 <!-- BOOTSTRAP -->

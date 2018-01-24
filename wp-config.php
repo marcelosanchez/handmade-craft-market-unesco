@@ -37,6 +37,9 @@ define('DB_CHARSET', 'utf8mb4');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+define('WP_HOME','http://200.10.147.158');
+define('WP_SITEURL','http://200.10.147.158');
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *

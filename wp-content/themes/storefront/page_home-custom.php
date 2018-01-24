@@ -30,7 +30,7 @@ get_header(); ?>
 					<h1>Find what you want</h1>
 					<h2>in our variety of crafts</h2>
 					<div class="gobtn_cont">
-						<button class="goto-btn" onclick="javascript:location.href='http://localhost/integ.handicrafts.unesco/shop/'">Go to Shop</button>
+						<button class="goto-btn" onclick="javascript:location.href='<?php echo WP_HOME ?>/shop/'">Go to Shop</button>
 					</div>
 
 				</div>
@@ -46,7 +46,7 @@ get_header(); ?>
 						<div class="col-md-3 offset-md-1">
 							<h1 class="">Artisans</h1>
 							<p class="">Donec a gravida ipsum. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue. Etiam iaculis mauris quis nulla tincidunt egestas tempor consectetur mi. Nullam ullamcorper posuere nisl, quis commodo purus fringilla in.</p>
-							<button class="goto-btn" onclick="javascript:location.href='http://localhost/integ.handicrafts.unesco/artisans/'">Read More</button>
+							<button class="goto-btn" onclick="javascript:location.href='<?php echo WP_HOME ?>/artisans/'">Read More</button>
 						</div>
 						<!-- <div class="col-md-6">
 							<img style="" src="/integ.handicrafts.unesco/wp-content/uploads/img/home/artisans_default_img.jpg">
@@ -66,7 +66,7 @@ get_header(); ?>
 						<div class="col-md-3 offset-md-8" style="text-align: left;">
 							<h1 class="">Handicrafts</h1>
 							<p class="" >Donec a gravida ipsum. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue. Etiam iaculis mauris quis nulla tincidunt egestas tempor consectetur mi. Nullam ullamcorper posuere nisl, quis commodo purus fringilla in.</p>
-							<button class="goto-btn" style="background-color: var(--main-theme-color4);" onclick="javascript:location.href='http://localhost/integ.handicrafts.unesco/handicraft/'">Read More</button>
+							<button class="goto-btn" style="background-color: var(--main-theme-color4);" onclick="javascript:location.href='<?php echo WP_HOME ?>/handicraft/'">Read More</button>
 						</div>
 						<!-- <div class="col-md-6">
 							<img style="" src="/integ.handicrafts.unesco/wp-content/uploads/img/home/artisans_default_img.jpg">
@@ -86,7 +86,7 @@ get_header(); ?>
 						<div class="col-md-3 offset-md-1">
 							<h1 class="">Cities</h1>
 							<p class="">Donec a gravida ipsum. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue. Etiam iaculis mauris quis nulla tincidunt egestas tempor consectetur mi. Nullam ullamcorper posuere nisl, quis commodo purus fringilla in. Mauris ultricies massa nisl, id mollis turpis gravida ut. Aliquam erat volutpat. Aliquam id metus ultrices, eleifend ipsum id.</p>
-							<button class="goto-btn" onclick="javascript:location.href='http://localhost/integ.handicrafts.unesco/cities/'">Read More</button>
+							<button class="goto-btn" onclick="javascript:location.href='<?php echo WP_HOME ?>/cities/'">Read More</button>
 						</div>
 						<div class="col-md-6">
 							<img style="" src="/integ.handicrafts.unesco/wp-content/uploads/img/home/artisans_default_img.jpg">

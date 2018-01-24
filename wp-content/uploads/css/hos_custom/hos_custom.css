@@ -10,13 +10,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*FONTS*/
-@font-face { font-family: LustriaRegular; src: url(/integ.handicrafts.unesco/wp-content/uploads/font/Lustria-Regular.ttf); }
-@font-face { font-family: Mottona; src: url(/integ.handicrafts.unesco/wp-content/uploads/font/Mottona-demo.otf); }
-@font-face { font-family: Raleway-Bold; src: url(/integ.handicrafts.unesco/wp-content/uploads/font/Raleway-Bold.ttf); }
-@font-face { font-family: Raleway-ExtraBold; src: url(/integ.handicrafts.unesco/wp-content/uploads/font/Raleway-ExtraBold.ttf); }
-@font-face { font-family: Raleway-Regular; src: url(/integ.handicrafts.unesco/wp-content/uploads/font/Raleway-Regular.ttf); }
-@font-face { font-family: Raleway-SemiBold; src: url(/integ.handicrafts.unesco/wp-content/uploads/font/Raleway-SemiBold.ttf); }
-@font-face { font-family: Raleway-ThinItalic; src: url(/integ.handicrafts.unesco/wp-content/uploads/font/Raleway-ThinItalic.ttf); }
+@font-face { font-family: LustriaRegular; src: url(http://200.10.147.158/wp-content/uploads/font/Lustria-Regular.ttf); }
+@font-face { font-family: Mottona; src: url(http://200.10.147.158/wp-content/uploads/font/Mottona-demo.otf); }
+@font-face { font-family: Raleway-Bold; src: url(http://200.10.147.158/wp-content/uploads/font/Raleway-Bold.ttf); }
+@font-face { font-family: Raleway-ExtraBold; src: url(http://200.10.147.158/wp-content/uploads/font/Raleway-ExtraBold.ttf); }
+@font-face { font-family: Raleway-Regular; src: url(http://200.10.147.158/wp-content/uploads/font/Raleway-Regular.ttf); }
+@font-face { font-family: Raleway-SemiBold; src: url(http://200.10.147.158/wp-content/uploads/font/Raleway-SemiBold.ttf); }
+@font-face { font-family: Raleway-ThinItalic; src: url(http://200.10.147.158/wp-content/uploads/font/Raleway-ThinItalic.ttf); }
 
 /*GENERAL CSS VARS*/
 :root {
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
  * --------------------------------------- */
 .gPage_hCont {
     /* background: grey; */
-    background-image: url(/integ.handicrafts.unesco/wp-content/uploads/img/artisans/content_header.jpg);
+    background-image: url(http://200.10.147.158/wp-content/uploads/img/artisans/content_header.jpg);
     background-position: 0px -170px;
     height: 110px;
     padding: 30px;
