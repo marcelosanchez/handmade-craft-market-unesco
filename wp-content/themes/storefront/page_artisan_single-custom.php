@@ -143,7 +143,7 @@ get_header(); ?>
 				<div class="col-md-3">
 					<p class="sect-h">Payment Accept</p>
 					<p>
-						<img src="/integ.handicrafts.unesco/wp-content/uploads/img/credit-cards.png" alt="credit card logos">
+						<img src="<?php echo WP_HOME ?>/wp-content/uploads/img/credit-cards.png" alt="credit card logos">
 					</p>
 					<br>
 					<p class="color-copyright-f">Powered by ESPOL</p>

@@ -23,7 +23,7 @@
 			<div class="quick_access_footer row col-md-9">
 				<div class="col-md-3">
 					<p class="sect-h">Company</p>
-					<p><a href="http://localhost/integ.handicrafts.unesco/">Home</a></p>
+					<p><a href="<?php echo WP_HOME ?>">Home</a></p>
 					<p><a href="#">About Us</a></p>
 					<p><a href="#">Shop</a></p>
 					<p><a href="#">Blog</a></p>
@@ -48,7 +48,7 @@
 				<div class="col-md-3">
 					<p class="sect-h">Payment Accept</p>
 					<p>
-						<img src="/integ.handicrafts.unesco/wp-content/uploads/img/credit-cards.png" alt="credit card logos">
+						<img src="<?php echo WP_HOME ?>/wp-content/uploads/img/credit-cards.png" alt="credit card logos">
 					</p>
 					<br>
 					<p class="color-copyright-f">Powered by ESPOL</p>

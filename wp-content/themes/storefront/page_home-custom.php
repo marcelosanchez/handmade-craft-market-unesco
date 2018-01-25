@@ -21,7 +21,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 		<div id="fullpage">
-			<div class="section main-home-section" id="section0">
+			<div class="section main-home-section" style="" id="section0">
 				<div class="intro">
 
 					<div class="home_logo_cont col-md-12">
@@ -39,38 +39,31 @@ get_header(); ?>
 				<div class="intro">
 
 					<div class="home_logo_cont col-md-12">
-						<img alt="logo_white" src="<?php echo get_images_path(); ?>/HANDMADE_logo_finalblanco.png">
+						<img class="logo_iso" alt="logo_white" src="<?php echo get_images_path(); ?>/logo_iso_white.png">
 					</div>
 					
 					<div class="row txtDesc_home">
 						<div class="col-md-3 offset-md-1">
 							<h1 class="">Artisans</h1>
-							<p class="">Donec a gravida ipsum. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue. Etiam iaculis mauris quis nulla tincidunt egestas tempor consectetur mi. Nullam ullamcorper posuere nisl, quis commodo purus fringilla in.</p>
+							<p class=""><?php the_field( 'atrisans_section' ); ?></p>
 							<button class="goto-btn" onclick="javascript:location.href='<?php echo WP_HOME ?>/artisans/'">Read More</button>
 						</div>
-						<!-- <div class="col-md-6">
-							<img style="" src="/integ.handicrafts.unesco/wp-content/uploads/img/home/artisans_default_img.jpg">
-						</div> -->
 					</div>
-					
 				</div>	
 			</div>
 			<div class="section handicraft-home-section sub-section" id="section2">
 				<div class="intro">
 
 					<div class="home_logo_cont col-md-12">
-						<img alt="logo_white" src="<?php echo get_images_path(); ?>/HANDMADE_logo_finalblanco.png">
+						<img class="logo_iso" alt="logo_white" src="<?php echo get_images_path(); ?>/logo_iso_white.png">
 					</div>
 					
 					<div class="row txtDesc_home" style="text-align: right;">
 						<div class="col-md-3 offset-md-8" style="text-align: left;">
 							<h1 class="">Handicrafts</h1>
-							<p class="" >Donec a gravida ipsum. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue. Etiam iaculis mauris quis nulla tincidunt egestas tempor consectetur mi. Nullam ullamcorper posuere nisl, quis commodo purus fringilla in.</p>
+							<p class="" ><?php the_field( 'handicraft_section' ); ?></p>
 							<button class="goto-btn" style="background-color: var(--main-theme-color4);" onclick="javascript:location.href='<?php echo WP_HOME ?>/handicraft/'">Read More</button>
 						</div>
-						<!-- <div class="col-md-6">
-							<img style="" src="/integ.handicrafts.unesco/wp-content/uploads/img/home/artisans_default_img.jpg">
-						</div> -->
 					</div>
 
 				</div>
@@ -79,7 +72,22 @@ get_header(); ?>
 				<div class="intro">
 
 					<div class="home_logo_cont col-md-12">
-						<img alt="logo_white" src="<?php echo get_images_path(); ?>/HANDMADE_logo_finalblanco.png">
+						<img class="logo_iso" alt="logo_white" src="<?php echo get_images_path(); ?>/logo_iso_white.png">
+					</div>
+					
+					<div class="row txtDesc_home">
+						<div class="col-md-3 offset-md-1">
+							<h1 class="">Cities</h1>
+							<p class=""><?php the_field( 'cities_section' ); ?></p>
+							<button class="goto-btn" onclick="javascript:location.href='<?php echo WP_HOME ?>/artisans/'">Read More</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="intro">
+
+					<div class="home_logo_cont col-md-12">
+						<img class="logo_iso" alt="logo_white" src="<?php echo get_images_path(); ?>/logo_iso_white.png">
 					</div>
 					
 					<div class="row txtDesc_home">
@@ -88,12 +96,9 @@ get_header(); ?>
 							<p class="">Donec a gravida ipsum. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue. Etiam iaculis mauris quis nulla tincidunt egestas tempor consectetur mi. Nullam ullamcorper posuere nisl, quis commodo purus fringilla in. Mauris ultricies massa nisl, id mollis turpis gravida ut. Aliquam erat volutpat. Aliquam id metus ultrices, eleifend ipsum id.</p>
 							<button class="goto-btn" onclick="javascript:location.href='<?php echo WP_HOME ?>/cities/'">Read More</button>
 						</div>
-						<div class="col-md-6">
-							<img style="" src="/integ.handicrafts.unesco/wp-content/uploads/img/home/artisans_default_img.jpg">
-						</div>
 					</div>
 
-				</div>
+				</div> -->
 			</div>
 
 			<!-- <div class="section artisans-home-section" id="section4">

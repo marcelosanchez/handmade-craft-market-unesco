@@ -38,8 +38,17 @@ h1, h2, h3, h4, h5, h6 {
 
   --main-theme-color4: #400026;
   --main-theme-color5: #751c2f;
-
   --main-theme-color6: #f17128;
+
+
+  --handicraft-main-color1: #fe7119;
+  --handicraft-main-color2: #c2523e;
+  --handicraft-main-color3: #8a162b;
+  --handicraft-main-color4: #51283a;
+
+  --handicraft-main-color3-dark: #480121;
+  --handicraft-main-color4-dark: #4b2c3c;
+
   
   --main-theme-color1-text-gray: #7b7b7b;
   --main-theme-dark-text-h: #181c28;

@@ -15,15 +15,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home_logo_cont {
-	text-align: center;
-	display: inline-block;
-	margin-top: 20px;
-	margin-bottom: 40px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 65px;
 }
 
 .home_logo_cont img {
 	display: inline-block;
     height: 8rem;
+}
+
+.home_logo_cont .logo_iso {
+	height: 5.7rem;
+    margin-top: 0.5%;
 }
 
 .main-home-section h1 {
