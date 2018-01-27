@@ -28,6 +28,14 @@ h1, h2, h3, h4, h5, h6 {
   --main-theme-font-subtitle2: "Raleway-SemiBold",sans-serif;
   --main-theme-font-description: "LustriaRegular",sans-serif;
   
+  --handicraft-main-color1: #fe7119;
+  --handicraft-main-color2: #c2523e;
+  --handicraft-main-color3: #8a162b;
+  --handicraft-main-color4: #51283a;
+  --handicraft-main-color5: #480121;
+
+  --handicraft-main-color4-dark: #4b2c3c;
+
   --main-theme-color1: #ff7a00;
   --main-theme-color1-hover: #ff5400;
   --main-theme-color2: #a25335;
@@ -35,20 +43,9 @@ h1, h2, h3, h4, h5, h6 {
   --main-theme-color3: #f7bc55;
   --main-theme-color3-hover: #bd8d38;
 
-
   --main-theme-color4: #400026;
   --main-theme-color5: #751c2f;
   --main-theme-color6: #f17128;
-
-
-  --handicraft-main-color1: #fe7119;
-  --handicraft-main-color2: #c2523e;
-  --handicraft-main-color3: #8a162b;
-  --handicraft-main-color4: #51283a;
-
-  --handicraft-main-color3-dark: #480121;
-  --handicraft-main-color4-dark: #4b2c3c;
-
   
   --main-theme-color1-text-gray: #7b7b7b;
   --main-theme-dark-text-h: #181c28;
@@ -339,4 +336,12 @@ nav.secondary-navigation {
 
 #menu-menu a {
 	text-transform: capitalize;
+}
+
+
+
+.hidden-pos-div {
+  width: 0;
+  height: 0;
+  position: relative;
 }
