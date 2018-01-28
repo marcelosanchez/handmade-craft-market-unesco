@@ -107,17 +107,26 @@ p {
 	padding: 0;
 }
 
+.right-city-images div[class^="image_"] {
+	transition-duration: 3s;
+	transition-timing-function: ease-in-out;
+}
+
 #city_navbar {
 	margin: 15% 0;
 }
 #city_navbar .nav-item {
 	margin: 35px 0;
+	cursor: pointer;
 }
 #city_navbar .nav-item a {
     padding: 14px 5vw;
     color: white;
     text-transform: uppercase;
     font-family: var(--main-theme-font-subtitle1);
+	transition-property: background;
+	transition-duration: .3s;
+	transition-timing-function: linear;
 }
 #city_navbar .nav-item .active {
     font-family: var(--main-theme-font-titleH1);

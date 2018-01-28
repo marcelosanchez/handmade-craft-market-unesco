@@ -33,6 +33,10 @@ h1, h2, h3, h4, h5, h6 {
   --handicraft-main-color3: #8a162b;
   --handicraft-main-color4: #51283a;
   --handicraft-main-color5: #480121;
+  
+  --handicraft-main-footer1: #2a2f35;
+  --handicraft-main-footer2: #aa5340;
+  --handicraft-main-footer3: #f9f9f9;
 
   --handicraft-main-color4-dark: #4b2c3c;
 
@@ -49,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   
   --main-theme-color1-text-gray: #7b7b7b;
   --main-theme-dark-text-h: #181c28;
+
 
   --main-theme-color-lightgrey: #f7f7f7;
 }
@@ -344,4 +349,84 @@ nav.secondary-navigation {
   width: 0;
   height: 0;
   position: relative;
+}
+
+
+
+/*FOOTER*/
+
+#colophon {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  background: transparent !important;
+}
+
+.subscribe_cardsInfo {
+  height: 200px;
+}
+
+.footer_subscribe {
+  height: 100%;
+  padding: 45px 0 0 13vw;
+  background-color: var(--handicraft-main-footer2);  
+  text-align: left;
+}
+
+.footer_subscribe p {
+  text-align: left !important;
+}
+
+.subscribe_cardsInfo .h1_text {
+  font-family: var(--main-theme-font-titleH1);
+  color: white !important;
+  font-size: 20px !important;
+  text-transform: uppercase;
+  line-height: 2.1 !important;
+}
+.subscribe_cardsInfo .h2_text {
+  font-family: var(--main-theme-font-subtitle1);
+  color: white !important;
+  font-size: 12px !important;
+  text-transform: uppercase;
+}
+
+.subscribe_cardsInfo input[type=email] {
+  height: 38px;
+  border-radius: 3px;
+  width: 270px;
+  text-align: center;
+}
+
+.subscribe_btn {
+  height: 32px;
+  width: 113px;
+  padding: 7px 20px;
+  margin: 3px 35px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: white;
+  background: var(--main-theme-color1);
+}
+
+.footer_cards {
+  height: 100%;
+  padding: 45px 13vw 0 0;
+  background-color: var(  --handicraft-main-footer3);
+}
+
+#colophon p {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 14px;
+  color: #ffffff80;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.rights_main_cont {
+  height: 77px;
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--handicraft-main-footer1);
 }

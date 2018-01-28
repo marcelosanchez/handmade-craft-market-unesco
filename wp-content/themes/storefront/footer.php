@@ -16,47 +16,34 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<!-- FOOTER -->
-		<div class="custom_footer_maincont row">
-			<div class="discount_code_cont col-md-12">
+		<div class="custom_footer_maincont">
+			<!-- <div class="discount_code_cont col-md-12">
 				<p>Ingrese Codigo de Descuento</p>
 			</div>
-			<div class="quick_access_footer row col-md-9">
-				<div class="col-md-3">
-					<p class="sect-h">Company</p>
-					<p><a href="<?php echo WP_HOME ?>">Home</a></p>
-					<p><a href="#">About Us</a></p>
-					<p><a href="#">Shop</a></p>
-					<p><a href="#">Blog</a></p>
-					<p><a href="#">Contact Us</a></p>
-				</div>
-				<div class="col-md-3">
-					<p class="sect-h">Service</p>
-					<p><a href="#">Support</a></p>
-					<p><a href="#">Faq</a></p>
-					<p><a href="#">Warranty</a></p>
-					<p><a href="#">Live Chat</a></p>
-					<p><a href="#">Privacy Policy</a></p>
-				</div>
-				<div class="col-md-3">
-					<p class="sect-h">Order & Returns</p>
-					<p><a href="#">Order</a></p>
-					<p><a href="#">Status</a></p>
-					<p><a href="#">Shipping</a></p>
-					<p><a href="#">Policy & Service</a></p>
-					<p><a href="#">Cart</a></p>
-				</div>
-				<div class="col-md-3">
-					<p class="sect-h">Payment Accept</p>
-					<p>
-						<img src="<?php echo WP_HOME ?>/wp-content/uploads/img/credit-cards.png" alt="credit card logos">
-					</p>
+			<div class="quick_access_footer row col-md-9"> -->
+			
+			<div class="subscribe_cardsInfo row">
+				<div class="footer_subscribe col-md-8">
+					<p class="h1_text">Subscribe your email</p>
+					<p class="h2_text">and get best news and know latest products added</p>
 					<br>
-					<p class="color-copyright-f">Powered by ESPOL</p>
-					<p class="color-copyright-f">Copyright © 2017 All Rights Reserved</p>
+					<input type="email" placeholder="ENTER YOUR EMAIL ADDRESS">
+					<button class="goto-btn subscribe_btn">Subscribe</button>
+				</div>
+				<div class="footer_cards col-md-4">
+					<p>Payment Accept</p>
 				</div>
 			</div>
+			<div class="rights_main_cont">
+				<p class="color-copyright-f">Powered by ESPOL</p>
+				<p class="color-copyright-f">© All Rights Reserved - 2018</p>
+			</div>
+				
 		</div> <!-- EO / FOOTER -->
 
+
+		<!-- <p class="color-copyright-f">Powered by ESPOL</p>
+		<p class="color-copyright-f">Copyright © 2017 All Rights Reserved</p> -->
 
 		<!-- <div class="col-full"> -->
 

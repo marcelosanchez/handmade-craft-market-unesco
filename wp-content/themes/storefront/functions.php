@@ -157,24 +157,31 @@ function wpb_adding_scripts() {
     }
 
     // ----------------------------------------------------------------
-    // SHOP - CSS
+    // SHOP - SCRIPT
     if ( is_shop() ) {
     }
 
-    // PRODUCT SINGLE - CSS
+    // PRODUCT SINGLE - SCRIPT
     if ( is_product() ) {
         wp_register_script( 'single_product_script', get_scripts_path() . '/page_wc_product_single/product_single_page.js', array('jquery'),'1.1', true);
         wp_enqueue_script( 'single_product_script' );
     }
 
-    // CART - CSS
+    // CART - SCRIPT
     if ( is_cart() ) {
     }
 
-    // CHECKOUT - CSS
+    // CHECKOUT - SCRIPT
     if ( is_checkout() ) {
     }
     // ----------------------------------------------------------------
+    
+
+    // CITY SINGLE - SCRIPT
+        if ( is_page_template( 'page_city_single-custom.php' ) ) {
+            wp_register_script( 'cities_script', get_scripts_path() . '/page_city_single/city_single_page.js', array('jquery'),'1.1', true);
+            wp_enqueue_script( 'cities_script' );
+        }
 
 }
 add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );  

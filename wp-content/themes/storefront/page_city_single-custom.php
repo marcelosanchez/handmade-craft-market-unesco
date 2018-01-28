@@ -88,19 +88,19 @@ get_header(); ?>
 				
 				<ul class="nav flex-column" id="city_navbar">
 					<li class="nav-item">
-						<a class="nav-link active" href="#">When to go to <?php the_field( 'city_name' ); ?></a>
+						<a class="nav-link active" onclick="selectCityNav(this,'1');">When to go to <?php the_field( 'city_name' ); ?></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Transport</a>
+						<a class="nav-link" onclick="selectCityNav(this,'2');">Transport</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Tourist Attractions</a>
+						<a class="nav-link" onclick="selectCityNav(this,'3');">Tourist Attractions</a>
 					</li>
 				</ul>
 
 			</div>
 			<div class="col-md-8 right-city-images">
-				<div class="image_1 img-full-div">
+				<div class="image_1 img_cont img-full-div">
 					<img class="img-full-div" src="<?php the_field( 'weather_image' ); ?>" alt="">
 					<div class="hidden-pos-div">
 						<div class="image_description">
@@ -110,7 +110,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-				<div class="image_2 img-full-div" style="display: none;">
+				<div class="image_2 img_cont img-full-div" style="display: none;">
 					<img class="img-full-div" src="<?php the_field( 'transport_image' ); ?>" alt="">
 					<div class="hidden-pos-div">
 						<div class="image_description">
@@ -120,7 +120,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-				<div class="image_3 img-full-div" style="display: none;">
+				<div class="image_3 img_cont img-full-div" style="display: none;">
 					<img class="img-full-div" src="<?php the_field( 'tourist_attractions_image' ); ?>" alt="">
 					<div class="hidden-pos-div">
 						<div class="image_description">
