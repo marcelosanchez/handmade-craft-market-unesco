@@ -58,7 +58,7 @@ p.desc_text {
     height: 430px;
     color: white;
     font-size: 15px;
-    padding: 75px;
+    padding: 10vh 5vw;
     background-color: var(--handicraft-main-color5);
     font-family: var(--main-theme-font-description);
     display: table;
@@ -80,7 +80,7 @@ p.desc_text {
 .half-branding-desc-text {
     height: 430px;
     font-size: 15px;
-    padding: 75px;
+    padding: 7vh 7vh 0 11vw;
     color: var(--handicraft-main-color5);
     font-family: var(--main-theme-font-description);
     display: table;
