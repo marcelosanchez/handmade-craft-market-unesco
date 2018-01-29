@@ -368,7 +368,7 @@ nav.secondary-navigation {
 
 .footer_subscribe {
   height: 100%;
-  padding: 45px 0 0 13vw;
+  padding: 36px 0 0 13vw;
   background-color: var(--handicraft-main-footer2);  
   text-align: left;
 }
@@ -411,8 +411,23 @@ nav.secondary-navigation {
 
 .footer_cards {
   height: 100%;
-  padding: 45px 13vw 0 0;
+  padding: 36px 13vw 0 0;
   background-color: var(  --handicraft-main-footer3);
+}
+
+.footer_cards p {
+  color: var(--handicraft-main-color2) !important;
+  font-family: var(--main-theme-font-H2);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: right !important;
+}
+
+.footer_cards img {
+  height: 60px;
+  float: right;
+  margin-top: 28px;
+  cursor: pointer;
 }
 
 #colophon p {

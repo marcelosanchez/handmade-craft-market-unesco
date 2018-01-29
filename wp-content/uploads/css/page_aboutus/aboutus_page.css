@@ -18,70 +18,257 @@ p {
 	font-size: 16px;
 }
 
-.fp-tableCell {
-	vertical-align: top;
+p.desc_text {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: var(--main-theme-font-description);
 }
 
-.intro {
-	margin-top: 77px;
-}
-
-.home_logo_cont {
+.page_title {
 	text-align: center;
-	display: inline-block;
-	margin-top: 10px;
-	margin-bottom: 175px;
 }
 
-.home_logo_cont img {
-	display: inline-block;
+.page_title h1 {
+    font-size: 25px;
+    margin: 8px auto;
+    text-transform: uppercase;
+    color: var(--handicraft-main-color4);
+    font-family: var(--main-theme-font-titleH1);
 }
 
-.main-home-section h1 {
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	font-size: 60px;
-	text-transform: uppercase;
-	color: white;
-}
-.main-home-section h2 {
-	margin: 0;
-	padding: 0;
-	text-align: center; 
-	font-size: 28px;
-	color: white;
+.aboutUs_shortDesc {
+    width: 33vw;
+    text-align: center;
 }
 
-.sub-section h1 {
-	color: white;
-	font-size: 38px;
-	text-transform: uppercase;
-	font-weight: normal;
+.half-aboutus-desc-img {
+    height: 430px;
+    padding: 0;
 }
 
-.sub-section p {
-	color: white;
-	font-size: 14px;
-	/*font-weight: bold;*/
+.img-full-div {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
 }
 
-.txtDesc_home {
-	text-align: left;
-}
-
-.txtDesc_home p {
+.half-aboutus-desc-text {
+    height: 430px;
     color: white;
-    font-size: 14px;
+    font-size: 15px;
+    padding: 75px;
+    background-color: var(--handicraft-main-color5);
+    font-family: var(--main-theme-font-description);
+    display: table;
+}
+
+.half-aboutus-desc-text h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: var(--main-theme-font-subtitle2);
+    padding-bottom: 40px;
+}
+
+.half-aboutus-desc-text p {
+    /*display: table-cell;*/
+    vertical-align: middle;
+}
+
+
+.half-branding-desc-text {
+    height: 430px;
+    font-size: 15px;
+    padding: 75px;
+    color: var(--handicraft-main-color5);
+    font-family: var(--main-theme-font-description);
+    display: table;
+}
+
+.half-branding-desc-text h3 {
+    font-family: var(--main-theme-font-titleH2);
+    text-transform: uppercase !important;
+    font-weight: bolder;
+    color: var(--handicraft-main-color5);
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+.fullw-video-desc {
+    position: absolute;
+}
+
+main div.aboutus_video_cont {
+    position: inherit;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 0;
     margin: 0;
-    margin-right: 34px;
-    margin-bottom: 25px;
-    display: inline-block;
+    margin-left: 14px;
+    height: 63vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+main div.aboutus_video_cont::before {
+    display: block;
+    position: fixed;
+    background-image: linear-gradient(rgba(14, 15, 19, 0.9), rgba(21, 21, 25, 0.75));
+    height: 100%;
+    width: 100%;
+    content: '';
+}
+
+main div.aboutus_video_cont video {
+    height: 100%;
+    width: 177.77777778vh;
+    min-width: 100%;
+    min-height: 56.25vw;
+    margin-top: -10px;
+}
+
+.half-video-desc-img {}
+
+.half-video-desc-text {
+	padding: 70px 130px;
+}
+.half-video-desc-text h3 {
+    text-transform: uppercase !important;
+    color: white !important;
+    font-size: 18px;
+    font-family: var(--main-theme-font-subtitle2);
+    padding-bottom: 40px;
+}
+.half-video-desc-text p {
+	color: white !important;
+	font-weight: lighter;
+	font-family: var(--main-theme-font-description);
+}
+
+
+.aboutus_h3 {
+	text-transform: uppercase !important;
+    font-weight: bolder;
+    color: var(--handicraft-main-color5);
+    font-size: 18px;
+    font-family: var(--main-theme-font-titleH1);
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+#galleryCarousel .carousel-indicators {
+    position: static;
+    left: initial;
+    margin-left: initial;
     width: 100%;
 }
 
-.txtDesc_home img {
-	width: 335px; 
-	height: 185px;
-	margin-left: 77px;
+#galleryCarousel .carousel-indicators > li {
+    width: initial;
+    height: initial;
+    text-indent: initial;
+    height: 60px;
+    width: auto;
+}
+
+#galleryCarousel .carousel-indicators > li img {
+    opacity: 0.7;
+    height: 60px;
+    width: auto;
+}
+
+#galleryCarousel .carousel-indicators > li.active img {
+    opacity: 0.7;
+    height: 60px;
+    width: auto;
+}
+
+
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    opacity: .5;
+}
+
+.carousel-control:focus, .carousel-control:hover {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.carousel-control.left {
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0%,rgba(0,0,0,.0001) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0%,rgba(0,0,0,.0001) 100%);
+    background-image: linear-gradient(to right,rgba(0,0,0,.5) 0%,rgba(0,0,0,.0001) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0%,rgba(0,0,0,.5) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0%,rgba(0,0,0,.5) 100%);
+    background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0%,rgba(0,0,0,.5) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+
+
+
+#galleryCarousel .list-inline {
+        white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+.list-inline-item:not(:last-child) {
+    margin-right: 5px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    margin-top: 3px;
+    background-color: #fff;
+}
+
+.pt-3 {
+    padding-top: 30% !important;
 }

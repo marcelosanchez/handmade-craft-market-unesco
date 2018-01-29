@@ -32,6 +32,7 @@
 				</div>
 				<div class="footer_cards col-md-4">
 					<p>Payment Accept</p>
+					<img src="<?php echo get_images_path() ?>/credit_cards.png" alt="">
 				</div>
 			</div>
 			<div class="rights_main_cont">

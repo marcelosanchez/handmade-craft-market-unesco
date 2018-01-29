@@ -122,6 +122,11 @@ function get_images_path () {
     return $upload_direct;
 }
 
+function get_videos_path () {
+    $upload_direct = content_url() . '/uploads/video' ;
+    return $upload_direct;
+}
+
 function get_fonts_path () {
     $upload_direct = content_url() . '/uploads/font' ;
     return $upload_direct;
@@ -182,6 +187,13 @@ function wpb_adding_scripts() {
             wp_register_script( 'cities_script', get_scripts_path() . '/page_city_single/city_single_page.js', array('jquery'),'1.1', true);
             wp_enqueue_script( 'cities_script' );
         }
+
+
+    // ABOUT US - CSS
+    if ( is_page_template( 'page_about-custom.php' ) ) {
+        wp_register_script( 'about_script', get_scripts_path() . '/page_aboutus/aboutus_page.js' );
+        wp_register_script( 'about_script' );
+    }
 
 }
 add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );  
