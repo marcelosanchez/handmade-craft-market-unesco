@@ -40,6 +40,9 @@ define('DB_COLLATE', '');
 define('WP_HOME','http://200.10.147.158');
 define('WP_SITEURL','http://200.10.147.158');
 
+/**don't need FTP for installing a theme*/
+define('FS_METHOD', 'direct');
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
