@@ -12,6 +12,20 @@
  * @package storefront
  */
 
+
+
+global $wpdb;
+
+  $table_name = $wpdb->prefix . "city";
+  //FROM TEMPLATE
+  $current_city = get_field( 'city_name' ); 
+
+  $city_cid = $wpdb->get_var( "SELECT DISTINCT city_id FROM $table_name WHERE UPPER(name) LIKE UPPER('%$current_city%')" );
+
+
+
+
+
 get_header(); ?>
 
 
@@ -33,6 +47,12 @@ get_header(); ?>
 			<h1><?php the_field( 'city_name' ); ?></h1>
 			<h2><?php the_field( 'country_name' ); ?></h2>
 		</div>
+
+		<!-- META INFO -->
+		<!-- <p><?php echo $table_name ?></p>
+		<p><?php echo $current_city ?></p>
+		<p><?php echo $city_cid ?></p> -->
+
 
 		<div id="city_carousel" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">

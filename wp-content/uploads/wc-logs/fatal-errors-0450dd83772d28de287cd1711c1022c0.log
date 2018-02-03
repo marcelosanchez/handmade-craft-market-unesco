@@ -94,3 +94,83 @@
 
 2018-01-21T08:08:49+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
 
+2018-02-03T04:30:18+00:00 CRITICAL Call to undefined function getproductList()
+
+2018-02-03T04:31:59+00:00 CRITICAL Call to undefined function getproductList()
+
+2018-02-03T04:33:30+00:00 CRITICAL Call to undefined function getproductList()
+
+2018-02-03T04:34:29+00:00 CRITICAL Call to undefined function getproductList()
+
+2018-02-03T04:35:26+00:00 CRITICAL Call to undefined function getproductList()
+
+2018-02-03T11:00:26+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:05:51+00:00 CRITICAL Call to undefined function wc_getId_from_name()
+
+2018-02-03T11:06:08+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:07:57+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:14:58+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:15:55+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:16:50+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:18:18+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:18:45+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:19:22+00:00 CRITICAL Call to undefined function wc_getId_from_name()
+
+2018-02-03T11:20:08+00:00 CRITICAL Call to undefined function wc_getId_from_name()
+
+2018-02-03T11:26:43+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:30:37+00:00 CRITICAL Call to undefined function wc_getId_from_name()
+
+2018-02-03T11:31:03+00:00 CRITICAL Call to undefined function wc_getId_from_name()
+
+2018-02-03T11:31:28+00:00 CRITICAL Call to undefined function wc_getId_from_name()
+
+2018-02-03T11:32:33+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:34:13+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:34:44+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:34:59+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:36:28+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:55:29+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:56:53+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:57:31+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:58:01+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T11:58:48+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T12:02:13+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T12:06:01+00:00 CRITICAL Call to a member function get_var() on a non-object
+
+2018-02-03T12:07:00+00:00 CRITICAL Call to undefined function test()
+
+2018-02-03T12:07:09+00:00 CRITICAL Call to undefined function test()
+
+2018-02-03T12:07:31+00:00 CRITICAL Call to undefined function test()
+
+2018-02-03T12:07:47+00:00 CRITICAL Call to undefined function test()
+
+2018-02-03T12:08:14+00:00 CRITICAL Call to undefined function test()
+
+2018-02-03T12:08:24+00:00 CRITICAL Call to undefined function test()
+
+2018-02-03T12:09:42+00:00 CRITICAL Call to undefined function test()
+
+2018-02-03T12:10:24+00:00 CRITICAL Call to undefined function test()
+

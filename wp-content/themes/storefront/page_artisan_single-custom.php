@@ -12,7 +12,20 @@
  * @package storefront
  */
 
+
+global $wpdb;
+
+$artisan_email = get_field( 'artisan_email' );
+
+$table_name = $wpdb->prefix . "users";
+$user_id = $wpdb->get_var( "SELECT id FROM $table_name WHERE user_email='$artisan_email'" );
+$display_name = $wpdb->get_var( "SELECT display_name FROM $table_name WHERE user_email='$artisan_email'" );
+
+
+
 get_header(); ?>
+
+<link rel="stylesheet" type="text/css" href="<?php echo get_styles_path() ?>/page_wc_product_card/product_card_page.css">
 
 <!-- ARTISANS PAGE -->
 
@@ -20,137 +33,78 @@ get_header(); ?>
 
 
 <div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
+	<main id="main" class="site-main city_main_cont" role="main">
 
-		<div class="col-md-12 gPage_hCont parallax">
-			<?php echo get_the_title(); ?>
-		</div>
+		
+		<!-- ********************************** -->
 
-		<div class="row txtDesc_general">
-			<div class="col-md-6">
-				<img style="" src="/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisans_general.jpg">
+		<div class="row" style="padding-top: 0px;">
+			<div class="col-md-12 artisan_header" style="background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),  url(<?php the_field( 'profile_banner_img' ); ?>);">
+				<div class="profile_img_cont col-md-12">
+					<img class="col-md-2" src="<?php the_field( 'profile_img' ); ?>" alt="">
+					<h1 data-id="<?php echo $user_id ?>"><?php echo $display_name ?></h1>
+					<h3><?php the_field( 'artisan_city' ); ?></h3>
+				</div>
 			</div>
-			<div class="col-md-4">
-				<p class="text-left">Donec a gravida ipsum. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue. Etiam iaculis mauris quis nulla tincidunt. Nullam ullamcorper posuere nisl, quis commodo purus fringilla in. Mauris ultricies massa nisl, id mollis turpis gravida ut. Aliquam erat volutpat. Aliquam id metus ultrices, eleifend ipsum id. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue.</p> 
-				<p>Donec a gravida ipsum. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue. Etiam iaculis mauris quis nulla tincidunt. Nullam ullamcorper posuere nisl, quis commodo purus fringilla in. Mauris ultricies massa nisl, id mollis turpis gravida ut. Aliquam erat volutpat. Aliquam id metus ultrices, eleifend ipsum id. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue.</p>
-			</div>
-		</div>
-		<div id="meet_ur_artisans" class="artisans_h_cont">
-			<h1 class="text-center">Meet our artisans</h1>
-			<h2 class="text-center">Excellent artisans from different countries</h2>
 		</div>
 
-		<div class="artisans_main_cont row">
+		<!-- ********************************** -->
+
+		<div class="row centered_content artisan_desc_main_text col-md-6" style="padding-top: 60px;">
+			<h5>My History</h5>
+			<p class="">
+				<?php the_field( 'my_history_text' ); ?>
+			</p>
+		</div>
+
+		<!-- ********************************** -->
+
+		<div class="row" style="padding-top: 60px;">
+			<div class="col-md-6 half-artisan-desc-text">
+				<h5>Craft's Elaboration</h5>
+				<p>
+					<?php the_field( 'crafts_elaboration' ); ?>
+				</p>
+			</div>
+			<div class="col-md-6 half-artisan-desc-img" style="background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),  url(<?php the_field( 'crafts_elaboration_image' ); ?>);">
+				<!-- <img class="img-full-div" src="<?php the_field( 'crafts_elaboration_image' ); ?>" alt=""> -->
+			</div>
+		</div>
+		
+		<!-- ********************************** -->
+
+		<div class="row centered_content handicrafts_section" style="padding-top: 60px;">
 			
-			<div class="card col-md-3 col-md-offset-1 hoverable flex-center">
-				<div class="card-header row">
-					<div class="user_cont col-md-12">
-						<img class="centered-and-cropped" width="50" height="50" src="/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisan_id_img/artisan-id01.jpg" alt="avatar">
-						<div class="user_data col-md-8">
-							<span class="art-name row" title="Name" href="#">
-								<b>Artisan Name</b>
-							</span>
-							<span class="art-country row">Artisan Country</span>
-						</div>
-					</div>
-				</div>
-				<div class="card-avatar-img row" style="background-image: url(/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisan_avatar_img/avatar-id01.jpg);">
-				</div>
-				<div class="card-body row">
-					<p>Aliquam erat volutpat. Aliquam id metus ultrices, eleifend ipsum id. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue.</p>
-					<button class="goto-btn">Read More</button>
-				</div>
-			</div>
+			<h3>Handicrafts</h3>
 
-			<div class="card col-md-3 col-md-offset-1 hoverable flex-center">
-				<div class="card-header row">
-					<div class="user_cont col-md-12">
-						<img class="centered-and-cropped" width="50" height="50" src="/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisan_id_img/artisan-id02.jpg" alt="avatar">
-						<div class="user_data col-md-8">
-							<span class="art-name row" title="Name" href="#">
-								<b>Artisan Name</b>
-							</span>
-							<span class="art-country row">Artisan Country</span>
-						</div>
-					</div>
-				</div>
-				<div class="card-avatar-img row" style="background-image: url(/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisan_avatar_img/avatar-id02.jpg);">
-				</div>
-				<div class="card-body row">
-					<p>Aliquam erat volutpat. Aliquam id metus ultrices, eleifend ipsum id. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue.</p>
-					<button class="goto-btn">Read More</button>
-				</div>
-			</div>
+			<div class="row">
+				<?php 
+					$args = apply_filters('woocommerce_related_products_args', array(
+					        'post_type'                             => 'product',
+					        'ignore_sticky_posts'   => 1,
+					        'no_found_rows'                 => 1,
+					        'posts_per_page'                => $posts_per_page,
+					        'orderby'                               => $orderby,
+					        'author'                                => $user_id,
+					        'post__not_in'                  => array($product->id)
+					) );
+					$products = new WP_Query( $args );
+					$woocommerce_loop['columns']    = $columns;
+					if ( $products->have_posts() ) : ?>
 
-			<div class="card col-md-3 col-md-offset-1">
-				<div class="card-header row">
-					<div class="user_cont col-md-12">
-						<img class="centered-and-cropped" width="50" height="50" src="/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisan_id_img/artisan-id03.jpg" alt="avatar">
-						<div class="user_data col-md-8">
-							<span class="art-name row" title="Name" href="#">
-								<b>Artisan Name</b>
-							</span>
-							<span class="art-country row">Artisan Country</span>
-						</div>
-					</div>
-				</div>
-				<div class="card-avatar-img row" style="background-image: url(/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisan_avatar_img/avatar-id03.jpg);">
-				</div>
-				<div class="card-body row">
-					<p>Aliquam erat volutpat. Aliquam id metus ultrices, eleifend ipsum id. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue.</p>
-					<button class="btn-waves-ef">Read More</button>
-				</div>
-			</div>
+			        <div class="columns-3">
+		                <?php woocommerce_product_loop_start(); ?>
+	                        <?php while ( $products->have_posts() ) : $products->the_post(); ?>
+	                            <?php woocommerce_get_template_part( 'content', 'product' ); ?>
+	                        <?php endwhile; // end of the loop. ?>
+		                <?php woocommerce_product_loop_end(); ?>
+			        </div>
 
+				<?php endif;
+				wp_reset_postdata();
+				?>
+			</div>
 		</div>
-
-		<div class="view_more_artisans row text-center">
-			<button class="goto-btn waves-effect waves-light" style="margin: 0 auto;">View More</button>
-		</div>
-
-
-
-		<!-- FOOTER -->
-		<!-- <div class="custom_footer_maincont row">
-			<div class="discount_code_cont col-md-12">
-				<p>Ingrese Codigo de Descuento</p>
-			</div>
-			<div class="quick_access_footer row col-md-9">
-				<div class="col-md-3">
-					<p class="sect-h">Company</p>
-					<p><a href="http://localhost/integ.handicrafts.unesco/">Home</a></p>
-					<p><a href="#">About Us</a></p>
-					<p><a href="#">Shop</a></p>
-					<p><a href="#">Blog</a></p>
-					<p><a href="#">Contact Us</a></p>
-				</div>
-				<div class="col-md-3">
-					<p class="sect-h">Service</p>
-					<p><a href="#">Support</a></p>
-					<p><a href="#">Faq</a></p>
-					<p><a href="#">Warranty</a></p>
-					<p><a href="#">Live Chat</a></p>
-					<p><a href="#">Privacy Policy</a></p>
-				</div>
-				<div class="col-md-3">
-					<p class="sect-h">Order & Returns</p>
-					<p><a href="#">Order</a></p>
-					<p><a href="#">Status</a></p>
-					<p><a href="#">Shipping</a></p>
-					<p><a href="#">Policy & Service</a></p>
-					<p><a href="#">Cart</a></p>
-				</div>
-				<div class="col-md-3">
-					<p class="sect-h">Payment Accept</p>
-					<p>
-						<img src="<?php echo WP_HOME ?>/wp-content/uploads/img/credit-cards.png" alt="credit card logos">
-					</p>
-					<br>
-					<p class="color-copyright-f">Powered by ESPOL</p>
-					<p class="color-copyright-f">Copyright © 2017 All Rights Reserved</p>
-				</div>
-			</div>
-		</div> --> <!-- EO / FOOTER -->
 
 	</main><!-- #main -->
 </div><!-- #primary -->

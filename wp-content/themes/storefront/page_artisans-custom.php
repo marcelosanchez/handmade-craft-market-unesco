@@ -28,7 +28,7 @@ get_header(); ?>
 
 		<div class="row txtDesc_general">
 			<div class="col-md-6">
-				<img style="" src="/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisans_general.jpg">
+				<img style="" src="http://200.10.147.158/wp-content/uploads/img/artisans/artisans_general.jpg">
 			</div>
 			<div class="col-md-4">
 				<p class="text-left">Donec a gravida ipsum. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue. Etiam iaculis mauris quis nulla tincidunt. Nullam ullamcorper posuere nisl, quis commodo purus fringilla in. Mauris ultricies massa nisl, id mollis turpis gravida ut. Aliquam erat volutpat. Aliquam id metus ultrices, eleifend ipsum id. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue.</p> 
@@ -45,7 +45,7 @@ get_header(); ?>
 			<div class="card col-md-3 col-md-offset-1 hoverable flex-center">
 				<div class="card-header row">
 					<div class="user_cont col-md-12">
-						<img class="centered-and-cropped" width="50" height="50" src="/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisan_id_img/artisan-id01.jpg" alt="avatar">
+						<img class="centered-and-cropped" width="50" height="50" src="http://200.10.147.158/wp-content/uploads/img/artisans/artisan_id_img/artisan-id01.jpg" alt="avatar">
 						<div class="user_data col-md-8">
 							<span class="art-name row" title="Name" href="#">
 								<b>Artisan Name</b>
@@ -54,7 +54,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-				<div class="card-avatar-img row" style="background-image: url(/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisan_avatar_img/avatar-id01.jpg);">
+				<div class="card-avatar-img row" style="background-image: url(http://200.10.147.158/wp-content/uploads/img/artisans/artisan_avatar_img/avatar-id01.jpg);">
 				</div>
 				<div class="card-body row">
 					<p>Aliquam erat volutpat. Aliquam id metus ultrices, eleifend ipsum id. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue.</p>
@@ -65,7 +65,7 @@ get_header(); ?>
 			<div class="card col-md-3 col-md-offset-1 hoverable flex-center">
 				<div class="card-header row">
 					<div class="user_cont col-md-12">
-						<img class="centered-and-cropped" width="50" height="50" src="/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisan_id_img/artisan-id02.jpg" alt="avatar">
+						<img class="centered-and-cropped" width="50" height="50" src="http://200.10.147.158/wp-content/uploads/img/artisans/artisan_id_img/artisan-id02.jpg" alt="avatar">
 						<div class="user_data col-md-8">
 							<span class="art-name row" title="Name" href="#">
 								<b>Artisan Name</b>
@@ -74,7 +74,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-				<div class="card-avatar-img row" style="background-image: url(/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisan_avatar_img/avatar-id02.jpg);">
+				<div class="card-avatar-img row" style="background-image: url(http://200.10.147.158/wp-content/uploads/img/artisans/artisan_avatar_img/avatar-id02.jpg);">
 				</div>
 				<div class="card-body row">
 					<p>Aliquam erat volutpat. Aliquam id metus ultrices, eleifend ipsum id. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue.</p>
@@ -85,7 +85,7 @@ get_header(); ?>
 			<div class="card col-md-3 col-md-offset-1">
 				<div class="card-header row">
 					<div class="user_cont col-md-12">
-						<img class="centered-and-cropped" width="50" height="50" src="/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisan_id_img/artisan-id03.jpg" alt="avatar">
+						<img class="centered-and-cropped" width="50" height="50" src="http://200.10.147.158/wp-content/uploads/img/artisans/artisan_id_img/artisan-id03.jpg" alt="avatar">
 						<div class="user_data col-md-8">
 							<span class="art-name row" title="Name" href="#">
 								<b>Artisan Name</b>
@@ -94,11 +94,11 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-				<div class="card-avatar-img row" style="background-image: url(/integ.handicrafts.unesco/wp-content/uploads/img/artisans/artisan_avatar_img/avatar-id03.jpg);">
+				<div class="card-avatar-img row" style="background-image: url(http://200.10.147.158/wp-content/uploads/img/artisans/artisan_avatar_img/avatar-id03.jpg);">
 				</div>
 				<div class="card-body row">
 					<p>Aliquam erat volutpat. Aliquam id metus ultrices, eleifend ipsum id. Nunc magna nibh, pulvinar vehicula velit at, convallis volutpat augue.</p>
-					<button class="btn-waves-ef">Read More</button>
+					<button class="goto-btn">Read More</button>
 				</div>
 			</div>
 
@@ -118,7 +118,7 @@ get_header(); ?>
 			<div class="quick_access_footer row col-md-9">
 				<div class="col-md-3">
 					<p class="sect-h">Company</p>
-					<p><a href="http://localhost/integ.handicrafts.unesco/">Home</a></p>
+					<p><a href="http://localhosthttp://200.10.147.158/">Home</a></p>
 					<p><a href="#">About Us</a></p>
 					<p><a href="#">Shop</a></p>
 					<p><a href="#">Blog</a></p>

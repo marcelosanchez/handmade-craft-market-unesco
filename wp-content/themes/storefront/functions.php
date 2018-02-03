@@ -84,6 +84,31 @@ add_action( 'wp_enqueue_scripts', 'theme_add_bootstrap' );
 
 
 
+// Place this in your themes functions.php 
+// This will put the menu item in your primary menu. Change the theme location if you want to change which menu this goes in. 
+// Use the Free code for WC Vendors Free, use the Pro code for WC Vendors Pro
+
+/* BEGIN WC Vendors Free */
+add_filter( 'wp_nav_menu_items', 'wcv_vendors_menu', 10, 2 );
+function wcv_vendors_menu ( $items, $args ) {
+    if ($args->theme_location == 'primary') {
+        $vendors  = get_users( array( 'role' => 'vendor' ) ); 
+        $items .= '<li><a href="#">Vendors</a>'; 
+        $items .= '<ul class="sub-menu">'; 
+        foreach( $vendors as $vendor ) { 
+            $vendor_shop_link = site_url( WC_Vendors::$pv_options->get_option( 'vendor_shop_permalink' ) .$vendor->pv_shop_slug ); 
+            $items .= '<li><a href="'.$vendor_shop_link.'">'.$vendor->pv_shop_name.'</a></li>';
+        }
+        $items .= '</ul></li>'; 
+    }
+    return $items;
+}
+/* END WC Vendors Free */
+
+
+
+
+
 
 
 /****************************  LOGIN  ****************************/
