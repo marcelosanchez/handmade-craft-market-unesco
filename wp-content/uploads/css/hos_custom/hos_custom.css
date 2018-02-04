@@ -311,24 +311,30 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.button-main-color {
+.sign-in-btn {
 	text-transform: uppercase;
-	background: var(--main-theme-color1) !important;
-	transition: background .3s ease;
-	color: white !important;
+  background: var(--main-theme-color1) !important;
+  transition: background .3s ease;
+  color: white !important;
+  margin-left: 2rem;
 }
 
-.button-main-color:hover {
-	background: var(--main-theme-color1-hover) !important;
+.sign-in-btn:hover {
+  background: var(--main-theme-color1-hover) !important;
+  text-decoration: none;  
 }
 
+li < .sign-in-btn {
+  border-bottom: none !important;
+} 
 
 
 
 
 /*LOGIN LOGOUT*/
 .custom-loginout {
-	margin-left: 30px;
+  margin-left: 30px;
+	background: var(--main-theme-color1) !important;
 }
 
 nav.secondary-navigation {

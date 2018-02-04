@@ -68,7 +68,7 @@ class WC_Gateway_PPEC_Settings {
 		return null;
 	}
 
-	public function __isset( $name ) {
+	public function __isset( $key ) {
 		return array_key_exists( $key, $this->_settings );
 	}
 
@@ -119,12 +119,11 @@ class WC_Gateway_PPEC_Settings {
 	 * @return WC_Gateway_PPEC_Client_Credential_Signature|WC_Gateway_PPEC_Client_Credential_Certificate
 	 */
 	public function get_live_api_credentials() {
-		if ( $this->api_signature ) {
-			return new WC_Gateway_PPEC_Client_Credential_Signature( $this->api_username, $this->api_password, $this->api_signature, $this->api_subject );
+		if ( $this->api_certificate ) {
+			return new WC_Gateway_PPEC_Client_Credential_Certificate( $this->api_username, $this->api_password, $this->api_certificate, $this->api_subject );
 		}
 
-		return new WC_Gateway_PPEC_Client_Credential_Certificate( $this->api_username, $this->api_password, $this->api_certificate, $this->api_subject );
-
+		return new WC_Gateway_PPEC_Client_Credential_Signature( $this->api_username, $this->api_password, $this->api_signature, $this->api_subject );
 	}
 
 	/**
@@ -133,11 +132,11 @@ class WC_Gateway_PPEC_Settings {
 	 * @return WC_Gateway_PPEC_Client_Credential_Signature|WC_Gateway_PPEC_Client_Credential_Certificate
 	 */
 	public function get_sandbox_api_credentials() {
-		if ( $this->sandbox_api_signature ) {
-			return new WC_Gateway_PPEC_Client_Credential_Signature( $this->sandbox_api_username, $this->sandbox_api_password, $this->sandbox_api_signature, $this->sandbox_api_subject );
+		if ( $this->sandbox_api_certificate ) {
+			return new WC_Gateway_PPEC_Client_Credential_Certificate( $this->sandbox_api_username, $this->sandbox_api_password, $this->sandbox_api_certificate, $this->sandbox_api_subject );
 		}
 
-		return new WC_Gateway_PPEC_Client_Credential_Certificate( $this->sandbox_api_username, $this->sandbox_api_password, $this->sandbox_api_certificate, $this->sandbox_api_subject );
+		return new WC_Gateway_PPEC_Client_Credential_Signature( $this->sandbox_api_username, $this->sandbox_api_password, $this->sandbox_api_signature, $this->sandbox_api_subject );
 	}
 
 	/**
@@ -157,10 +156,11 @@ class WC_Gateway_PPEC_Settings {
 	 *                       to 'commit' which makes PayPal sets the button text
 	 *                       to **Pay Now** ont the PayPal _Review your information_
 	 *                       page.
+	 * @param bool   $ppc    Whether to use PayPal credit.
 	 *
 	 * @return string PayPal redirect URL
 	 */
-	public function get_paypal_redirect_url( $token, $commit = false ) {
+	public function get_paypal_redirect_url( $token, $commit = false, $ppc = false ) {
 		$url = 'https://www.';
 
 		if ( 'live' !== $this->environment ) {
@@ -171,6 +171,10 @@ class WC_Gateway_PPEC_Settings {
 
 		if ( $commit ) {
 			$url .= '&useraction=commit';
+		}
+
+		if ( $ppc ) {
+			$url .= '#/checkout/chooseCreditOffer';
 		}
 
 		return $url;
@@ -345,12 +349,7 @@ class WC_Gateway_PPEC_Settings {
 	 * @return bool Returns true if PayPal Credit is enabled and supported
 	 */
 	public function is_credit_enabled() {
-		$gateways = WC()->payment_gateways->get_available_payment_gateways();
-		if ( ! isset( $gateways['ppec_paypal'] ) ) {
-			return false;
-		}
-
-		return 'yes' === $this->credit_enabled && $gateways['ppec_paypal']->is_credit_supported();
+		return 'yes' === $this->credit_enabled && wc_gateway_ppec_is_credit_supported();
 	}
 
 	/**

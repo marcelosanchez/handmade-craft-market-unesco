@@ -7,7 +7,9 @@
  * Author URI: https://woocommerce.com/
  * Text Domain: woocommerce-services
  * Domain Path: /i18n/languages/
- * Version: 1.9.0
+ * Version: 1.11.0
+ * WC requires at least: 3.0.0
+ * WC tested up to: 3.3.0
  *
  * Copyright (c) 2017 Automattic
  *
@@ -165,6 +167,11 @@ if ( ! class_exists( 'WC_Connect_Loader' ) ) {
 		 * @var WC_Connect_Stripe
 		 */
 		protected $stripe;
+
+		/**
+		 * @var WC_Connect_PayPal_EC
+		 */
+		protected $paypal_ec;
 
 		/**
 		 * @var WC_REST_Connect_Tos_Controller
@@ -379,6 +386,10 @@ if ( ! class_exists( 'WC_Connect_Loader' ) ) {
 			$this->stripe = $stripe;
 		}
 
+		public function set_paypal_ec( WC_Connect_PayPal_EC $paypal_ec ) {
+			$this->paypal_ec = $paypal_ec;
+		}
+
 		/**
 		 * Load our textdomain
 		 *
@@ -558,6 +569,7 @@ if ( ! class_exists( 'WC_Connect_Loader' ) ) {
 			require_once( plugin_basename( 'classes/class-wc-connect-shipping-label.php' ) );
 			require_once( plugin_basename( 'classes/class-wc-connect-nux.php' ) );
 			require_once( plugin_basename( 'classes/class-wc-connect-stripe.php' ) );
+			require_once( plugin_basename( 'classes/class-wc-connect-paypal-ec.php' ) );
 
 			$logger                = new WC_Connect_Logger( new WC_Logger() );
 			$validator             = new WC_Connect_Service_Schemas_Validator();
@@ -571,6 +583,7 @@ if ( ! class_exists( 'WC_Connect_Loader' ) ) {
 			$taxjar                = new WC_Connect_TaxJar_Integration( $api_client, $logger );
 			$options               = new WC_Connect_Options();
 			$stripe                = new WC_Connect_Stripe( $api_client, $options, $logger );
+			$paypal_ec             = new WC_Connect_PayPal_EC( $api_client, $nux );
 
 			$this->set_logger( $logger );
 			$this->set_api_client( $api_client );
@@ -583,6 +596,7 @@ if ( ! class_exists( 'WC_Connect_Loader' ) ) {
 			$this->set_nux( $nux );
 			$this->set_taxjar( $taxjar );
 			$this->set_stripe( $stripe );
+			$this->set_paypal_ec( $paypal_ec );
 		}
 
 		/**
@@ -648,6 +662,7 @@ if ( ! class_exists( 'WC_Connect_Loader' ) ) {
 			$tracks->init();
 
 			$this->taxjar->init();
+			$this->paypal_ec->init();
 		}
 
 		public function tos_rest_init() {
@@ -1039,7 +1054,8 @@ if ( ! class_exists( 'WC_Connect_Loader' ) ) {
 			$plugin_version = $plugin_data[ 'Version' ];
 
 			// Use the same version as Jetpack
-			wp_register_style( 'noticons', $this->wpcom_static_url( '/i/noticons/noticons.css' ), array(), JETPACK__VERSION . '-' . gmdate( 'oW' ) );
+			$jetpack_version = defined( 'JETPACK__VERSION' ) ? JETPACK__VERSION : '0';
+			wp_register_style( 'noticons', $this->wpcom_static_url( '/i/noticons/noticons.css' ), array(), $jetpack_version . '-' . gmdate( 'oW' ) );
 			wp_register_style( 'wc_connect_admin', $this->wc_connect_base_url . 'woocommerce-services.css', array( 'noticons' ), $plugin_version );
 			wp_register_script( 'wc_connect_admin', $this->wc_connect_base_url . 'woocommerce-services.js', array(), $plugin_version );
 			wp_register_script( 'wc_services_admin_pointers', $this->wc_connect_base_url . 'woocommerce-services-admin-pointers.js', array( 'wp-pointer', 'jquery' ), $plugin_version );
