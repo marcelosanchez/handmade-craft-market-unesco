@@ -60,13 +60,13 @@ get_header(); ?>
 			</div>
 		</div>
 
-		<div class="row" style="padding-top: 60px;">
+		<div class="row" style="padding-top: 60px;height: 82vh;">
 			<div class="col-md-12 fullw-video-desc">
 				<div class="aboutus_video_cont">
 					<video controls muted width="16" height="9" x-webkit-airplay="allow" loop="loop" autoplay="autoplay">
-						<source src="<?php echo get_videos_path () ?>/HOS_demo.mp4" type="video/mp4">
-						<source src="<?php echo get_videos_path () ?>/HOS_demo.mp4" type="video/ogg">
-						<source src="<?php echo get_videos_path () ?>/HOS_demo.mp4" type="video/webm">
+						<source src="<?php echo get_videos_path () ?>/Handmade_ESPOL.mp4" type="video/mp4">
+						<source src="<?php echo get_videos_path () ?>/Handmade_ESPOL.mp4" type="video/ogg">
+						<source src="<?php echo get_videos_path () ?>/Handmade_ESPOL.mp4" type="video/webm">
 					</video>
 				</div>
 			</div>

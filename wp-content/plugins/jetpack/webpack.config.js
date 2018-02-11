@@ -55,6 +55,8 @@ var webpackConfig = {
 				include: [
 					path.join( __dirname, 'test' ),
 					path.join( __dirname, '_inc/client' ),
+					fs.realpathSync( path.join( __dirname, './node_modules/@automattic/dops-components/client' ) ),
+					path.join( __dirname, './node_modules/@automattic/dops-components/client' )
 				]
 			},
 			{
@@ -93,6 +95,7 @@ var webpackConfig = {
 		modules: [
 			path.resolve( __dirname, 'node_modules' ),
 			path.resolve( __dirname, '_inc/client' ),
+			fs.realpathSync( path.join(__dirname, 'node_modules/@automattic/dops-components/client') )
 		]
 	},
 	resolveLoader: {

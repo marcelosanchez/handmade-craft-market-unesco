@@ -21,7 +21,7 @@ p {
 }
 
 html { 
-  background: url('https://previews.123rf.com/images/tonobalaguer/tonobalaguer1108/tonobalaguer110800344/10438111-clay-ceramic-colorful-plates-from-mexico-traditional-handcrafts-Stock-Photo.jpg') no-repeat center center fixed; 
+  background: linear-gradient(rgba(43, 46, 55, .5), rgba(43, 46, 55, .5)), url('https://lh3.google.com/u/0/d/1ify2VBu_blqBGZ76K4klJOrsMFmPNPSf=w1366-h662-iv1') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -71,4 +71,116 @@ div[id^="post-"], #primary, #main {
 
 .goto-btn:hover {
 	background: var(--main-theme-color1-hover) !important;
+}
+
+.um-form.top-space {
+	margin-top: 100px;
+	
+}
+
+/*REGISTER*/
+.um-register-custom {
+	max-width: 100% !important;
+}
+
+.um-register-custom {
+	max-width: 100% !important;
+}
+
+.um-register-custom .um-form {
+	background: white;
+	padding: 20px;
+}
+
+.um-register-custom .um-form form {
+	margin-bottom: 0;
+}
+
+.um-field.col-md-5 {
+	display: inline-block !important;
+}
+
+.custom-field-cont {
+    margin: 0 2vw;
+}
+
+
+/*LOGIN*/
+.um-login-custom {
+
+}
+.um-login-custom .um-form {
+	background: white;
+	padding: 30px;
+	margin-top: 22vh;
+}
+
+.um-login-custom form {
+	margin-bottom: 0;
+}
+
+
+/*RECOVER PASSWORD*/
+.um-password-custom {
+
+}
+
+.um-password-custom .um-form {
+	background: white;
+	padding: 30px;
+	margin-top: 30vh;
+}
+
+
+.um-password-custom .um-center {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.um-password-custom form {
+	margin-bottom: 0;
+	text-align: center;
+}
+
+
+
+/*GO BTN*/
+
+.goto-btn {
+	height: 40px !important;
+	width: 125px !important; 
+	font-size: 15px !important;
+	text-transform: uppercase !important;
+	background: var(--main-theme-color1) !important;
+	transition: background .3s ease !important;
+	border: 0;
+    
+    
+    color: #fff !important;
+    cursor: pointer !important;
+    padding: .6180469716em 1.41575em !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    text-shadow: none !important;
+    display: inline-block !important;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0 !important;
+}
+
+.goto-btn:hover {
+	background: var(--main-theme-color1-hover) !important;
+}
+
+.gobtn_cont {
+	text-align: center !important;
+	margin-top: 50px !important;
+}
+
+input[type=submit].goto-btn {
+    float: right;
+}
+a.goto-btn {
+    height: 50px !important;
 }

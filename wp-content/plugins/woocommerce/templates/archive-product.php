@@ -20,6 +20,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
+	$vendor_shop = urldecode( get_query_var( 'vendor_shop' ) );
+	$vendor_id   = WCV_Vendors::get_vendor_id( $vendor_shop );
+
+
+	$artisan_info = get_userdata($vendor_id);
+
+	$crafts_elaboration_text = get_the_author_meta('user_craft_elaboration_text', $vendor_id);
+
+      
+
+
 get_header( 'shop' ); ?>
 
 	<?php
@@ -41,21 +52,88 @@ get_header( 'shop' ); ?>
 
 		<?php endif; ?>
 
-		<?php
-			/**
-			 * woocommerce_archive_description hook.
-			 *
-			 * @hooked woocommerce_taxonomy_archive_description - 10
-			 * @hooked woocommerce_product_archive_description - 10
-			 */
-			do_action( 'woocommerce_archive_description' );
-		?>
-
+		
+		
     </header>
+
+    <?php 
+    	if ( $vendor_id ) {	
+	    	wp_enqueue_style( 'artisans_stylesheet', get_styles_path() . '/page_artisan_single/artisan_single_page.css' );
+	        wp_enqueue_style( 'artisans_stylesheet' );
+    	} else {
+     ?>
 
     <div class="col-md-12 gPage_hCont parallax">
     	Shop
     </div>
+
+	<?php } ?>
+	
+
+    <?php 
+      if ( $vendor_id ) {
+    ?>
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main city_main_cont" role="main">
+
+			
+			<!-- ********************************** -->
+			
+			<?php $authorImage = get_the_author_meta('header_user_image', $vendor_id); ?>
+
+			<div class="row" style="padding-top: 0px;">
+				<!-- <div class="col-md-12 artisan_header" style="background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),  url(<?php echo get_uploads_path (); ?>/ultimatemember/<?php echo $vendor_id ?>/cover_photo-600.jpg?1517819883);"> -->
+				<div class="col-md-12 artisan_header" style="background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),  url(http://200.10.147.158/wp-content/uploads/2018/02/IMG_9083.jpg);">
+					<div class="profile_img_cont col-md-12">
+						<img class="col-md-2" src="<?php echo get_uploads_path (); ?>/ultimatemember/<?php echo $vendor_id ?>/profile_photo-190.jpg?1517819883" alt="">
+						
+						<h1 data-id="<?php echo $vendor_id ?>"> <?php echo $artisan_info->first_name .  " " . $artisan_info->last_name ; ?>  </h1>
+						<h3><?php echo the_author_meta( 'billing_city', $vendor_id ); ?></h3>
+					</div>
+				</div>
+			</div>
+
+			<!-- ********************************** -->
+
+			<div class="row centered_content artisan_desc_main_text col-md-6" style="padding-top: 60px;">
+				<h5>My History</h5>
+				<p class="">
+					<?php echo the_author_meta( 'description', $vendor_id ); ?>
+				</p>
+			</div>
+
+			<!-- ********************************** -->
+
+			<div class="row" style="padding-top: 60px;">
+				<div class="col-md-6 half-artisan-desc-text">
+					<h5>Craft's Elaboration</h5>
+					<p>
+						<?php 
+							echo $crafts_elaboration_text;
+						?>
+
+					</p>
+				</div>
+				<!-- <div class="col-md-6 half-artisan-desc-img" style="background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),  url(<?php the_field( 'crafts_elaboration_image' ); ?>);"> -->
+				<div class="col-md-6 half-artisan-desc-img" style="background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),  url(http://200.10.147.158/wp-content/uploads/2018/02/IMG_9077.jpg);">
+					<!-- <img class="img-full-div" src="<?php the_field( 'crafts_elaboration_image' ); ?>" alt=""> -->
+				</div>
+			</div>
+			
+			<!-- ********************************** -->
+
+	<div class="row centered_content handicrafts_section" style="padding-top: 60px;">
+			
+			<h3>Handicrafts</h3>
+	</div>
+
+	<?php
+    } else {
+    	//echo 'This is a regular shop page, and not a vendor store';
+    }
+
+     ?>
 
 		<?php if ( have_posts() ) : ?>
 

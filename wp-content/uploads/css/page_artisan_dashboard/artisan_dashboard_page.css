@@ -1,0 +1,58 @@
+@CHARSET "ISO-8859-1";
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(main-theme-dark-text-h);
+}
+
+/* Custom CITY CSS
+ * --------------------------------------- */
+
+p {
+	font-size: 100%;
+}
+
+.goto-btn {
+    height: 35px;
+    width: 140px;
+    margin: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    background: var(--main-theme-color1) !important;
+    transition: background .3s ease;
+}
+
+.centered_content {
+	width: 78vw;
+}
+
+#main .entry-content center p {
+	margin-bottom: 0;
+	text-align: left;
+}
+
+#main .entry-content a:first-child {
+	margin-left: 0 !important;
+}
+
+
+input[type=date], input[type=datetime-local], input[type=month], input[type=time] {
+	border: 1px solid lightgray;
+	border-radius: 3px;
+	padding: 3px 7px 0px;
+	margin: -4px 10px 0 !important;
+}
+input[type=submit] {
+	margin: -6px 10px 0 !important;
+}
+
+.entry-content h2 {
+	font-size: 25px;
+	margin: 8px auto;
+	text-transform: uppercase;
+	color: var(--handicraft-main-color4);
+	font-family: var(--main-theme-font-titleH1);
+	text-align: center;
+	padding: 5vh 0 4vh;
+}

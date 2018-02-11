@@ -118,6 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .goto-btn:hover {
 	background: var(--main-theme-color1-hover);
+  text-decoration: none;
 }
 
 .gobtn_cont {
@@ -334,6 +335,7 @@ li < .sign-in-btn {
 /*LOGIN LOGOUT*/
 .custom-loginout {
   margin-left: 30px;
+  color: white !important;
 	background: var(--main-theme-color1) !important;
 }
 

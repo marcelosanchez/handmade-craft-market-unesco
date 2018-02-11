@@ -37,6 +37,7 @@ p {
     background: white;
     margin-top: 22px;
     margin-bottom: 30px;
+    min-height: 15vw;
 }
 
 .profile_img_cont h1 {
