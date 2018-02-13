@@ -2660,7 +2660,7 @@ function feed_links( $args = array() ) {
 	 * @param bool $show Whether to display the posts feed link. Default true.
 	 */
 	if ( apply_filters( 'feed_links_show_posts_feed', true ) ) {
-		echo '<link rel="alternate" type="' . feed_content_type() . '" title="' . esc_attr( sprintf( $args['feedtitle'], get_bloginfo( 'name' ), $args['separator'] ) ) . '" href="' . esc_url( get_feed_link() ) . "\" />\n";
+		echo '<link rel="alternate" type="' . feed_content_type() . '" title="' . esc_attr( sprintf( $args['feedtitle'], get_bloginfo( 'name' , 'display' ), $args['separator'] ) ) . '" href="' . esc_url( get_feed_link() ) . "\" />\n";
 	}
 
 	/**
@@ -2671,7 +2671,7 @@ function feed_links( $args = array() ) {
 	 * @param bool $show Whether to display the comments feed link. Default true.
 	 */
 	if ( apply_filters( 'feed_links_show_comments_feed', true ) ) {
-		echo '<link rel="alternate" type="' . feed_content_type() . '" title="' . esc_attr( sprintf( $args['comstitle'], get_bloginfo( 'name' ), $args['separator'] ) ) . '" href="' . esc_url( get_feed_link( 'comments_' . get_default_feed() ) ) . "\" />\n";
+		echo '<link rel="alternate" type="' . feed_content_type() . '" title="' . esc_attr( sprintf( $args['comstitle'], get_bloginfo( 'name' , 'display' ), $args['separator'] ) ) . '" href="' . esc_url( get_feed_link( 'comments_' . get_default_feed() ) ) . "\" />\n";
 	}
 }
 
@@ -2718,7 +2718,7 @@ function feed_links_extra( $args = array() ) {
 			$post_type = reset( $post_type );
 
 		$post_type_obj = get_post_type_object( $post_type );
-		$title = sprintf( $args['posttypetitle'], get_bloginfo( 'name' ), $args['separator'], $post_type_obj->labels->name );
+		$title = sprintf( $args['posttypetitle'], get_bloginfo( 'name' , 'display' ), $args['separator'], $post_type_obj->labels->name );
 		$href = get_post_type_archive_feed_link( $post_type_obj->name );
 	} elseif ( is_category() ) {
 		$term = get_queried_object();

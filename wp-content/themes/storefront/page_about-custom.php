@@ -27,7 +27,7 @@ get_header(); ?>
 		<!-- <?php // echo get_the_title(); ?> -->
 
 		<div class="row col-md-12 centered_content page_title">
-			<h1>About Handmade</h1>
+			<h1><?php echo get_the_title(); ?> <?php echo get_bloginfo( 'name' ); ?></h1>
 		</div>
 		
 		<div class="row centered_content aboutUs_shortDesc" style="padding-top: 60px;">

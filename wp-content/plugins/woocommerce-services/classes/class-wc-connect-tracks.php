@@ -107,7 +107,7 @@ if ( ! class_exists( 'WC_Connect_Tracks' ) ) {
 			$data['jetpack_version'] = $jp_version;
 			$data['is_atomic'] = $is_atomic;
 			$data['wc_version'] = $wc_version;
-			$data['wp_version'] = get_bloginfo( 'version' );
+			$data['wp_version'] = get_bloginfo( 'version' , 'display' );
 
 			$event_type = self::$product_name . '_' . $event_type;
 

@@ -496,7 +496,7 @@ class WC_Emails {
 		/* translators: 1: product name 2: items in stock */
 		$message = sprintf(
 			__( '%1$s is low in stock. There are %2$d left.', 'woocommerce' ),
-			html_entity_decode( strip_tags( $product->get_formatted_name() ), ENT_QUOTES, get_bloginfo( 'charset' ) ),
+			html_entity_decode( strip_tags( $product->get_formatted_name() ), ENT_QUOTES, get_bloginfo( 'charset' , 'display' ) ),
 			html_entity_decode( strip_tags( $product->get_stock_quantity() ) )
 		);
 

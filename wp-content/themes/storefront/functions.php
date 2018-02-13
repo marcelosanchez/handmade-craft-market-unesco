@@ -160,8 +160,10 @@ add_filter('user_contactmethods','hide_profile_fields',10,1);
 
 
 /* Adding Image Upload Fields */
-add_action( 'show_user_profile', 'my_show_extra_profile_fields' );
-add_action( 'edit_user_profile', 'my_show_extra_profile_fields' );
+if( current_user_can('editor') || current_user_can('administrator') ) {
+    add_action( 'show_user_profile', 'my_show_extra_profile_fields' );
+    add_action( 'edit_user_profile', 'my_show_extra_profile_fields' );
+}
 
 function my_show_extra_profile_fields( $user ) 
 { 
@@ -329,7 +331,13 @@ function my_save_extra_profile_fields( $user_id ) {
 
 
 
-
+// function jquery_migrate( $scripts ) {
+//     if ( ! is_admin() && ! empty( $scripts->registered[‘jquery’] ) ) {
+//         $jquery_dependencies = $scripts->registered[‘jquery’]->deps;
+//         $scripts->registered[‘jquery’]->deps = array_diff( $jquery_dependencies, array( ‘jquery-migrate’ ) );
+//     }
+// }
+// add_action( ‘wp_default_scripts’, ‘jquery_migrate’ );
 
 
 
@@ -561,3 +569,5 @@ function wpb_adding_styles() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'wpb_adding_styles' );
+
+

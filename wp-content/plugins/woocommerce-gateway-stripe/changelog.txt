@@ -366,7 +366,7 @@
 
 = 1.8.6 - 2014-05-20 =
 * correct SSl message
-* decode get_bloginfo( 'name' ) for plain text display
+* decode get_bloginfo( 'name' , 'display' ) for plain text display
 
 = 1.8.5 - 2014-05-10 =
 * Updated textdomains

@@ -27,10 +27,10 @@ get_header(); ?>
 					<div class="home_logo_cont col-md-12">
 						<img alt="logo_white" src="<?php echo get_images_path(); ?>/HOS_Logo.png">
 					</div>
-					<h1>Find what you want</h1>
-					<h2>in our variety of crafts</h2>
+					<h1><?php echo __('[:en]Find what you want[:es]Encuentra lo que quieras[:pb]Encontre o que deseja'); ?></h1>
+					<h2><?php echo __('[:en]in our variety of crafts[:es]en nuestra amplia variedad de artesanías[:pb]em nossa variedade de artesanato'); ?></h2>
 					<div class="gobtn_cont">
-						<button class="goto-btn" onclick="javascript:location.href='<?php echo WP_HOME ?>/shop/'">Go to Shop</button>
+						<button class="goto-btn" onclick="javascript:location.href='<?php echo WP_HOME ?>/shop/'"><?php echo __('[:en]Go to Shop[:es]Ir a Tienda[:pb]Ir para Loja'); ?></button>
 					</div>
 
 				</div>
@@ -44,9 +44,9 @@ get_header(); ?>
 					
 					<div class="row txtDesc_home">
 						<div class="col-md-3 offset-md-1">
-							<h1 class="">Artisans</h1>
+							<h1 class=""><?php echo __('[:en]Artisans[:es]Artesanos[:pb]Artesãos'); ?></h1>
 							<p class=""><?php the_field( 'atrisans_section' ); ?></p>
-							<button class="goto-btn" onclick="javascript:location.href='<?php echo WP_HOME ?>/artisans/'">Read More</button>
+							<button class="goto-btn" onclick="javascript:location.href='<?php echo WP_HOME ?>/artisans/'"><?php echo __('[:en]Read More[:es]Leer Más[:pb]Mais Informação'); ?></button>
 						</div>
 					</div>
 				</div>	
@@ -60,9 +60,9 @@ get_header(); ?>
 					
 					<div class="row txtDesc_home" style="text-align: right;">
 						<div class="col-md-3 offset-md-8" style="text-align: left;">
-							<h1 class="">Handicrafts</h1>
+							<h1 class=""><?php echo __('[:en]Handicrafts[:es]Artesanías[:pb]Artesanato'); ?></h1>
 							<p class="" ><?php the_field( 'handicraft_section' ); ?></p>
-							<button class="goto-btn" style="background-color: var(--main-theme-color4);" onclick="javascript:location.href='<?php echo WP_HOME ?>/handicraft/'">Read More</button>
+							<button class="goto-btn" style="background-color: var(--main-theme-color4);" onclick="javascript:location.href='<?php echo WP_HOME ?>/handicraft/'"><?php echo __('[:en]Read More[:es]Leer Más[:pb]Mais Informação'); ?></button>
 						</div>
 					</div>
 
@@ -77,9 +77,9 @@ get_header(); ?>
 					
 					<div class="row txtDesc_home">
 						<div class="col-md-3 offset-md-1">
-							<h1 class="">Cities</h1>
+							<h1 class=""><?php echo __('[:en]Cities[:es]Ciudades[:pb]Cidades'); ?></h1>
 							<p class=""><?php the_field( 'cities_section' ); ?></p>
-							<button class="goto-btn" onclick="javascript:location.href='<?php echo WP_HOME ?>/artisans/'">Read More</button>
+							<button class="goto-btn" onclick="javascript:location.href='<?php echo WP_HOME ?>/cities/'"><?php echo __('[:en]Read More[:es]Leer Más[:pb]Mais Informação'); ?></button>
 						</div>
 					</div>
 				</div>

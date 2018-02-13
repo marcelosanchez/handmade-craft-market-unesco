@@ -1,0 +1,71 @@
+# Translation of Plugins - User Profile Picture - Stable (latest release) in English (Canada)
+# This file is distributed under the same license as the Plugins - User Profile Picture - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-08-31 00:37:38+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: en_CA\n"
+"Project-Id-Version: Plugins - User Profile Picture - Stable (latest release)\n"
+
+#: metronet-profile-picture.php:438
+msgid "Remove Profile Image"
+msgstr "Remove Profile Image"
+
+#. Author URI of the plugin/theme
+msgid "https://www.mediaron.com"
+msgstr "https://www.mediaron.com"
+
+#. Author of the plugin/theme
+msgid "Ronald Huereca"
+msgstr "Ronald Huereca"
+
+#: metronet-profile-picture.php:523
+msgid "Profile picture not found."
+msgstr "Profile picture not found."
+
+#: metronet-profile-picture.php:516
+msgid "User not found."
+msgstr "User not found."
+
+#. Description of the plugin/theme
+msgid "Use the native WP uploader on your user profile page."
+msgstr "Use the native WP uploader on your user profile page."
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/extend/plugins/metronet-profile-picture/"
+msgstr "http://wordpress.org/extend/plugins/metronet-profile-picture/"
+
+#. Plugin Name of the plugin/theme
+msgid "User Profile Picture"
+msgstr "User Profile Picture"
+
+#: metronet-profile-picture.php:437
+msgid "Set Profile Image"
+msgstr "Set Profile Image"
+
+#: metronet-profile-picture.php:412
+msgid "Override Avatar?"
+msgstr "Override Avatar?"
+
+#: metronet-profile-picture.php:365
+msgid "Profile Image"
+msgstr "Profile Image"
+
+#: metronet-profile-picture.php:301 metronet-profile-picture.php:439
+msgid "Crop Thumbnail"
+msgstr "Crop Thumbnail"
+
+#: metronet-profile-picture.php:92 metronet-profile-picture.php:117
+#: metronet-profile-picture.php:128 metronet-profile-picture.php:148
+#: metronet-profile-picture.php:376 metronet-profile-picture.php:381
+msgid "Upload or Change Profile Picture"
+msgstr "Upload or Change Profile Picture"
+
+#: metronet-profile-picture.php:95 metronet-profile-picture.php:120
+#: metronet-profile-picture.php:390
+msgid "Remove profile image"
+msgstr "Remove profile image"

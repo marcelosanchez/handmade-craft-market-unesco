@@ -101,7 +101,7 @@ if ( ! class_exists( 'WC_Connect_Service_Settings_Store' ) ) {
 
 		public function get_origin_address() {
 			$wc_address_fields = array();
-			$wc_address_fields['company'] = get_bloginfo( 'name' );
+			$wc_address_fields['company'] = get_bloginfo( 'name' , 'display' );
 			$wc_address_fields['name'] = wp_get_current_user()->display_name;
 			$wc_address_fields['phone'] = '';
 

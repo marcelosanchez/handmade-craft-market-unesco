@@ -94,7 +94,7 @@ get_header(); ?>
 
 		<div class="row" style="padding-top: 60px;">
 			<div class="col-md-6 half-city-desc-img">
-				<img class="img-full-div" src="<?php the_field( 'city_representative_image' ); ?>" alt="">
+				<img class="img-artisan-div" src="<?php the_field( 'city_representative_image' ); ?>" alt="">
 			</div>
 			<div class="col-md-6 half-city-desc-text">
 				<span>
@@ -108,19 +108,19 @@ get_header(); ?>
 				
 				<ul class="nav flex-column" id="city_navbar">
 					<li class="nav-item">
-						<a class="nav-link active" onclick="selectCityNav(this,'1');">When to go to <?php the_field( 'city_name' ); ?></a>
+						<a class="nav-link active" onclick="selectCityNav(this,'1');"><?php echo __('[:en]When to go to[:es]Cuando visitar[:pb]Quando ir para'); ?> <?php the_field( 'city_name' ); ?></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" onclick="selectCityNav(this,'2');">Transport</a>
+						<a class="nav-link" onclick="selectCityNav(this,'2');"><?php echo __('[:en]Transport[:es]Transporte[:pb]Transporte'); ?></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" onclick="selectCityNav(this,'3');">Tourist Attractions</a>
+						<a class="nav-link" onclick="selectCityNav(this,'3');"><?php echo __('[:en]Tourist Attractions[:es]Atracciones Turísticas[:pb]Atrações Turísticas'); ?></a>
 					</li>
 				</ul>
 
 			</div>
 			<div class="col-md-8 right-city-images">
-				<div class="image_1 img_cont img-full-div">
+				<div class="image_1 img_cont">
 					<img class="img-full-div" src="<?php the_field( 'weather_image' ); ?>" alt="">
 					<div class="hidden-pos-div">
 						<div class="image_description">
@@ -130,7 +130,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-				<div class="image_2 img_cont img-full-div" style="display: none;">
+				<div class="image_2 img_cont" style="display: none;">
 					<img class="img-full-div" src="<?php the_field( 'transport_image' ); ?>" alt="">
 					<div class="hidden-pos-div">
 						<div class="image_description">
@@ -140,7 +140,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-				<div class="image_3 img_cont img-full-div" style="display: none;">
+				<div class="image_3 img_cont" style="display: none;">
 					<img class="img-full-div" src="<?php the_field( 'tourist_attractions_image' ); ?>" alt="">
 					<div class="hidden-pos-div">
 						<div class="image_description">

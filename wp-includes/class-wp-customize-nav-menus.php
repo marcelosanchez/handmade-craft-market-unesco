@@ -195,7 +195,7 @@ final class WP_Customize_Nav_Menus {
 				}
 				$items[] = array(
 					'id'         => "post-{$post->ID}",
-					'title'      => html_entity_decode( $post_title, ENT_QUOTES, get_bloginfo( 'charset' ) ),
+					'title'      => html_entity_decode( $post_title, ENT_QUOTES, get_bloginfo( 'charset' , 'display' ) ),
 					'type'       => 'post_type',
 					'type_label' => get_post_type_object( $post->post_type )->labels->singular_name,
 					'object'     => $post->post_type,
@@ -223,7 +223,7 @@ final class WP_Customize_Nav_Menus {
 			foreach ( $terms as $term ) {
 				$items[] = array(
 					'id'         => "term-{$term->term_id}",
-					'title'      => html_entity_decode( $term->name, ENT_QUOTES, get_bloginfo( 'charset' ) ),
+					'title'      => html_entity_decode( $term->name, ENT_QUOTES, get_bloginfo( 'charset' , 'display' ) ),
 					'type'       => 'taxonomy',
 					'type_label' => get_taxonomy( $term->taxonomy )->labels->singular_name,
 					'object'     => $term->taxonomy,
@@ -338,7 +338,7 @@ final class WP_Customize_Nav_Menus {
 			}
 			$items[] = array(
 				'id'         => 'post-' . $post->ID,
-				'title'      => html_entity_decode( $post_title, ENT_QUOTES, get_bloginfo( 'charset' ) ),
+				'title'      => html_entity_decode( $post_title, ENT_QUOTES, get_bloginfo( 'charset' , 'display' ) ),
 				'type'       => 'post_type',
 				'type_label' => $post_type_objects[ $post->post_type ]->labels->singular_name,
 				'object'     => $post->post_type,
@@ -360,7 +360,7 @@ final class WP_Customize_Nav_Menus {
 			foreach ( $terms as $term ) {
 				$items[] = array(
 					'id'         => 'term-' . $term->term_id,
-					'title'      => html_entity_decode( $term->name, ENT_QUOTES, get_bloginfo( 'charset' ) ),
+					'title'      => html_entity_decode( $term->name, ENT_QUOTES, get_bloginfo( 'charset' , 'display' ) ),
 					'type'       => 'taxonomy',
 					'type_label' => get_taxonomy( $term->taxonomy )->labels->singular_name,
 					'object'     => $term->taxonomy,
@@ -647,7 +647,7 @@ final class WP_Customize_Nav_Menus {
 			// Create a section for each menu.
 			$section_id = 'nav_menu[' . $menu_id . ']';
 			$this->manager->add_section( new WP_Customize_Nav_Menu_Section( $this->manager, $section_id, array(
-				'title'     => html_entity_decode( $menu->name, ENT_QUOTES, get_bloginfo( 'charset' ) ),
+				'title'     => html_entity_decode( $menu->name, ENT_QUOTES, get_bloginfo( 'charset' , 'display' ) ),
 				'priority'  => 10,
 				'panel'     => 'nav_menus',
 			) ) );

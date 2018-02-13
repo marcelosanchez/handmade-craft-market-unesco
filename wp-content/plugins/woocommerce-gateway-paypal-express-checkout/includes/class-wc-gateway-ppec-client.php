@@ -391,7 +391,7 @@ class WC_Gateway_PPEC_Client {
 	 */
 	protected function _get_billing_agreement_description() {
 		/* translators: placeholder is blogname */
-		$description = sprintf( _x( 'Orders with %s', 'data sent to PayPal', 'woocommerce-subscriptions'  ), get_bloginfo( 'name' ) );
+		$description = sprintf( _x( 'Orders with %s', 'data sent to PayPal', 'woocommerce-subscriptions'  ), get_bloginfo( 'name' , 'display' ) );
 
 		if ( strlen( $description  ) > 127  ) {
 			$description = substr( $description, 0, 124  ) . '...';
