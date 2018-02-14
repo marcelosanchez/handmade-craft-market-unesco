@@ -79,7 +79,7 @@ get_header(); ?>
 			<a class="carousel-control-prev" href="#city_carousel" role="button" data-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
-			</a>
+			</a> 
 			<a class="carousel-control-next" href="#city_carousel" role="button" data-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>

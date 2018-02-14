@@ -52,8 +52,6 @@ get_header( 'shop' ); ?>
 
 		<?php endif; ?>
 
-		
-		
     </header>
 
     <?php 
@@ -64,7 +62,7 @@ get_header( 'shop' ); ?>
      ?>
 
     <div class="col-md-12 gPage_hCont parallax">
-    	Shop
+    	<?php woocommerce_page_title(); ?>
     </div>
 
 	<?php } ?>

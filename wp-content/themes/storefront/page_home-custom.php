@@ -27,7 +27,7 @@ get_header(); ?>
 					<div class="home_logo_cont col-md-12">
 						<img alt="logo_white" src="<?php echo get_images_path(); ?>/HOS_Logo.png">
 					</div>
-					<h1><?php echo __('[:en]Find what you want[:es]Encuentra lo que quieras[:pb]Encontre o que deseja'); ?></h1>
+					<h1><?php echo __('[:en]Find what you need[:es]Encuentra lo que necesitas[:pb]Encontre o que você precisa'); ?></h1>
 					<h2><?php echo __('[:en]in our variety of crafts[:es]en nuestra amplia variedad de artesanías[:pb]em nossa variedade de artesanato'); ?></h2>
 					<div class="gobtn_cont">
 						<button class="goto-btn" onclick="javascript:location.href='<?php echo WP_HOME ?>/shop/'"><?php echo __('[:en]Go to Shop[:es]Ir a Tienda[:pb]Ir para Loja'); ?></button>

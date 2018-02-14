@@ -38,7 +38,7 @@ get_header(); ?>
 
 		<div class="row" style="padding-top: 60px;">
 			<div class="col-md-6 half-aboutus-desc-img">
-				<img class="img-full-div" src="<?php the_field( 'creation_image' ); ?>" alt="">
+				<img class="img-team-full-div" src="<?php the_field( 'creation_image' ); ?>" alt="">
 			</div>
 			<div class="col-md-6 half-aboutus-desc-text">
 				<h3>Creation</h3>

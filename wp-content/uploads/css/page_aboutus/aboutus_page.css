@@ -46,6 +46,15 @@ p.desc_text {
     padding: 0;
 }
 
+.img-team-full-div {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
 .img-full-div {
     max-height: 100%;
     max-width: 100%;

@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .goto-btn {
 	height: 40px;
-	width: 125px; 
+	width: auto;
 	font-size: 12px;
 	/*font-weight: bolder;*/
 	text-transform: uppercase;
