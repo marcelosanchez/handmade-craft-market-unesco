@@ -50,6 +50,8 @@ h1, h2, h3, h4, h5, h6 {
   --main-theme-color4: #400026;
   --main-theme-color5: #751c2f;
   --main-theme-color6: #f17128;
+
+  --main-theme-color7: #8c3d20;
   
   --main-theme-color1-text-gray: #7b7b7b;
   --main-theme-dark-text-h: #181c28;
@@ -291,6 +293,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 50%;
   height: 100%;
   width: auto;
+  object-fit: cover;
   -webkit-transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
