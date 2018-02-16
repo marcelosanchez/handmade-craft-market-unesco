@@ -8,9 +8,7 @@
     Author URI: #
     License: GPL2
 */
- ?>
 
-<?php
 /*  Copyright 2018 MARCELOSANCHEZ  (email : mdsv14@gmail.com)
 
     This program is free software; you can redistribute it and/or modify
@@ -31,19 +29,26 @@
 <?php 
     global $wpdb;
 
-    $table_name = $wpdb->prefix . "country";
-    $sql = "SELECT * FROM $table_name";
-    $result = $wpdb->get_results($sql) or die(mysql_error());
+    $table_country = $wpdb->prefix . "country";
+
+    $sql = "SELECT * FROM $table_country";
+    $countries = $wpdb->get_results($sql) or die(mysql_error());
+
+
+    $table_city = $wpdb->prefix . "city";
  ?>
 
 
 <?php 
-    
-    if ( !empty( $_POST['image'] ) ) {
-      $image_url = $_POST['image'];
-      $wpdb->insert( 'images', array( 'image_url' => $image_url ), array( '%s' ) ); 
-    }
+    // Get Prev Image
+    // if ( !empty( $_POST['image'] ) ) {
+    //   $image_url = $_POST['image'];
+    //   $wpdb->insert( 'images', array( 'image_url' => $image_url ), array( '%s' ) ); 
+    // }
  ?>
+
+
+
 
 
 
@@ -95,7 +100,7 @@ add_action( 'admin_enqueue_scripts', 'city_enqueue_scripts_styles' );
 
 // ----------------------- ADD NEW CITY -----------------------
 function add_new_city_page( $user ) {
-    global $result;
+    global $countries;
 
 
     if ( ! current_user_can( 'upload_files' ) ) {
@@ -136,8 +141,8 @@ function add_new_city_page( $user ) {
                     </th>
                     <td>
                         <select name="country_cid" id="country_cid" style="width: 350px;">
-                        <?php foreach ( $result as $page ) { ?>
-                            <option value="<?php echo $page->country_id; ?>"><?php echo $page->name; ?></option>
+                        <?php foreach ( $countries as $country_r ) { ?>
+                            <option value="<?php echo $country_r->country_id; ?>"><?php echo $country_r->name; ?></option>
                         <?php } ?>
                         </select>
                     </td>
@@ -145,116 +150,139 @@ function add_new_city_page( $user ) {
                 
                 <tr class="user-first-name-wrap">
                     <th>
-                        <label for="short_description">Short Description</label>
+                        <label for="short_description"><?php _e( 'Short Description', 'cities-creator' ); ?></label>
                     </th>
                     <td>
                         <textarea rows="5" cols="53" name="short_description" id="short_description" style="resize: none;"></textarea>
                     </td>
                 </tr>
 
-                <!-- <tr class="user-last-name-wrap">
+                <tr class="user-first-name-wrap">
                     <th>
-                        <label for="image_url">Image</label>
+                        <label for="cupp_meta"><?php _e( 'City Main Photo', 'cities-creator' ); ?></label>
                     </th>
                     <td>
-                        <input id="image-url" type="text" name="image" />
-                        <input id="uploadimage" type='button' class="city_wpmu_button button-primary"
-                               value="<?php _e( esc_attr( $button_text ), 'cities-creator' ); ?>"/>
-                    </td>
+                        <!-- Outputs the image after save -->
+                        <div id="current_img">
+                            <?php //if ( $upload_url ): ?>
+                                <!-- <img class="cupp-current-img" src="<?php echo esc_url( $upload_url ); ?>"/>
 
+                                <div class="edit_options uploaded">
+                                    <a class="remove_img">
+                                        <span><?php _e( 'Remove', 'cities-creator' ); ?></span>
+                                    </a>
+
+                                    <a class="edit_img" href="<?php echo esc_url( $upload_edit_url ); ?>" target="_blank">
+                                        <span><?php _e( 'Edit', 'cities-creator' ); ?></span>
+                                    </a>
+                                </div> -->
+                            <?php //elseif ( $url ) : ?>
+                                <!-- <img class="cupp-current-img" src="<?php echo esc_url( $url ); ?>"/> -->
+                                <!-- <div class="edit_options single">
+                                    <a class="remove_img">
+                                        <span><?php _e( 'Remove', 'cities-creator' ); ?></span>
+                                    </a>
+                                </div> -->
+                            <?php //else : ?>
+                                <img class="cupp-current-img placeholder"
+                                     src="<?php echo esc_url( plugins_url( 'cities-creator/img/placeholder.gif' ) ); ?>"/>
+
+                                <input type="hidden" id="city_image_s" name="city_image_s" value="<?php echo esc_url( plugins_url( 'cities-creator/img/placeholder.gif' ) ); ?>">
+                            <?php //endif; ?>
+                        </div>
+
+                        <!-- Select an option: Upload to WPMU or External URL -->
+                        <!-- <div id="cupp_options">
+                            <input type="radio" id="upload_option" name="img_option" value="upload" class="tog" checked>
+                            <label
+                                    for="upload_option"><?php _e( 'Upload New Image', 'cities-creator' ); ?></label><br>
+
+                            <input type="radio" id="external_option" name="img_option" value="external" class="tog">
+                            <label
+                                    for="external_option"><?php _e( 'Use External URL', 'cities-creator' ); ?></label><br>
+                        </div> -->
+
+                        <!-- Hold the value here if this is a WPMU image -->
+                        <div id="cupp_upload">
+                            <input class="hidden" type="hidden" name="cupp_placeholder_meta" id="cupp_placeholder_meta"
+                                   value="<?php echo esc_url( plugins_url( 'cities-creator/img/placeholder.gif' ) ); ?>"/>
+                            <input class="hidden" type="hidden" name="cupp_upload_meta" id="cupp_upload_meta"
+                                   value="<?php echo esc_url_raw( $upload_url ); ?>"/>
+                            <input class="hidden" type="hidden" name="cupp_upload_edit_meta" id="cupp_upload_edit_meta"
+                                   value="<?php echo esc_url_raw( $upload_edit_url ); ?>"/>
+                            <input id="uploadimage" type='button' class="cupp_wpmu_button button-primary"
+                                   value="<?php _e( esc_attr( $button_text ), 'cities-creator' ); ?>"/>
+                            <br/>
+                            
+                        </div>
+
+                        <!-- Outputs the text field and displays the URL of the image retrieved by the media uploader -->
+                        <div id="cupp_external">
+                            <input class="regular-text" type="text" name="cupp_meta" id="cupp_meta"
+                                   value="<?php echo esc_url_raw( $url ); ?>"/>
+                        </div>
+
+                        <!-- Outputs the save button -->
+                        <!-- <span class="description"> -->
+                            <?php
+                            // _e(
+                            //     'Upload a custom photo for your user profile or use a URL to a pre-existing photo.',
+                            //     'cities-creator'
+                            // );
+                            ?>
+                        <!-- </span>  -->
+                        <p class="description">
+                            <?php _e( 'Update to save your changes.', 'cities-creator' ); ?>
+                        </p>
+                    </td>
                 </tr>
 
-                <tr class="user-nickname-wrap">
-                    <th>
-                         
-                    </th>
-                    <td style="float: left;margin-left: 18vw;">
-                        <?php //submit_button('Add New City') ?>
-                    </td>
-                </tr> -->
+                <input type="submit" value="click" name="submit">
 
             </form>
         </tbody>
     </table>
 
 
-    <table class="form-table">
-            <tr>
-                <th><label for="cupp_meta"><?php _e( 'Profile Photo', 'cities-creator' ); ?></label></th>
-                <td>
-                    <!-- Outputs the image after save -->
-                    <div id="current_img">
-                        <?php if ( $upload_url ): ?>
-                            <img class="cupp-current-img" src="<?php echo esc_url( $upload_url ); ?>"/>
 
-                            <div class="edit_options uploaded">
-                                <a class="remove_img">
-                                    <span><?php _e( 'Remove', 'cities-creator' ); ?></span>
-                                </a>
+            <?php 
+            function display() {
+                echo "hello ".$_POST["studentname"];
 
-                                <a class="edit_img" href="<?php echo esc_url( $upload_edit_url ); ?>" target="_blank">
-                                    <span><?php _e( 'Edit', 'cities-creator' ); ?></span>
-                                </a>
-                            </div>
-                        <?php elseif ( $url ) : ?>
-                            <img class="cupp-current-img" src="<?php echo esc_url( $url ); ?>"/>
-                            <div class="edit_options single">
-                                <a class="remove_img">
-                                    <span><?php _e( 'Remove', 'cities-creator' ); ?></span>
-                                </a>
-                            </div>
-                        <?php else : ?>
-                            <img class="cupp-current-img placeholder"
-                                 src="<?php echo esc_url( plugins_url( 'cities-creator/img/placeholder.gif' ) ); ?>"/>
-                        <?php endif; ?>
-                    </div>
+                global $url;
 
-                    <!-- Select an option: Upload to WPMU or External URL -->
-                    <div id="cupp_options">
-                        <input type="radio" id="upload_option" name="img_option" value="upload" class="tog" checked>
-                        <label
-                                for="upload_option"><?php _e( 'Upload New Image', 'cities-creator' ); ?></label><br>
+                $cname = $_POST['city_name'];
+                $city_name_up = strtoupper ( $cname );
+                $city_name_lw = strtolower ( $cname );
+                $cshort_desc = $_POST['short_description'];
+                $country_id = $_POST['country_cid'];
+                $city_img_url = esc_url( get_the_author_meta( 'city_upload_meta', $user_id ) );
 
-                        <input type="radio" id="external_option" name="img_option" value="external" class="tog">
-                        <label
-                                for="external_option"><?php _e( 'Use External URL', 'cities-creator' ); ?></label><br>
-                    </div>
 
-                    <!-- Hold the value here if this is a WPMU image -->
-                    <div id="cupp_upload">
-                        <input class="hidden" type="hidden" name="cupp_placeholder_meta" id="cupp_placeholder_meta"
-                               value="<?php echo esc_url( plugins_url( 'cities-creator/img/placeholder.gif' ) ); ?>"/>
-                        <input class="hidden" type="hidden" name="cupp_upload_meta" id="cupp_upload_meta"
-                               value="<?php echo esc_url_raw( $upload_url ); ?>"/>
-                        <input class="hidden" type="hidden" name="cupp_upload_edit_meta" id="cupp_upload_edit_meta"
-                               value="<?php echo esc_url_raw( $upload_edit_url ); ?>"/>
-                        <input id="uploadimage" type='button' class="cupp_wpmu_button button-primary"
-                               value="<?php _e( esc_attr( $button_text ), 'cities-creator' ); ?>"/>
-                        <br/>
-                    </div>
+                $data = array(
+                    'name'                      => $city_name_up,
+                    'nicename'                  => $city_name_lw,
+                    'city_short_description'    => $cshort_desc,
+                    'city_header_img_url'       => $city_img_url,
+                    'page_url'                  => '#',
+                    'country_fid'               => $_POST['country_cid']
+                );
 
-                    <!-- Outputs the text field and displays the URL of the image retrieved by the media uploader -->
-                    <div id="cupp_external">
-                        <input class="regular-text" type="text" name="cupp_meta" id="cupp_meta"
-                               value="<?php echo esc_url_raw( $url ); ?>"/>
-                    </div>
+                echo print_r($data);
 
-                    <!-- Outputs the save button -->
-                    <span class="description">
-                        <?php
-                        _e(
-                            'Upload a custom photo for your user profile or use a URL to a pre-existing photo.',
-                            'cities-creator'
-                        );
-                        ?>
-                    </span>
-                    <p class="description">
-                        <?php _e( 'Update Profile to save your changes.', 'cities-creator' ); ?>
-                    </p>
-                </td>
-            </tr>
-        </table><!-- end form-table -->
-<?php 
+            }
+            if(isset($_POST['submit']))
+            {
+               display();
+            } 
+             ?>
+
+
+
+    <p id="studentname" name="studentname">Data: </p>
+
+    
+    <?php 
     // Enqueue the WordPress Media Uploader.
     wp_enqueue_media();
 
@@ -389,3 +417,4 @@ function city_get_user_by_id_or_email( $identifier ) {
 
 
  ?>
+

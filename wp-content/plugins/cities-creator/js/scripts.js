@@ -36,7 +36,15 @@ var file_frame;
       jQuery('#city_upload_meta').val(attachment.url);
       jQuery('#city_upload_edit_meta').val('/wp-admin/post.php?post='+attachment.id+'&action=edit&image-editor');
       jQuery('.cupp-current-img').attr('src', attachment.url).removeClass('placeholder');
+      // alert(attachment.url);
+      // jQuery('.cupp-current-img').attr('value', attachment.url).removeClass('placeholder');
+
+
+
+
     });
+
+    console.log(attachment);
  
     // Finally, open the modal
     file_frame.open();
@@ -90,3 +98,8 @@ var file_frame;
   });
 
 });
+
+
+function show_data($){
+  console.log(attachment)
+}
