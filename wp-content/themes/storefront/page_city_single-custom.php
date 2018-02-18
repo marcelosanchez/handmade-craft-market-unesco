@@ -25,8 +25,8 @@ global $wpdb;
   $city_cid = $wpdb->get_results( "SELECT DISTINCT name FROM $table_city WHERE UPPER(name) LIKE UPPER('%$current_city%')" ); 
   $city_array = $wpdb->get_results( "SELECT * FROM $table_city WHERE UPPER(name) LIKE UPPER('%$current_city%')" ); 
 
-  debug_PHP_console( $city_cid );
-  debug_PHP_console( $city_array );
+  // debug_PHP_console( $city_cid );
+  // debug_PHP_console( $city_array );
 
 
 	if($city_cid !== NULL) {
