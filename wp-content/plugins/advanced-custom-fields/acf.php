@@ -918,7 +918,8 @@ class acf {
 		{
 			return $post_id;
 		}
-		
+
+		debug_PHP_console($post_id);
 
 		// loop through and save
 		if( !empty($_POST['fields']) )

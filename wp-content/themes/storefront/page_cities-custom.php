@@ -19,6 +19,52 @@ $table_name = $wpdb->prefix . "city";
 $sql = "SELECT * FROM $table_name";
 $result = $wpdb->get_results($sql) or die(mysql_error());
 
+
+
+// Values
+
+
+$city_name = get_field('city_name');
+
+
+
+
+function updateCityDB() {
+    global $wpdb;
+    global $table_name;
+
+    $cname = get_field('city_name');
+    $city_name_up = strtoupper ( $cname );
+    $city_name_lw = strtolower ( $cname );
+    $cshort_desc = get_field('city_short_description');
+    $city_img_url = get_field('slider_image_1');
+    $country_id = $_POST['country_cid'];
+
+    $data = array(
+        'name'                      => $city_name_up,
+        'nicename'                  => $city_name_lw,
+        'city_short_description'    => $cshort_desc,
+        'city_header_img_url'       => $city_img_url ?: 'https://www.hsjaa.com/images/joomlart/demo/default.jpg',
+        'page_url'                  => 'http://200.10.147.158/cities/',
+        'country_fid'               => 1
+    );
+    $format = array(
+        '%s',
+        '%s',
+        '%s',
+        '%s',
+        '%s',
+        '%d'
+    );
+    $success=$wpdb->insert( $table_city, $data, $format );
+    if($success){
+        echo '<script language="javascript">alert("juas");</script>'; ; 
+    }
+
+}
+
+
+
 get_header(); ?>
 
 
@@ -129,7 +175,7 @@ get_header(); ?>
 		</div>
 
 
-
+		<?php the_field( 'demo_field' ); ?>
 
 
 	</main><!-- #main -->

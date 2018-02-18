@@ -16,13 +16,136 @@
 
 global $wpdb;
 
-  $table_name = $wpdb->prefix . "city";
+  $table_country = $wpdb->prefix . "country";
   //FROM TEMPLATE
-  $current_city = get_field( 'city_name' ); 
+  $current_country = get_field( 'country_name' ); 
+  $country_cid = $wpdb->get_var( "SELECT DISTINCT country_id FROM $table_country WHERE UPPER(name) LIKE UPPER('%$current_country%')" );
 
-  $city_cid = $wpdb->get_var( "SELECT DISTINCT city_id FROM $table_name WHERE UPPER(name) LIKE UPPER('%$current_city%')" );
+  $table_city = $wpdb->prefix . "city";
+  $current_city = get_field( 'city_name' );
+  $city_cid = $wpdb->get_results( "SELECT DISTINCT name FROM $table_city WHERE UPPER(name) LIKE UPPER('%$current_city%')" ); 
+  $city_array = $wpdb->get_results( "SELECT * FROM $table_city WHERE UPPER(name) LIKE UPPER('%$current_city%')" ); 
+
+  debug_PHP_console( $city_cid );
+  debug_PHP_console( $city_array );
 
 
+	if($city_cid !== NULL) {
+		// do other stuff...
+		debug_PHP_console( "ROW FOUND, do other stuff..." );
+		updateCity();
+	} else {
+		// row not found, do stuff...
+		debug_PHP_console( "ROW -NOT- FOUND, do stuff..." );
+		createNewCity();
+	}
+
+function createNewCity() {
+    global $wpdb;
+    global $url;
+    global $country_cid;
+
+    $cname = get_field( 'city_name' );
+    $city_name_up = strtoupper ( $cname );
+    $city_name_lw = strtolower ( $cname );
+    $cshort_desc = get_field( 'city_short_description' );
+
+    $city_img_url = get_field( 'slider_image_1' );
+    $current_url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+    $count_id = $country_cid;
+
+    $data = array(
+        'name'                      => $city_name_up,
+        'nicename'                  => $city_name_lw,
+        'city_short_description'    => $cshort_desc,
+        'city_header_img_url'       => $city_img_url ?: 'https://www.hsjaa.com/images/joomlart/demo/default.jpg',
+        'page_url'                  => $current_url ?: '#',
+        'country_fid'               => $count_id
+    );
+    $format = array(
+        '%s',
+        '%s',
+        '%s',
+        '%s',
+        '%s',
+        '%d'
+    );
+    $success=$wpdb->insert( 'hos_city', $data, $format );
+}
+
+function updateCity() {
+	global $wpdb;
+	global $table_city;
+	global $city_array;
+	global $country_cid;
+
+	$cname = get_field( 'city_name' );
+	$city_name_up = strtoupper ( $cname );
+	$city_name_lw = strtolower ( $cname );
+	$cshort_desc = get_field( 'city_short_description' );
+
+	$city_img_url = get_field( 'slider_image_1' );
+	$current_url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+	$count_id = $country_cid;
+
+	$data = array(
+	    'name'                      => $city_name_up,
+	    'nicename'                  => $city_name_lw,
+	    'city_short_description'    => $cshort_desc,
+	    'city_header_img_url'       => $city_img_url ?: 'https://www.hsjaa.com/images/joomlart/demo/default.jpg',
+	    'page_url'                  => $current_url ?: '#',
+	    'country_fid'               => $count_id
+	);
+	$format = array(
+        '%s',
+        '%s',
+        '%s',
+        '%s',
+        '%s',
+        '%d'
+    );
+
+    $where = array( 'name' => $city_name_up );
+    $w_format = array( '%s' );
+
+	debug_PHP_console( "city_short_description" );
+	debug_PHP_console( $cshort_desc );
+	debug_PHP_console( "Before UPDATE" );
+	debug_PHP_console( "data" );
+	debug_PHP_console( $data );
+	debug_PHP_console( $format );
+	debug_PHP_console( $where );
+	debug_PHP_console( $w_format );
+
+	// $updated=$wpdb->update( $table_city, $data, $where, $format, $w_format );
+	// $updated=$wpdb->query($wpdb->prepare("UPDATE $table_city SET city_short_description='$cshort_desc', city_header_img_url='$city_img_url' WHERE name=$city_name_up"));
+	
+
+	// $updated = $wpdb->query( $wpdb->prepare("
+	//     UPDATE  $table_city
+	//     SET city_short_description=$cshort_desc, city_header_img_url=$city_img_url
+	//     WHERE name = $city_name_up
+	// ") );
+
+
+	$updated = $wpdb->query( $wpdb->prepare("
+		UPDATE $table_city 
+        SET city_short_description = %s, city_header_img_url = %s 
+        WHERE name = %s
+    ",$cshort_desc, $city_img_url, $city_name_up) );
+
+	
+	debug_PHP_console( "UPDATED" );
+	debug_PHP_console( $updated );
+	 
+	if ( false === $updated ) {
+		// There was an error.
+		debug_PHP_console( "ERROR." );
+	} else {
+		// No error. You can check updated to see how many rows were changed.
+		debug_PHP_console( "UPDATED. No fails." );
+	}
+}
 
 
 
@@ -49,9 +172,9 @@ get_header(); ?>
 		</div>
 
 		<!-- META INFO -->
-		<!-- <p><?php echo $table_name ?></p>
+		<!-- <p><?php echo $table_country ?></p>
 		<p><?php echo $current_city ?></p>
-		<p><?php echo $city_cid ?></p> -->
+		<p><?php echo $country_cid ?></p> -->
 
 
 		<div id="city_carousel" class="carousel slide" data-ride="carousel">

@@ -84,6 +84,29 @@ add_action( 'wp_enqueue_scripts', 'theme_add_bootstrap' );
 
 
 
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/**
+ * Send debug code to the Javascript console
+ */ 
+function debug_PHP_console($data) {
+    if(is_array($data) || is_object($data)) {
+        echo("<script>console.log('PHP_arr_obj: ".json_encode($data)."');</script>");
+        echo("<script>console.log('PHP_r: ".print_r($data)."');</script>");
+    } else {
+        echo("<script>console.log('PHP_val: ".$data."');</script>");
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 // Place this in your themes functions.php 
 // This will put the menu item in your primary menu. Change the theme location if you want to change which menu this goes in. 
 // Use the Free code for WC Vendors Free, use the Pro code for WC Vendors Pro

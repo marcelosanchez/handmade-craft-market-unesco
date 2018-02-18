@@ -77,6 +77,7 @@ var file_frame;
     if( '' !== $(this).val() ) {
       jQuery('#city_upload_meta').val('');
       jQuery('.cupp-current-img').attr('src', $(this).val()).removeClass('placeholder');
+      alert($(this).val());
     }
   });
 
@@ -93,6 +94,7 @@ var file_frame;
     jQuery(this).parent().fadeOut('fast', function(){
       jQuery(this).remove();
       jQuery('.cupp-current-img').addClass('placeholder').attr('src', placeholder);
+      alert("sssssssssssssss");
     });
     jQuery('#city_upload_meta, #city_upload_edit_meta, #city_meta').val('');
   });

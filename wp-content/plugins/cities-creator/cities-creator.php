@@ -102,7 +102,8 @@ add_action( 'admin_enqueue_scripts', 'city_enqueue_scripts_styles' );
 function add_new_city_page( $user ) {
     global $countries;
 
-
+    echo "test";
+    
     if ( ! current_user_can( 'upload_files' ) ) {
         return;
     }
@@ -213,7 +214,6 @@ function add_new_city_page( $user ) {
                             <input id="uploadimage" type='button' class="cupp_wpmu_button button-primary"
                                    value="<?php _e( esc_attr( $button_text ), 'cities-creator' ); ?>"/>
                             <br/>
-                            
                         </div>
 
                         <!-- Outputs the text field and displays the URL of the image retrieved by the media uploader -->
@@ -247,33 +247,48 @@ function add_new_city_page( $user ) {
 
             <?php 
             function display() {
-                echo "hello ".$_POST["studentname"];
-
+                global $wpdb;
                 global $url;
+                global $table_city;
 
                 $cname = $_POST['city_name'];
                 $city_name_up = strtoupper ( $cname );
                 $city_name_lw = strtolower ( $cname );
                 $cshort_desc = $_POST['short_description'];
+                $city_img_url = $imgurl;
                 $country_id = $_POST['country_cid'];
-                $city_img_url = esc_url( get_the_author_meta( 'city_upload_meta', $user_id ) );
-
 
                 $data = array(
                     'name'                      => $city_name_up,
                     'nicename'                  => $city_name_lw,
                     'city_short_description'    => $cshort_desc,
-                    'city_header_img_url'       => $city_img_url,
-                    'page_url'                  => '#',
+                    'city_header_img_url'       => $city_img_url ?: 'https://www.hsjaa.com/images/joomlart/demo/default.jpg',
+                    'page_url'                  => 'http://200.10.147.158/cities/',
                     'country_fid'               => $_POST['country_cid']
                 );
+                $format = array(
+                    '%s',
+                    '%s',
+                    '%s',
+                    '%s',
+                    '%s',
+                    '%d'
+                );
+                $success=$wpdb->insert( $table_city, $data, $format );
+                if($success){
+                    echo '<script language="javascript">alert("juas");</script>'; ; 
+                }
+
 
                 echo print_r($data);
 
             }
             if(isset($_POST['submit']))
             {
+                
+
                display();
+
             } 
              ?>
 
