@@ -512,17 +512,32 @@ if ( is_multisite() && is_network_admin() && ! IS_PROFILE_PAGE && current_user_c
 ?>
 </table>
 
+<?php //debug_PHP_console($profileuser); ?>
+
 <h2><?php IS_PROFILE_PAGE ? _e( 'About Yourself' ) : _e( 'About the user' ); ?></h2>
 
 <table class="form-table">
 <tr class="user-description-wrap">
-	<th><label for="description"><?php _e('Biographical Info'); ?></label></th>
+   <!-- ARTISAN CUSTOM FIELDS -->
+   <?php $user_role = array_values($profileuser->roles)[0]; 
+    if ( $user_role === "vendor" ) { ?>
+		<th><label for="description"><?php _e('My History'); ?></label></th>
+   <?php } else { ?>
+		<th><label for="description"><?php _e('User Biographical Info'); ?></label></th>
+   <?php } ?>
 	<td><textarea name="description" id="description" rows="5" cols="30"><?php echo $profileuser->description; // textarea_escaped ?></textarea>
 	<p class="description"><?php _e('Share a little biographical information to fill out your profile. This may be shown publicly.'); ?></p></td>
 </tr>
+<?php $user_role = array_values($profileuser->roles)[0]; 
+    if ( $user_role === "vendor" ) { ?>
+<tr>
+	<th><label for="craft_elaboration"><?php _e('Crafts Elaboration'); ?></label></th>
+	<td><textarea name="craft_elaboration" id="craft_elaboration" rows="5" cols="30"></textarea></td>
+</tr>
+<?php } ?>
 
 <?php if ( get_option( 'show_avatars' ) ) : ?>
-<tr class="user-profile-picture">
+<tr class="user-profile-picture" style="display: none;">
 	<th><?php _e( 'Profile Picture' ); ?></th>
 	<td>
 		<?php echo get_avatar( $user_id ); ?>

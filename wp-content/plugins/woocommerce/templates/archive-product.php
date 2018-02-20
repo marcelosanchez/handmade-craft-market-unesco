@@ -82,9 +82,10 @@ get_header( 'shop' ); ?>
 
 			<div class="row" style="padding-top: 0px;">
 				<!-- <div class="col-md-12 artisan_header" style="background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),  url(<?php echo get_uploads_path (); ?>/ultimatemember/<?php echo $vendor_id ?>/cover_photo-600.jpg?1517819883);"> -->
-				<div class="col-md-12 artisan_header" style="background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),  url(http://200.10.147.158/wp-content/uploads/2018/02/IMG_9083.jpg);">
+				<div class="col-md-12 artisan_header" style="background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),  url(https://lh3.google.com/u/0/d/1ify2VBu_blqBGZ76K4klJOrsMFmPNPSf=w1366-h662-iv1);">
+
 					<div class="profile_img_cont col-md-12">
-						<img class="col-md-2" src="<?php echo get_uploads_path (); ?>/ultimatemember/<?php echo $vendor_id ?>/profile_photo-190.jpg?1517819883" alt="">
+						<img class="col-md-2" src="https://www.farn-ct.ac.uk/wp-content/uploads/2017/08/Blank-Avatar.jpg" alt="">
 						
 						<h1 data-id="<?php echo $vendor_id ?>"> <?php echo $artisan_info->first_name .  " " . $artisan_info->last_name ; ?>  </h1>
 						<h3><?php echo the_author_meta( 'billing_city', $vendor_id ); ?></h3>
@@ -96,9 +97,7 @@ get_header( 'shop' ); ?>
 
 			<div class="row centered_content artisan_desc_main_text col-md-6" style="padding-top: 60px;">
 				<h5>My History</h5>
-				<p class="">
-					<?php echo the_author_meta( 'description', $vendor_id ); ?>
-				</p>
+				<?php echo the_author_meta( 'description', $vendor_id ); ?>
 			</div>
 
 			<!-- ********************************** -->
@@ -114,7 +113,7 @@ get_header( 'shop' ); ?>
 					</p>
 				</div>
 				<!-- <div class="col-md-6 half-artisan-desc-img" style="background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),  url(<?php the_field( 'crafts_elaboration_image' ); ?>);"> -->
-				<div class="col-md-6 half-artisan-desc-img" style="background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),  url(http://200.10.147.158/wp-content/uploads/2018/02/IMG_9077.jpg);">
+				<div class="col-md-6 half-artisan-desc-img" style="background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),  url(http://200.10.147.158/wp-content/uploads/2018/02/IMG_9389-4.jpg);">
 					<!-- <img class="img-full-div" src="<?php the_field( 'crafts_elaboration_image' ); ?>" alt=""> -->
 				</div>
 			</div>

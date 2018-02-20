@@ -66,6 +66,7 @@ p {
 .artisan_desc_main_text h5 {
     text-align: center;
     margin: 0 auto;
+    width: 100%;
 	font-size: 16px;
 	text-transform: uppercase;
 	line-height: 1.5;
